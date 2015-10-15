@@ -1,5 +1,6 @@
 /*
- * \TODO add your names here!
+ * Benjamin Schroeder
+ * Jonas Ditz
  */
 package exampleCode;
 

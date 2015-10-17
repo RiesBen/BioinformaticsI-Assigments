@@ -58,17 +58,17 @@ public class RunNeedlemanWunsch {
         nw.compute();
 
         if(options.getSingle()){
-            if(options.getOutput() == null) {
+            if(options.getOutFile() == null) {
                 System.out.println("Alignment :");
                 System.out.println("\t" + "aligned1 = " + nw.getAligned1(0));
                 System.out.println("\t" + "aligned2 = " + nw.getAligned2(0));
                 System.out.println("--------------------------------");
                 System.out.println("Alignment-Score = "+nw.getScore());
             }else {
-                nw.writeAlignment(options.getOutput(), true);
+                nw.writeAlignment(options.getOutFile(), true);
             }
         }else{
-            if(options.getOutput() == null) {
+            if(options.getOutFile() == null) {
                 // display all possible optimal alignments
                 for(int i = 0; i < nw.getNumberOfAlignments(); i++) {
                     System.out.println("Alignment " + (i+1) + ":");
@@ -79,20 +79,9 @@ public class RunNeedlemanWunsch {
                 System.out.println("--------------------------------");
                 System.out.println("Alignment-Score = "+nw.getScore());
             }else {
-                nw.writeAlignment(options.getOutput(), false);
+                nw.writeAlignment(options.getOutFile(), false);
             }
         }
-        /*
-         * \TODO here it is only possible to write the output to system.out
-         * your program should also be able to write the ouput in fasta-format to
-         * a user defined file! All the output should go in the same fasta file 
-         * (multi-fasta file). In this, make sure, that you set the headers of
-         * your entries such that:
-         * 	- one can easily see which two sequences are aligned to each other
-         *  - the score of the alignment should be encoded in the header of both
-         *    aligned sequences
-         */
-        
         /*
          * \TODO make sure your code compiles correctly!
          */

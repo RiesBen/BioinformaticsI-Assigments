@@ -181,4 +181,30 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
 		else
 			return 4;
 	}
+
+    /**
+     * This funktion provide a easy way to write a computed alignment into a fasta file
+     * @param outFile
+     * @param single
+     */
+    public void writeAlignment(String outFile, boolean single) {
+        File outputFile = new File(outFile);
+        output = new BufferedWriter(new FileWriter(outputFile));
+        if(single) {
+            output.write(">SEQUENCE_1|Score:"); output.write(this.score); output.newLine();
+            output.write(this.aligned1[0]); output.newLine();
+            output.write(">SEQUENCE_2|Score:"); output.write(this.score); output.newLine();
+            output.write(this.aligned2[0]);
+        }else {
+            for(int i = 0; i < this.aligned1.size(); i++) {
+                output.write(">SEQUENCE_1|Alignment:"); output.write(i+1);
+                output.write("|Score:"); output.write(this.score); output.newLine();
+                output.write(this.aligned1[0]); output.newLine();
+                output.write(">SEQUENCE_2|Alignment:"); output.write(i+1);
+                output.write("|Score:"); output.write(this.score); output.newLine();
+                output.write(this.aligned2[0]); output.newLine();
+            }
+        }
+    }
+
 }

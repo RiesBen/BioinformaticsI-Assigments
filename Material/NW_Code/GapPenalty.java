@@ -40,7 +40,7 @@ public class GapPenalty {
       * set gap opening cost
       * @param gapOpening
       */
-     public void setOpeningCost(int gapOpening) {
+     public void setGapOpening(int gapOpening) {
          this.gapOpening = gapOpening;
      }
 
@@ -48,7 +48,7 @@ public class GapPenalty {
       * set gap extension cost
       * @param gapExtension
       */
-     public void setExtensionCost(int gapExtension) {
+     public void setGapExtension(int gapExtension) {
          this.gapExtension = gapExtension;
      }
 

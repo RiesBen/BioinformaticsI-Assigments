@@ -13,14 +13,14 @@ import org.kohsuke.args4j.Option;
 
 public class CommandLineParser {
 
-    @Option(name="-i1", usage="input file, which stores the first sequence")
+    @Option(name="-i1", usage="input file, which stores the first sequence", required=true)
     private File inSeq1;
 
-    @Option(name="-i2", usage="input file, which stores the second sequence")
+    @Option(name="-i2", usage="input file, which stores the second sequence", required=true)
     private File inSeq2;
 
     @Option(name="-o", usage="output to this file")
-    private File out = new File(".");
+    private String out;
 
     @Option(name="-open", usage="set gap open penalty\nIf linear gap costs are used, this is the gap penalty")
     private int gapOpenPenalty = 1;

@@ -20,30 +20,21 @@ public class RunNeedlemanWunsch {
      * @throws Exception
      */
     static public void main (String[] args) throws Exception {
-        if(args.length!=5)
-            throw new Exception("Usage: file1 file2 matchscore mismatchscore gappenalty");
         
-        /*
-         * \TODO
-         * Adapt this class such that it accepts command line switches
-         * e.g.
-         * -i		for input files
-         * -d		for gap penalty
-         * -ms		for match score
-         * -mms		for mismatch score
-         * -single	only output one best alignment
-         * -all		output all best alignments
-         * -o		write output to a fasta file instead of system.out
-         * 			in this case the alingments should be writen in fasta-format +
-         * 			store the score of the alignment in the header of each fasta entry
-         * -?		provide helpful usage information
-         */
-        
+        CommandLineParser options = new CommandLineParser(args);
+        CmdLineParser parser = new CmdLineParser(options);
+
+        try {
+            parser.parseArgument(args);
+        } catch (CmdLineException e) {
+            System.exit(1);
+        }
+
         FastA fasta1 = new FastA();
-        fasta1.read(new BufferedReader(new FileReader(new File(args[0]))));
+        fasta1.read(new BufferedReader(new FileReader(options.getSeq1())));
         
         FastA fasta2 = new FastA();
-        fasta2.read(new BufferedReader(new FileReader(new File(args[1]))));
+        fasta2.read(new BufferedReader(new FileReader(options.getSeq2())));
 
         // setup algorithm parameters:
         NeedlemanWunsch nw = new NeedlemanWunsch();
@@ -53,9 +44,9 @@ public class RunNeedlemanWunsch {
         nw.setSequence2(fasta2.getSequence(0));
 
         //set match, mismatch score and gap penalty
-        nw.setMatchScore(Integer.parseInt(args[2]));
-        nw.setMismatchScore(Integer.parseInt(args[3]));
-        nw.setGapPenalty(Integer.parseInt(args[4]));
+        nw.setMatchScore(options.getMatchScore());
+        nw.setMismatchScore(options.getMismatchScore());
+        nw.setGapPenalty(options.getOpeningCost());
 
         // display input
         System.out.println("Input:");
@@ -66,16 +57,31 @@ public class RunNeedlemanWunsch {
         // run algorithm
         nw.compute();
 
-     // display all possible optimal alignments
-        for(int i = 0; i < nw.getNumberOfAlignments(); i++) {
-            System.out.println("Alignment " + (i+1) + ":");
-            System.out.println("\t" + "aligned1 = " + nw.getAligned1(i));
-            System.out.println("\t" + "aligned2 = " + nw.getAligned2(i));
+        if(options.getSingle()){
+            if(options.getOutput() == null) {
+                System.out.println("Alignment :");
+                System.out.println("\t" + "aligned1 = " + nw.getAligned1(0));
+                System.out.println("\t" + "aligned2 = " + nw.getAligned2(0));
+                System.out.println("--------------------------------");
+                System.out.println("Alignment-Score = "+nw.getScore());
+            }else {
+                nw.writeAlignment(options.getOutput(), true);
+            }
+        }else{
+            if(options.getOutput() == null) {
+                // display all possible optimal alignments
+                for(int i = 0; i < nw.getNumberOfAlignments(); i++) {
+                    System.out.println("Alignment " + (i+1) + ":");
+                    System.out.println("\t" + "aligned1 = " + nw.getAligned1(i));
+                    System.out.println("\t" + "aligned2 = " + nw.getAligned2(i));
+                }
+        
+                System.out.println("--------------------------------");
+                System.out.println("Alignment-Score = "+nw.getScore());
+            }else {
+                nw.writeAlignment(options.getOutput(), false);
+            }
         }
-        
-        System.out.println("--------------------------------");
-        System.out.println("Alignment-Score = "+nw.getScore());
-        
         /*
          * \TODO here it is only possible to write the output to system.out
          * your program should also be able to write the ouput in fasta-format to

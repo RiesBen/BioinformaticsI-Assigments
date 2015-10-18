@@ -86,12 +86,5 @@ public class RunNeedlemanWunsch {
                 nw.writeAlignment(options.getOutFile(), false);
             }
         }
-        /*
-         * \TODO make sure your code compiles correctly!
-         */
-        
-        /*
-         * \TODO explain in your report, why you think your changes are necessary!
-         */
     }
 }

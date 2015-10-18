@@ -5,6 +5,10 @@
 package exampleCode;
 
 import java.util.Stack;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileWriter;
 
 /**
  * Needleman-Wunsch Algorithm
@@ -187,22 +191,22 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
      * @param outFile
      * @param single
      */
-    public void writeAlignment(String outFile, boolean single) {
+    public void writeAlignment(String outFile, boolean single) throws IOException {
         File outputFile = new File(outFile);
-        output = new BufferedWriter(new FileWriter(outputFile));
+        BufferedWriter output = new BufferedWriter(new FileWriter(outputFile));
         if(single) {
-            output.write(">SEQUENCE_1|Score:"); output.write(this.score); output.newLine();
-            output.write(this.aligned1[0]); output.newLine();
-            output.write(">SEQUENCE_2|Score:"); output.write(this.score); output.newLine();
-            output.write(this.aligned2[0]);
+            output.write(">SEQUENCE_1|Score:"); output.write(this.getScore()); output.newLine();
+            output.write(this.getAligned1(0)); output.newLine();
+            output.write(">SEQUENCE_2|Score:"); output.write(this.getScore()); output.newLine();
+            output.write(this.getAligned2(0));
         }else {
-            for(int i = 0; i < this.aligned1.size(); i++) {
+            for(int i = 0; i < this.getNumberOfAlignments(); i++) {
                 output.write(">SEQUENCE_1|Alignment:"); output.write(i+1);
-                output.write("|Score:"); output.write(this.score); output.newLine();
-                output.write(this.aligned1[0]); output.newLine();
+                output.write("|Score:"); output.write(this.getScore()); output.newLine();
+                output.write(this.getAligned1(0)); output.newLine();
                 output.write(">SEQUENCE_2|Alignment:"); output.write(i+1);
-                output.write("|Score:"); output.write(this.score); output.newLine();
-                output.write(this.aligned2[0]); output.newLine();
+                output.write("|Score:"); output.write(this.getScore()); output.newLine();
+                output.write(this.getAligned2(0)); output.newLine();
             }
         }
     }

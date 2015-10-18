@@ -1,6 +1,7 @@
 package exampleCode;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
@@ -31,49 +32,26 @@ public class CommandLineParser {
     @Option(name="-m", usage="set the score of a match")
     private int match = 1;
 
-    @Option(name"-mm", usage="set the score of a mismatch")
+    @Option(name="-mm", usage="set the score of a mismatch")
     private int mismatch = 1;
 
     @Option(name="-single", usage="output only the best alignment, i.e. with highest alignment score\nIf you want all alignments, set this option to FALSE")
     private boolean single = true;
 
-   
-    // main
-    public static void main(String[] args) throws IOException {
-        new CommandLineParser().doMain(args);
-    }
-
-    public void doMain(String[] args) throws IOEception {
+    /*
+     * Constructor
+     */
+    public CommandLineParser(String[] args) {
         CmdLineParser parser = new CmdLineParser(this);
-
-        // set the width of your consol
         parser.setUsageWidth(100);
 
-        
         try {
-            // parse the arguments.
             parser.parseArgument(args);
-
-            //check whether there are enough arguments
-            if( arguments.isEmpty() )
-                throw new CmdLineException(parser,"No argument is given");
-
-        } catch( CmdLineException e ) {
-            // if there's a problem in the command line,
-            // you'll get this exception. this will report
-            // an error message.
+        } catch (CmdLineException e) {
             System.err.println(e.getMessage());
-            System.err.println("java SampleMain [options...] arguments...");
-            // print the list of available options
             parser.printUsage(System.err);
-            System.err.println();
-
-            // print option sample. This is useful some time
-            System.err.println("  Example: java SampleMain"+parser.printExample(ALL));
-
-            return;
         }
-    }
+    } 
 
     /**
      * get inSeq1
@@ -95,7 +73,7 @@ public class CommandLineParser {
      * get output file
      * @return out
      */
-    public File getOutFile() {
+    public String getOutFile() {
         return out;
     }
 

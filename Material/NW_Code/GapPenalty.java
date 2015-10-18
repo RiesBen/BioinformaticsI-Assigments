@@ -55,9 +55,9 @@ public class GapPenalty {
      /**
       * set gap penalty type
       * 0 for linear, 1 for affine
-      * @param penaltyTyp
+      * @param penaltyType
       */
-     public void setPenaltyTyp(int penaltyTyp) {
+     public void setPenaltyType(int penaltyType) {
          if (penaltyType == 0) this.affine = false;
          else this.affine = true;
      }

@@ -124,14 +124,14 @@ Tutor: #2  % Tutor
 	  \cite{GPU}
 	  
   \section*{Exercise 2 - \textsl{DP Algorithm for finding motifs}}
-  \emph{for} i = 0 \emph{to} \emph{length}(X)\\
-  \indent \emph{if} X[i] == Y[0]\\
+  \textbf{for} i = 0 \textbf{to} \textbf{length}(X)\\
+  \indent \textbf{if} X[i] == Y[0]\\
   \indent \indent Score = 0
-  \indent \indent \emph{for} j = 0 \emph{to} \emph{length}(Y)\\
-  \indent \indent \indent \emph{if} (X[i+j] == Y[j]) Score += 1\\
-  \indent \indent if (Score > T) 
-  \indent \indent \indent \emph{print}(motif found at position i)
-  \indent \indent \indent i += \emph{length}(Y)
+  \indent \indent \textbf{for} j = 0 \textbf{to} \textbf{length}(Y)\\
+  \indent \indent \indent \textbf{if} (X[i+j] == Y[j]) Score += 1\\
+  \indent \indent if (Score > T)\\
+  \indent \indent \indent \textbf{print}(motif found at position i)\\
+  \indent \indent \indent i += \textbf{length}(Y)
  
   \section*{Exercise 3 - \textsl{Programming assignment: Needleman-Wunsch alignment}}
   One task was to handle command line options. We wrote a new class to have a modular 

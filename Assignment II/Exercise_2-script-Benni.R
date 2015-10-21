@@ -7,4 +7,10 @@ BLOSUM80<- read.table(file=paste0(basicPath,"material/substitution_matrices/BLOS
 PAM250<- read.table(file=paste0(basicPath,"material/substitution_matrices/PAM250.txt"))
 PAMN<- read.table(file=paste0(basicPath,"material/substitution_matrices/PAMN.txt"))
 
-#Now m
+#Now sum all matrices and divide by the equally distributed amino acids.
+  sumBLOSUM50 <- sum(BLOSUM50[0:20,0:20])/400
+  sumBLOSUM62 <- sum(BLOSUM62[0:20,0:20])/400
+  sumBLOSUM80 <- sum(BLOSUM80[0:20,0:20])/400
+  sumPAM250 <- sum(PAM250[0:20,0:20])/400
+  sumPAMN <- sum(PAMN[0:20,0:20])/400
+

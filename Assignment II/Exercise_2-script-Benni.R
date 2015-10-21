@@ -14,3 +14,8 @@ PAMN<- read.table(file=paste0(basicPath,"material/substitution_matrices/PAMN.txt
   sumPAM250 <- sum(PAM250[0:20,0:20])/400
   sumPAMN <- sum(PAMN[0:20,0:20])/400
 
+  sumBLOSUM50aX <- sum(BLOSUM50[0:20,0:20])/400
+  sumBLOSUM62aX <- sum(BLOSUM62[0:20,0:20])/400
+  sumBLOSUM80aX <- sum(BLOSUM80[0:20,0:20])/400
+  sumPAM250aX <- sum(PAM250[0:20,0:20])/400
+  sumPAMNaX <- sum(PAMN[0:20,0:20])/400

@@ -2,7 +2,7 @@
 %!TEX TS-program = pdflatex
 \documentclass[%
    10pt,              % Schriftgroesse
-   ngerman,           % wird an andere Pakete weitergereicht
+   nenglish,           % wird an andere Pakete weitergereicht
    a4paper,           % Seitengroesse
    DIV11,             % Textbereichsgroesse (siehe Koma Skript Dokumentation !)
 ]{scrartcl}%     Klassen: scrartcl, scrreprt, scrbook, article
@@ -115,7 +115,34 @@ Tutor: #2  % Tutor
  \section*{Exercise 1 - \textsl{Hirschberg algorithm for alignment in linear space}}
   
  \section*{Exercise 2 - \textsl{Do scoring matrices have expected score smaller than zero?}}
-    
+ 
+ The substitution matrices were evaluated according to the expectancy value formula given in the lecture, the substitution matrices were evaluated with the assumption of uniform distributed amino acids in two sequences.
+ \begin{equation*}
+ \sum_{a,b \in \Sigma}p_a p_b s(a,b)
+ <=>  (\sum_{a,b \in \Sigma} s(a,b))  p_a p_b
+ \label{expectance}
+ \end{equation*}
+ 
+ For the determination of one expectance value, $p_a$ and $p_b$ were each substituted with $1/20$, for the probabilistic occurrence in sequences with uniform distributed amino acids. The sum was calculated via R and the total summation of the substitution matrix \ref{expectance}.The result for each matrix can be seen in table \ref{Results-Expectance}.
+ 
+ \begin{table}[h]
+ \begin{tabular}{|c|c|}
+ 	\hline \rule[-2ex]{0pt}{5.5ex} Substitution Matrix & Expectance Value \\ 
+ 	\hline \rule[-2ex]{0pt}{5.5ex} BLSOUM50 & -1.155 \\ 
+ 	\hline \rule[-2ex]{0pt}{5.5ex} BLOSUM52 & -1.065 \\ 
+ 	\hline \rule[-2ex]{0pt}{5.5ex} BLOSUM80 & -2.3275 \\ 
+ 	\hline \rule[-2ex]{0pt}{5.5ex} PAM250 & -1.14 \\ 
+ 	\hline \rule[-2ex]{0pt}{5.5ex} PAMN & 0.155 \\ 
+ 	\hline 
+ \end{tabular} 
+ 
+   	\label{Results-Expectance}
+   	\caption{Result of the calculation with each given substitution matrix according to equation}
+ \end{table}
+ 
+ As a conclusion we want to state, that all substitution matrices are possible feasible matrices. Except of the PAMN matrix, which has a positive expectancy value, which could lead to wrong conclusion.
+One Aspect we also want to state, is that we did not calculate the values for the matrices with the unknown sign x or X. and the B or Z sign,  which stands for two amino acids. Although it would be possbile to use the unknown sign, if they are also uniform distributed in a sequence. But as a result of the wanted comparison, between matrices which didn't contain these signs, we did not use these columns and rows in our calculations.
+ 
  \section*{Exercise 3 - \textsl{Needleman-Wunsch algorithm for affine gap scores}}
  
   

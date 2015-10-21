@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.15)  21 OCT 2015 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.15)  21 OCT 2015 20:45
 entering extended mode
 **Assignment1-Ditz_Schroeder-WS15-16.tex
 (Assignment1-Ditz_Schroeder-WS15-16.tex
@@ -333,23 +333,14 @@ Package: babel 2015/08/03 3.9m The Babel package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf"
-Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf"
-Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-\l@naustrian = a dialect from \language\l@ngerman 
-\l@nswissgerman = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 88.
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
-Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -1282,6 +1273,10 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks37
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+
+LaTeX Warning: Unused global option(s):
+    [nenglish].
+
 (Assignment1-Ditz_Schroeder-WS15-16.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
 LaTeX Font Info:    ... okay on input line 111.
@@ -1433,39 +1428,52 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 115.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
+)
+
+Package hyperref Warning: Suppressing empty link on input line 126.
+
+
+Package hyperref Warning: Suppressing empty link on input line 126.
+
+[1
 
 {C:/Users/Benjamin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
-
-(Assignment1-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+ (Assignment1-Ditz_Schroeder-WS15-16.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `Assignment1-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 24269 strings out of 493673
- 462239 string characters out of 3141520
- 612078 words of memory out of 3000000
- 27145 multiletter control sequences out of 15000+200000
+ 24207 strings out of 493673
+ 461072 string characters out of 3141520
+ 614875 words of memory out of 3000000
+ 27087 multiletter control sequences out of 15000+200000
  40466 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  64i,9n,67p,957b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on Assignment1-Ditz_Schroeder-WS15-16.pdf (1 page, 133712 bytes)
-.
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
+fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-mathex.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbo
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
+Output written on Assignment1-Ditz_Schroeder-WS15-16.pdf (2 pages, 156829 bytes
+).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

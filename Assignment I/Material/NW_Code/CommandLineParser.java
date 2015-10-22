@@ -33,7 +33,7 @@ public class CommandLineParser {
     private int match = 1;
 
     @Option(name="-mm", usage="set the score of a mismatch")
-    private int mismatch = 1;
+    private int mismatch = -1;
 
     @Option(name="-single", usage="output only the best alignment, i.e. with highest alignment score\nIf you want all alignments, set this option to FALSE")
     private boolean single = true;

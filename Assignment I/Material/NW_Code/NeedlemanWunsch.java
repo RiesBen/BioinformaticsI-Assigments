@@ -34,14 +34,13 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
 		
 		switch (direction){
 		case 0:	// end of the global alignment
-			/*
-			 * \TODO format the aligned sequences, such that they are in the fasta-format!
-			 * i.e. remove any unsupported fasta characters, such as "," " " or "[" ...
-			 * think of a clever object oriented way to do so!
-			 */
 			
 			String aligned1 = s1.toString();
 			String aligned2 = s2.toString();
+
+                        // remove non-fasta characters
+                        aligned1 = aligned1.replace(" ,[]()", "");
+                        aligned2 = aligned2.replace(" ,[]()", "");
 			
 			this.addAligned1(reverse(aligned1));
 			this.addAligned2(reverse(aligned2)); 

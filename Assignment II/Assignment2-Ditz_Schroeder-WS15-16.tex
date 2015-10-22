@@ -115,17 +115,19 @@ Tutor: #2  % Tutor
 \header{7}{Alexander Seitz}{26. October 2015}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{3}
 
  \section*{Exercise 1 - \textsl{Hirschberg algorithm for alignment in linear space}}
-  
+  With two given Sequences (Xand Y), the scoring of s(a,a) = 4, s(a,b)=-3 and a gap penalty g=-3, the Hirschberg algorithm was started.
+ 
+ First, the Sequence X was split into two parts and 
   \begin{figure}[h]
   	\includegraphics[scale=0.25]{img/Hirschberg_Step1.png}
   	\label{Step1}
-  	\caption{BLAAAAAAAAAAA}
+  	\caption{In the first step the sequence X was split into two parts and for both a NW global alignment was calculated. It's important to state, that the NW of the suffix of the sequence splitting was calculated reverse. The Maximum which was found after the substraction of both maxima was used to identify two letters, whrch are to be aligned.}
   \end{figure}
   
   \begin{figure}[h]
    	\includegraphics[scale=0.25]{img/Hirschberg_Step2.png}
    	\label{Step2}
-   	\caption{BLAAAAAAAAAAA}
+   	\caption{In the}
   \end{figure}
   \begin{figure}[h]
     \includegraphics[scale=0.25]{img/Hirschberg_Step3.png}

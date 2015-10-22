@@ -119,12 +119,20 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
     	
     	// fill the first row and first column of matrix and tracebackMatrix
     	for(int i = 0; i < rows; i++){
-    		matrix[i][0] = -i * this.getGapPenalty();
-    		tracebackMatrix[i][0] = 1;	// see explanation below
+            if(this.gapPenalty.getPenaltyType() == 0 || i == 0) {
+    		matrix[i][0] = -i * this.gapPenalty.getGapCost(true);
+            }else{
+                matrix[i][0] = -(i-1) * this.gapPenalty.getGapCost(false)  - this.gapPenalty.getGapCost(true);
+            }
+                tracebackMatrix[i][0] = 1;	// see explanation below
     	}
     	
     	for(int j = 0; j < columns; j++){
-    		matrix[0][j] = -j * this.getGapPenalty();
+            if(this.gapPenalty.getPenaltyType() == 0 || j == 0) {
+    		matrix[0][j] = -j * this.gapPenalty.getGapCost();
+            }else{
+                matrix[0][j] = -(j-1) * this.gapPenalty.getGapCost(false)  - this.gapPenalty.getGapCost(true);
+            }
     		tracebackMatrix[0][j] = 4; // see explanation below
     	}
     	

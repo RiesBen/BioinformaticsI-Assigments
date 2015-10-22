@@ -28,10 +28,10 @@ public class GapPenalty {
     }
 
     /**
-     * get gap penalty typ
+     * get gap penalty type
      * @return 0 if linear, 1 else
      */
-    public int getPenaltyTyp() {
+    public int getPenaltyType() {
         if(affine) return 1;
         else return 0;
     }

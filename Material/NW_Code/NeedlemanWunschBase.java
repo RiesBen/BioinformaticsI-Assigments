@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class NeedlemanWunschBase {
 	
-    private int gapPenalty = 1;
+    public GapPenalty gapPenalty = 1;
     private int matchScore = 1;
     private int mismatchScore = -1;
     private String sequence1 = null;
@@ -26,22 +26,6 @@ public class NeedlemanWunschBase {
         return aligned1.size();
     }   
     
-    /**
-     * get gap open penalty
-     * @return gap open penalty
-     */
-    public int getGapPenalty() {
-        return gapPenalty;
-    }
-
-    /**
-     * set gap open penalty
-     * @param gapPenalty
-     */
-    public void setGapPenalty(int gapPenalty) {
-        this.gapPenalty = gapPenalty;
-    }
-
     /**
      * get match score
      * @return match score

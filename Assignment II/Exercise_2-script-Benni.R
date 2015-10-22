@@ -1,0 +1,21 @@
+
+#load all files
+basicPath <- "C:/Users/Benjamin/Documents/GitHub/BioinformaticsI-Assigments/Assignment II/"
+BLOSUM50<- read.table(file=paste0(basicPath,"material/substitution_matrices/BLOSUM50.txt"))
+BLOSUM62<- read.table(file=paste0(basicPath,"material/substitution_matrices/BLOSUM62.txt"))
+BLOSUM80<- read.table(file=paste0(basicPath,"material/substitution_matrices/BLOSUM80.txt"))
+PAM250<- read.table(file=paste0(basicPath,"material/substitution_matrices/PAM250.txt"))
+PAMN<- read.table(file=paste0(basicPath,"material/substitution_matrices/PAMN.txt"))
+
+#Now sum all matrices and divide by the equally distributed amino acids.
+  sumBLOSUM50 <- sum(BLOSUM50[0:20,0:20])/400
+  sumBLOSUM62 <- sum(BLOSUM62[0:20,0:20])/400
+  sumBLOSUM80 <- sum(BLOSUM80[0:20,0:20])/400
+  sumPAM250 <- sum(PAM250[0:20,0:20])/400
+  sumPAMN <- sum(PAMN[0:20,0:20])/400
+
+  sumBLOSUM50aX <- sum(BLOSUM50[0:20,0:20])/400
+  sumBLOSUM62aX <- sum(BLOSUM62[0:20,0:20])/400
+  sumBLOSUM80aX <- sum(BLOSUM80[0:20,0:20])/400
+  sumPAM250aX <- sum(PAM250[0:20,0:20])/400
+  sumPAMNaX <- sum(PAMN[0:20,0:20])/400

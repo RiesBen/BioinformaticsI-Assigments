@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class NeedlemanWunschBase {
 	
-    public GapPenalty gapPenalty = 1;
+    public GapPenalty gapPenalty = new GapPenalty();
     private int matchScore = 1;
     private int mismatchScore = -1;
     private String sequence1 = null;

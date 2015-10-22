@@ -27,7 +27,7 @@ public class CommandLineParser {
     private int gapOpenPenalty = 1;
 
     @Option(name="-epen", usage="set gap extention penalty")
-    private int gapExtPenalty = 1;
+    private int gapExtPenalty = 0;
 
     @Option(name="-m", usage="set the score of a match")
     private int match = 1;

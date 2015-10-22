@@ -128,7 +128,7 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
     	
     	for(int j = 0; j < columns; j++){
             if(this.gapPenalty.getPenaltyType() == 0 || j == 0) {
-    		matrix[0][j] = -j * this.gapPenalty.getGapCost();
+    		matrix[0][j] = -j * this.gapPenalty.getGapCost(true);
             }else{
                 matrix[0][j] = -(j-1) * this.gapPenalty.getGapCost(false)  - this.gapPenalty.getGapCost(true);
             }
@@ -141,8 +141,8 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
     	for(int i = 1; i < rows; i++){
     		for(int j = 1; j < columns; j++){
     			int a = matrix[i-1][j-1] + this.match(sequence1.charAt(j-1), sequence2.charAt(i-1));
-    			int b = matrix[i][j-1] - this.gapPenalty.getGapCost();
-    			int c = matrix[i-1][j] - this.gapPenalty.getGapCost();
+    			int b = matrix[i][j-1] - this.gapPenalty.getGapCost(true);
+    			int c = matrix[i-1][j] - this.gapPenalty.getGapCost(true);
     			int max = this.max(a, b, c);
     			
     			// fill cell of the scoring matrix

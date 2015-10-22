@@ -72,5 +72,14 @@ public class GapPenalty {
        else if (affine & !gapOpen) return gapExtension;
        else return gapOpening;
      }
-    
+
+     /**
+      * get initialize gap costs
+      * @param index
+      * @return cost
+      */
+     public getInitCost(int index) {
+    	if(affine) return -(index-1)*this.gapExtension - this.gapOpening;
+    	return -index*this.gapOpening;
+     }
 }

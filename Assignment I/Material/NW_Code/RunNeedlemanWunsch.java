@@ -51,8 +51,8 @@ public class RunNeedlemanWunsch {
         nw.setMatchScore(options.getMatchScore());
         nw.setMismatchScore(options.getMismatchScore());
         nw.gapPenalty.setGapOpening(options.getOpeningCost());
-        nw.gapPenalty.setGapExtension(options.getExtensionCost());
-        if(options.getExtensionCost() != 0) {
+        if(options.getExtensionCost() != null) {
+            nw.gapPenalty.setGapExtension(options.getExtensionCost());
             nw.gapPenalty.setPenaltyType(1);
         }else{
             nw.gapPenalty.setPenaltyType(0);

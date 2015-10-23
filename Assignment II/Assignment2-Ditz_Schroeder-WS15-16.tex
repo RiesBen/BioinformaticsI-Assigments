@@ -115,7 +115,7 @@ Tutor: #2  % Tutor
 \header{7}{Alexander Seitz}{26. October 2015}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{3}
 
  \section*{Exercise 1 - \textsl{Hirschberg algorithm for alignment in linear space}}
-  With two given Sequences (X= TGGA and Y=TTGAGA), the scoring of s(a,a) = 4, s(a,b)=-3 and a gap penalty g=-3, the Hirschberg algorithm was started. First the sequence X was split into two substrings, one was the prefix (\ref{Step1}-green): TG and one the subfix sequence GGA (\ref{Step1} - yellow). The prefix was used in a NW alignment and the suffix was also used in a NW laigment, but this time reversed. Both NW Matrices were calculated with the space reduced algorithm technique. The result is an array with the maxima the matrix saved in an array (\ref{Step1}-red columns). Both arrays are cellwise added up and the maximum is used to determine the two positions of both sequences (\ref{Step1}-red cell), which should be aligned. In step 1 this was the G(X2) to the G(Y3). These position were finally saved in a final array.
+  With two given Sequences (X= TGGA and Y=TTGAGA), the scoring of s(a,a) = 4, s(a,b)=-3 and a gap penalty g=-3, the Hirschberg algorithm was started. First the sequence X was split into two substrings, one was the prefix (\ref{Step1}-green): TG and one the suffix sequence GGA (\ref{Step1} - yellow). The prefix was used in a NW alignment and the suffix was also used in a NW alignment, but this time reversed. Both NW Matrices were calculated with the space reduced algorithm technique. The result is an array with the maxima the matrix saved in an array (\ref{Step1}-red columns). Both arrays are cellwise added up and the maximum is used to determine the two positions of both sequences (\ref{Step1}-red cell), which should be aligned. In step 1 this was the G(X2) to the G(Y3). These position were finally saved in a final array.
  
  First, the Sequence X was split into two parts and 
   \begin{figure}[h]
@@ -123,7 +123,7 @@ Tutor: #2  % Tutor
   	\label{Step1}
   	\caption{In the first step the sequence X was split into two parts and for both a NW global alignment was calculated. It's important to state, that the NW of the suffix of the sequence splitting was calculated reverse. The Maximum which was found after the substraction of both maxima was used to identify two letters, whrch are to be aligned.}
   \end{figure}
-  The second steps starts with cutting the  matrix in the Sequence Y Dimension. Definition of how to start the cutting is not very clearly described, and therefore we cutted at position y+1(\ref{Step2} - yellow and gold area) and y-1 (\ref{Step2} - green area) of the last maximum. The yellow and gold part was processed like in the first step. The green one was interpreted as the trivial case, were one sequence has the length one. which mean,s we simply took the maximum of the table as the to aligning position and saved it in the result array.
+  The second steps starts with cutting the  matrix in the Sequence Y Dimension. Definition of how to start the cutting is not very clearly described, and therefore we cutted at position y+1(\ref{Step2} - yellow and gold area) and y-1 (\ref{Step2} - green area) of the last maximum. The yellow and gold part was processed like in the first step. The green one was interpreted as the trivial case, were one sequence has the length one. Which means we simply took the maximum of the table as the two aligning position and saved it in the result array.
    
   \begin{figure}[h]
    	\includegraphics[scale=0.25]{img/Hirschberg_Step2.png}
@@ -131,7 +131,7 @@ Tutor: #2  % Tutor
    	\caption{Step 2 - calculating the needleman wunsch alignments for the sub sequences.}
   \end{figure}
   
-  In step 3 the trivial case was now in the yellow area (\ref{Step3} -yellow arrea). And the last position for aligning was filled into the result matrix. 
+  In step 3 the trivial case was now in the yellow area (\ref{Step3} -yellow area). And the last position for aligning was filled into the result matrix. 
  
   \begin{figure}[h]
     \includegraphics[scale=0.25]{img/Hirschberg_Step3.png}
@@ -139,7 +139,7 @@ Tutor: #2  % Tutor
 	\caption{step 3 - final trivial case}
   \end{figure}
     
-    In step 4 the interpretation of the result array was processed. This means, that if a position was in the result array, both letters were aligned according to the postions. If there was no position in the array, a gap was filled in (\ref{Step4}).
+    In step 4 the interpretation of the result array was processed. This means, that if a position was in the result array, both letters were aligned according to the positions. If there was no position in the array, a gap was filled in (\ref{Step4}).
     
   \begin{figure}[h]
    \includegraphics[scale=0.25]{img/Hirschberg_Step4.png}
@@ -179,6 +179,10 @@ Tutor: #2  % Tutor
 One Aspect we also want to state, is that we did not calculate the values for the matrices with the unknown sign x or X. and the B or Z sign,  which stands for two amino acids. Although it would be possbile to use the unknown sign, if they are also uniform distributed in a sequence. But as a result of the wanted comparison, between matrices which didn't contain these signs, we did not use these columns and rows in our calculations.
  
  \section*{Exercise 3 - \textsl{Needleman-Wunsch algorithm for affine gap scores}}
- 
+
+ We extended our GapPenalty class from the previous assignment. Now it is possible to get the
+ initialization cost. One just has to call the function getInitCost() with an integer, which defines
+ the current cell index i or j, respectively. This leads us to a very convenient way to initialize 
+ our matrix. 
   
 \end{document}

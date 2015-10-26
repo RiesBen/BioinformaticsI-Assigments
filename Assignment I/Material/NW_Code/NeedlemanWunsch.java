@@ -130,7 +130,7 @@ public class NeedlemanWunsch extends NeedlemanWunschBase {
             if(j == 0) {
     		matrix[0][j] = 0;
             }else{
-                matrix[0][j] = this.getInitCost(i);
+                matrix[0][j] = this.gapPenalty.getInitCost(j);
             }
     	    tracebackMatrix[0][j] = 4; // see explanation below
     	}

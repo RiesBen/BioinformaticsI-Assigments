@@ -90,7 +90,7 @@ public class CommandLineParser {
      * get gap extension penalty
      * @return gapExtPenalty
      */
-    public int getExtensionCost() {
+    public Integer getExtensionCost() {
         return gapExtPenalty;
     }
 

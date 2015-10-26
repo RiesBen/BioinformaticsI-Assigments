@@ -78,7 +78,7 @@ public class GapPenalty {
       * @param index
       * @return cost
       */
-     public getInitCost(int index) {
+     public int getInitCost(int index) {
     	if(affine) return -(index-1)*this.gapExtension - this.gapOpening;
     	return -index*this.gapOpening;
      }

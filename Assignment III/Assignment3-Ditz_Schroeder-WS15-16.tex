@@ -30,9 +30,9 @@
 \usepackage{listings}
 \usepackage{etextools}
 \usepackage{ifthen}
-\usepackage{TikZ} %phylogenetischer Baum
-\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
-\usetikzlibrary{automata,arrows}
+%\usepackage{TikZ} %phylogenetischer Baum
+%\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
+%\usetikzlibrary{automata,arrows}
 \usepackage{subfigure} 
 
 
@@ -114,10 +114,37 @@ Tutor: #2  % Tutor
 %\header{Blatt}{Tutor}{Abgabedatum}{Vorlesung}{Bearbeiter}{Semester}{Anzahl Aufgaben}
 \header{3}{Alexander Seitz}{2. November 2015}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{3}
 
-\section*{Exercise 1 - \textsl{Equivalence of distance and similarity alignments}}
+\section*{Theoretical Assignment - \textsl{Equivalence of distance and similarity alignments}}
+Assume there are two sequences of length n and m, respectively. The length of an alignment between
+this two sequences is of length n+m. As it is written on the assignment following equation is 
+valid:
 
-\section*{Exercise 1 - \textsl{Using BLAT to align 454 reads to the Helicobacter pylori genome}}
+\begin{equation}
+ n + m = 2*M + \sum_k kg_k ,
+\end{equation}
 
-\section*{Exercise 1 - \textsl{Bonus: Use SSAHA2 to align 535 reads to the Helicobacter pylori genome}}
+where M is the number of aligned characters. Since later one of our sequences is called a, we 
+changed the latter a, which is used on the assignment sheet, to M. \\
+Using this equation, we can write the distance of our two sequences (let us call them a and b) as
+
+\begin{align}
+ D(a,b) &= min\{\sum_M d(a,b) + \sum_k k g_k\} \nonumber\\
+        &= min\{\sum_M c + \sum_k k g_k c/2 - \sum_M s(a,b) + \sum_k \hat{\gamma}(k) g_k\} \nonumber\\
+        &= min\{c(n+m)/2 - \sum_M s(a,b) + \sum_k \hat{\gamma}(k) g_k\} \nonumber\\
+        &= c(n+m)/2 - max\{\sum_M s(a,b) - \sum_k \hat{\gamma}(k) g_k\} \nonumber\\
+        &= c(n+m)/2 - S(a,b)
+\end{align}
+
+Solving for S(a,b), we get:
+
+\begin{equation}
+ S(a,b) = c(n+m)/2 - D(a,b)
+\end{equation}
+
+So one can see that the Score is optimal if and only if the Distance is optimal.
+
+\section*{Practical Assignment - \textsl{Using BLAT to align 454 reads to the Helicobacter pylori genome}}
+
+\section*{Practical Assignment - \textsl{Bonus: Use SSAHA2 to align 535 reads to the Helicobacter pylori genome}}
  
 \end{document}

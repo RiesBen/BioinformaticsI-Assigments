@@ -147,4 +147,32 @@ So one can see that the Score is optimal if and only if the Distance is optimal.
 
 \section*{Practical Assignment - \textsl{Bonus: Use SSAHA2 to align 535 reads to the Helicobacter pylori genome}}
  
+As described on the assignment sheet, we downloaded the binaries of SSAHA2 from \\
+https://www.sanger.ac.uk/resources/software/ssaha2/\#t\_2. After unpacking the zip archive SSAHA2 was
+working, instantly. We ran SSAHA2 with the following command: \\
+\\
+\textit{~/bin/ssaha2\_v2.5.5\_x86\_64/ssaha2 -454 -output psl  ../data/Hpylori.fasta ../data/reads.fasta > hpylori\_reads\_ssaha2\_output.psl} \\
+\\
+The parameter \textit{-output psl} convert SSAHA2 output into psl format, which is the same format 
+as used by BLAT.
+One can look over the results by opening hpylori\_reads\_ssaha2\_output.psl, which we provide together 
+with this pdf. Since it is a huge file, we used a short python script (analysis.py, also send as a 
+attachment) to get a short overview of our results. \\
+\\
+Output of analysis.py:\\
+\indent number of all mapped reads:\\ 
+    \indent\indent absolute number:  321954\\
+    \indent\indent percentage:  100\\
+\indent number of unique mapped reads:\\ 
+    \indent\indent absolute number: 72897\\
+    \indent\indent percentage:  22.642054455\\
+\\
+With that short overview one can see that SSAHA2 mapped all provided reads to our database. In 
+this case our database was Helicobacter pylori. That is interesting and might indicate a problem with
+the default parameters of SSAHA2. It looks like SSAHA2 tries to get a sensitivity of 100\%, which 
+was successful in our case. One has to decide from case to case, if that is really what their needs.
+We run SSAHA2 on a linux machine with 1 Gb RAM and a single core processor with 1.66 GHz. The runtime
+was about one hour on that computer.
+
+ 
 \end{document}

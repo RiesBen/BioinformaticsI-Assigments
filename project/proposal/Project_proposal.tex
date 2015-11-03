@@ -24,9 +24,9 @@
 \usepackage{listings}
 \usepackage{etextools}
 \usepackage{ifthen}
-\usepackage{TikZ} %phylogenetischer Baum
-\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
-\usetikzlibrary{automata,arrows}
+%\usepackage{TikZ} %phylogenetischer Baum
+%\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
+%\usetikzlibrary{automata,arrows}
 \usepackage{subfigure} 
 
 
@@ -52,7 +52,7 @@ Most lifescience labs manage their data for primers and plasmids via excel sprea
 Our idea is to create an open source tool, which tries to optimize the organization and speed of getting to the desired data.
 
 \section{ The Structure}
-General we splitted the project in several modules. First we want to list the basic ones. These are the data base (DB) module, which we want to realise with SQL lite and .csv-files. These should be automatically loaded into the database and also should be automatically exported.
+General we splitted the project in several modules. First we want to list the basic ones. These are the database (DB) module, which we want to realise with SQL lite and .csv-files. These should be automatically loaded into the database and also should be automatically exported.
 The next most important module is the GUI which should give the user the possibility of intuitive usage of the DB. Also we want to restrict the user to a minimum of needed rules, when for example making new entries, to verify a clear structured DB.\\
 Following now the applications, which should run on the server and provide some useful functions.\\
 The integration of the BLAST or DIAMOND search algorithm. This is useful for designing new Arrays or modifying plasmids, because it's is wanted to do the changes in the least amount of steps, which is of only possible if the most similar sequence is known.\\
@@ -63,7 +63,7 @@ The last module idea was to integrate information to the data from other DBs. If
 	\end{figure}
 
 \section{ The Time-Plan}
-Of course time is a important factor. Therefore we started to organize a time plan for all of our ideas. This is of course the final plan. The set up of the DB should be finished in the first two weeks. It should be easy to set the DB up from the data we might get from our eventually partner lab. At the same time and through the whole project time, we want to work on the GUI. Because of adding of new functional modules also needs to happen in the GUI. But before starting blindly the GUI we want to design a general concept, allowing a reasonable integration. After the basics are finished we start to implement or integrate additional functions, like the search or the alignment algortihms. Time is definetly limiting the time of our project. Therefore we want to add the modules one after another and we cannot add all modules in time, this might be the case after the project.
+Of course time is a important factor. Therefore we started to organize a time plan for all of our ideas. This is of course the final plan. The set up of the DB should be finished in the first two weeks. It should be easy to set the DB up from the data we might get from our eventually partner lab. At the same time and through the whole project time, we want to work on the GUI. Because of adding of new functional modules also needs to happen in the GUI. But before starting blindly the GUI we want to design a general concept, allowing a reasonable integration. After the basics are finished we start to implement or integrate additional functions, like the search or the alignment algorithms. Time is the limiting factor of our project. Therefore we want to add the modules one after another and if we cannot add all modules in time, this might be the case after the project.
   
 	\begin{figure}[h]
 		\includegraphics[width=\textwidth]{img/Time.png}

@@ -145,7 +145,28 @@ To calculate our MSA we use the recursion written down on page 50 in the script.
 \noindent with score $\alpha_{SP}(A^*) = S(A,B) + S(A,C) + S(B,C) = -2 + 2 + (-6) = -6$.
 
 \section*{Theoretical Assignment - \textsl{Progressive alignment}}
+Progressive alignment methodes are one way to create multiple sequence alignments (MSA), in this task we had to accomplish manualy a progressive alignment. The first step for the progressive alignment was to generate the pairwise global distance matrices. Afterwards the global optima were entered into a new table, which was used to generate the guide tree in the second step.(figure \ref{DP2}).
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{Img/Exercise2-DP-Matrix.png}
+	\caption{ Global alignments lead to the basis table used to generate the guide tree}
+	\label{DP2}
+\end{figure}
 
+In step 2 the guide tree was created by the UPGMA methode in 3 substeps. After every step, which added a new cluster, the distance table was updated. The result from this step was the guide tree, which was used to apply the 'complete alignment' methode in the last step, the progressive alignment step.(figure \ref{guidetree2})
+
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{Img/Exercise2-Guidetree.png}
+	\caption{ The guide tree is made from the final table from step 1}
+	\label{guidetree2}
+\end{figure}
+
+The last step was creating the actual MSA. The 'complete alignment' methode 
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{Img/Exercise2-CompleteAlignment.png}
+	\caption{ Complete alignment methode is used to get an MSA from the guidetree from step 2	}
+	\label{completealign}
+\end{figure}
 \section*{Practical Assignment - \textsl{Comparing multiple alignment}}
  
 \end{document}

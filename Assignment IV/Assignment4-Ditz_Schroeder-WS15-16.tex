@@ -15,6 +15,7 @@
 \usepackage{textcomp}    % Zusatzliche Symbole (Text Companion font extension)
 \usepackage{lmodern,dsfont}     % Latin Modern Schrift
 \usepackage{dsfont}
+\usepackage{color}
 %\usepackage{wasysym}
 \usepackage{ulem}
 \usepackage{graphicx}
@@ -132,7 +133,43 @@ To calculate our MSA we use the recursion written down on page 50 in the script.
                         \end{cases} \nonumber
 \end{equation}
 
-\noindent If we fill the DP matrix using this recursion, we get the following MSA:
+\noindent Such a recursion results in a three-dimensional matrix. Since such a matrix is really difficult to 
+sketch, we split it into three two-dimensional matrices.  
+
+\begin{figure}[ht]
+\centering
+\subfigure{
+\begin{tabular}{c|cccc}
+ 0 & 0 & C & C & T \\
+ \hline
+ 0 & \textcolor{red}{\textbf{0}} & -2 & -4 & -6 \\
+ C & -2 & \textcolor{red}{\textbf{-2}} & -4 & -10 \\
+ T & -4 & -8 & -8 & -6 \\
+ T & -6 & -10 & -12 & -10 \\
+\end{tabular}}
+\subfigure{
+\begin{tabular}{c|cccc}
+ T & 0 & C & C & T \\
+ \hline
+ 0 & -2 & -4 & -6 & -8 \\
+ C & -4 & -4 & -6 & -10 \\
+ T & -6 & -8 & \textcolor{red}{\textbf{-4}} & 2 \\
+ T & -8 & -10 & -8 & 2 \\
+\end{tabular}}
+\subfigure{
+\begin{tabular}{c|cccc}
+ C & 0 & C & C & T \\
+ \hline
+ 0 & -4 & -6 & -8 & -10 \\
+ C & -6 & 2 & 2 & -8 \\
+ T & -8 & -6 & -2 & 0 \\
+ T & -10 & -8 & -6 & \textcolor{red}{\textbf{-6}} \\
+\end{tabular}}
+\caption[DP matrix of MSA]{DP matrix of MSA, traceback is shown in red}
+\end{figure}
+
+\noindent If we fill the DP matrix using this recursion, we get several optimal alignments. One of 
+them is the following:
 
 \begin{equation}
  \begin{pmatrix}

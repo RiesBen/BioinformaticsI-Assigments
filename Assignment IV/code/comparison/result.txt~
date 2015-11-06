@@ -1,0 +1,729 @@
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare:for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:alignment_location="./alignments/"
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:#readarray alignments< <(ls $alignment_location | grep *)
+bali_score_elm script_compare:alignment_location="./alignments/" script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare~:alignment_location="./alignments/" script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_compare~:#for aln in "${alignments[@]}"
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf
+bali_score_elm script_compare:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare:for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:alignment_location="./alignments/" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#readarray alignments< <(ls $alignment_location | grep *) script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_compare~:#for aln in "${alignments[@]}" script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB11007.tfa -out ./alignments/BB11007_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB11007.tfa --force -o ./alignments/BB11007_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/BB20002.tfa -out ./alignments/BB20002_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/BB20002.tfa --force -o ./alignments/BB20002_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time muscle -in ./input/Prolyl-tRNA-synthetase-C-terminal.fasta -out ./alignments/Prolyl-tRNA-synthetase-C-terminal_muscle.msf -msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf script_result.txt:time clustalo -i ./input/Prolyl-tRNA-synthetase-C-terminal.fasta --force -o ./alignments/Prolyl-tRNA-synthetase-C-terminal_clustalo.msf --outfmt=msf
+bali_score_elm BB11007.msf BB11007_mafft.msf
+bali_score_elm BB20002.msf BB11007_mafft.msf
+bali_score_elm Prolyl-tRNA-synthetase-C-terminal-aligned.msf BB11007_mafft.msf
+bali_score_elm BB11007.msf BB20002_mafft.msf
+bali_score_elm BB20002.msf BB20002_mafft.msf
+bali_score_elm Prolyl-tRNA-synthetase-C-terminal-aligned.msf BB20002_mafft.msf
+bali_score_elm BB11007.msf Prolyl-tRNA-synthetase-C-terminal_mafft.msf
+bali_score_elm BB20002.msf Prolyl-tRNA-synthetase-C-terminal_mafft.msf
+bali_score_elm Prolyl-tRNA-synthetase-C-terminal-aligned.msf Prolyl-tRNA-synthetase-C-terminal_mafft.msf

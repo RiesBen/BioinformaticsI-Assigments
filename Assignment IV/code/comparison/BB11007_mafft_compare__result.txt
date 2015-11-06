@@ -1,0 +1,197 @@
+
+compare: BB11007.msf~
+ with BB11007_mafft.msf~
+
+Using GCG format reference alignment
+
+Comparing test alignment in ./alignments/BB11007_mafft.msf~
+with reference alignment in ./reference/BB11007.msf~
+
+
+               1cpt_   MDARATI-------------PE---------HIARTVI----------LP
+               1oxa_   ----ATV-------------PDL---ESDSFHV--------DWY------
+               1phd_   --NLAPL-------------PP---------HVPEHLVFDFDMYNPSNLS
+              2hpd_A   -----TIKE----------MPQ---------------------------P
+              1dt6_A   --PPGPT-----------PFPII-------GNILQ-----IDAKDISKSL
+              1e9x_A   ---MSAV-----------ALPRVSGGHDEHGHLEE-----FRTDPIGLMQ
+              1izo_A   --------------------PHDKS-LDNSLTLLKEGY---------LFI
+              1n40_A   ----ATVLLEVPFSARGDRIPD----------------------------
+              1n97_A   M-KRLSLREAWPY------LKDL---QQDPLAV--------------LLA
+
+
+                       ..................................0000..........00
+
+               1cpt_   QGYAD-----DEVIYPAFKWLRDEQPLAMAH-IE------------GYDP
+               1oxa_   STYAE---------------LRETAPVTPVRFL-------------GQDA
+               1phd_   AGVQEAWAVLQESNVPDLVWTRCN---------G------------GH--
+              2hpd_A   KTFGE---------LKNLPLLNTDKPVQALMKIADELGEIFKFEAPGRVT
+              1dt6_A   TKFSECYG-------PVFTVYLGMKPTVVLH---------------GYEA
+              1e9x_A   RVRDEC-G-------DVGTFQLAGKQVVLLS---------------GSHA
+              1izo_A   KNRTERYNS------DLFQARLLGKNFICMT---------------GAEA
+              1n40_A   -AVAE---------------LRTREPIRKVRTIT------------GAEA
+              1n97_A   WGRAH----------PRLFLPLPRFPLALIFDPE------------GVEG
+
+
+                       00000.....000000000000000000000...............0000
+
+               1cpt_   --MWIATKHADVMQI----GKQPGLFSNAEGSEILYDQNNEAF--MRSIS
+               1oxa_   ---WLVTG---------------------------YDEAKAALSDLR-LS
+               1phd_   ---WIATR----------------------GQLI-----REAYEDYRHFS
+              2hpd_A   --RYLSSQ---------------RLIKEACDESRFDKNLSQALKFVRDFA
+              1dt6_A   ----VKEALVDLGEEFAGRGSVPILEKVSKGLGIAF-SNAKTWKEMRRFS
+              1e9x_A   NEFFFRAGDDDLDQAKAYPFMTPIF-----GEGVVFDASPERRKEMLHNA
+              1izo_A   ---------------------------------------AKVFYDTDRFQ
+              1n40_A   ---WLVSS---------------------------YALCTQVLEDRR-FS
+              1n97_A   --ALLAEG------------------------------TTKATFQYRALS
+
+
+                       ..0000000000000....00000.0000...........000..00000
+
+               1cpt_   GG------------------CPHVID----SL--------TSMDPPTHTA
+               1oxa_   SDPKKKYPGVEVEFPAYLGFPEDVRNYFATNMG-------T-SDPPTHTR
+               1phd_   SE------------------CPFIPR----EAGEAYDFIPTSMDPPEQRQ
+              2hpd_A   GDG------------------------LFTSWTHEKNW----------KK
+              1dt6_A   LMTLR-------------------------NFGMGKR-------------
+              1e9x_A   ALRGE-------------------------QMKGHAA-------------
+              1izo_A   RQNAL---------------PKRVQK---SLFGVNAI---QGMDGSAHIH
+              1n40_A   ---MKETAAAGAPRLNALTVPPEVVN----NMG-------NIAD----AG
+              1n97_A   RLTGRG---------------------LLTDWGESW------------KE
+
+
+                       0........................0....00........00.0000000
+
+               1cpt_   YRGLTLNWFQPASIR----KLEENIRRIAQASVQ--------------RL
+               1oxa_   LRKLVSQEFTVRRVEAMRPRVEQI---TA-ELLD--------------EV
+               1phd_   FRALANQVVGMPVVD----KLENRIQELACSLIE--------------SL
+              2hpd_A   AHNILLPSFSQQAMK----GYHAMMVDIAVQLVQ--------------KW
+              1dt6_A   -------------------SIEDRIQEEARCLVE--------------EL
+              1e9x_A   -------------------TIEDQVR---RMIADWGEAGEIDLLDFFAEL
+              1izo_A   RKMLFLSLMTPPHQK----RLAELMTEEWKAAVT--------------RW
+              1n40_A   LRKAVMKAITPK-----APGLEQFLRDTANSLLD--------------NL
+              1n97_A   ARKALKDPFLPKNVR----GYREAMEEEARAFFG--------------EW
+
+
+                       00000000000000.....000000000000000..............00
+
+               1cpt_   LD-FDGE-CDFMTDCALYYPLHVVMT-ALGV-----------PEDDEPLM
+               1oxa_   GD--SGV-VDIVDRFAHPLPIKVICE-LLGV-----------DEAARGAF
+               1phd_   RP--QGQ-CNFTEDYAEPFPIRIFML-LAGL-----------PEEDIPHL
+              2hpd_A   ERLNADEHIEVPEDM-----TRLTLD-TIGLCGFNYRFNSFYRDQPHPFI
+              1dt6_A   RK-TNASPCDPTFILGCA-PCNVICSVIFHN-----RF-----DYKDEEF
+              1e9x_A   TI-YTSSAC------------------LIGK-----KF----RDQLDGRF
+              1izo_A   EK--ADE-VVLFEEAKEIL-CRVACY-WAGV-------------------
+              1n40_A   IT--EGAPADLRNDFADPLATALHCK-VLGI-----------PQEDGPKL
+              1n97_A   ----RGEERDLDHEM-----LALSLR-LLGR-----------ALFGKPL-
+
+
+                       00.00...0000000.0000000000.0000............0000000
+
+               1cpt_   LKLTQDFF----------------GVEAARR----FHETIATFYDYFNGF
+               1oxa_   GRWSSEILVM--------------DPERAEQ----RGQAAREVVNFILDL
+               1phd_   KYLTDQMT----------------RPDGSMT----FAEAKEALYDYLIPI
+              2hpd_A   TSMVRALDEAMN----KLQRANPDDPAYDENKRQ-FQEDIKVMNDLVDKI
+              1dt6_A   LKLMESLHENVELLGTPLDYF----PGIHKTLLKNADYIKNFIMEKVKEH
+              1e9x_A   AKLYHELERGTD----PLAYV---DPYLPIESFRRRDEARNGLVALVADI
+              1izo_A   ----------------PLKETE-------------VKERADDFIDMVDAF
+              1n40_A   FR-SLSIAFMSS-----------ADPIPAAKINWDRD------IEYMAGI
+              1n97_A   ------------------------SPSLAEHA-----------LKALDRI
+
+
+                       00000000................0...000....000000000000000
+
+               1cpt_   -------TVDRRSC--PK---------DDVMSLLANSKLD----------
+               1oxa_   -------VERRRTE--PG---------DDLLSALISVQDDD---------
+               1phd_   -------IEQRRQK--PG---------TDAISIVANGQVN----------
+              2hpd_A   -------IADRKASGEQS---------DDLLTHMLNGKDPE---------
+              1dt6_A   -------QKLLDVN-NP----------RDFIDCFLIKMEQEN--------
+              1e9x_A   -------MNGRIAN-PPTDKS-----DRDMLDVLIAVKAETG--------
+              1izo_A   GAVGPRHWKGRRAR--PRAEEWIEVMIEDARAGLLKTTSGTA---LHEMA
+              1n40_A   -------LENPNIT--TG-----------LMGELSRLRKDP---------
+              1n97_A   -------MAQTRSP--LA---------LLDLAAEARFRKDRGALYREAEA
+
+
+                       .......0000000.............0000000000000..........
+
+               1cpt_   ------GNYIDDKYINAYYVAIATAGHDTTSSSSGGAIIGLSRNPEQLAL
+               1oxa_   -----DGRLSADEL-TSIALVLLLAGFEASVSLIGIGTYLLLTHPDQLAL
+               1phd_   ------GRPITSDEAKRMCGLLLVGGLDTVVNFLSFSMEFLAKSPEHRQE
+              2hpd_A   -----TGEPLDDENIRYQIITFLIAGHETTSGLLSFALYFLVKNPHVLQK
+              1dt6_A   -----NLEFTLESLV-IAVSDLFGAGTETTSTTLRYSLLLLLKHPEVAAR
+              1e9x_A   -----TPRFSADEITGMFISMMF-AGHHTSSGTASWTLIELMRHRDAYAA
+              1izo_A   FHTQEDGSQLDSRMAAIELINVL-RPIVAISYFLVFSALALHEHPKYKEW
+              1n40_A   -----AYSHVSDELFATIGVTFFGAGVISTGSFLTTALISLIQRPQLRNL
+              1n97_A   LIVHPPLSHLPRERALSEAVTLLVAGHETVASALTWSFLLLSHRPDWQKR
+
+
+                       ......00.0000000000000000.111111111111111111111111
+
+               1cpt_   AKSDPALIPR------------------LVDEAVRW-TAPVKS-FMRTAL
+               1oxa_   VRADPSALPN------------------AVEEILRY-IAPPET-TTRFAA
+               1phd_   LIERPERIPA------------------ACEELLRR-FSLVAD--GRILT
+              2hpd_A   AAEEAARVLVD-PVPSYKQVKQLKYVGMVLNEALRL-WPTAPA-FSLYAK
+              1dt6_A   VQEEIERVIGRHRSPCMQDRSRMPYTDAVIHEIQRF-IDLLPTNLPHAVT
+              1e9x_A   VIDELDELYGDGRSVSFHALRQIPQLENVLKETLRL-HPPLII-LMRVAK
+              1izo_A   LRSGNSRERE-----------------MFVQEVRRY-YPFGPF-LGALVK
+              1n40_A   LHEKPELIPA------------------GVEELLRINLSFADG-LPRLAT
+              1n97_A   VAESEEAALA------------------AFQEALRL-YPPAWI-LTRRLE
+
+
+                       1111100000..................11111111.0000...011111
+
+               1cpt_   ADTEVRGQ-NIKRGDRIMLSYPSANR-------D-EEVFSNPDEFDITR-
+               1oxa_   EEVEIGGV-AIPQYSTVLVANGAANR-------D-PSQFPDPHRFDVTR-
+               1phd_   SDYEFHGV-QLKKGDQILLPQMLSGL-------D-ERENACPMHVDFSR-
+              2hpd_A   EDTVLGGEYPLEKGDELMVLIPQLHRDKTIWGDD-VEEFR-PERFENPSA
+              1dt6_A   RDVRFRNY-FIPKGTDIITSLTSVLH-------D-EKAFPNPKVFDPGHF
+              1e9x_A   GEFEVQGH-RIHEG-DLVAASPAISN-------RIPEDFPDPHDFVPARY
+              1izo_A   KDFVWNNC-EFKKGTSVLLDLYGTNH-------D-PRLWDHPDEFRPERF
+              1n40_A   ADIQVGDV-LVRKGELVLVLLEGANF-------D-PEHFPNPGSIELDRP
+              1n97_A   RPLLLGED-RLPPGTTLVLSPYVTQRLHF---PD-GEAFR-PERFLEERG
+
+
+                       11111110.11111000000000000.......0...000000000000.
+
+               1cpt_   FPNR-------------HLGFGWGA----HMCLGQHLAKLEMKIFFEELL
+               1oxa_   DTRG-------------HLSFGQGI----HFCMGRPLAKLEGEVALRALF
+               1phd_   QKVS-------------HTTFGHGS----HLCLGQHLARREIIVTLKEWL
+              2hpd_A   IPQH------------AFKPFGNGQ----RACIGQQFALHEATLVLGMML
+              1dt6_A   LDESGNFKKSD-----YFMPFSAGK----RMCVGEGLARMELFLFLTSIL
+              1e9x_A   EQP----RQEDLLNRWTWIPFGAGR----HRCVGAAFAIMQIKAIFSVLL
+              1izo_A   AERE-----ENLF---DMIPQGGGHAEKGHRCPGEGITIEVMKASLDFLV
+              1n40_A   NPTS-------------HLAFGRGQ----HFCPGSALGRRHAQIGIEALL
+              1n97_A   TPSG------------RYFPFGLGQ----RLCLGRDFALLEGPIVLRAFF
+
+
+                       0000.............11111110....111111111111111111111
+
+               1cpt_   PKLKSVELS-GPPRLV--ATNFVGGPKNVPIRF----TKA----------
+               1oxa_   GRFPALSLGIDADDVVWRRSLLLRGIDHLPVRLDG---------------
+               1phd_   TRIPDFSIAPGAQIQH--KSGIVSGVQALPLVWDPATTKAV---------
+              2hpd_A   KHFDFEDH----------TNYELDIKETLTLKPEGFVVKAKSKK------
+              1dt6_A   QNFKLQSLVEPKDLDI---TAVVNGFVSVPPSY---------QL----CF
+              1e9x_A   REYEFE-MAQP------------------PESYRNDHSKMVVQLAQPAC-
+              1izo_A   HQIEYDVP----------EQSLHYSLARMPSLPESGFVMSGIRRK-----
+              1n40_A   KKMPGVDLAVPIDQLVWRTRFQRRIPERLPVLW-----------------
+              1n97_A   RRFRLDPL--PFPRVL--AQVTLRPEGGLPARPRE---------------
+
+
+                       1111110...000000..000000000000000.................
+
+               1cpt_   ---------
+               1oxa_   ---------
+               1phd_   ---------
+              2hpd_A   IPLGG----
+              1dt6_A   IPIHH----
+              1e9x_A   --VRYRRRT
+              1izo_A   ---------
+              1n40_A   ---------
+              1n97_A   ---------
+
+
+                       .........
+
+
+	SP score= 0.524
+
+	TC score= 0.240
+auto ./alignments/BB11007_mafft.msf~ 0.524 0.240

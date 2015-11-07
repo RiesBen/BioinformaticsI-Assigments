@@ -241,7 +241,22 @@ sequences and updates this distance measure for every iteration step.\\
 \\
 \noindent The resulting total column scores can be found in figure \ref{totCol}. All calculated sum-
 of-pairs scores are written down in figure \ref{SPscore} and the runtime of all programs can be found 
-in figure \ref{runtime}. 
+in figure \ref{runtime}. One can see that the total column score as well as the sum-of-pairs 
+score for Prolyl-tRNA is missing. Although we calculated the MSAs with all three programs for these 
+sequences, BaliScore was not able to calculate a score. We got a memory error, even with five Gb 
+accessible memory. Also interesting is the total column score for the second biggest file, BB20002. 
+BaliScore calculated a score of 0.00 for all of the three programms. If we assume that the 
+program calculated valid scores, one can see that the gold standard provided by BaliBase differs 
+a lot compared to the calculated MSAs. Even for the smallest file, BB11007, the total column score 
+barely reaches 0.4. That means only 40 percent of the columns in the reference MSA were identically 
+reproduced by our used algorithms. Since all three programs are heuristics, it is not surprising 
+that the calculated MSAs are not similar with the gold standard. One can explain such a big difference 
+with the occurrence of several optimal MSAs of the sequences. And the algorithms have calculated 
+another MSA than the gold standard. Another explanation for our results would be that the heuristics 
+worked worst than expected. By comparing runtimes of Clustal$\Omega$, MUSCLE and MAFFT one can see 
+that MUSCLE is by far the slowest program. This is logical, since MUSCLE is a iterative approach to 
+multiple sequence alignment. But our results for MUSCLE are not significant better than for the other 
+algorithms. So in that case we paid with a lot of computational time for no improvement.
 
 
 \begin{figure}[ht]
@@ -252,7 +267,7 @@ in figure \ref{runtime}.
   \hline
   \textbf{BB11007} & 0.33 & 0.39 & 0.24 \\
   \textbf{BB20002} & 0.00 & 0.00 & 0.00 \\
-  \textbf{Prolyl-tRNA} & $c_{1,3}$ & $c_{2,3}$ & $c_{3,3}$ \\
+  \textbf{Prolyl-tRNA} & - & - & - \\
  \end{tabular}}
  \caption{total column score of all alignments}
  \label{totCol}
@@ -266,7 +281,7 @@ in figure \ref{runtime}.
   \hline
   \textbf{BB11007} & 0.597 & 0.582 & 0.524 \\
   \textbf{BB20002} & 0.314 & 0.197 & 0.246 \\
-  \textbf{Prolyl-tRNA} & $s_{1,3}$ & $s_{2,3}$ & $s_{3,3}$ \\
+  \textbf{Prolyl-tRNA} & - & - & - \\
  \end{tabular}}
  \caption{sum-of-pairs score of all alignments}
  \label{SPscore}

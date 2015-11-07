@@ -1,0 +1,13 @@
+
+Startet with: BB11007
+use programm: muscle
+use programm: mafft
+use programm: clustalo
+Startet with: BB20002
+use programm: muscle
+use programm: mafft
+use programm: clustalo
+Startet with: Prolyl-tRNA-synthetase-C-terminal
+use programm: muscle
+use programm: mafft
+use programm: clustalo

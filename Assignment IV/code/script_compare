@@ -13,20 +13,20 @@ readarray files < <(ls $input_location | grep '.tfa\|.fasta')
 mkdir -p $alignment_location
 mkdir -p $comparison_location
 
+
 #echo "">$output
- #for item in "${files[@]}"
- #do
+#for item in "${files[@]}"
+#do
 #	name=${item%.*}
 #	echo "Startet with: $name">>$output
 #		echo "use programm: ${programms[0]}">>$output	
 #		time ${programms[0]} -in $input_location$item -out $alignment_location$name"_"${programms[0]}".msf" -msf  >>$output
-#
+
 #		echo "use programm: ${programms[1]}">>$output
 #		time ${programms[1]} --clustalout $input_location$item > $alignment_location$name"_"${programms[1]}.msf
 
 #		echo "use programm: ${programms[2]}">>$output
-#		time ${programms[2]} -i $input_location$item --force -o $alignment_location$name"_"${programms[2]}".msf" --outfmt=msf >>$output
-		
+#		time ${programms[2]} -i $input_location$item --force -o $alignment_location$name"_"${programms[2]}".msf" --outfmt=msf >>$output	
 #done
 
 
@@ -36,14 +36,15 @@ for aln in "${alignments[@]}"
 do
 	for ref in "${references[@]}"
 	do
-		echo "test"
 		temp_ref=${ref%.*}
 		temp_aln=${aln%_*}
-		echo "$temp_ref vs $temp_aln"
 		if [ $temp_aln == $temp_ref ]
 		then
-			echo "compare: $ref with $aln"
-			./src/bali_score_elm $reference_location$ref $alignment_location$aln
+		echo "$temp_ref vs $temp_aln"
+			name=${aln%.*}
+			echo "">./result/$name"_"compare__result.txt
+			echo "compare: $ref with $aln">>./result/$name"_"compare__result.txt
+			./src/bali_score $reference_location$ref $alignment_location$aln -v >>./result/$name"_"compare__result.txt
 		fi
 	done
 done

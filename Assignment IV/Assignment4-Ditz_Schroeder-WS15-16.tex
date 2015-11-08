@@ -1,4 +1,4 @@
-%\textsl{}%!TEX TS-options = --shell-escape
+bb%\textsl{}%!TEX TS-options = --shell-escape
 %!TEX TS-program = pdflatex
 \documentclass[%
    10pt,              % Schriftgroesse
@@ -227,15 +227,15 @@ percentage of pairs of aligned residues that are similar in the reference and th
 MSA. Furthermore, a important information is the runtime of different programs. We used the bash 
 command \textit{time} to collect this information.\\
 \\
-\noindent Clustal$\Omega$ is the newest extension for the Clustal family. One problem of ClustalW 
+\noindent Clustal$\Omega$ \cite{Sievers539} is the newest extension for the Clustal family. One problem of ClustalW 
 was the scalability. With Clustal$\Omega$ a MSA can now calculated for hundreds of thousands of 
 sequences within a few hours. On the technical side the algorithm can use multiple processors. 
 According to the official site\footnote{http://www.clustal.org/omega/}, Clustal$\Omega$ produces 
-better alignments than previous versions. MAFFT offers several modes. The L-INS-i mode is 
+better alignments than previous versions. MAFFT\cite{Katoh1} offers several modes. The L-INS-i mode is 
 slower and only suitable for alignments with less than 200 sequences but results in a more accurate 
 alignment. Contrary to that mode the FFT-NS-2 mode can be used to align up to 300.000 sequences. It 
 is a lot faster by using the Fast Fourier Transformation but also less accurate. We used the 
-FFT-NS-2 mode for this assignment. The third program MUSCLE is a iterative approach to multiple 
+FFT-NS-2 mode for this assignment. The third program MUSCLE \cite{Edgar1} his a iterative approach to multiple 
 sequence alignments. It uses a very accurate distance measure two calculate relatedness of two 
 sequences and updates this distance measure for every iteration step.\\
 \\

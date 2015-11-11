@@ -173,6 +173,30 @@ To get a not solveable algorithm for example the following constraint could be a
 Generally a new constraint just needs to be a contradiction to another constraint.
 	
 \subsection*{How to get infinite solutions with t and s?}
+The equation influence by t and s is:
+
+\begin{equation*}
+max: s*x_1+t*x_2
+\end{equation*}
+
+One way to get an infinite solution could be to generate a endless loop with values for s and t like:
+\begin{eqnarray*}
+s=s*x_1\label{inf1}\\ 
+t=t*x_2 \label{inf2}\\ 
+or\\
+s=t*x_2\label{inf3}\\ 
+t=s*x_1 \label{inf4}\\ 
+\end{eqnarray*}
+
+
+Best idea of the evening:
+Do not assume to only use integers!
+Another variant is to define:
+\begin{eqnarray*}
+	s=\frac{1}{x_1}\\
+	t=\frac{1}{x_2}\\ 
+\end{eqnarray*}
+the result for Z now is 2 and there are infinite many possibilities to get to 2.
 
 \subsection*{how to get the points? ?}
 

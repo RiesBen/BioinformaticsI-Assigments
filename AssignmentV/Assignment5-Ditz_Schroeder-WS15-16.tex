@@ -118,6 +118,13 @@ Tutor: #2  % Tutor
 
 \section*{Theoretical Assignment - \textsl{Comparison with at most $l$ mismatches}}
 
+Assume two sequences of length t with l mismatches. In the worst case, all mismatches are 
+distributed uniformly. Than both sequences will share $l+1$ tuples of length $\lfloor\frac{t}{l+1}\rfloor$.\\
+\\
+\noindent So both sequences share $l+1$ k-tuples of length $k = \lfloor\frac{t}{l+1}\rfloor$ and for each 
+$k \le \lfloor\frac{t}{l+1}\rfloor$ they share $l+1 * \lfloor\frac{\lfloor\frac{t}{l+1}\rfloor}{k}\rfloor$
+k-tuples.
+
 \section*{Theoretical Assignment - \textsl{Linear programming by hand}}
 
 \section*{Theoretical Assignment - \textsl{Bonus: Carillo-Lipman bound}}

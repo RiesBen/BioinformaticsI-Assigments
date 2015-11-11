@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.15)  11 NOV 2015 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.15)  11 NOV 2015 18:56
 entering extended mode
 **Assignment5-Ditz_Schroeder-WS15-16.tex
 (Assignment5-Ditz_Schroeder-WS15-16.tex
@@ -1355,34 +1355,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--127
 
  []
 
-<img/figure_1.png, id=7, 586.8324pt x 442.2924pt>
+<img/figure_1.png, id=7, 578.16pt x 430.0065pt>
 File: img/figure_1.png Graphic file (type png)
  <use img/figure_1.png>
 Package pdftex.def Info: img/figure_1.png used on input line 136.
-(pdftex.def)             Requested size: 298.75264pt x 225.1747pt.
-
-[1
+(pdftex.def)             Requested size: 298.75264pt x 222.19397pt.
+ [1
 
 {C:/Users/Benjamin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/fi
 gure_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (Assignment5-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `Assignment5-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 21829 strings out of 493673
- 389586 string characters out of 3141520
- 518961 words of memory out of 3000000
- 24744 multiletter control sequences out of 15000+200000
- 44687 words of font info for 49 fonts, out of 3000000 for 9000
+ 21842 strings out of 493673
+ 389701 string characters out of 3141520
+ 521188 words of memory out of 3000000
+ 24750 multiletter control sequences out of 15000+200000
+ 47455 words of font info for 50 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 64i,9n,60p,957b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,11n,60p,957b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
@@ -1400,10 +1429,10 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files (x
 X 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmsy7.pfb>
-Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (1 page, 223183 bytes)
-.
+Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (2 pages, 235236 bytes
+).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

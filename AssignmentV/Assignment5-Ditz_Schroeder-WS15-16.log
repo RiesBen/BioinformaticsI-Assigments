@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  11 NOV 2015 14:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  11 NOV 2015 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1313,25 +1313,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--127
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
+<img/figure_1.png, id=8, 586.8324pt x 442.2924pt>
+File: img/figure_1.png Graphic file (type png)
+ <use img/figure_1.png>
+Package pdftex.def Info: img/figure_1.png used on input line 136.
+(pdftex.def)             Requested size: 298.75264pt x 225.1747pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/figure_1.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
 
 (./Assignment5-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
 Package rerunfilecheck Info: File `Assignment5-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 20060 strings out of 493304
- 337924 string characters out of 6139870
- 459051 words of memory out of 5000000
- 23094 multiletter control sequences out of 15000+600000
+ 20071 strings out of 493304
+ 338092 string characters out of 6139870
+ 459106 words of memory out of 5000000
+ 23104 multiletter control sequences out of 15000+600000
  44687 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,9n,71p,957b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1348,11 +1354,11 @@ are/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy7.pfb>
-Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (1 page, 183951 bytes)
+Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (1 page, 212713 bytes)
 .
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

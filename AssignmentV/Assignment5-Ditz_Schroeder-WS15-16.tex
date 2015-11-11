@@ -122,10 +122,22 @@ Assume two sequences of length t with l mismatches. In the worst case, all misma
 distributed uniformly. Than both sequences will share $l+1$ tuples of length $\lfloor\frac{t}{l+1}\rfloor$.\\
 \\
 \noindent So both sequences share $l+1$ k-tuples of length $k = \lfloor\frac{t}{l+1}\rfloor$ and for each 
-$k \le \lfloor\frac{t}{l+1}\rfloor$ they share $l+1 * \lfloor\frac{\lfloor\frac{t}{l+1}\rfloor}{k}\rfloor$
+$k \le \lfloor\frac{t}{l+1}\rfloor$ they share $(l+1) * \lfloor\frac{\lfloor\frac{t}{l+1}\rfloor}{k}\rfloor$
 k-tuples.
 
 \section*{Theoretical Assignment - \textsl{Linear programming by hand}}
+
+The feasible region of this linear program is shown in figure \ref{feasibleRegion}, where the red line 
+is constraint 1, green line is constraint 2, constraint 3 is drawn as a blue line and the yellow line 
+is constraint 4.
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=0.7\textwidth]{img/figure_1.png}
+ \caption{feasible region of linear program}
+ \label{feasibleRegion}
+\end{figure}
+
 
 \section*{Theoretical Assignment - \textsl{Bonus: Carillo-Lipman bound}}
 

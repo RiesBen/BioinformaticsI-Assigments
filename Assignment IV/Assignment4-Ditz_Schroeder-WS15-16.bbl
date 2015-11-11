@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{Sievers539}
+F.~Sievers, A.~Wilm, D.~Dineen, T.~J. Gibson, K.~Karplus, W.~Li, R.~Lopez,
+  H.~McWilliam, M.~Remmert, J.~S{\"o}ding, J.~D. Thompson, and D.~G. Higgins,
+  ``Fast, scalable generation of high-quality protein multiple sequence
+  alignments using clustal omega,'' {\em Molecular Systems Biology}, vol.~7,
+  no.~1, 2011.
+
+\bibitem{Katoh1}
+K.~Katoh, K.~Kuma, H.~Toh, and T.~Miyata, ``Mafft version 5: improvement in
+  accuracy of multiple sequence alignment. nucleic acids research,'' {\em
+  Nucleic Acids Research}, vol.~33, no.~2, 2005.
+
+\bibitem{Edgar1}
+R.~C. Edgar, ``Muscle: multiple sequence alignment with high accuracy and high
+  throughput,'' {\em Nucleic Acids Research}, vol.~32, no.~5, 2004.
+
+\bibitem{Edgar2}
+R.~C. Edgar, ``Muscle: a multiple sequence alignment method with reduced time
+  and space complexity,'' {\em BMC Bioinformatics}, vol.~5, no.~113, 2004.
+
+\bibitem{Bahr1}
+A.~Bahr, J.~Thompson, J.-C. Thierry, and O.~Poch, ``Balibase (benchmark
+  alignment database): enhancements for repeats, transmembrane sequences and
+  circular permutations,'' {\em Nucleic Acids Research}, vol.~29, no.~1, 2001.
+
+\end{thebibliography}

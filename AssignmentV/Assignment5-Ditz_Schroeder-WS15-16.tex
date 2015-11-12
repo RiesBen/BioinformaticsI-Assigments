@@ -142,8 +142,8 @@ is constraint 4.
 Generally we only used integers in this task. The constraint for the algorithm are as following if t and s value is 1 now:
 
 \begin{eqnarray}
-max: 1*x_1+1*x_2 \label{con1}\\ 
-2*x_1+x_2 \le 12 \label{con2}\\ 
+max. 1*x_1+1*x_2 \label{con1}\\ 
+s.t. 2*x_1+x_2 \le 12 \label{con2}\\ 
 2*x_1+3*x_2 \le 7 \label{con3}\\ 
 -1*x_1+2*x_2 \le 16 \label{con4}\\ 
 x_1,x_2 \ge 0 \label{con5}
@@ -190,21 +190,17 @@ t=s*x_1 \label{inf4}\\
 \end{eqnarray*}
 
 
-\noindent idea of the evening:
-Do not assume to only use integers!
-Another variant is to define:
-\begin{eqnarray*}
-	s=\frac{1}{x_1}\\
-	t=\frac{1}{x_2}\\ 
-\end{eqnarray*}
-the result for Z now is 2 and there are infinite many possibilities to get to 2.
-
 \subsection*{how to get the points?}
 
-P1=(0,3)\\
+For the first point $P_1=(0,3)$ we have to set $s = -1$ and $t = 1$. That result in a maximal value 
+for (0,3) because we cannot set $x_2$ arbitrary big due to constraint 4. And if we assign a bigger 
+value to $x_1$, would decrease the result. Also we would violate constraint 2, if $x_1$ is to big.\\
+\\
 P2=(2,4)\\
 P3=(1,3)\\
-P4=(6,0)
+\\
+\noindent To make $P_4=(6,0)$ the maximum we set $s = 1$ and $t = -1$. We cannot set $x_1$ to a bigger value 
+than 6 without violating constraint 1.
 
 \section*{Theoretical Assignment - \textsl{Bonus: Carillo-Lipman bound}}
 

@@ -10,8 +10,8 @@ y4 = (6+x)/2
 
 plt.ylim(0,14)
 plt.plot(x,y1,'r', x,y2,'g', x,y3,'b', x,y4,'y')
-plt.fill_between(x,y1, color='r', alpha='0.5')
-plt.fill_between(x,y2, color='g', alpha='0.5')
-plt.fill_between(x,y3, color='b', alpha='0.5')
-plt.fill_between(x,y4, color='y', alpha='0.5')
+plt.fill_between(x,y4, where=(x <=2), color='grey', alpha='1')
+plt.fill_between(x,y3, where=((x <= 5) & (x>=2)), color='grey', alpha='1')
+plt.fill_between(x,y1, where=((x <= 6) & (x>=5)),color='grey', alpha='1')
+
 plt.show()

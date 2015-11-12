@@ -139,7 +139,7 @@ is constraint 4.
 \end{figure}
 
 \subsection*{solution if t=s=1}
-Generally we only used integers in this task. The constraint for the algortihm are as following if t and s value is 1 now:
+Generally we only used integers in this task. The constraint for the algorithm are as following if t and s value is 1 now:
 
 \begin{eqnarray}
 max: 1*x_1+1*x_2 \label{con1}\\ 
@@ -149,28 +149,29 @@ max: 1*x_1+1*x_2 \label{con1}\\
 x_1,x_2 \ge 0 \label{con5}
 \end{eqnarray}
 
-In the next step we started to compute each line of the tuple. Starting with constraint \ref{con3} under the aspect of constraint \ref{con5}. All possible tuples respectivly to both constraints from the assignment are:\\
+\noindent the next step we started to compute each line of the tuple. Starting with constraint \ref{con3} under the aspect of constraint \ref{con5}. All possible tuples respectively to both constraints from the assignment are:\\
 $temp1=\{(0,7);(1,6);(2,5);(3,4);(4,3);(5,2);(6,1);(7,0)\}$\\
 
-Next the constraint \ref{con2} was applied to temp1:\\
+\noindent the constraint \ref{con2} was applied to temp1:\\
 $temp2=\{(0,7);(1,6);(2,5);(3,4);(4,3);(5,2);\}$\\
 
-Again the next constraint (contraint \ref{con4}) was applied:\\
+\noindent the next constraint (constraint \ref{con4}) was applied:\\
 $temp3=\{(5,2)\}$\\
 
-Last but not least the last constraint (4) is checked and the remaining tuple from the last step is valid:\\
+\noindent but not least the last constraint (4) is checked and the remaining tuple from the last step is valid:\\
 $r=\{(5,2)\}$\\
 
-So the final result for the Algorithm with s=t=1 is the Dupel: (5,2).\\
+\noindent the final result for the Algorithm with s=t=1 is the tuple: (5,2). Solving the formula with this numbers 
+leads us to the following maximal value: $1*x_1 + 1*x_2 = 5+2 = 7$\\
 
 
-\subsection*{How to make unsolveable?}
-To get a not solveable algorithm for example the following constraint could be added:
+\subsection*{How to make unsolvable?}
+To get a not solvable algorithm for example the following constraint could be added:
 	\begin{equation}\\
 		x_1+x_2\ge 7
 	\end{equation}
 
-Generally a new constraint just needs to be a contradiction to another constraint.
+\noindent a new constraint just needs to be a contradiction to another constraint.
 	
 \subsection*{How to get infinite solutions with t and s?}
 The equation influence by t and s is:
@@ -179,7 +180,7 @@ The equation influence by t and s is:
 max: s*x_1+t*x_2
 \end{equation*}
 
-One way to get an infinite solution could be to generate a endless loop with values for s and t like:
+\noindent way to get an infinite solution could be to generate a endless loop with values for s and t like:
 \begin{eqnarray*}
 s=s*x_1\label{inf1}\\ 
 t=t*x_2 \label{inf2}\\ 
@@ -189,7 +190,7 @@ t=s*x_1 \label{inf4}\\
 \end{eqnarray*}
 
 
-Best idea of the evening:
+\noindent idea of the evening:
 Do not assume to only use integers!
 Another variant is to define:
 \begin{eqnarray*}
@@ -198,11 +199,11 @@ Another variant is to define:
 \end{eqnarray*}
 the result for Z now is 2 and there are infinite many possibilities to get to 2.
 
-\subsection*{how to get the points? ?}
+\subsection*{how to get the points?}
 
-P1=(0,3)
-P2=(2,4)
-P3=(1,3)
+P1=(0,3)\\
+P2=(2,4)\\
+P3=(1,3)\\
 P4=(6,0)
 
 \section*{Theoretical Assignment - \textsl{Bonus: Carillo-Lipman bound}}

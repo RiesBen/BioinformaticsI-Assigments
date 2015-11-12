@@ -119,10 +119,10 @@ Tutor: #2  % Tutor
 \section*{Theoretical Assignment - \textsl{Comparison with at most $l$ mismatches}}
 
 General we are now only looking at the worst case scenario, which means uniform distributed mistmatches in an alignment. Also we only look at $k>=1$, as $k=0$ is in our application not a useful result. Assume two sequences of length t with l mismatches.\\
- Than both sequences contain $l$ tuples of length $\lfloor\frac{t}{l+1}\rfloor$ and one tuple which has a length of maximal $\lfloor\frac{t}{l+1}\rfloor$ . Where $k = \lfloor\frac{t}{l+1}\rfloor$ is the maximal tuple length, possible in sequences.\\
+ Than both sequences contain $l$ tuples of length $L = \lfloor\frac{t}{l+1}\rfloor$ and one tuple which has a length of maximal $\lfloor\frac{t}{l+1}\rfloor$ . \\
 \\
-\noindent So both sequences share $l+1$ k-tuples and for each 
-$k \le \lfloor\frac{t}{l+1}\rfloor$ they share $(l+1) * \lfloor\frac{\lfloor\frac{t}{l+1}\rfloor}{k}\rfloor$
+\noindent So both sequences share $l$ or $l+1$ k-tuples, if $k = \lfloor\frac{t}{l+1}\rfloor$, and for each 
+$k \le \lfloor\frac{t}{l+1}\rfloor$ they share $(l+1) * \lfloor\frac{L}{k}\rfloor$
 k-tuples.
 
 \section*{Theoretical Assignment - \textsl{Linear programming by hand}}

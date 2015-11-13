@@ -25,6 +25,7 @@
 \usepackage{stmaryrd}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{multirow}
@@ -174,23 +175,19 @@ To get a not solvable algorithm for example the following constraint could be ad
 \noindent a new constraint just needs to be a contradiction to another constraint.
 	
 \subsection*{How to get infinite solutions with t and s?}
-The equation influence by t and s is:
+The linear program has infinite solutions, if we assign the following values to s and t:
 
-\begin{equation*}
-max: s*x_1+t*x_2
-\end{equation*}
+\begin{align}
+ s &= x_2 \nonumber \\
+ t &= -x_1 \nonumber \\
+\end{align}
 
-\noindent way to get an infinite solution could be to generate a endless loop with values for s and t like:
-\begin{eqnarray*}
-s=s*x_1\label{inf1}\\ 
-t=t*x_2 \label{inf2}\\ 
-or\\
-s=t*x_2\label{inf3}\\ 
-t=s*x_1 \label{inf4}\\ 
-\end{eqnarray*}
+\noindent These values would lead to the equation $x_2*x_1 + (-x_1)*x_2$, which is always zero. So 
+the maximal result is zero and you can fill in arbitrary numbers to get this result, i.e. infinite 
+solutions.
 
 
-\subsection*{how to get the points?}
+\subsection*{how to make the points a optimal solution?}
 
 For the first point $P_1=(0,3)$ we have to set $s = -1$ and $t = 1$. That result in a maximal value 
 for (0,3) because we cannot set $x_2$ arbitrary big due to constraint 4. And if we assign a bigger 
@@ -202,8 +199,18 @@ P3=(1,3)\\
 \noindent To make $P_4=(6,0)$ the maximum we set $s = 1$ and $t = -1$. We cannot set $x_1$ to a bigger value 
 than 6 without violating constraint 1.
 
+
 \section*{Theoretical Assignment - \textsl{Bonus: Carillo-Lipman bound}}
 
+The Carrillo-Lipman bound is defined by $B_{pq} \coloneqq B(A) - (\sum_{i<j} s(\hat{A}_i, \hat{A}_j)-s(\hat{A}_p,\hat{A}_q))$, 
+where $B(A)$ is a score for the alignment computed by a heuristic and $s(\hat{A}_i,\hat{A}_j)$ is 
+the score of a optimal alignment of sequences $i$ and $j$. If we have just two sequences $p$ and $q$, 
+this equation would be simplified as 
+\[
+B_{pq} = B(A) - (s(\hat{A}_p,\hat{A}_q)-s(\hat{A}_p,\hat{A}_q)) = B(A).
+\]
+
+\noindent So the Carrillo-Lipman bound for two sequences is just the computed score by a heuristic.
 %\newpage
 %\bibliography{Assignment4-Ditz_Schroeder-WS15-16.bib}
 %\bibliographystyle{ieeetr}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  13 NOV 2015 18:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  13 NOV 2015 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,7 +1165,11 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 LaTeX Warning: Unused global option(s):
     [nenglish].
 
-(./Assignment5-Ditz_Schroeder-WS15-16.aux)
+(./Assignment5-Ditz_Schroeder-WS15-16.aux
+
+LaTeX Warning: Label `rel2' multiply defined.
+
+)
 \openout1 = `Assignment5-Ditz_Schroeder-WS15-16.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
@@ -1183,8 +1187,7 @@ LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 116.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 116.
@@ -1377,36 +1380,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--167
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 192--201
+Underfull \hbox (badness 10000) in paragraph at lines 218--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--201
+Underfull \hbox (badness 10000) in paragraph at lines 218--223
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+<img/figure-P24.png, id=45, 578.16pt x 430.0065pt>
+File: img/figure-P24.png Graphic file (type png)
+ <use img/figure-P24.png>
+Package pdftex.def Info: img/figure-P24.png used on input line 226.
+(pdftex.def)             Requested size: 426.79135pt x 317.42558pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 230.
+
+
+Package hyperref Warning: Suppressing empty link on input line 230.
+
+[3 <./img/figure-P24.png>]
+
+Package hyperref Warning: Suppressing empty link on input line 241.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--262
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
  (./Assignment5-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `Assignment5-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 20633 strings out of 493304
- 347781 string characters out of 6139870
- 473072 words of memory out of 5000000
- 23646 multiletter control sequences out of 15000+600000
+ 20647 strings out of 493304
+ 347962 string characters out of 6139870
+ 476520 words of memory out of 5000000
+ 23656 multiletter control sequences out of 15000+600000
  47455 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,11n,71p,957b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
@@ -1415,12 +1443,12 @@ ts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmsy10.pfb>
-Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (3 pages, 209044 bytes
+ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+Output written on Assignment5-Ditz_Schroeder-WS15-16.pdf (4 pages, 245644 bytes
 ).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

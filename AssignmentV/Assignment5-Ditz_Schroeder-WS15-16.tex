@@ -177,6 +177,32 @@ To get a not solvable algorithm for example the following constraint could be ad
 \subsection*{How to get infinite solutions with t and s?}
 The linear program has infinite solutions, if we assign the following values to s and t:
 
+%Getting infinite solutions,  requires to describe with the max function of a linear algorithm a line in the feasible region and not just one point.
+%Therefore we decided to use constraint 3 and wanted to generate a max function along constraint (3). For the modelling of the max function we used two points from constraint (3) ($P_1(2,4); P_2(5,2)$) to determine $s=\frac{2}{3}$ and $t=1$ in the following equations.
+
+%\begin{eqnarray*}
+%	s * x_{1_{P_1}} + t*x_{2_{P_1}} = s * x_{1_{P_2}} + t*x_{2_{P_2}}\\
+%\Leftrightarrow	s*2+t*4 = s*5+ t*2\\
+%\Leftrightarrow	2t = 3s\\
+%\Leftrightarrow	s = \frac{2}{3}t\\
+%\rightarrow t=1\\	
+%\end{eqnarray*}
+
+%Now we controlled the resuld by inserting the extreme data points $P_1$ and $P_2$.
+
+
+%\begin{eqnarray*}
+%t=1\\
+%\frac{2}{3}*t*x_1+t*x_2\\
+%\Leftrightarrow\frac{2}{3}*x_1+x_2\\
+%\\
+%\frac{2}{3}*2+4 =\frac{2}{3}*5+2  = 5+\frac{1}{3}\\
+%\end{eqnarray*}
+
+
+%Not serious ;)
+%The equation influence by t and s is:
+
 \begin{align}
  s &= x_2 \nonumber \\
  t &= -x_1 \nonumber \\
@@ -194,6 +220,41 @@ for (0,3) because we cannot set $x_2$ arbitrary big due to constraint 4. And if 
 value to $x_1$, would decrease the result. Also we would violate constraint 2, if $x_1$ is to big.\\
 \\
 P2=(2,4)\\
+
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{img/figure-P24.png}
+	\label{P24}
+\end{figure}
+
+To achive that P(2,4) is the only maximal value, we need to use the borders used in figure \ref{P24}. The lower one is described by the maximal constraint (4) (equation \ref{lowerbound})and the higher one is described by the horizontal line at $x2=4$. Next we can define relations, for the variables $m_2$ and $c_2$ of the searched linear equation. These are shown in equation \ref{rel1} and \ref{rel2}.
+
+\begin{eqnarray}
+-1x_1+2x_2=6\\
+\Leftrightarrow  x_2 = \frac{1}{2} x_1 +3 \label{lowerbound}\\
+=	x_2= m_1 x_1 + c_1\\
+	\\
+	m_1 > m_2 > 0 \label{rel1}\\
+	c_1<c_2<4 \label{rel2}\\
+\end{eqnarray}
+
+ So any linear equation, which lies in the green area of figure \ref{P24} , is a possible solution. We will now just choose one and define $c_2 = 3.5 = \frac{7}{2}$ according to relation \label{rel2}. From this now we can deduce $m_2=\frac{1}{4}$ as shown in Equation \ref{m} so that P(2,4) is the only intersection with the feasible region.
+
+\begin{eqnarray}
+4=m_2 * 2+3.5\\
+m_2 = \frac{4-3.5}{2}  = \frac{1}{4} \label{m}\\
+\end{eqnarray}
+
+The last step is now to get s and t, this is achieved by forming the found linear equation back to the desired form (Equation \ref{result24}). The complete result is for $s=\frac{-1}{14}$ and for $t= \frac{2}{7}$.
+
+\begin{eqnarray}
+x_2=\frac{1}{4} * x_1 + \frac{7}{2}\\
+ 	\Leftrightarrow 	- \frac{1}{4} x_1 + x_2=\frac{7}{2}\\
+ 	\Leftrightarrow 	- \frac{1}{14} x_1 + \frac{2}{7} x_2 = 1 \label{result24}\\
+\Rightarrow s= - \frac{1}{14} ; t=\frac{2}{7}\\
+\end{eqnarray}
+
+
 P3=(1,3)\\
 \\
 \noindent To make $P_4=(6,0)$ the maximum we set $s = 1$ and $t = -1$. We cannot set $x_1$ to a bigger value 

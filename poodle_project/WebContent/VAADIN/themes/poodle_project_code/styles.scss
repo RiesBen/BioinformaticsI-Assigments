@@ -1,9 +1,0 @@
-@import "addons.scss";
-@import "poodle_project_code.scss";
-
-/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
-/* The actual styles should be defined in poodle_project_code.scss */
-.poodle_project_code {
-  @include addons;
-  @include poodle_project_code;
-}

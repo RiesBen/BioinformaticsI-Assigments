@@ -1,0 +1,89 @@
+>MCS01_A01_015 Reverse Complement
+GGGATTGAAAGGTCCTGGAAGGCGGGTTTAAATAAAAAGACAAAACCGCT
+GGGGTGCCGTAGCGCTGAAAGTCTACGAGGAAAGAGTTGGGCGAAAGATC
+CACGTATTGCCGCCACTATGGAAAACGCCCAGAAAGGTGAAATCATGCCG
+AACATCCCGCAGATGTCCGCTTTCTGGTATGCCGTGCGTACTGCGGTGAT
+CAACGCCGCCAGCGGTCGTCAGACTGTCGATGAAGCCCTGAAAGACGCGC
+AGACTAATTCGAGCTCGAACAACAACAACAATAACAATAACAACAACCCC
+ATGAGCGAGAATCTTTATTTTCAGGGCGCCATGGCTCTGAAGCGTATCCA
+CAAGGAATTGAATGATCTGGCACGGGACCCTCCAGCACAGTGTTCAGCAG
+GTCCTGTTGGAGATGATATGTTCCATTGGCAAGCTACAATAATGGGGCCA
+AATGACAGTCCCTATCAGGGTGGAGTATTTTTCTTGACAATTCATTTCCC
+AACAGATTACCCCTTCAAACCACCTAAGGTTGCATTTACAACAAGAATTT
+ATCATCCAAATATTAACAGTAATGGCAGCATTTGTCTTGATATTCTACGA
+TCACAGTGGTCTCCAGCACTAACTATTTCAAAAGTACTCTTGTCCATCTG
+TTCTCTGTTGTGTGATCCCAATCCAGATGATCCTTTAGTGCCTGAGATTG
+CTCGGATCTACAAAACAGATAGAGAAAAGTACAACAGAATAGCTCGGGAA
+TGGACTCAGAAGTATGCGATGTAACTAGCTAGCTAGGGATCCGAATTCGA
+GCTCCGTCGACAAGCTTGCGGCCGCACTCGAGCACCACCACCACCACCAC
+TGAGATCCGGCTGCTAACAAAGCCTGAAATGAAGTTTATTC
+
+gggattgaaaggtcctggaaggcgggtttaaataaaaagacaaaaccgctggggtgccgt
+ G  I  E  R  S  W  K  A  G  L  N  K  K  T  K  P  L  G  C  R 
+agcgctgaaagtctacgaggaaagagttgggcgaaagatccacgtattgccgccactatg
+ S  A  E  S  L  R  G  K  S  W  A  K  D  P  R  I  A  A  T  M 
+gaaaacgcccagaaaggtgaaatcatgccgaacatcccgcagatgtccgctttctggtat
+ E  N  A  Q  K  G  E  I  M  P  N  I  P  Q  M  S  A  F  W  Y 
+gccgtgcgtactgcggtgatcaacgccgccagcggtcgtcagactgtcgatgaagccctg
+ A  V  R  T  A  V  I  N  A  A  S  G  R  Q  T  V  D  E  A  L 
+aaagacgcgcagactaattcgagctcgaacaacaacaacaataacaataacaacaacccc
+ K  D  A  Q  T  N  S  S  S  N  N  N  N  N  N  N  N  N  N  P 
+
+                             NcoI
+                            ------
+atgagcgagaatctttattttcagggcgccatggctctgaagcgtatccacaaggaattg
+ M  S  E  N  L  Y  F  Q  G  A  M  A  L  K  R  I  H  K  E  L 
+aatgatctggcacgggaccctccagcacagtgttcagcaggtcctgttggagatgatatg
+ N  D  L  A  R  D  P  P  A  Q  C  S  A  G  P  V  G  D  D  M 
+ttccattggcaagctacaataatggggccaaatgacagtccctatcagggtggagtattt
+ F  H  W  Q  A  T  I  M  G  P  N  D  S  P  Y  Q  G  G  V  F 
+ttcttgacaattcatttcccaacagattaccccttcaaaccacctaaggttgcatttaca
+ F  L  T  I  H  F  P  T  D  Y  P  F  K  P  P  K  V  A  F  T 
+acaagaatttatcatccaaatattaacagtaatggcagcatttgtcttgatattctacga
+ T  R  I  Y  H  P  N  I  N  S  N  G  S  I  C  L  D  I  L  R 
+tcacagtggtctccagcactaactatttcaaaagtactcttgtccatctgttctctgttg
+ S  Q  W  S  P  A  L  T  I  S  K  V  L  L  S  I  C  S  L  L 
+tgtgatcccaatccagatgatcctttagtgcctgagattgctcggatctacaaaacagat
+ C  D  P  N  P  D  D  P  L  V  P  E  I  A  R  I  Y  K  T  D 
+
+                                                         NheI
+                                                         ---
+agagaaaagtacaacagaatagctcgggaatggactcagaagtatgcgatgtaactagct
+ R  E  K  Y  N  R  I  A  R  E  W  T  Q  K  Y  A  M  -  L  A 
+
+       BamHI
+---   ------
+agctagggatccgaattcgagctccgtcgacaagcttgcggccgcactcgagcaccacca
+ S  -  G  S  E  F  E  L  R  R  Q  A  C  G  R  T  R  A  P  P 
+ccaccaccactgagatccggctgctaacaaagcctgaaatgaagtttattc
+ P  P  P  L  R  S  G  C  -  Q  S  L  K  -  S  L  F  
+
+XXXXXXXGIERSWKAGLNKKTKPLGCRSAESLRGKSWAKDPRIAATMENAQKGEIMPNIP
+QMSAFWYAVRTAVINAASGRQTVDEALKDAQTNSSSNNNNNNNNNNPMSENLYFQGAMAL
+KRIHKELNDLARDPPAQCSAGPVGDDMFHWQATIMGPNDSPYQGGVFFLTIHFPTDYPFK
+PPKVAFTTRIYHPNINSNGSICLDILRSQWSPALTISKVLLSICSLLCDPNPDDPLVPEI
+ARIYKTDREKYNRIAREWTQKYAM-LAS-GSEFELRRQACGRTRAPPPPPLRSGC-QSLK
+-SLF
+
+>UNIPROT:D3DQC9_HUMAN D3DQC9 Ubiquitin carrier protein OS=Homo sapiens GN=UBE2D2 PE=3
+           SV=1
+          Length = 147
+
+ Score =  336 bits (862), Expect = 5e-91
+ Identities = 147/147 (100%), Positives = 147/147 (100%)
+
+Query: 5   MALKRIHKELNDLARDPPAQCSAGPVGDDMFHWQATIMGPNDSPYQGGVFFLTIHFPTDY 64
+           MALKRIHKELNDLARDPPAQCSAGPVGDDMFHWQATIMGPNDSPYQGGVFFLTIHFPTDY
+Sbjct: 1   MALKRIHKELNDLARDPPAQCSAGPVGDDMFHWQATIMGPNDSPYQGGVFFLTIHFPTDY 60
+
+Query: 65  PFKPPKVAFTTRIYHPNINSNGSICLDILRSQWSPALTISKVLLSICSLLCDPNPDDPLV 124
+           PFKPPKVAFTTRIYHPNINSNGSICLDILRSQWSPALTISKVLLSICSLLCDPNPDDPLV
+Sbjct: 61  PFKPPKVAFTTRIYHPNINSNGSICLDILRSQWSPALTISKVLLSICSLLCDPNPDDPLV 120
+
+Query: 125 PEIARIYKTDREKYNRIAREWTQKYAM 151
+           PEIARIYKTDREKYNRIAREWTQKYAM
+Sbjct: 121 PEIARIYKTDREKYNRIAREWTQKYAM 147
+
+
+MBP - TEV - UbcH5b WT
+pETM 40 UbcH 5b #1 (#39)

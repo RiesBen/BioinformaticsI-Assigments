@@ -31,7 +31,7 @@ def createClonVecTable(db):
     # create table cloningVectors
     db.execute('create table cloningVectors (Id Primary Key,Box,position,vector,size_bp,tags,TEV_cleavage,MCS,cloning_site,cloning_site_behind_protein,AB,fw_seq_primer,rv_seq_primer,protein,vector_map,date,author,concentration,DH5A_stock,notes)')
     values = []
-    clonVecFile = open('../../data/cloning_vectors.csv', 'r')
+    clonVecFile = open('../../data/cloning_vectors/cloning_vectors.csv', 'r')
     for line in clonVecFile.readlines():
         # just take non-empty lines into account
         if line:

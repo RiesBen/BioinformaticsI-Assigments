@@ -218,7 +218,7 @@ There are three different possible outcomes for P to appear at position 1:
 \begin{align}
  S[1...3] &= YAA \nonumber \\
  S[1...3] &= AYA \nonumber \\
- S[1...3] &= AAY \nonumber 
+ S[1...3] &= AAY \nonumber an
 \end{align}
 
 \noindent Each of this possibilities has the probability $\frac{1}{16}$. Since we have four different 
@@ -233,8 +233,19 @@ is:
 
 \section*{Theoretical Assignment - \textsl{Practice writing an introduction / background for a paper}}
 
-%\newpage
-%\bibliography{Assignment4-Ditz_Schroeder-WS15-16.bib}
-%\bibliographystyle{ieeetr}
+Pattern recognition is a important topic for all life sciences areas and also a though challenge for the computational area. The main goal of finding repeating patterns in bio-sequences is the lead to propose functions which could be contained in new unknown sequences. Specially motifs which are involved in regulation can give a deep insight to regulatory networks and the involvement of proteins. The field of transcription factors is also highly interested in interaction motifs, which can lead to a regulation of gene expression.\\
+For example the standard example the nucleus located protein p53, which is in very often mutated in cancer cells. A very conserved region of p53 binding side which binds to following motif on the DNA (\cite{p53}):
+\begin{equation*}
+5'-R-R-R-C-(A/T)-(T/A)-G-Y-Y-Y-3'
+\end{equation*}
+
+Directly by p53 influenced proteins are for example p21, which inhibits the cell cyklus and Bcl2, an trigger protein for apoptosis.\cite{p53-Function}\\
+\\sperimental approach for showing the binding of a protein is the chromatin immunoprecipitation (ChIP). With the fixation of the nucleic-acid-protein-complex via formaldehyde. Afterwards the cells are lysated via sonification. The resulting DNA and DNA-Protein-complex fragments are seperated via an immunoprecipitiation with a protein specific antibody. After several washing steps, the fixation via the formaldehyde is destroyed via heating up the sample. After another seperation step, the result is the DNA from the DNA-protein-complex. The gained can be sequenced or otherwise analysed. A critical parameter for this methode is the specifity of the antibody. Because if the specifity is to low, no pure sample can be purified \cite{chip}. \\
+But of course there are also computational methods, which allow the discovery of new motifs like with the Gibbs sampling mehtod implemented in or the Projection Method. These methods all challenge the problem, what is background and therefore not important for a interaction? But also there are Database like Jaspar or TRANSFAC which already contain motifs, which can be compared to a querry. \\
+With this new algorithm we designed, we want to push the limits of space, time complexity and accuracy. The "best-motives"-Algorithm solves could therefore make motif finding much more easier and faster.
+\\
+\newpage
+\bibliography{Assignment6-Ditz_Schroeder-WS15-16.bib}
+\bibliographystyle{ieeetr}
  
 \end{document}

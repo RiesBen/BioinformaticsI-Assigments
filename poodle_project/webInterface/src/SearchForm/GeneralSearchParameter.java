@@ -15,39 +15,35 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-@SuppressWarnings("serial")
-@Theme("test")
-@DesignRoot
 
-public class SearchPrimerView extends VerticalLayout{
-	//Such Parameter:
+public class GeneralSearchParameter extends VerticalLayout{
+	//Grid Layout:
+	GridLayout grid = new GridLayout(2,4);
+	
+	//Search Parameter:
 	   TextField parameter1   = new TextField("ID");
 	   TextField parameter2   = new TextField("box");
 	   TextField parameter3   = new TextField("position");
 	   TextField parameter4   = new TextField("name");
 	   TextField parameter5   = new TextField("protein");
 	   TextField parameter6   = new TextField("domain");
-	   TextField parameter7   = new TextField("Made by");
+	   TextField parameter7   = new TextField("author");
 	   
 	   //Rest Navigation
-	   Label     displays = new Label("Please enter your Parameters.");
-	   Button    click   = new Button("Search This");
+	   Label     displays = new Label("General Parameters.");
 
-	    public SearchPrimerView() {
+	    public GeneralSearchParameter() {
 	    		
 	    	
 	        addComponent(displays);
-	    	addComponent(parameter1);
-	        addComponent(parameter2);
-	        addComponent(parameter3);
-	        addComponent(parameter4);
-	        addComponent(parameter5);
-	        addComponent(parameter6);
-	        addComponent(parameter7);
-	        addComponent(click);
-	        
-	        // Configure it a bit
-	        setSizeFull();
-	        addStyleName("myview");
+	    	grid.addComponent(parameter1, 0, 0);
+	        grid.addComponent(parameter2, 0, 1);
+	        grid.addComponent(parameter3, 0, 2);
+	        grid.addComponent(parameter4, 0, 3);
+	        grid.addComponent(parameter5, 1, 0);
+	        grid.addComponent(parameter6, 1, 1);
+	        grid.addComponent(parameter7, 1, 2);
+	        addComponent(grid);
+
 	    }
 	}

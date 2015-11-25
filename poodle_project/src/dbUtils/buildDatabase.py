@@ -1,7 +1,9 @@
 #!/bin/python
 
 import dbUtils
-
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
 
 # function to create table of protein construncts
 def createProtConTable(db):
@@ -66,6 +68,22 @@ def createPrimTable(db):
     db.execute('insert into primer (Id,box,position,primer_name,protein,domain,restriction_QC_or_RF,restriction_site_or_mutation,primer_sequence,protein_sequence,notes_additional_informations_specification,primer_group,melting_temperature,Concentration_uM,date,name) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
+# function to create a fasta file with sequences from a database
+def makeFastaFile(db):
+    # select primer sequences
+    db.select("select id,primer_name,primer_sequence from primer")
+    results = db.fetchAll()
+    records = []
+
+    for result in results:
+        rec = SeqRecord(Seq(result[2]),
+                        id=result[0] + "|" + result[1])
+        records.append(rec)
+
+    # write sequences to file
+    SeqIO.write(records, "primer.fasta", "fasta")
+    
+
 
 if __name__ == '__main__':
     # get database handler
@@ -82,3 +100,7 @@ if __name__ == '__main__':
     createPrimTable(db)
 
     print "successfully built the database"
+
+    print "making fasta file for blast search..."
+    makeFastaFile(db)
+    print "successfully made fasta file"

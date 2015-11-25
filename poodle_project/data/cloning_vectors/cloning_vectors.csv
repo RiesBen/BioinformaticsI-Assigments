@@ -1,7 +1,7 @@
 #Id|Box|position|vector|size (bp)|tags|TEV cleavage|MCS|0 cloning site|cloning site behind protein|AB|fw seq primer|rv seq primer|protein|vector map|date|author|concentration|DH5A stock|notes
 1|I|1A|pProExHTb|4779|N-His-MCS|y||||Amp|M13 pUC|pBAD/pTrcHis||empty|11.08.08|Silke|108||
-|||||||||NheI/BamHI||||||||||
-|||||||||||||Ubiquitin||||||
+2|||||||||NheI/BamHI||||||||||
+3|||||||||||||Ubiquitin||||||
 4|I|4A|pET 11a|5677|N-T7|n|BamHI||||T7 promotor|T7 terminator|empty||||||
 5|I|5A|pET 15b|5708|N-His-thrombin|n|NdeI-XhoI-BamHI||||T7 promotor|T7 terminator||N-His-thrombin-NdeI-XhoI-BamHI|||||not in the box
 6|I|6A|pET 19b|5717|N-His|n|||||T7 promotor|T7 terminator||N-His-enterokinase cleavage site-NdeI-XhoI-BamHI|||||

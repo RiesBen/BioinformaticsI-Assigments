@@ -30,7 +30,10 @@ class DBUtil:
     # @param	query	query to execute
     # @param	values	tuple of values
     # @return	none
-    def select(self, query, values):
+    def select(self, query, values=None):
+        if values == None:
+            self.cursor.execute(query)
+            return
         self.cursor.execute(query, values)
 
     # Fetch next row

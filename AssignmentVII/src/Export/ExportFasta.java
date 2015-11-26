@@ -77,9 +77,9 @@ public class ExportFasta {
 		fw= new FileWriter(output2.getAbsoluteFile());
 		bw = new BufferedWriter(fw);
 		
-		fileHeader= ";Here are "+set.length+" random Sequences with a planted Motif \n "
+		fileHeader= ";Here are "+set.length+" random Sequences with a planted Motif \n"
 				+ ";Motif Base: "+motif+"\n"
-				+ "; Motif was with a length of: "+l+" and possible deviations up to: "+d;
+				+ ";Motif was with a length of: "+l+" and possible deviations up to: "+d;
 		
 		bw.newLine();
 		bw.write(fileHeader);

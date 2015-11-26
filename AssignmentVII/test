@@ -1,14 +1,14 @@
 
 ;Here are 5 random Sequences with a planted Motif 
- ;Motif Base: [A, C, C, C, A]
-; Motif was with a length of: 5 and possible deviations up to: 1
->Sequence 0 Motif was entered from 13 to 18
-GGGCCGCTATTGTACACATC
->Sequence 1 Motif was entered from 9 to 14
-GATACCCGAGCCCACTTGTC
->Sequence 2 Motif was entered from 3 to 8
-GCTACCTAAATCATGGATTT
->Sequence 3 Motif was entered from 8 to 13
-CTCGGGTGACCAACGAGTTG
->Sequence 4 Motif was entered from 3 to 8
-TACTCCCAGGCGATTTAAGT
+;Motif Base: [C, A, G, A, G]
+;Motif was with a length of: 5 and possible deviations up to: 1
+>Sequence 0 Motif was entered from 11 to 16
+GCCTTCCCGATCAGGGCGGA
+>Sequence 1 Motif was entered from 1 to 6
+TCAGATAGGACATTCGTATG
+>Sequence 2 Motif was entered from 15 to 20
+TCTAATTCGACACTGAAGAG
+>Sequence 3 Motif was entered from 12 to 17
+GGATGTAATGGACGGAGCAG
+>Sequence 4 Motif was entered from 14 to 19
+AAGTAACAAACGGCCAGATG

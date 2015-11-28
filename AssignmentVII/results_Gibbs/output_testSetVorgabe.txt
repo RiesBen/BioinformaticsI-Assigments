@@ -1,0 +1,55 @@
+/home/jonas/bin/Gibbs/Gibbs.x86_64 ../testSetVorgabe.fasta 10 1 -o result_testSetVorgabe -n 
+
+Seed = 1448714091
+
+motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 1 **
+4[] cycle 4 MAP -7.98265 (1 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 1
+7[] cycle 7 MAP -0.892849 (0 sites) Prev: -7.98265 Diff: 7.0898 Motifs: 0
+27
+MAX :: -0.892849 (Seed = 1448714091, Iteration = 7   Motif A = 0 )
+motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 2 **
+4[] cycle 4 MAP -0.892849 (0 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 0
+24motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 3 **
+4[] cycle 4 MAP -8.59989 (1 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 1
+5[] cycle 5 MAP -0.892849 (0 sites) Prev: -8.59989 Diff: 7.70704 Motifs: 0
+25motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 4 **
+4[+] cycle 4 MAP -10.116 (3 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 3
+5[] cycle 5 MAP -7.07247 (1 sites) Prev: -10.116 Diff: 3.04349 Motifs: 1
+6[] cycle 6 MAP -0.892849 (0 sites) Prev: -7.07247 Diff: 6.17962 Motifs: 0
+26motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 5 **
+4[] cycle 4 MAP -5.1181 (3 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 3
+14[] cycle 14 MAP -0.892849 (0 sites) Prev: -5.1181 Diff: 4.22525 Motifs: 0
+34motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 6 **
+4[] cycle 4 MAP -13.3932 (2 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 2
+5[] cycle 5 MAP -8.61119 (1 sites) Prev: -13.3932 Diff: 4.78202 Motifs: 1
+6[] cycle 6 MAP -8.60982 (1 sites) Prev: -8.61119 Diff: 0.00136719 Motifs: 1
+7[] cycle 7 MAP -0.892849 (0 sites) Prev: -8.60982 Diff: 7.71697 Motifs: 0
+27motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 7 **
+4[] cycle 4 MAP -8.6085 (1 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 1
+5[] cycle 5 MAP -8.60102 (1 sites) Prev: -8.6085 Diff: 0.00748576 Motifs: 1
+7[] cycle 7 MAP -0.892849 (0 sites) Prev: -8.60102 Diff: 7.70817 Motifs: 0
+27motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 8 **
+4[] cycle 4 MAP -8.48171 (1 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 1
+5[] cycle 5 MAP -0.892849 (0 sites) Prev: -8.48171 Diff: 7.58886 Motifs: 0
+25motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 9 **
+4[++] cycle 4 MAP -8.85474 (1 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 1
+5[] cycle 5 MAP -0.892849 (0 sites) Prev: -8.85474 Diff: 7.96189 Motifs: 0
+25motif A: 1 (+/- 3.52) out of 1810   a = 4; b = 7236; p = 0.000549451
+** 10 **
+4[] cycle 4 MAP -13.6681 (2 sites) Prev: -1.79769e+308 Diff: 1.79769e+308 Motifs: 2
+5[--] cycle 5 MAP -9.08541 (2 sites) Prev: -13.6681 Diff: 4.58273 Motifs: 2
+8[--] cycle 8 MAP -8.68385 (3 sites) Prev: -9.08541 Diff: 0.401561 Motifs: 3
+25[] cycle 25 MAP -8.64199 (3 sites) Prev: -8.68385 Diff: 0.0418554 Motifs: 3
+26[] cycle 26 MAP -6.27445 (2 sites) Prev: -8.64199 Diff: 2.36754 Motifs: 2
+46Max subopt MAP found on seed 1
+500Total Time 1 sec (0.016667 min)
+DOF[0] = 30

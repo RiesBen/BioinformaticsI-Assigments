@@ -1,0 +1,137 @@
+/home/jonas/bin/Gibbs/Gibbs.x86_64 ../testSet2.fasta 10 1 -o result_testSet2 -n 
+
+
+Gibbs 3.10.001  Aug 12 2009
+Data file: ../testSet2.fasta
+Output file: result_testSet2
+Current directory: /home/jonas/Dokumente/Universitaet_Tuebingen/Semester1/Bioinformatics 1/Assignment/BioinformaticsI-Assigments/AssignmentVII/results_Gibbs
+The following options are set:
+Concentrated Region          False    Sequence type        False
+Collapsed Alphabet           False    Pseudocount weight   False
+Use Expectation/Maximization False    Don't Xnu sequence   False
+Help flag                    False    Near optimal cutoff  False
+Number of iterations         False    Don't fragment       False
+Don't use map maximization   False    Repeat regions       False
+Output file                  True     Informed priors file False
+Plateau periods              False    palindromic sequence False
+Don't Reverse complement     False    Number of seeds      False
+Seed Value                   False    Pseudosite weight    False
+Suboptimal sampler output    False    Overlap              False
+Allow width to vary          False    Wilcoxon signed rank False
+Sample along length          False    Output Scan File     False
+Output prior file            False    Modular Sampler      False
+Ignore Spacing Model         False    Sample Background    False
+Bkgnd Comp Model             False    Init from prior      False
+Homologous Seq pairs         False    Parallel Tempering   False
+Group Sampler                False    No progress info     False
+Fragment from middle         False    Verify Mode          False
+Alternate sample on k        False    No freq. soln.       False
+Calc. def. pseudo wt.        False    Motif/Recur smpl     False
+Phylogenetic Sampling        False    Supress Near Opt.    False
+Nearopt display cutoff       False    Sample model         False
+Hierarchical Model           False    Centroid model       False
+Print Bayesian Counts        False    Align Centroid       False
+Calculate Credibility Limits False    Frequency Bkgnd.     False
+
+site_samp            =            0
+nMotifLen            =           10
+nAlphaLen            =            4
+nNumMotifs           =            1
+dPseudoCntWt         =          0.1
+dPseudoSiteWt        =          0.8
+nMaxIterations       =          500
+lSeedVal             =   1448714337
+nPlateauPeriods      =           20
+nSeeds               =           10
+nNumMotifTypes       =            1
+dCutoff              =         0.01
+dNearOptDispCutoff   =          0.5
+RevComplement        =            1
+glOverlapParam       =            0
+Rcutoff factor       =            0
+Post Plateau Samples =            0
+Frag/Shft Per.       =            5
+Frag width           =           15
+
+
+Sequences to be Searched:
+_________________________
+#1   Sequence0 Motif was entered from 63 to 68
+#2   Sequence1 Motif was entered from 73 to 78
+#3   Sequence2 Motif was entered from 18 to 23
+#4   Sequence3 Motif was entered from 86 to 91
+#5   Sequence4 Motif was entered from 24 to 29
+#6   Sequence5 Motif was entered from 79 to 84
+#7   Sequence6 Motif was entered from 27 to 32
+#8   Sequence7 Motif was entered from 46 to 51
+#9   Sequence8 Motif was entered from 63 to 68
+#10  Sequence9 Motif was entered from 78 to 83
+#11  Sequence10 Motif was entered from 78 to 83
+#12  Sequence11 Motif was entered from 33 to 38
+#13  Sequence12 Motif was entered from 79 to 84
+#14  Sequence13 Motif was entered from 87 to 92
+#15  Sequence14 Motif was entered from 27 to 32
+#16  Sequence15 Motif was entered from 16 to 21
+#17  Sequence16 Motif was entered from 29 to 34
+#18  Sequence17 Motif was entered from 63 to 68
+#19  Sequence18 Motif was entered from 13 to 18
+#20  Sequence19 Motif was entered from 43 to 48
+Processed Sequence Length: 2000 Total sequence length: 2000
+
+
+
+
+
+
+
+
+
+
+======================================================================
+======================== NEAR OPTIMAL RESULTS ========================
+======================================================================
+
+MAP = 0 maybe = 0 discard = 2000
+-------------------------------------------------------------------------
+                          MOTIF a
+
+               No Motifs Detected
+
+
+Log Background portion of Map = -2789.25803
+Log Alignment portion of Map = -0.89285
+Log Site/seq portion of Map = 0.00000
+Log Null Map = -2789.25803
+Log Map = -0.89285
+
+
+log MAP = sum of motif and fragmentation parts of MAP + background + alignment + sites/seq - Null
+
+
+
+
+
+
+======================================================================
+======================== MAP MAXIMIZATION RESULTS ====================
+======================================================================
+
+-------------------------------------------------------------------------
+                          MOTIF a
+
+               No Motifs Detected
+
+
+Log Background portion of Map = -2789.25803
+Log Alignment portion of Map = -0.89285
+Log Site/seq portion of Map = 0.00000
+Log Null Map = -2789.25803
+Log Map = -0.89285
+
+
+log MAP = sum of motif and fragmentation parts of MAP + background + alignment + sites/seq - Null
+
+Frequency Map = -0.892849
+Nearopt Map   = -0.892849
+Maximal Map   = -0.892849
+Elapsed time: 1.180000 secs

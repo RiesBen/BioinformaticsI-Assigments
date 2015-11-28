@@ -1,0 +1,362 @@
+/home/jonas/bin/Gibbs/Gibbs.x86_64 ../testSet1.fasta 10 1 -o result_testSet1 -n 
+
+
+Gibbs 3.10.001  Aug 12 2009
+Data file: ../testSet1.fasta
+Output file: result_testSet1
+Current directory: /home/jonas/Dokumente/Universitaet_Tuebingen/Semester1/Bioinformatics 1/Assignment/BioinformaticsI-Assigments/AssignmentVII/results_Gibbs
+The following options are set:
+Concentrated Region          False    Sequence type        False
+Collapsed Alphabet           False    Pseudocount weight   False
+Use Expectation/Maximization False    Don't Xnu sequence   False
+Help flag                    False    Near optimal cutoff  False
+Number of iterations         False    Don't fragment       False
+Don't use map maximization   False    Repeat regions       False
+Output file                  True     Informed priors file False
+Plateau periods              False    palindromic sequence False
+Don't Reverse complement     False    Number of seeds      False
+Seed Value                   False    Pseudosite weight    False
+Suboptimal sampler output    False    Overlap              False
+Allow width to vary          False    Wilcoxon signed rank False
+Sample along length          False    Output Scan File     False
+Output prior file            False    Modular Sampler      False
+Ignore Spacing Model         False    Sample Background    False
+Bkgnd Comp Model             False    Init from prior      False
+Homologous Seq pairs         False    Parallel Tempering   False
+Group Sampler                False    No progress info     False
+Fragment from middle         False    Verify Mode          False
+Alternate sample on k        False    No freq. soln.       False
+Calc. def. pseudo wt.        False    Motif/Recur smpl     False
+Phylogenetic Sampling        False    Supress Near Opt.    False
+Nearopt display cutoff       False    Sample model         False
+Hierarchical Model           False    Centroid model       False
+Print Bayesian Counts        False    Align Centroid       False
+Calculate Credibility Limits False    Frequency Bkgnd.     False
+
+site_samp            =            0
+nMotifLen            =           10
+nAlphaLen            =            4
+nNumMotifs           =            1
+dPseudoCntWt         =          0.1
+dPseudoSiteWt        =          0.8
+nMaxIterations       =          500
+lSeedVal             =   1448714320
+nPlateauPeriods      =           20
+nSeeds               =           10
+nNumMotifTypes       =            1
+dCutoff              =         0.01
+dNearOptDispCutoff   =          0.5
+RevComplement        =            1
+glOverlapParam       =            0
+Rcutoff factor       =            0
+Post Plateau Samples =            0
+Frag/Shft Per.       =            5
+Frag width           =           15
+
+
+Sequences to be Searched:
+_________________________
+#1   Sequence0 Motif was entered from 28 to 43
+#2   Sequence1 Motif was entered from 16 to 31
+#3   Sequence2 Motif was entered from 80 to 95
+#4   Sequence3 Motif was entered from 60 to 75
+#5   Sequence4 Motif was entered from 11 to 26
+#6   Sequence5 Motif was entered from 36 to 51
+#7   Sequence6 Motif was entered from 29 to 44
+#8   Sequence7 Motif was entered from 58 to 73
+#9   Sequence8 Motif was entered from 81 to 96
+#10  Sequence9 Motif was entered from 17 to 32
+#11  Sequence10 Motif was entered from 68 to 83
+#12  Sequence11 Motif was entered from 44 to 59
+#13  Sequence12 Motif was entered from 37 to 52
+#14  Sequence13 Motif was entered from 20 to 35
+#15  Sequence14 Motif was entered from 37 to 52
+Processed Sequence Length: 2250 Total sequence length: 2250
+
+
+
+
+
+
+
+
+
+
+======================================================================
+======================== NEAR OPTIMAL RESULTS ========================
+======================================================================
+
+MAP = 54 maybe = 57 discard = 2193
+-------------------------------------------------------------------------
+                          MOTIF a
+
+
+
+
+
+Motif model (residue frequency x 100)
+____________________________________________
+Pos. #     a   t   c   g  Info
+_____________________________
+   1 |   100  .   .   .   1.9
+
+   3 |    .  100  .   .   1.8
+
+   5 |    .  100  .   .   1.8
+   6 |    .  100  .   .   1.8
+
+   8 |    .   .   .  100  1.9
+   9 |    .   .   88  11  1.5
+  10 |    11  88  .   .   1.4
+
+  12 |   100  .   .   .   1.9
+
+  14 |    77  11  .   11  1.0
+  15 |    .   22  .   77  1.2
+
+nonsite   24  26  24  25
+site      28  42   8  20
+
+Motif probability model
+____________________________________________
+Pos. #    a     t     c     g   
+____________________________________________
+   1 |  0.992 0.003 0.003 0.003 
+
+   3 |  0.003 0.992 0.003 0.003 
+
+   5 |  0.003 0.992 0.003 0.003 
+   6 |  0.003 0.992 0.003 0.003 
+
+   8 |  0.003 0.003 0.003 0.992 
+   9 |  0.003 0.003 0.882 0.113 
+  10 |  0.113 0.882 0.003 0.003 
+
+  12 |  0.992 0.003 0.003 0.003 
+
+  14 |  0.772 0.113 0.003 0.113 
+  15 |  0.003 0.223 0.003 0.772 
+
+
+
+Background probability model
+        0.244 0.256 0.246 0.253 
+
+
+
+10 columns
+Num Motifs: 9
+   1,  1      43 ctcga ATTATTTGGTTACAG gacga      29   0.99 R Sequence0 Motif was entered from 28 to 43
+   3,  1      95 cgggc ATTATTTGCTAAGGG ttggc      81   0.99 R Sequence2 Motif was entered from 80 to 95
+   4,  1      75 aacga ATTTTTTGCTGAAAT cccta      61   0.99 R Sequence3 Motif was entered from 60 to 75
+   6,  1      51 catgc AATCTTTGCTCAAAT acggt      37   0.99 R Sequence5 Motif was entered from 36 to 51
+   7,  1      44 acatt AATGTTTGCTCAGAG cctca      30   1.00 R Sequence6 Motif was entered from 29 to 44
+  10,  1      32 gagga ATTTTTTGCAGAAAG cagtg      18   0.99 R Sequence9 Motif was entered from 17 to 32
+  11,  1      83 acgcc AGTATTTGCTCACTG tccag      69   0.99 R Sequence10 Motif was entered from 68 to 83
+  13,  1      52 taact AATGTTCGCTCAAAG aaacc      38   1.00 R Sequence12 Motif was entered from 37 to 52
+  15,  1      52 ctagt ATTGTTAGCTGAAAG attat      38   1.00 R Sequence14 Motif was entered from 37 to 52
+                       * * ** *** * **
+
+
+Column 1 :  Sequence Number, Site Number
+Column 2 :  Left End Location
+Column 4 :  Motif Element
+Column 6 :  Right End Location
+Column 7 :  Probability of Element
+Column 8 :  Forward Motif (F) or Reverse Complement (R) 
+Column 9 :  Sequence Description from Fast A input
+
+Log Motif portion of MAP for motif a = -46.40264
+Log Fragmentation portion of MAP for motif a = -7.16007
+
+
+
+=============================================================
+====== ELEMENTS OCCURRING GREATER THAN  50% OF THE TIME =====
+======                    Motif a                       =====
+=============================================================
+
+
+Listing of those elements occurring greater than 50% of the time
+in near optimal sampling using 500 iterations
+
+
+
+Motif model (residue frequency x 100)
+____________________________________________
+Pos. #     a   t   c   g  Info
+_____________________________
+   1 |   100  .   .   .   1.9
+
+   3 |    .  100  .   .   1.8
+
+   5 |    .  100  .   .   1.8
+   6 |    .  100  .   .   1.8
+
+   8 |    .   .   .  100  1.9
+   9 |    .   .   88  11  1.5
+  10 |    11  88  .   .   1.4
+
+  12 |   100  .   .   .   1.9
+
+  14 |    77  11  .   11  1.0
+  15 |    .   22  .   77  1.2
+
+nonsite   24  26  24  25
+site      28  42   8  20
+
+Motif probability model
+____________________________________________
+Pos. #    a     t     c     g   
+____________________________________________
+   1 |  0.992 0.003 0.003 0.003 
+
+   3 |  0.003 0.992 0.003 0.003 
+
+   5 |  0.003 0.992 0.003 0.003 
+   6 |  0.003 0.992 0.003 0.003 
+
+   8 |  0.003 0.003 0.003 0.992 
+   9 |  0.003 0.003 0.882 0.113 
+  10 |  0.113 0.882 0.003 0.003 
+
+  12 |  0.992 0.003 0.003 0.003 
+
+  14 |  0.772 0.113 0.003 0.113 
+  15 |  0.003 0.223 0.003 0.772 
+
+
+
+Background probability model
+        0.244 0.256 0.246 0.253 
+
+
+
+10 columns
+Num Motifs: 9
+   1,  1      43 ctcga ATTATTTGGTTACAG gacga      29   0.71 R Sequence0 Motif was entered from 28 to 43
+   3,  1      95 cgggc ATTATTTGCTAAGGG ttggc      81   0.73 R Sequence2 Motif was entered from 80 to 95
+   4,  1      75 aacga ATTTTTTGCTGAAAT cccta      61   0.99 R Sequence3 Motif was entered from 60 to 75
+   6,  1      51 catgc AATCTTTGCTCAAAT acggt      37   0.98 R Sequence5 Motif was entered from 36 to 51
+   7,  1      44 acatt AATGTTTGCTCAGAG cctca      30   1.00 R Sequence6 Motif was entered from 29 to 44
+  10,  1      32 gagga ATTTTTTGCAGAAAG cagtg      18   0.65 R Sequence9 Motif was entered from 17 to 32
+  11,  1      83 acgcc AGTATTTGCTCACTG tccag      69   0.70 R Sequence10 Motif was entered from 68 to 83
+  13,  1      52 taact AATGTTCGCTCAAAG aaacc      38   1.00 R Sequence12 Motif was entered from 37 to 52
+  15,  1      52 ctagt ATTGTTAGCTGAAAG attat      38   1.00 R Sequence14 Motif was entered from 37 to 52
+                       * * ** *** * **
+
+
+Log Background portion of Map = -3012.57420
+Log Alignment portion of Map = -66.08592
+Log Site/seq portion of Map = 0.00000
+Log Null Map = -3137.55825
+Log Map = 5.33541
+
+
+log MAP = sum of motif and fragmentation parts of MAP + background + alignment + sites/seq - Null
+
+
+
+
+
+
+======================================================================
+======================== MAP MAXIMIZATION RESULTS ====================
+======================================================================
+
+-------------------------------------------------------------------------
+                          MOTIF a
+
+
+
+
+
+Motif model (residue frequency x 100)
+____________________________________________
+Pos. #     a   t   c   g  Info
+_____________________________
+   1 |   100  .   .   .   1.9
+
+   3 |    .  100  .   .   1.8
+
+   5 |    .  100  .   .   1.8
+   6 |    .  100  .   .   1.8
+
+   8 |    .   .   .  100  1.9
+   9 |    .   .   88  11  1.5
+  10 |    11  88  .   .   1.4
+
+  12 |   100  .   .   .   1.9
+
+  14 |    77  11  .   11  1.0
+  15 |    .   22  .   77  1.2
+
+nonsite   24  26  24  25
+site      28  42   8  20
+
+Motif probability model
+____________________________________________
+Pos. #    a     t     c     g   
+____________________________________________
+   1 |  0.992 0.003 0.003 0.003 
+
+   3 |  0.003 0.992 0.003 0.003 
+
+   5 |  0.003 0.992 0.003 0.003 
+   6 |  0.003 0.992 0.003 0.003 
+
+   8 |  0.003 0.003 0.003 0.992 
+   9 |  0.003 0.003 0.882 0.113 
+  10 |  0.113 0.882 0.003 0.003 
+
+  12 |  0.992 0.003 0.003 0.003 
+
+  14 |  0.772 0.113 0.003 0.113 
+  15 |  0.003 0.223 0.003 0.772 
+
+
+
+Background probability model
+        0.244 0.256 0.246 0.253 
+
+
+
+10 columns
+Num Motifs: 9
+   1,  1      43 ctcga ATTATTTGGTTACAG gacga      29   0.71 R Sequence0 Motif was entered from 28 to 43
+   3,  1      95 cgggc ATTATTTGCTAAGGG ttggc      81   0.73 R Sequence2 Motif was entered from 80 to 95
+   4,  1      75 aacga ATTTTTTGCTGAAAT cccta      61   0.99 R Sequence3 Motif was entered from 60 to 75
+   6,  1      51 catgc AATCTTTGCTCAAAT acggt      37   0.98 R Sequence5 Motif was entered from 36 to 51
+   7,  1      44 acatt AATGTTTGCTCAGAG cctca      30   1.00 R Sequence6 Motif was entered from 29 to 44
+  10,  1      32 gagga ATTTTTTGCAGAAAG cagtg      18   0.65 R Sequence9 Motif was entered from 17 to 32
+  11,  1      83 acgcc AGTATTTGCTCACTG tccag      69   0.70 R Sequence10 Motif was entered from 68 to 83
+  13,  1      52 taact AATGTTCGCTCAAAG aaacc      38   1.00 R Sequence12 Motif was entered from 37 to 52
+  15,  1      52 ctagt ATTGTTAGCTGAAAG attat      38   1.00 R Sequence14 Motif was entered from 37 to 52
+                       * * ** *** * **
+
+
+Column 1 :  Sequence Number, Site Number
+Column 2 :  Left End Location
+Column 4 :  Motif Element
+Column 6 :  Right End Location
+Column 7 :  Probability of Element
+Column 8 :  Forward Motif (F) or Reverse Complement (R) 
+Column 9 :  Sequence Description from Fast A input
+
+Log Motif portion of MAP for motif a = -46.40264
+Log Fragmentation portion of MAP for motif a = -7.16007
+
+
+Log Background portion of Map = -3012.57420
+Log Alignment portion of Map = -65.99334
+Log Site/seq portion of Map = 0.00000
+Log Null Map = -3137.55825
+Log Map = 5.42800
+
+
+log MAP = sum of motif and fragmentation parts of MAP + background + alignment + sites/seq - Null
+
+Frequency Map = 5.427999
+Nearopt Map   = 5.335411
+Maximal Map   = 5.427999
+Elapsed time: 1.420000 secs

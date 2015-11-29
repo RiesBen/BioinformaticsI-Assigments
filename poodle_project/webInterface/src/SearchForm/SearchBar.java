@@ -1,11 +1,16 @@
 package SearchForm;
 
 import com.vaadin.ui.*;
+import com.vaadin.ui.Button.ClickEvent;
+
+import guis.SearchResultView;
 
 public class SearchBar extends HorizontalLayout {
 
-	GridLayout colums = new GridLayout(4,6);
+	GridLayout columns = new GridLayout(4,6);
 	
+//	SearchButton
+	Button searchButton;
 	
 	//Search Parameter:
 	//General
@@ -23,17 +28,32 @@ public class SearchBar extends HorizontalLayout {
 	   
 	   
 	   public SearchBar(){
-		   colums.addComponent(parameter1, 0, 0);
-		   colums.addComponent(parameter2, 0, 1);
-		   colums.addComponent(parameter3, 0, 2);
-		   colums.addComponent(parameter4, 0, 3);
+		   columns.addComponent(parameter1, 0, 0);
+		   columns.addComponent(parameter2, 0, 1);
+		   columns.addComponent(parameter3, 0, 2);
+		   columns.addComponent(parameter4, 0, 3);
 		   
-		   colums.addComponent(parameter5, 1, 0);
-		   colums.addComponent(parameter6, 1, 1);
-		   colums.addComponent(parameter7, 1, 2);
+		   columns.addComponent(parameter5, 1, 0);
+		   columns.addComponent(parameter6, 1, 1);
+		   columns.addComponent(parameter7, 1, 2);
 		   
-		   colums.addComponent(parameter8, 2, 0);
-		   colums.addComponent(parameter9, 2, 1);
+		   columns.addComponent(parameter8, 2, 0);
+		   columns.addComponent(parameter9, 2, 1);
+		   
+			// Search Button 
+			searchButton = new Button("Search");
+			searchButton.addStyleName("searchButton");
+			searchButton.addClickListener(new Button.ClickListener() {
+				public void buttonClick(ClickEvent event) {
+					Label na = new Label("Did it again!");
+					columns.addComponent(na);
+					}
+				});
+			columns.addComponent(searchButton, 2,4);
+	   }
+	   
+	   public Layout getLayout(){
+		   return columns;
 	   }
 	
 }

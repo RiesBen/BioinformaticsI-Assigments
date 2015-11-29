@@ -33,8 +33,7 @@ public class GeneralSearchParameter extends VerticalLayout{
 	   Label     displays = new Label("General Parameters.");
 
 	    public GeneralSearchParameter() {
-	    		
-	    	
+	    	grid.setSpacing(true);
 	        addComponent(displays);
 	    	grid.addComponent(parameter1, 0, 0);
 	        grid.addComponent(parameter2, 0, 1);

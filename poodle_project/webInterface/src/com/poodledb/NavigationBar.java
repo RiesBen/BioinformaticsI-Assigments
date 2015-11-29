@@ -12,7 +12,9 @@ public class NavigationBar extends MenuBar{
 		barMenu = new MenuBar();
 		MenuItem search = barMenu.addItem("Search", null, null);
 		MenuItem newEntry = barMenu.addItem("New Entry", null, null);
-
-
+	}
+	
+	public MenuBar getNavigation(){
+		return barMenu;
 	}
 }

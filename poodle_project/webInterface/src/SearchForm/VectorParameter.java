@@ -16,9 +16,9 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 
-public class VectorParameters extends VerticalLayout{
+public class VectorParameter extends VerticalLayout{
 	//Grid Layout:
-	GridLayout grid = new GridLayout(2,1);
+	GridLayout grid = new GridLayout(1,2);
 	
 	//Search Parameter:
 	   TextField parameter1   = new TextField("Tags");
@@ -26,12 +26,13 @@ public class VectorParameters extends VerticalLayout{
 
 	   
 	   //Rest Navigation
-	   Label     displays = new Label("Vector Parameters.");
+	   Label     displays = new Label("Vector Parameters");
 
-	    public VectorParameters() {
+	    public VectorParameter() {
+	    	grid.setSpacing(true);
 	        addComponent(displays);
-	    	grid.addComponent(parameter1, 1, 0);
-	        grid.addComponent(parameter2, 2, 0);
+	    	grid.addComponent(parameter1, 0, 0);
+	        grid.addComponent(parameter2, 0, 1);
 	        addComponent(grid);
 
 	    }

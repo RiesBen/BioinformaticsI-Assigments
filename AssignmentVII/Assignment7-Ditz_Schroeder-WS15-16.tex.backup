@@ -205,7 +205,6 @@ two and five. For all of the three other sets, Gibbs sample could not find any M
  \begin{tabular}{|l|l|}
   \hline
     & Motif \\
-  \hline
   test set 1 & \textit{No Motifs detected} \\
   test set 2 & ANTNTTNGCTNANAG \\
   test set 3 & \textit{No Motifs detected} \\
@@ -227,7 +226,6 @@ be given.
  \begin{tabular}{|c|c|c|}
   \hline
     & MEME & Gibbs sampler \\
-  \hline
   test set 1 & 1.66 & 1.04 \\
   test set 2 & 3.33 & 1.13 \\
   test set 3 & 1.66 & 1.05 \\
@@ -244,14 +242,7 @@ be given.
 With the results given above one can see that both, MEME and Gibbs sampler, have a problem with 
 Motifs of too small size. Since the Motif finding problem is not statistically solvable for small 
 Motifs\cite{bioinf1}, this observation makes sense. Also MEME seems to have a higher sensitivity, 
-since it still find a Motif for test set three and four but a wrong one. Obviously for these wrong 
-Motifs the position found by MEME were also wrong but for all other Motifs MEME found the exact 
-positions. On the other hand Gibbs sampler has a lower sensitivity than MEME and it also did not 
-output the positions of the founded Motifs. So it is difficult to proof that Gibbs sampler found 
-the right Motifs.
-
-Under the circumstances discussed above and with respect to the much more user-friendly interface of 
-MEME-Suite we would recommend to use that website.
+since it still find a Motif for test set three and four but a wrong one. 
 
 \newpage
 \bibliography{Assignment7-Ditz_Schroeder-WS15-16.bib}

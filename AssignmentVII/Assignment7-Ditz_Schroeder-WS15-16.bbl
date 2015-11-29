@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{meme}
+T.~L. Bailey and C.~Elkan, ``Fitting a mixture model by expectation
+  maximization to discover motifs in biopolymers,'' {\em Proceedings of the
+  Second International Conference on Intelligent Systems for Molecular
+  Biology}, pp.~28--36, 1994.
+
+\bibitem{gibbs}
+T.~W, R.~EC, and L.~CE, ``Gibbs recursive sampler: finding transcription factor
+  binding sites,'' {\em Nucleic Acids Res.}, vol.~31, no.~13, pp.~3580--3585,
+  2003.
+
+\bibitem{bioinf1}
+K.~Nieselt and D.~Huson, ``Bioinformatics 1: On sequences, genes, proteinsand
+  genomes,'' {\em University of Tübingen}, 2015.
+
+\end{thebibliography}

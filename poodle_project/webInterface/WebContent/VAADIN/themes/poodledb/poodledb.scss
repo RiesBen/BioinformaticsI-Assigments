@@ -53,6 +53,11 @@ $valo-menu-background-color: #eee;
 	.navigationMenu{
 	    background: #4472c4;/* Dark blue */
 	    color: white;}
+	.navigationMenu .v-menubar-menuitem-highlight {
+    background: #000040; /* Dark blue */}
+	    
+	    
+	    
 	.v-menubar-menuitem{ color: black;}
 	
 	.v-vertical > .v-spacing {

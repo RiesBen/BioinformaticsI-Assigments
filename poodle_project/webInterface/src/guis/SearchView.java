@@ -26,7 +26,7 @@ import SearchForm.ProteinConstructParameter;
 import SearchForm.VectorParameter;
 
 @Push
-public class SearchView extends HorizontalLayout {
+public class SearchView extends VerticalLayout {
 	VerticalLayout root;
 	Button searchButton;
 	SearchResultView resultView = new SearchResultView();
@@ -73,10 +73,8 @@ public class SearchView extends HorizontalLayout {
 		//function:
 		searchButton.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
-//				root.removeAllComponents();
-				
+				root.removeAllComponents();
 				SearchResultView result = new SearchResultView();
-//				SearchBar look = newS
 				root.addComponent(result.getLayout());
 				Label na = new Label("LALALA");
 				root.addComponent(na);
@@ -90,11 +88,12 @@ public class SearchView extends HorizontalLayout {
 		NativeSelect dbSelect = new NativeSelect("Select the Database");
 		dbSelect.addItems("All","Sprangers", "Wiesner");
 		dbSelect.setValue("Wiesner");
+		dbSelect.setNullSelectionAllowed(false);
 		//Select which table you want to search through
 		NativeSelect tableSelect = new NativeSelect("Pre-Select");
 		tableSelect.addItems("All", "Primer", "Vector", "Protein-Construct");
 		tableSelect.setValue("All");
-		
+		tableSelect.setNullSelectionAllowed(false);
 		// Handling of Selections:
 //		dbSelect.addValueChangeListener(event -> dbSQL = (String) event.getProperty().getValue())));
 		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));

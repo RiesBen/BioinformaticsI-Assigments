@@ -1,5 +1,8 @@
 package SearchForm;
 
+import java.io.File;
+
+import com.vaadin.server.FileResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
@@ -7,7 +10,7 @@ import guis.SearchResultView;
 
 public class SearchBar extends HorizontalLayout {
 
-	GridLayout columns = new GridLayout(4,6);
+	GridLayout columns = new GridLayout(4,4);
 	
 //	SearchButton
 	Button searchButton;
@@ -28,18 +31,8 @@ public class SearchBar extends HorizontalLayout {
 	   
 	   
 	   public SearchBar(){
-		   columns.addComponent(parameter1, 0, 0);
-		   columns.addComponent(parameter2, 0, 1);
-		   columns.addComponent(parameter3, 0, 2);
-		   columns.addComponent(parameter4, 0, 3);
-		   
-		   columns.addComponent(parameter5, 1, 0);
-		   columns.addComponent(parameter6, 1, 1);
-		   columns.addComponent(parameter7, 1, 2);
-		   
-		   columns.addComponent(parameter8, 2, 0);
-		   columns.addComponent(parameter9, 2, 1);
-		   
+		   this.setSpacing(true);
+		   columns.setSpacing(true);
 			// Search Button 
 			searchButton = new Button("Search");
 			searchButton.addStyleName("searchButton");
@@ -49,7 +42,21 @@ public class SearchBar extends HorizontalLayout {
 					columns.addComponent(na);
 					}
 				});
-			columns.addComponent(searchButton, 2,4);
+			
+   
+		   columns.addComponent(parameter1, 0, 0);
+		   columns.addComponent(parameter2, 0, 1);
+		   columns.addComponent(parameter3, 0, 2);
+		   
+		   columns.addComponent(parameter4, 1, 0);
+		   columns.addComponent(parameter5, 1, 1);
+		   columns.addComponent(parameter6, 1, 2);
+		   	
+		   columns.addComponent(parameter7, 2, 0);
+		   columns.addComponent(parameter8, 2, 1);
+		   columns.addComponent(parameter9, 2, 2);
+		   
+		   columns.addComponent(searchButton, 3,3);
 	   }
 	   
 	   public Layout getLayout(){

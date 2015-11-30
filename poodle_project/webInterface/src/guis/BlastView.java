@@ -20,6 +20,7 @@ public class BlastView extends VerticalLayout {
 		//Layout
 		this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		this.setSpacing(true);
+		this.setMargin(true);
 		//Selection Buttons (for table
 		//Which server or Table??
 		serverTableBar.setSpacing(true);

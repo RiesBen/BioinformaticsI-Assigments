@@ -34,6 +34,7 @@ public class PoodledbUI extends UI {
 	private final VerticalLayout layout = new VerticalLayout();
 	private MenuBar navigationMenu;
 	private static VerticalLayout content;
+	private static ServerTableSelection serverTableSelection;
 	
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class)
@@ -56,7 +57,7 @@ public class PoodledbUI extends UI {
 		FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/logo_poodle.png"));
 		logo= new Image("",resource1);
 		logo.setWidth("256px");
-		layout.addComponent(logo);
+
 		
 		//setup search view
 		//initially start with search view
@@ -69,27 +70,38 @@ public class PoodledbUI extends UI {
 		navigationMenu = new NavigationBar(this);
 		navigationMenu.addStyleName("navigationMenu");
 
-
+		//Selection
+		serverTableSelection = new ServerTableSelection(this);
 		
 		//whole Layout
-
+		layout.addComponent(logo);
 		layout.addComponent(navigationMenu);
+		layout.addComponent(serverTableSelection);
 		layout.addComponent(content);
 	}
 	
 	public void modifyLayouttoResultView(){
 		layout.removeComponent(logo);
+		layout.removeComponent(serverTableSelection);
 		layout.setComponentAlignment(navigationMenu, Alignment.TOP_LEFT);
 	}
 	public void modifyLayouttoSearchView(){
 		layout.removeAllComponents();
 		layout.addComponent(logo);
 		layout.addComponent(navigationMenu);
+		layout.addComponent(serverTableSelection);
 		layout.addComponent(content);
+	}
+	
+	public Layout getContentBox(){
+		return content;
 	}
 	
 	public void SetContentBox(Component view){
 		content.removeAllComponents();
 		content.addComponent(view);
+	}
+	public ServerTableSelection getServerTable(){
+		return serverTableSelection;
 	}
 }

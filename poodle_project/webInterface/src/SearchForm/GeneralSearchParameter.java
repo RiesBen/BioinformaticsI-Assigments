@@ -35,6 +35,7 @@ public class GeneralSearchParameter extends VerticalLayout{
 	    public GeneralSearchParameter() {
 	    	setDefaultComponentAlignment(Alignment.TOP_CENTER);
 	    	
+	    	grid.setSpacing(true);
 	        addComponent(displays);
 	        
 	    	grid.addComponent(parameter1, 0, 0);
@@ -46,5 +47,12 @@ public class GeneralSearchParameter extends VerticalLayout{
 	        grid.addComponent(parameter7, 1, 2);
 	        addComponent(grid);
 
+	    }
+	    public void fill(String[][] entry){
+	    	
+	    }
+	    
+	    public void getParameters(){
+	    	
 	    }
 	}

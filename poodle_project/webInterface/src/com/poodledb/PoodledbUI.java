@@ -1,4 +1,4 @@
- 	package com.poodledb;
+package com.poodledb;
 
 import java.io.File;
 import java.io.FileReader;

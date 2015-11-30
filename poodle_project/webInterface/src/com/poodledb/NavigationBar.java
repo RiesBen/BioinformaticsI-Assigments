@@ -4,6 +4,7 @@ import java.io.File;
 
 import com.vaadin.server.FileResource;
 import com.vaadin.server.Resource;
+import com.vaadin.server.VaadinService;
 import com.vaadin.ui.*;
 
 import guis.BlastView;
@@ -15,7 +16,7 @@ public class NavigationBar extends MenuBar{
 	
 	//new Entry icon
 	//Integration of icon
-	String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
+	String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();//Change in the END!!!
 	FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/plus_colored-small.png"));
 	
 	

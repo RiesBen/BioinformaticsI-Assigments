@@ -1,4 +1,4 @@
-package com.poodledb;
+	package com.poodledb;
 
 import java.io.File;
 import java.io.FileReader;
@@ -53,10 +53,11 @@ public class PoodledbUI extends UI {
 		
 		//Logo
 		//Integration of Logo
-		String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
+		System.out.println();
+		String basepath =  VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
 		FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/logo_poodle.png"));
 		logo= new Image("",resource1);
-		logo.setWidth("256px");
+		logo.setWidth("512px");
 
 		
 		//setup search view

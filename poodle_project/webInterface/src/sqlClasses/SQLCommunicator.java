@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.connection.*;
 import com.vaadin.data.util.sqlcontainer.query.TableQuery;
+import com.vaadin.server.VaadinService;
+
 import org.sqlite.*;
 
 
@@ -23,9 +25,11 @@ public class SQLCommunicator {
 
 
 	public SQLCommunicator(String db){
-		this.db = db;	
+		this.db = db;
+		String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
+		String dbPath = "/WEB-INF/db/poodle_sqlite3.dat";
 		try {
-			pool = new SimpleJDBCConnectionPool("org.sqlite.JDBC", "jdbc:sqlite:/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/src/dbUtils/poodle_sqlite3.dat", "", "", 2, 5);
+			pool = new SimpleJDBCConnectionPool("org.sqlite.JDBC", "jdbc:sqlite:"+basepath+dbPath, "", "", 2, 5);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

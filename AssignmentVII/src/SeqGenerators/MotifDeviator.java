@@ -34,12 +34,7 @@ public class MotifDeviator {
 		// Now modify every position now
 		for(int j=0; j<deviationPositions.length; j++){
 			String dev =E.getSymbolByIndex((int) (Math.random()*100)%E.getAlphabetLength());
-			if(tmpMotif.get((deviationPositions[j]-1)).equals(dev)){
-				j--;
-			}
-			else{
 				tmpMotif.set((deviationPositions[j]-1), dev );
-			}
 		}		
 		return tmpMotif;
 	}

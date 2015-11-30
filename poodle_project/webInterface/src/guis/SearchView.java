@@ -9,6 +9,7 @@ import com.vaadin.annotations.DesignRoot;
 import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.data.util.sqlcontainer.query.TableQuery;
 import com.vaadin.server.BrowserWindowOpener;
 import com.vaadin.server.FileResource;
 import com.vaadin.server.VaadinRequest;
@@ -24,12 +25,12 @@ import SearchForm.GeneralSearchParameter;
 import SearchForm.PrimerParameter;
 import SearchForm.ProteinConstructParameter;
 import SearchForm.VectorParameter;
+import sqlClasses.SQLCommunicator;
 
 @Push
 public class SearchView extends VerticalLayout {
 	VerticalLayout root;
 	Button searchButton;
-	SearchResultView resultView = new SearchResultView();
 	VerticalLayout generalSearchParameter = new GeneralSearchParameter();
 	VerticalLayout vectorParameter = new VectorParameter();
 	VerticalLayout primerParameter = new PrimerParameter();
@@ -41,16 +42,19 @@ public class SearchView extends VerticalLayout {
 	//SQL - THINGS
 	String dbSQL="Wiesner"; 
 	String tableSQL="all";
+	SQLCommunicator sqlC;
 	
-	
-	public SearchView(){
+	public SearchView(PoodledbUI poodleUI){
+		//SQL
+		 sqlC = new SQLCommunicator(dbSQL);
+		
+		
 		//root Layout 
 		root = new VerticalLayout();
 		root.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		root.setSpacing(true);
 		
 		//initialize
-		resultView = new SearchResultView();
 		generalSearchParameter = new GeneralSearchParameter();
 		serverTableBar = new HorizontalLayout();
 		parameters = new HorizontalLayout();
@@ -59,27 +63,9 @@ public class SearchView extends VerticalLayout {
 		generalSearchParameter.addStyleName("Parameters");
 		
 		//Components
-		//Logo
-		//Integration of Logo
-		String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
-		FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/logo_poodle.png"));
-		Image logo= new Image("",resource1);
-		logo.setWidth("256px");
+
 		
-		// Search Button 
-		//initialize
-		searchButton = new Button("Search");
-		searchButton.addStyleName("searchButton");
-		//function:
-		searchButton.addClickListener(new Button.ClickListener() {
-			public void buttonClick(ClickEvent event) {
-				root.removeAllComponents();
-				SearchResultView result = new SearchResultView();
-				root.addComponent(result.getLayout());
-				Label na = new Label("LALALA");
-				root.addComponent(na);
-			}
-		});
+
 		
 		//Selection Buttons (for table
 		//Which server or Table??
@@ -97,7 +83,20 @@ public class SearchView extends VerticalLayout {
 		// Handling of Selections:
 //		dbSelect.addValueChangeListener(event -> dbSQL = (String) event.getProperty().getValue())));
 		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
-
+	
+		
+		// Search Button 
+		//initialize
+		searchButton = new Button("Search");
+		searchButton.addStyleName("searchButton");
+		//function:
+		searchButton.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				sqlC.setTableQuerry((String) tableSelect.getValue());
+				poodleUI.modifyLayouttoResultView();
+				poodleUI.SetContentBox(new SearchResultView(sqlC));
+			}
+		});
 
 		//STICK everything together
 		//Server and table selection
@@ -108,7 +107,6 @@ public class SearchView extends VerticalLayout {
 		parameters.addComponent(generalSearchParameter);
 		parameters.setSpacing(true);
 		//build up:
-		root.addComponent(logo);
 		root.addComponent(serverTableBar);
 		root.addComponent(parameters);
 		root.addComponent(searchButton);

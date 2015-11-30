@@ -30,7 +30,11 @@ import guis.SearchView;
 @Theme("poodledb")
 @DesignRoot
 public class PoodledbUI extends UI {
-
+	private Image logo;
+	private final VerticalLayout layout = new VerticalLayout();
+	private MenuBar navigationMenu;
+	private static VerticalLayout content;
+	
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class)
 	public static class Servlet extends VaadinServlet {
@@ -39,31 +43,53 @@ public class PoodledbUI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		//Layouts
-		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);
 		layout.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		layout.setSpacing(true);
 		layout.addStyleName("layoutStyle");
 
 		setContent(layout);
-
+		
+		//Logo
+		//Integration of Logo
+		String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
+		FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/logo_poodle.png"));
+		logo= new Image("",resource1);
+		logo.setWidth("256px");
+		layout.addComponent(logo);
+		
 		//setup search view
 		//initially start with search view
-
-		
 		//initial ContentContainer:
-		VerticalLayout content= new SearchView();
+		content= new SearchView(this);
 		content.setDefaultComponentAlignment(Alignment.TOP_CENTER);
+		
+
 		//MenuBar: 
-		MenuBar navigationMenu = new NavigationBar(content);
+		navigationMenu = new NavigationBar(this);
 		navigationMenu.addStyleName("navigationMenu");
+
 
 		
 		//whole Layout
+
 		layout.addComponent(navigationMenu);
 		layout.addComponent(content);
-		layout.setComponentAlignment(navigationMenu, Alignment.TOP_LEFT);
-		
 	}
-
+	
+	public void modifyLayouttoResultView(){
+		layout.removeComponent(logo);
+		layout.setComponentAlignment(navigationMenu, Alignment.TOP_LEFT);
+	}
+	public void modifyLayouttoSearchView(){
+		layout.removeAllComponents();
+		layout.addComponent(logo);
+		layout.addComponent(navigationMenu);
+		layout.addComponent(content);
+	}
+	
+	public void SetContentBox(Component view){
+		content.removeAllComponents();
+		content.addComponent(view);
+	}
 }

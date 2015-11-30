@@ -11,47 +11,44 @@ import guis.NewEntryView;
 import guis.SearchView;
 
 public class NavigationBar extends MenuBar{
-	VerticalLayout content;
+	PoodledbUI poodledb;
+	
+	//new Entry icon
+	//Integration of icon
+	String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
+	FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/plus_colored-small.png"));
+	
 	
 	//Commands for Navigation Bar
 	MenuBar.Command searchCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	        System.out.println("Ordered a " +
-	                           selectedItem.getText() +
-	                           " from menu.");
-	        content.removeAllComponents();
-			content.addComponent(new SearchView());
+	    	poodledb.modifyLayouttoSearchView();
+	    	poodledb.SetContentBox(new SearchView(poodledb));
 	    }
 	};
 	
 	MenuBar.Command newEntryCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	        System.out.println("Ordered a " +
-	                           selectedItem.getText() +
-	                           " from menu.");
-	        content.removeAllComponents();
-			content.addComponent(new NewEntryView());
+	    	poodledb.modifyLayouttoSearchView();
+	    	poodledb.SetContentBox(new NewEntryView());
 			
 	    }
 	};
 	
 	MenuBar.Command blastCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	        System.out.println("Ordered a " +
-	                           selectedItem.getText() +
-	                           " from menu.");
-	        content.removeAllComponents();
-			content.addComponent(new BlastView());
+	    	poodledb.modifyLayouttoSearchView();
+	    	poodledb.SetContentBox(new BlastView());
     	}
 	};
-	//new Entry icon
-	//Integration of icon
-	String basepath = "/home/benjamin_schroeder/BioinformaticsI-Assigments/poodle_project/webInterface/WebContent/";//Change in the END!!!
-	FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/plus_colored-small.png"));
 	
-	public NavigationBar(VerticalLayout content){		
+
+	
+	public NavigationBar(PoodledbUI poodledb){		
 		// Define a common menu command for all the menu items.
-		this.content=content;
+		this.addStyleName("valo-menu");
+		this.poodledb=poodledb;
+		
 		MenuItem search = this.addItem("Search", searchCommand);
 		MenuItem newEntry = this.addItem("New Entry", resource1, newEntryCommand);
 		MenuItem blast = this.addItem("BLAST", blastCommand);

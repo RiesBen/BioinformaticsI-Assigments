@@ -5,21 +5,21 @@ import com.vaadin.annotations.Push;
 import com.vaadin.ui.*;
 
 import SearchForm.SearchBar;
+import sqlClasses.SQLCommunicator;
 
 @Push
 public class SearchResultView extends VerticalLayout{
-	VerticalLayout root = new VerticalLayout();
-	GridLayout grid = new GridLayout(3,1);
+	GridLayout grid = new GridLayout(1,3);
 	SearchBar searchBar = new SearchBar();
+	Table primerTable = new Table("Primer");
 	
-	public SearchResultView(){
-		grid.addComponent(searchBar.getLayout(), 1, 0);
+	
+	public SearchResultView(SQLCommunicator sqlC){		
 		
-		root.addComponent(grid);
+		primerTable.setContainerDataSource(sqlC.getContainer());
+		
+		grid.addComponent(searchBar.getLayout(), 0, 0);
+		grid.addComponent(primerTable, 0, 1);
+		addComponent(grid);
 	}
-
-	public VerticalLayout getLayout() {
-		return root;
-	}
-	
 }

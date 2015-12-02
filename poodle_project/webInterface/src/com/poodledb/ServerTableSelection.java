@@ -45,11 +45,12 @@ public class ServerTableSelection extends HorizontalLayout{
 
 	private void tableValues(String val){
 		Layout view = (Layout) poodledb.getContentBox();
-
+		HorizontalLayout parameters;
+		
 		if(view instanceof SearchView){
-			HorizontalLayout parameters= ((SearchView) view).getParameters();
+			parameters= ((SearchView) view).getParameters();
 			switch(val){
-			case "All":
+			case "all":
 				parameters.removeAllComponents();
 				parameters.addComponent(new GeneralSearchParameter());
 				break;
@@ -58,12 +59,12 @@ public class ServerTableSelection extends HorizontalLayout{
 				parameters.addComponent(new GeneralSearchParameter());
 				parameters.addComponent(new PrimerParameter());
 				break;
-			case "Vector":
+			case "cloningVectors":
 				parameters.removeAllComponents();
 				parameters.addComponent(new GeneralSearchParameter());
 				parameters.addComponent(new VectorParameter());
 				break;
-			case "Protein-Construct":
+			case "proteinConstructs":
 				parameters.removeAllComponents();
 				parameters.addComponent(new GeneralSearchParameter());
 				parameters.addComponent(new ProteinConstructParameter());

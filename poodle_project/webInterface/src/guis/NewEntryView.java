@@ -2,45 +2,55 @@ package guis;
 
 import com.vaadin.annotations.Push;
 import com.vaadin.ui.*;
+import com.vaadin.ui.Button.ClickEvent;
 
 import SearchForm.GeneralSearchParameter;
 import SearchForm.SearchBar;
 
 public class NewEntryView extends VerticalLayout {
-		VerticalLayout root = new VerticalLayout();
 		Label title = new Label("You want to create a new Entry?");
 		GeneralSearchParameter generalParameters = new GeneralSearchParameter();
-		HorizontalLayout serverTableBar = new HorizontalLayout();
+		Button newEntryButton;
+		Button importButton;
+		HorizontalLayout buttons;
 		
 		public NewEntryView(){
 
 			//Layout
-			root.setDefaultComponentAlignment(Alignment.TOP_CENTER);
-			
-			//Selection Buttons (for table
-			//Which server or Table??
-			serverTableBar.setSpacing(true);
-			//Select which Database:
-			NativeSelect dbSelect = new NativeSelect("Select the Database");
-			dbSelect.addItems("Both","Sprangers", "Wiesner");
-			dbSelect.setValue("Wiesner");
-			//Select which table you want to search through
-			NativeSelect tableSelect = new NativeSelect("Pre-Select");
-			tableSelect.addItems("Primer", "Vector", "Protein-Construct");
-			tableSelect.setValue("Primer");
-			
-			// Handling of Selections:
-//			dbSelect.addValueChangeListener(event -> dbSQL = (String) event.getProperty().getValue())));
-//			tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
+			this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
+			this.setSpacing(true);
 
-			serverTableBar.addComponent(tableSelect);
-			serverTableBar.addComponent(dbSelect);
+			//newEntry Button 
+			//initialize
+			newEntryButton = new Button("newEntry");
+			newEntryButton.addStyleName("newEntry");
+			//function:
+			newEntryButton.addClickListener(new Button.ClickListener() {
+				public void buttonClick(ClickEvent event) {
+					Label working = new Label ("still working on");
+					addComponent(working);
+				}
+			});
+			//import Button 
+			//initialize
+			importButton = new Button("import");
+			importButton.addStyleName("import");
+			//function:
+			importButton.addClickListener(new Button.ClickListener() {
+				public void buttonClick(ClickEvent event) {
+					Label working = new Label ("still working on");
+					addComponent(working);
+				}
+			});
 			
-			root.addComponent(title);
-			root.addComponent(serverTableBar);
-			root.addComponent(generalParameters);
+			buttons = new HorizontalLayout();
+			buttons.addComponent(newEntryButton);
+			buttons.addComponent(importButton);
+			buttons.setSpacing(true);
 			
-			
-			addComponent(root);
+
+			this.addComponent(title);
+			this.addComponent(generalParameters);
+			this.addComponent(buttons);
 		}
 	}

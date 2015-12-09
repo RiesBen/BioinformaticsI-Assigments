@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  9 DEC 2015 15:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  9 DEC 2015 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1362,7 +1362,7 @@ n-struc-tion for the string
 
 LaTeX Warning: Float too large for page by 76.09137pt on input line 159.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./tast1ai/tree_step01.
@@ -1370,35 +1370,41 @@ png> <./tast1ai/tree_step02.png> <./tast1ai/tree_step03.png> <./tast1ai/tree_st
 ep04.png> <./tast1ai/tree_step05.png> <./tast1ai/tree_step06.png> <./tast1ai/tr
 ee_step07.png> <./tast1ai/tree_step08.png> <./tast1ai/tree_step09.png> <./tast1
 ai/tree_step10.png> <./tast1ai/tree_step11.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
 
 (./Assignment8-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
 Package rerunfilecheck Info: File `Assignment8-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
  19999 strings out of 493304
  336685 string characters out of 6139870
- 460018 words of memory out of 5000000
+ 462018 words of memory out of 5000000
  23021 multiletter control sequences out of 15000+600000
  49028 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,9n,71p,957b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-sbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on Assignment8-Ditz_Schroeder-WS15-16.pdf (2 pages, 352378 bytes
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb>
+Output written on Assignment8-Ditz_Schroeder-WS15-16.pdf (2 pages, 391209 bytes
 ).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  25 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

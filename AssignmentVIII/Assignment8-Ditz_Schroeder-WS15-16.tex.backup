@@ -29,9 +29,9 @@
 \usepackage{listings}
 \usepackage{etextools}
 \usepackage{ifthen}
-\usepackage{TikZ} %phylogenetischer Baum
-\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
-\usetikzlibrary{automata,arrows}
+%\usepackage{TikZ} %phylogenetischer Baum
+%\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
+%\usetikzlibrary{automata,arrows}
 \usepackage{subfigure} 
 
 
@@ -103,62 +103,80 @@ Tutor: #2  % Tutor
 \setcounter{colmns}{#1}
 \stepcounter{colmns}
   \begin{vartab}{\thecolmns}
-    \numbers{#1} & $\sum$\\\hline
+    \numbers{#1} & $\sum$ (6+2)\\\hline
     \emptyLine{\thecolmns}\\
   \end{vartab}
 }
 
 \begin{document}
 %\header{Blatt}{Tutor}{Abgabedatum}{Vorlesung}{Bearbeiter}{Semester}{Anzahl Aufgaben}
-\header{8}{Alexander Seitz}{19. October 2015}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{2}
+\header{8}{Alexander Seitz}{14. December 2015}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{2}
 
-  \section*{Exercise 1 - \textsl{Smith Waterman today}}
-	  The 30 years old Smith-Waterman (SW) algorithm is one of the fundamental algorithms in bioinformatics. This dynamic programming (DP) algorithm allows in a biological sense for example the detection of Domains in a protein or a protein in a larger sequence. But the algorithm has to face the problem of time and space complexity of $O(n\times m)$. This complexity is getting a problem when starting to compare large sequences or even whole genomes. In the paper of Sandes et al., there is a model, which describes the problems of the space complexity as follows:"  For instance, in order to compare two 33 MBP (Million Base Pairs) sequences, we would need at least
-	  4.3 PB of memory." \cite{GPU} which was shown by D. Hirschberg \cite{algoritm}. This amount of space is at least today a major problem.
-	  
-	  But the SW-algorithm has still a high importance in bioinformatics, which can be seen in the following examples.
-	  The classical example for todays usage of the Smith Waterman algorithm is the BLAST algorithm. Which uses the algorithm for seed refinement. Thereby the algorithm is accelerated with a vectorization process. Basically this is an improvment on the hardwarelevel of a computer, which can be adressed by the software for parallelizing the alignment. As a result, the Smith-Waterman algorithm is accelerated by a factor of 10 in comparison to the standard algorithm Novoalign (http://novocraft.com). Also an advantage in complexity matters is constraining the algorithm around seeds from the seeding step.
-	   \cite{blast}
-	   
-	  Parallelizing is general a very modern topic for the Smith-Waterman Algorithm. Some research groups try to accelerate the algorithm by parallelizing the algorithm via the usage of the graphics processing unit (GPU). Some of the prominent algorithms are the CUDAlign1.0 \cite{CUD} or the Weiguo Liu algorithm \cite{Liu}. The CUDAlign Algorithm for example can align up to 32 MBP x 47 MBP.
-	  \cite{GPU}
-	  
-  \section*{Exercise 2 - \textsl{DP Algorithm for finding motifs}}
-  \textbf{for} i = 0 \textbf{to} \textbf{length}(X)\\
-  \indent \textbf{if} X[i] == Y[0]\\
-  \indent \indent Score = 0
-  \indent \indent \textbf{for} j = 0 \textbf{to} \textbf{length}(Y)\\
-  \indent \indent \indent \textbf{if} (X[i+j] == Y[j]) Score += 1\\
-  \indent \indent if (Score > T)\\
-  \indent \indent \indent \textbf{print}(motif found at position i)\\
-  \indent \indent \indent i += \textbf{length}(Y)
- 
-  \section*{Exercise 3 - \textsl{Programming assignment: Needleman-Wunsch alignment}}
-  One task was to handle command line options. We wrote a new class to have a modular 
-  and easy way to provide this functionality. The java package \textit{args4j} has everything
-  we need. So we used that package to write our own option handler class. The code can 
-  be found in \textit{CommandLineParser.java}. We did the same with gap penalties. A
-  gap penalty class gives one the advantage of modular gap handling. If a gap penalties are
-  needed, just reuse this class.\\
-  A new member function of our NeedlemanWunsch class takes care of file writing. If a user 
-  wants the resulting alignment in a FastA file, this function takes care of it. To fullfil 
-  that task it uses a BufferedWriter and FileWriter. 
+\section*{Theoretical Assignment - \textit{Suffix tree construction and application}}
 
-\begin{thebibliography}{widestlabel}
-	\bibitem[Li, H., Homer, N.]{blast} 	
-	Li, H., Homer, N. (2010). A survey of sequence alignment algorithms for next-generation sequencing. Briefings in Bioinformatics, 11(5), 473–483. http://doi.org/10.1093/bib/bbq015
-	\bibitem[Chen, B. and Xu, Y. et al]{parallel} 		
-		Chen, B. and Xu, Y. and Yang, J. and Jiang, H. (2010). A New Parallel Method of Smith-Waterman Algorithm on a Heterogeneous Platform. Springer. Algorithms and Architectures for Parallel Processing.79–90
-	\bibitem[Edans Flavius de O. Sandes, Alba Cristina M.A. de Melo]{GPU} 	
-	Edans Flavius de O. Sandes, Alba Cristina M.A. de Melo (2013), "Retrieving Smith-Waterman Alignments with Optimizations for Megabase Biological Sequences Using GPU", IEEE Transactions on Parallel \& Distributed Systems, vol.24, no. 5, pp. 1009-1021, doi:10.1109/TPDS.2012.194 
-	\bibitem[D.S. Hirschberg,]{algoritm}
-	D.S. Hirschberg, “A Linear Space Algorithm for Computing Maximal Common Subsequences,” Comm. ACM, vol. 18, no. 6, pp. 341-343, 1975
-	
-	\bibitem[Sandes, E.F. de and Melo A.C.M.A. de]{CUD}
-	E.F. de, O. Sandes, and A.C.M.A. de Melo.(2010) “CUDAlign: Using GPU to Accelerate the Comparison of Megabase Genomic Sequence,”.	Proc. 15th ACM SIGPLAN Symp. Principles and Practice
-	of Parallel Programming (PPoPP). pp. 137-146
-	\bibitem[W. Liu, B. Schmidt, G. Voss et al]{Liu}
-	W. Liu, B. Schmidt, G. Voss, A. Schroder, and W. Muller-Wittig. (2006). “Bio-Sequence Database Scanning on a GPU”.	Proc. 20th Int’l Conf. Parallel and Distributed Processing (IPDPS).
-	\end{thebibliography}
+\subsection*{a - \textit{Suffix tree construction}}
+\subsubsection*{i}
+If one uses the naive approach to construct the suffix tree of ``CTAGTAGCAG'', the result would look 
+like Figure \ref{fig:naiveImpl}.
+
+\begin{figure}[ht]
+ \centering
+ \subfigure[step 1]{
+  \includegraphics[width=0.15\textwidth]{tast1ai/tree_step01.png}
+ }
+ \subfigure[step 2]{
+  \includegraphics[width=0.25\textwidth]{tast1ai/tree_step02.png}
+ }
+ \subfigure[step 3]{
+  \includegraphics[width=0.35\textwidth]{tast1ai/tree_step03.png}
+ }
+ \subfigure[step 4]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step04.png}
+ }
+ \subfigure[step 5]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step05.png}
+ }
+ \subfigure[step 6]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step06.png}
+ }
+ \subfigure[step 7]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step07.png}
+ }
+ \subfigure[step 8]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step08.png}
+ }
+ \subfigure[step 9]{
+  \includegraphics[width=0.45\textwidth]{tast1ai/tree_step09.png}
+ }
+ \subfigure[step 10]{
+  \includegraphics[width=0.7\textwidth]{tast1ai/tree_step10.png}
+ }
+ \subfigure[step 11]{
+  \includegraphics[width=0.7\textwidth]{tast1ai/tree_step11.png}
+ }
+ \caption{All steps of the naive implementation of suffix tree construction for the string ``CTAGTAGCAG''.}
+ \label{fig:naiveImpl}
+\end{figure}
+
+\subsubsection*{ii}
+
+
+\subsection*{b - \textit{Main data table of WOTD}}
+
+
+\subsection*{c - \textit{Suffix tree application}}
+
+
+
+\section*{Theoretical Assignment - \textit{Runtime and space complexity of suffix trees}}
+
+\subsection*{a}
+Assume a text $T$ of length $n$ with $n$ times the letter ``a''. If one build a suffix tree for $T$ 
+using WOTD
+
+\subsection*{b}
+
+
+\subsection*{c}
 
 \end{document}

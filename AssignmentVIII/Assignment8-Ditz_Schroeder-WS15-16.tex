@@ -171,6 +171,14 @@ like Figure \ref{fig:naiveImpl}.
 \section*{Theoretical Assignment - \textit{Runtime and space complexity of suffix trees}}
 
 \subsection*{a}
+Assume a text $T$ of length $n$ with $n$ times the letter ``a''. If one build a suffix tree for $T$ 
+using WOTD, each node will have just one c-group with all remaining suffixes in it. So evaluating the 
+root node, one has to compute the longest common prefix of $n$ suffixes, of $n-1$ suffixes for the 
+second node and so on. In each c-group the shortest suffix is of length $1$, so for each node $\bar{u}$ 
+there are just $|R_a{\bar{u}}|$ numbers of comparisons.
+
+Since $T$ is of length $n$ this will lead to an overall runtime of $\sum_{i=1}^{n}i = \frac{1}{2}n(n+1)$, 
+which is in $O(n^2)$. $\square$
 
 
 \subsection*{b}

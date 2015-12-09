@@ -1,0 +1,20 @@
+// suffix tree
+digraph {
+	A [label=""]
+	B [label=""]
+	C [label=""]
+	D [label=""]
+	E [label=""]
+	F [label=""]
+	G [label=""]
+	H [label=""]
+	I [label=""]
+		A -> B [label="CTAGTAGCAG$"]
+		A -> C [label=TAG]
+		A -> D [label=AG]
+		A -> E [label="GTAGCAG$"]
+		C -> F [label="TAGCAG$"]
+		C -> G [label="CAG$"]
+		D -> H [label="TAGCAG$"]
+		D -> I [label="CAG$"]
+}

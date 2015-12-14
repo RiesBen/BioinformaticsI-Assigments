@@ -22,10 +22,12 @@ import com.vaadin.ui.declarative.Design;
 import com.vaadin.ui.themes.ValoTheme;
 
 import SearchForm.GeneralSearchParameter;
-import guis.BlastView;
-import guis.NewEntryView;
-import guis.SearchResultView;
-import guis.SearchView;
+import contentViews.BlastView;
+import contentViews.NewEntryView;
+import contentViews.SearchResultView;
+import contentViews.SearchView;
+import pageElements.NavigationBar;
+import pageElements.ServerTableSelection;
 
 @SuppressWarnings("serial")
 @Theme("poodledb")

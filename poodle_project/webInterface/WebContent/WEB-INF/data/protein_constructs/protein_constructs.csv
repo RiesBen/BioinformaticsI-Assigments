@@ -1,8 +1,8 @@
-#Id|Box|position|protein|domain|mutation|vector|*add. #|AB|cloning sites / QC / RF|*add. Cloning site behind protein|date|author|*type of enzyme|seq?|notes|concentration|DH5A stock|*C+ stock
-1|I|1A|hUbiquitin|full length|WT|pET M30||Kan||||SW|Ub|y||41||
-19|I|1C|hUbcH5a||WT|pET M41|1|Kan|NcoI / KpnI||28.01.10|Mira|E2|y||69||
-30|I|3D|hSmurf2|HECT|WT|pProEx HTb||Amp|||||E3|y||101||no
-39|I|3E|hUbcH5b|full length|WT|pET M40|1|Kan|NcoI / BamHI|NheI / BamHI|07.07.10|Mira|E2|y||105|yes|
-82|II|1A|hSmurf2|C2|WT|pET M30||Kan|NcoI / KpnI||2005|SW|E3||expression not tested (free text)|||
-212|III|5F|scUbiquitin|full length|WT|pProEx HTb|5|Amp|NcoI / KpnI|-|7.03.2011|Matthias|Ub|y||||
-901|XII|1B|hUbiquitin|full length|K0 with K63|pET M11||Kan|QC on #481||01.07.2015|Carsten|Ub|||107||
+id|box|position|protein|domain|mutation|vector|antibiotics|cloning sites|QC|RF|date|author|protein family|sequenced|notes|concentration|DH5A stock|C+ stock
+1|I|1A|hUbiquitin|full length|WT|pET M30|Kan|||||SW|Ub|y||41||
+19|I|1C|hUbcH5a||WT|pET M41|Kan|NcoI / KpnI|||28.01.10|Mira|E2|y||69||
+30|I|3D|hSmurf2|HECT|WT|pProEx HTb|Amp||||||E3|y||101||no
+39|I|3E|hUbcH5b|full length|WT|pET M40|Kan|NcoI / BamHI|||07.07.10|Mira|E2|y||105|yes|
+82|II|1A|hSmurf2|C2|WT|pET M30|Kan|NcoI / KpnI|||2005|SW|E3||expression not tested (free text)|||
+212|III|5F|scUbiquitin|full length|WT|pProEx HTb|Amp|NcoI / KpnI|||7.03.2011|Matthias|Ub|y||||
+901|XII|1B|hUbiquitin|full length|K0 with K63|pET M11|Kan||QC on #481||01.07.2015|Carsten|Ub|||107||

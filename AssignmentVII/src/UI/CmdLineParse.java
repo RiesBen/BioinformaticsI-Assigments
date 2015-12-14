@@ -26,7 +26,7 @@ public class CmdLineParse {
     @Option(name="-d", usage="deviations of the Motif")
     private int inD=0;
 
-    @Option(name="-out", usage="name of the OutFile")
+    @Option(name="-o", usage="name of the OutFile")
     private String inOut=null;
 
     @Option(name="-M", usage="Motif")

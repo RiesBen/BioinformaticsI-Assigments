@@ -5,23 +5,20 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
-public class ProteinConstructParameter extends VerticalLayout {
-	//Grid Layout:
-	GridLayout grid = new GridLayout(1,2);
-	
-	//Search Parameter:
-	   TextField parameter1   = new TextField("Tags");
-	   TextField parameter2   = new TextField("expressed");
-
+public class ProteinConstructParameter extends BasicParameters{
 	   //Rest Navigation
 	   Label     displays = new Label("Protein Construct Parameter");
 
 	    public ProteinConstructParameter() {
-	    	grid.setSpacing(true);
+	    	grid = new GridLayout(1,2);
+			parameters = new TextField[2];
+
+			//Search Parameter:
+			parameters[0]   = new TextField("Tags");
+			parameters[1]   = new TextField("expressed");
+
 	        addComponent(displays);
-	    	grid.addComponent(parameter1, 0, 0);
-	        grid.addComponent(parameter2, 0, 1);
-	        addComponent(grid);
+	        this.changeViewLarge();
 
 	    }
 }

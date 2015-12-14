@@ -105,7 +105,7 @@ public class Main {
 					}
 					// If there's no name entered!
 					if(outPath==null){
-						outPath= "untiteled";
+						outPath= "untitled";
 					}
 					
 					//Handle E: E is the alphabet. a Default is the basic DNA alphabet. but if a unknown letter is entered, throw error.

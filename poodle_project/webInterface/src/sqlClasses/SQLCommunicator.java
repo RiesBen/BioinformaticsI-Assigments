@@ -2,30 +2,36 @@ package sqlClasses;
 
 import java.sql.SQLException;
 
+import com.vaadin.data.Container.*;
+import com.vaadin.data.util.filter.Compare.Equal;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.connection.*;
 import com.vaadin.data.util.sqlcontainer.query.TableQuery;
 import com.vaadin.server.VaadinService;
+
+import SearchForm.GeneralSearchParameter;
+import SearchForm.PrimerParameter;
+import SearchForm.ProteinConstructParameter;
+import SearchForm.VectorParameter;
 
 import org.sqlite.*;
 
 
 public class SQLCommunicator {
 
-	JDBCConnectionPool pool;
-	String db;
-	String table;
-	TableQuery tq;
-	String [][] searchCriteria;
-	SQLContainer container;
-	SQLContainer primerContainer;
-	SQLContainer vectorContainer;
-	SQLContainer proteinContainer;
+	private JDBCConnectionPool pool;
+	private String db;
+	private String table;
+	private TableQuery tq;
+	private SQLContainer container;
+	private SQLContainer primerContainer;
+	private SQLContainer vectorContainer;
+	private SQLContainer proteinContainer;
 	
 
 
 	public SQLCommunicator(String db){
-		this.db = db;
+		this.setDb(db);
 		String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
 		String dbPath = "/WEB-INF/db/poodle_sqlite3.dat";
 		try {
@@ -34,15 +40,17 @@ public class SQLCommunicator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-
 	}
 
 	public void setTableQuerry(String a){
 		table = a;
+		TableQuery tq1;
+		TableQuery tq2;
+		TableQuery tq3;
+		
 		switch(a){
 		case "all":
-			TableQuery tq1= new TableQuery("Primer", pool);
+			tq1= new TableQuery("Primer", pool);
 			tq1.setVersionColumn("OPTLOCK");
 			try {
 				primerContainer = new SQLContainer(tq1);
@@ -51,7 +59,7 @@ public class SQLCommunicator {
 				e.printStackTrace();
 			}
 			
-			TableQuery tq2= new TableQuery("cloningVectors", pool);
+			tq2= new TableQuery("cloningVectors", pool);
 			tq2.setVersionColumn("OPTLOCK");
 			try {
 				vectorContainer = new SQLContainer(tq2);
@@ -60,7 +68,7 @@ public class SQLCommunicator {
 				e.printStackTrace();
 			}
 			
-			TableQuery tq3= new TableQuery("proteinConstructs", pool);
+			tq3= new TableQuery("proteinConstructs", pool);
 			tq3.setVersionColumn("OPTLOCK");
 			try {
 				proteinContainer = new SQLContainer(tq3);
@@ -69,35 +77,132 @@ public class SQLCommunicator {
 				e.printStackTrace();
 			}
 			break;
-
-		default:
-			tq= new TableQuery(a, pool);
-			tq.setVersionColumn("OPTLOCK");
+		case "primer":
+			tq1= new TableQuery("Primer", pool);
+			tq1.setVersionColumn("OPTLOCK");
 			try {
-				container = new SQLContainer(tq);
+				primerContainer = new SQLContainer(tq1);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			break;
+		case "cloningVectors":
+			tq2= new TableQuery("cloningVectors", pool);
+			tq2.setVersionColumn("OPTLOCK");
+			try {
+				vectorContainer = new SQLContainer(tq2);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			break;
-
+		case "proteinConstructs":
+			tq3= new TableQuery("proteinConstructs", pool);
+			tq3.setVersionColumn("OPTLOCK");
+			try {
+				proteinContainer = new SQLContainer(tq3);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+		default:
+			System.out.println("Error in Server selection!");
+		}
+	}
+	
+	
+	public void setGeneralFilter(GeneralSearchParameter gP){
+		String[][] searchCriteria  = gP.getParamteters(); 
+		for(int i=0; i<searchCriteria.length; i++){
+			if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+			System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+			primerContainer.addContainerFilter(querry);
+			vectorContainer.addContainerFilter(querry);
+			proteinContainer.addContainerFilter(querry);
+			}
+		}
+	}
+	
+	public void setPrimerFilter(PrimerParameter pP){
+		String[][] searchCriteria  = pP.getParamteters(); 
+		for(int i=0; i<searchCriteria.length; i++){
+			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+			System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+			primerContainer.addContainerFilter(querry);
+			}
+		}
+	}
+	public void setVectorFilter(VectorParameter vP){
+		String[][] searchCriteria  = vP.getParamteters(); 
+		for(int i=0; i<searchCriteria.length; i++){
+			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+			System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
+			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+			vectorContainer.addContainerFilter(querry);
+			}
+		}
+	}
+	public void setProteinFilter(ProteinConstructParameter pcP){
+		String[][] searchCriteria  = pcP.getParamteters(); 
+		for(int i=0; i<searchCriteria.length; i++){
+			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+			System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
+			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+			proteinContainer.addContainerFilter(querry);
+			}
 		}
 	}
 
+
+	public boolean hasProteinContainer(){
+		if(proteinContainer == null){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	public boolean hasPrimerContainer(){
+		if(primerContainer == null){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	public boolean hasVectorContainer(){
+		if(vectorContainer == null){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 	public String getTable(){
 		return table;
 	}
-	public SQLContainer getProteinQuerry(){
+	public SQLContainer getProteinContainer(){
 		return proteinContainer;
 	}
-	public SQLContainer getPrimerQuerry(){
+	public SQLContainer getPrimerContainer(){
 		return primerContainer;
 	}
-	public SQLContainer getVectorQuerry(){
+	public SQLContainer getVectorContainer(){
 		return vectorContainer;
 	}
 
 	public SQLContainer getContainer(){
 		return container;
+	}
+
+	public String getDb() {
+		return db;
+	}
+
+	public void setDb(String db) {
+		this.db = db;
 	}
 }

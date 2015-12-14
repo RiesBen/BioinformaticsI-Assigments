@@ -22,6 +22,7 @@ import com.vaadin.ui.declarative.Design;
 import com.vaadin.ui.themes.ValoTheme;
 
 import SearchForm.GeneralSearchParameter;
+import guis.BlastView;
 import guis.NewEntryView;
 import guis.SearchResultView;
 import guis.SearchView;
@@ -30,11 +31,17 @@ import guis.SearchView;
 @Theme("poodledb")
 @DesignRoot
 public class PoodledbUI extends UI {
+	
 	private Image logo;
 	private final VerticalLayout layout = new VerticalLayout();
 	private MenuBar navigationMenu;
-	private static VerticalLayout content;
 	private static ServerTableSelection serverTableSelection;
+	private static VerticalLayout content;
+	
+	private SearchView searchView;
+	private NewEntryView newEntryView;
+	private BlastView blastView;
+	
 	
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class)
@@ -53,20 +60,19 @@ public class PoodledbUI extends UI {
 		
 		//Logo
 		//Integration of Logo
-		System.out.println();
 		String basepath =  VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
 		FileResource resource1 = new FileResource(new File(basepath+"/WEB-INF/img/logo_poodle.png"));
 		logo= new Image("",resource1);
 		logo.setWidth("512px");
 
-		
 		//setup search view
 		//initially start with search view
 		//initial ContentContainer:
+		searchView = new SearchView(this);
+		newEntryView  = new NewEntryView();
+		blastView = new BlastView();
 		content= new SearchView(this);
-		content.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		
-
 		//MenuBar: 
 		navigationMenu = new NavigationBar(this);
 		navigationMenu.addStyleName("navigationMenu");
@@ -104,5 +110,29 @@ public class PoodledbUI extends UI {
 	}
 	public ServerTableSelection getServerTable(){
 		return serverTableSelection;
+	}
+
+	public SearchView getSearchView() {
+		return searchView;
+	}
+
+	public void setSearchView(SearchView searchView) {
+		this.searchView = searchView;
+	}
+
+	public NewEntryView getNewEntry() {
+		return newEntryView;
+	}
+
+	public void setNewEntry(NewEntryView newEntry) {
+		this.newEntryView = newEntry;
+	}
+
+	public BlastView getBlastView() {
+		return blastView;
+	}
+
+	public void setBlastView(BlastView blastView) {
+		this.blastView = blastView;
 	}
 }

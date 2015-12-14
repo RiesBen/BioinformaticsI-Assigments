@@ -30,14 +30,12 @@ import sqlClasses.SQLCommunicator;
 @Push
 public class SearchView extends VerticalLayout {
 	Button searchButton;
-	HorizontalLayout serverTableBar = new HorizontalLayout();
-	HorizontalLayout parameters = new HorizontalLayout();
 	
-	VerticalLayout generalSearchParameter = new GeneralSearchParameter();
-	VerticalLayout vectorParameter = new VectorParameter();
-	VerticalLayout primerParameter = new PrimerParameter();
-	VerticalLayout proteinConstructParameter = new ProteinConstructParameter();
-	
+	HorizontalLayout parameters;
+	private GeneralSearchParameter generalSearchParameter = new GeneralSearchParameter();
+	private VectorParameter vectorParameter = new VectorParameter();
+	private PrimerParameter primerParameter = new PrimerParameter();
+	private ProteinConstructParameter proteinConstructParameter = new ProteinConstructParameter();
 
 	//SQL - THINGS
 	String dbSQL="Wiesner"; 
@@ -48,19 +46,14 @@ public class SearchView extends VerticalLayout {
 		//SQL
 		 sqlC = new SQLCommunicator(dbSQL);
 		
-		
 		//Layout 
 		this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		this.setSpacing(true);
 		
 		//initialize
-		generalSearchParameter = new GeneralSearchParameter();
-		serverTableBar = new HorizontalLayout();
 		parameters = new HorizontalLayout();
 		
-//		Layout:
-		generalSearchParameter.addStyleName("Parameters");
-		
+		//Layout:		
 		//Components
 	
 		// Search Button 
@@ -71,20 +64,39 @@ public class SearchView extends VerticalLayout {
 		searchButton.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				sqlC.setTableQuerry(poodleUI.getServerTable().getTable());
+				
 				poodleUI.modifyLayouttoResultView();
-				poodleUI.SetContentBox(new SearchResultView(sqlC));
+				poodleUI.SetContentBox(new SearchResultView(sqlC, generalSearchParameter, primerParameter, vectorParameter, proteinConstructParameter));
 			}
 		});
 
 		//Parameters initial:
 		parameters.addComponent(generalSearchParameter);
 		parameters.setSpacing(true);
+		
+		
+		
+		
 		//build up:
 		this.addComponent(parameters);
 		this.addComponent(searchButton);
 	}
 	
+	public GeneralSearchParameter getGeneralSearchParameter(){
+		return generalSearchParameter;
+	}
+	public  VectorParameter getVectorParameter(){
+		return vectorParameter;
+	}
+	public PrimerParameter getPrimerParameter(){
+		return primerParameter;
+	}
+	public ProteinConstructParameter getProteinConstructParameter(){
+		return proteinConstructParameter;
+	}
 	public HorizontalLayout getParameters(){
 		return parameters;
 	}
+	
+	
 }

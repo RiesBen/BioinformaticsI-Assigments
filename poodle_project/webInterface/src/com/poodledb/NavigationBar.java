@@ -24,7 +24,8 @@ public class NavigationBar extends MenuBar{
 	MenuBar.Command searchCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
 	    	poodledb.modifyLayouttoSearchView();
-	    	poodledb.SetContentBox(new SearchView(poodledb));
+	    	poodledb.SetContentBox(poodledb.getSearchView());
+	    	poodledb.getServerTable().refresh();
 	    }
 	};
 	
@@ -32,6 +33,7 @@ public class NavigationBar extends MenuBar{
 	    public void menuSelected(MenuItem selectedItem) {
 	    	poodledb.modifyLayouttoSearchView();
 	    	poodledb.SetContentBox(new NewEntryView());
+	    	poodledb.getServerTable().refresh();
 			
 	    }
 	};
@@ -40,6 +42,7 @@ public class NavigationBar extends MenuBar{
 	    public void menuSelected(MenuItem selectedItem) {
 	    	poodledb.modifyLayouttoSearchView();
 	    	poodledb.SetContentBox(new BlastView());
+	    	poodledb.getServerTable().refresh();
     	}
 	};
 	

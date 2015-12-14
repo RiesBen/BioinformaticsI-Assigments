@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 x = np.arange(0.,8.)
 
-y1 = 12-2*x
+y1 = -x+1
 y2 = 7-x
 y3 = (16-2*x)/3
 y4 = (6+x)/2

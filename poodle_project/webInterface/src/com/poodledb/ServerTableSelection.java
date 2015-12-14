@@ -28,7 +28,7 @@ public class ServerTableSelection extends HorizontalLayout{
 		dbSelect.setNullSelectionAllowed(false);
 		//Select which table you want to search through
 		tableSelect = new NativeSelect("Pre-Select");
-		tableSelect.addItems("all", "Primer", "cloningVectors", "proteinConstructs");
+		tableSelect.addItems("all", "primer", "cloningVectors", "proteinConstructs");
 		tableSelect.setValue("all");
 		tableSelect.setNullSelectionAllowed(false);
 		// Handling of Selections:
@@ -38,7 +38,11 @@ public class ServerTableSelection extends HorizontalLayout{
 		this.addComponent(tableSelect);
 		this.addComponent(dbSelect);
 	}
-	
+	public void refresh(){
+		dbSelect.setValue("Wiesner");
+		tableSelect.setValue("all");
+		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
+	}
 	public String getTable(){
 		return (String)tableSelect.getValue();
 	}
@@ -52,22 +56,22 @@ public class ServerTableSelection extends HorizontalLayout{
 			switch(val){
 			case "all":
 				parameters.removeAllComponents();
-				parameters.addComponent(new GeneralSearchParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
 				break;
-			case "Primer":
+			case "primer":
 				parameters.removeAllComponents();
-				parameters.addComponent(new GeneralSearchParameter());
-				parameters.addComponent(new PrimerParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getPrimerParameter());
 				break;
 			case "cloningVectors":
 				parameters.removeAllComponents();
-				parameters.addComponent(new GeneralSearchParameter());
-				parameters.addComponent(new VectorParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getVectorParameter());
 				break;
 			case "proteinConstructs":
 				parameters.removeAllComponents();
-				parameters.addComponent(new GeneralSearchParameter());
-				parameters.addComponent(new ProteinConstructParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
+				parameters.addComponent(((SearchView) poodledb.getContent()).getProteinConstructParameter());
 				break;
 			}
 		}

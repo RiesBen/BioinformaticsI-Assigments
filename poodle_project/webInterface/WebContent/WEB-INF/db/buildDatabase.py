@@ -43,7 +43,7 @@ def createClonVecTable(db):
     # drop table, if it already exists
     db.execute('drop table if exists cloningVectors')
     # create table cloningVectors
-    db.execute('create table cloningVectors (id Primary Key,Box,position,vector,size_bp,tags,TEV_cleavage,MCS,cloning_site,cloning_site_behind_protein,AB,fw_seq_primer,rv_seq_primer,protein,vector_map,date,author,concentration,DH5A_stock,notes)')
+    db.execute('create table cloningVectors (id Primary Key,Box,position,vector,size_bp,tags,TEV_cleavage,MCS,AB,fw_seq_primer,rv_seq_primer,vector_map,date,author,concentration,DH5A_stock,notes)')
     values = []
     clonVecFile = open(DATA_PATH + 'cloning_vectors/cloning_vectors.csv', 'r')
     for line in clonVecFile.readlines():
@@ -56,7 +56,7 @@ def createClonVecTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into cloningVectors (id,Box,position,vector,size_bp,tags,TEV_cleavage,MCS,cloning_site,cloning_site_behind_protein,AB,fw_seq_primer,rv_seq_primer,protein,vector_map,date,author,concentration,DH5A_stock,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into cloningVectors (id,Box,position,vector,size_bp,tags,TEV_cleavage,MCS,AB,fw_seq_primer,rv_seq_primer,vector_map,date,author,concentration,DH5A_stock,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of primer
@@ -126,6 +126,6 @@ if __name__ == '__main__':
     makeFastaFile(db, primerDB)
     print "successfully made fasta file"
 
-    print "building blast database..."
-    makeBlastDB(primerDB)
-    print "successfully built blast database"
+    #print "building blast database..."
+    #makeBlastDB(primerDB)
+    #print "successfully built blast database"

@@ -4,16 +4,16 @@ import java.io.File;
 
 import com.poodledb.PoodledbUI;
 import com.vaadin.server.FileResource;
-import com.vaadin.server.Resource;
 import com.vaadin.server.VaadinService;
-import com.vaadin.ui.*;
+import com.vaadin.ui.MenuBar;
 
-import contentViews.BlastView;
-import contentViews.NewEntryView;
 import contentViews.SearchView;
 
 public class NavigationBar extends MenuBar{
-	PoodledbUI poodledb;
+	private PoodledbUI poodledb;
+	private MenuItem search;
+	private MenuItem newEntry;
+	private MenuItem blast;
 	
 	//new Entry icon
 	//Integration of icon
@@ -24,38 +24,39 @@ public class NavigationBar extends MenuBar{
 	//Commands for Navigation Bar
 	MenuBar.Command searchCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	    	poodledb.modifyLayouttoSearchView();
+	    	if(poodledb.getViewIsReduced()){
+	    		poodledb.getSearchView().refreshParameters();
+	    	}
 	    	poodledb.SetContentBox(poodledb.getSearchView());
-	    	poodledb.getServerTable().refresh();
+	    	poodledb.modifyLayoutToLargeView();
+	    	poodledb.getServerTable().setForSearchView();
 	    }
 	};
 	
 	MenuBar.Command newEntryCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	    	poodledb.modifyLayouttoSearchView();
-	    	poodledb.SetContentBox(new NewEntryView());
-	    	poodledb.getServerTable().refresh();
-			
+	    	poodledb.SetContentBox(poodledb.getNewEntryView());
+	    	poodledb.modifyLayoutToLargeView();
+	    	poodledb.getServerTable().setForNewEntryView();
 	    }
 	};
 	
 	MenuBar.Command blastCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	    	poodledb.modifyLayouttoSearchView();
-	    	poodledb.SetContentBox(new BlastView());
-	    	poodledb.getServerTable().refresh();
+	    	poodledb.SetContentBox(poodledb.getBlastView());
+	    	poodledb.modifyLayoutToLargeView();
+	    	poodledb.getServerTable().setForBlastView();
     	}
 	};
-	
-
 	
 	public NavigationBar(PoodledbUI poodledb){		
 		// Define a common menu command for all the menu items.
 		this.addStyleName("valo-menu");
 		this.poodledb=poodledb;
 		
-		MenuItem search = this.addItem("Search", searchCommand);
-		MenuItem newEntry = this.addItem("New Entry", resource1, newEntryCommand);
-		MenuItem blast = this.addItem("BLAST", blastCommand);
+		//link commands to buttons
+		search = this.addItem("Search", searchCommand);
+		newEntry = this.addItem("New Entry", resource1, newEntryCommand);
+		blast = this.addItem("BLAST", blastCommand);
 	}
 }

@@ -5,34 +5,37 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.NativeSelect;
 
-import SearchForm.GeneralSearchParameter;
-import SearchForm.PrimerParameter;
-import SearchForm.ProteinConstructParameter;
-import SearchForm.VectorParameter;
+import contentViews.NewEntryView;
 import contentViews.SearchView;
+import specificValues.BasicTables;
 import specificValues.WiesnerTables;
 
 public class ServerTableSelection extends HorizontalLayout{
-	PoodledbUI poodledb;
-	NativeSelect tableSelect;
-	NativeSelect dbSelect;
+	private PoodledbUI poodledb;
+	private NativeSelect tableSelect;
+	private NativeSelect dbSelect;
 	
 	public ServerTableSelection(PoodledbUI poodledb){
 		this.poodledb = poodledb;
-
-		//Selection Buttons (for table
-		//Which server or Table??
+		
+		//Layout:
 		this.setSpacing(true);
-		//Select which Database:
+		
+		//Button generation:
+		//1. Select which Database:
 		dbSelect = new NativeSelect("Select the Database");
-		dbSelect.addItems("all","Sprangers", "Wiesner");
-		dbSelect.setValue("Wiesner");
+		dbSelect.addItems(poodledb.getdBs().allOption,poodledb.getdBs().wiesnerDB, poodledb.getdBs().sprangerDB);
+		dbSelect.setValue(poodledb.getdBs().wiesnerDB);
 		dbSelect.setNullSelectionAllowed(false);
-		//Select which table you want to search through
-		tableSelect = new NativeSelect("Pre-Select");
-		tableSelect.addItems("all", "primer", "cloningVectors", "proteinConstructs");
-		tableSelect.setValue("all");
+		
+		
+		//2. Select which table you want to search through
+		tableSelect = new NativeSelect("Table");
+		tableSelect.addItems(BasicTables.allOption, BasicTables.primerOption,  BasicTables.cloningVectorOption,  BasicTables.proteinConstructOption);
+		tableSelect.setValue(BasicTables.allOption);
 		tableSelect.setNullSelectionAllowed(false);
+		
+		
 		// Handling of Selections:
 		//	dbSelect.addValueChangeListener(event -> dbSQL = (String) event.getProperty().getValue())));
 		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
@@ -40,10 +43,36 @@ public class ServerTableSelection extends HorizontalLayout{
 		this.addComponent(tableSelect);
 		this.addComponent(dbSelect);
 	}
-	public void refresh(){
-		dbSelect.setValue("Wiesner");
-		tableSelect.setValue("all");
+	
+	public void setForNewEntryView(){
+		this.removeAllComponents();
+		tableSelect= new NativeSelect("Table");
+		tableSelect.addItems(poodledb.getTables().primerOption, poodledb.getTables().cloningVectorOption,  poodledb.getTables().proteinConstructOption);
+		tableSelect.setValue(poodledb.getTables().primerOption);
+		tableSelect.setNullSelectionAllowed(false);
 		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
+		this.addComponent(tableSelect);
+		this.addComponent(dbSelect);
+	}
+	public void setForSearchView(){
+		this.removeAllComponents();
+		tableSelect= new NativeSelect("Table");
+		tableSelect.addItems(BasicTables.allOption, BasicTables.primerOption,  BasicTables.cloningVectorOption,  BasicTables.proteinConstructOption);
+		tableSelect.setValue(BasicTables.allOption);
+		tableSelect.setNullSelectionAllowed(false);
+		tableSelect.addValueChangeListener(event -> this.tableValues((String) event.getProperty().getValue()));
+		this.addComponent(tableSelect);
+		this.addComponent(dbSelect);
+	}
+	
+	public void setForBlastView(){
+		this.removeAllComponents();
+	}
+	
+	
+	public void refresh(){
+		dbSelect.setValue(poodledb.getdBs().wiesnerDB);
+		tableSelect.setValue(BasicTables.allOption);
 	}
 	public String getTable(){
 		return (String)tableSelect.getValue();
@@ -51,29 +80,35 @@ public class ServerTableSelection extends HorizontalLayout{
 
 	private void tableValues(String val){
 		Layout view = (Layout) poodledb.getContentBox();
-		HorizontalLayout parameters;
 		
 		if(view instanceof SearchView){
-			parameters= ((SearchView) view).getParameters();
+			SearchView searchView= (SearchView) view;
 			switch(val){
 			case WiesnerTables.allOption:
-				parameters.removeAllComponents();
-				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
+				searchView.modifyToGenParam();
 				break;
 			case WiesnerTables.primerOption:
-				parameters.removeAllComponents();
-				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
-				parameters.addComponent(((SearchView) poodledb.getContent()).getPrimerParameter());
+				searchView.modifyToPrimerParam();
 				break;
 			case WiesnerTables.cloningVectorOption:
-				parameters.removeAllComponents();
-				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
-				parameters.addComponent(((SearchView) poodledb.getContent()).getVectorParameter());
+				searchView.modifyToVectorParam();
 				break;
 			case WiesnerTables.proteinConstructOption:
-				parameters.removeAllComponents();
-				parameters.addComponent(((SearchView) poodledb.getContent()).getGeneralSearchParameter());
-				parameters.addComponent(((SearchView) poodledb.getContent()).getProteinConstructParameter());
+				searchView.modifyToProteinParam();
+				break;
+			}
+		}
+		if(view instanceof NewEntryView){
+			NewEntryView newEntry= (NewEntryView) view;
+			switch(val){
+			case WiesnerTables.primerOption:
+				newEntry.modifyToPrimerParamAdvanced();
+				break;
+			case WiesnerTables.cloningVectorOption:
+				newEntry.modifyToVectorParamAdvanced();
+				break;
+			case WiesnerTables.proteinConstructOption:
+				newEntry.modifyToProteinParamAdvanced();
 				break;
 			}
 		}

@@ -3,6 +3,7 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/sqlPackage"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/BlastPackage"/>
         <property name="context-root" value="PoodleDB"/>
         <property name="java-output-path" value="/PoodleDB/build/classes"/>
     </wb-module>

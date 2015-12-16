@@ -32,22 +32,22 @@ public abstract class BasicParameters extends VerticalLayout {
 				j++;
 			}
 			parameters[i].setWidth("175px");
-			parameters[i].setHeight("25px");
+//			parameters[i].setHeight("25px");
 			grid.addComponent(parameters[i], j, i%3);
 		}
 		this.addComponent(grid);
 	}
-	
-	public void changeViewLarge(){
-		this.removeAllComponents();
-		grid = new GridLayout(2,4);
 
+	public void changeViewLarge(){
+		this.removeAllComponents();		
+		grid = new GridLayout(2,4);
+		
 		int j=-1;
 		for(int i=0; i<parameters.length; i++){
-			if(i%4==0){
+			if(i%3==0){
 				j++;
 			}
-			grid.addComponent(parameters[i], j, i%4);
+			grid.addComponent(parameters[i], j, i%3);
 		}
 		grid.setSpacing(true);
 		this.addComponent(grid);
@@ -64,5 +64,9 @@ public abstract class BasicParameters extends VerticalLayout {
 		}
 		return entry;
 	}
-
+	public void refreshTextfields(){
+		for(int i=0; i<parameters.length; i++){
+			parameters[i].setValue("");
+		}
+	}
 }

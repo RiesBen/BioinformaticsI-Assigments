@@ -17,14 +17,14 @@ public class SearchBar extends HorizontalLayout {
 
 
 	//	SearchButton
-	Button searchButton;
+	private Button searchButton;
 
 	//Search Parameter:
 	//General
-	GeneralSearchParameter generalParameters;
-	PrimerParameter primerParameters;
-	VectorParameter vectorParameters;
-	ProteinConstructParameter proteinContstructParameters;
+	private GeneralSearchParameter generalParameters;
+	private PrimerParameter primerParameters;
+	private VectorParameter vectorParameters;
+	private ProteinConstructParameter proteinContstructParameters;
 
 	public SearchBar(GeneralSearchParameter gP){
 		this.setSpacing(true);

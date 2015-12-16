@@ -27,7 +27,7 @@ public class SQLCommunicator {
 	private SQLContainer primerContainer;
 	private SQLContainer vectorContainer;
 	private SQLContainer proteinContainer;
-	
+
 
 
 	public SQLCommunicator(String db){
@@ -47,7 +47,7 @@ public class SQLCommunicator {
 		TableQuery tq1;
 		TableQuery tq2;
 		TableQuery tq3;
-		
+
 		switch(a){
 		case "all":
 			tq1= new TableQuery("Primer", pool);
@@ -58,7 +58,7 @@ public class SQLCommunicator {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 			tq2= new TableQuery("cloningVectors", pool);
 			tq2.setVersionColumn("OPTLOCK");
 			try {
@@ -67,7 +67,7 @@ public class SQLCommunicator {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 			tq3= new TableQuery("proteinConstructs", pool);
 			tq3.setVersionColumn("OPTLOCK");
 			try {
@@ -110,99 +110,123 @@ public class SQLCommunicator {
 			System.out.println("Error in Server selection!");
 		}
 	}
-	
-	
+
+
 	public void setGeneralFilter(GeneralSearchParameter gP){
 		String[][] searchCriteria  = gP.getParamteters(); 
 		for(int i=0; i<searchCriteria.length; i++){
 			if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
-			System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
-			primerContainer.addContainerFilter(querry);
-			vectorContainer.addContainerFilter(querry);
-			proteinContainer.addContainerFilter(querry);
+				System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+				Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+				primerContainer.addContainerFilter(querry);
+				vectorContainer.addContainerFilter(querry);
+				proteinContainer.addContainerFilter(querry);
 			}
 		}
 	}
-	
-	public void setPrimerFilter(PrimerParameter pP){
-		String[][] searchCriteria  = pP.getParamteters(); 
+
+	public void setPrimerFilter(GeneralSearchParameter gP, PrimerParameter pP){
+		String[][] searchCriteria  = gP.getParamteters(); 
 		for(int i=0; i<searchCriteria.length; i++){
-			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
-			System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
-			primerContainer.addContainerFilter(querry);
+			if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+				System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+				Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+				primerContainer.addContainerFilter(querry);
 			}
 		}
-	}
-	public void setVectorFilter(VectorParameter vP){
-		String[][] searchCriteria  = vP.getParamteters(); 
-		for(int i=0; i<searchCriteria.length; i++){
-			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
-			System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
-			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
-			vectorContainer.addContainerFilter(querry);
+			searchCriteria  = pP.getParamteters(); 
+			for(int i=0; i<searchCriteria.length; i++){
+				if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					primerContainer.addContainerFilter(querry);
+				}
 			}
 		}
-	}
-	public void setProteinFilter(ProteinConstructParameter pcP){
-		String[][] searchCriteria  = pcP.getParamteters(); 
-		for(int i=0; i<searchCriteria.length; i++){
-			if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
-			System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
-			Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
-			proteinContainer.addContainerFilter(querry);
+		public void setVectorFilter(GeneralSearchParameter gP, VectorParameter vP){
+			String[][] searchCriteria  = gP.getParamteters(); 
+			for(int i=0; i<searchCriteria.length; i++){
+				if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					vectorContainer.addContainerFilter(querry);
+				}
+			}
+			searchCriteria  = vP.getParamteters(); 
+			for(int i=0; i<searchCriteria.length; i++){
+				if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+					System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
+					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					vectorContainer.addContainerFilter(querry);
+				}
 			}
 		}
-	}
+		public void setProteinFilter(GeneralSearchParameter gP, ProteinConstructParameter pcP){
+			String[][] searchCriteria  = gP.getParamteters(); 
+			for(int i=0; i<searchCriteria.length; i++){
+				if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
+					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					proteinContainer.addContainerFilter(querry);
+				}
+			}
+			searchCriteria  = pcP.getParamteters(); 
+			for(int i=0; i<searchCriteria.length; i++){
+				if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
+					System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
+					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					proteinContainer.addContainerFilter(querry);
+				}
+			}
+		}
 
 
-	public boolean hasProteinContainer(){
-		if(proteinContainer == null){
-			return true;
+		public boolean hasProteinContainer(){
+			if(proteinContainer == null){
+				return true;
+			}
+			else{
+				return false;
+			}
 		}
-		else{
-			return false;
+		public boolean hasPrimerContainer(){
+			if(primerContainer == null){
+				return true;
+			}
+			else{
+				return false;
+			}
 		}
-	}
-	public boolean hasPrimerContainer(){
-		if(primerContainer == null){
-			return true;
+		public boolean hasVectorContainer(){
+			if(vectorContainer == null){
+				return true;
+			}
+			else{
+				return false;
+			}
 		}
-		else{
-			return false;
+		public String getTable(){
+			return table;
 		}
-	}
-	public boolean hasVectorContainer(){
-		if(vectorContainer == null){
-			return true;
+		public SQLContainer getProteinContainer(){
+			return proteinContainer;
 		}
-		else{
-			return false;
+		public SQLContainer getPrimerContainer(){
+			return primerContainer;
 		}
-	}
-	public String getTable(){
-		return table;
-	}
-	public SQLContainer getProteinContainer(){
-		return proteinContainer;
-	}
-	public SQLContainer getPrimerContainer(){
-		return primerContainer;
-	}
-	public SQLContainer getVectorContainer(){
-		return vectorContainer;
-	}
+		public SQLContainer getVectorContainer(){
+			return vectorContainer;
+		}
 
-	public SQLContainer getContainer(){
-		return container;
-	}
+		public SQLContainer getContainer(){
+			return container;
+		}
 
-	public String getDb() {
-		return db;
-	}
+		public String getDb() {
+			return db;
+		}
 
-	public void setDb(String db) {
-		this.db = db;
+		public void setDb(String db) {
+			this.db = db;
+		}
 	}
-}

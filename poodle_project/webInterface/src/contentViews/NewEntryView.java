@@ -53,4 +53,19 @@ public class NewEntryView extends VerticalLayout {
 			this.addComponent(generalParameters);
 			this.addComponent(buttons);
 		}
+
+		public void modifyToPrimerParamAdvanced() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void modifyToVectorParamAdvanced() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void modifyToProteinParamAdvanced() {
+			// TODO Auto-generated method stub
+			
+		}
 	}

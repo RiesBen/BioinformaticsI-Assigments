@@ -28,30 +28,46 @@ import contentViews.SearchResultView;
 import contentViews.SearchView;
 import pageElements.NavigationBar;
 import pageElements.ServerTableSelection;
+import specificValues.BasicDBs;
+import specificValues.BasicTables;
+import specificValues.WiesnerDBs;
+import specificValues.WiesnerTables;
 
 @SuppressWarnings("serial")
 @Theme("poodledb")
 @DesignRoot
 public class PoodledbUI extends UI {
 	
-	private Image logo;
-	private final VerticalLayout layout = new VerticalLayout();
-	private MenuBar navigationMenu;
-	private static ServerTableSelection serverTableSelection;
-	private static VerticalLayout content;
+	//"root box"
+	private final VerticalLayout layout = new VerticalLayout(); // layout is the complete page, which is viewed
 	
-	private SearchView searchView;
-	private NewEntryView newEntryView;
-	private BlastView blastView;
+	//the page is build up by using the following elements:
+	private static Image logo;
+	private static MenuBar navigationMenu; // guide through the page
+	private static ServerTableSelection serverTableSelection;	// select the Database (in work), and the single tables
+	private static VerticalLayout content; // contains the different view classes.
 	
+	//The following classes each are used to get the content.
+	private SearchView searchView;	// the class which provides the normal search context
+	private NewEntryView newEntryView;	//class for newEntry 
+	private BlastView blastView;	//class for new Blast run.
 	
+	//control elements
+	private Boolean viewIsReduced=false;
+	
+	//specific value content box:
+	private static BasicDBs dBs = new WiesnerDBs();
+	private static BasicTables tables = new WiesnerTables();
+
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class)
 	public static class Servlet extends VaadinServlet {
 	}
 	
+	//initialization of the whole page
 	@Override
 	protected void init(VaadinRequest request) {
+		
 		//Layouts
 		layout.setMargin(true);
 		layout.setDefaultComponentAlignment(Alignment.TOP_CENTER);
@@ -67,34 +83,37 @@ public class PoodledbUI extends UI {
 		logo= new Image("",resource1);
 		logo.setWidth("512px");
 
-		//setup search view
-		//initially start with search view
-		//initial ContentContainer:
-		searchView = new SearchView(this);
-		newEntryView  = new NewEntryView();
-		blastView = new BlastView();
-		content= new SearchView(this);
-		
 		//MenuBar: 
 		navigationMenu = new NavigationBar(this);
 		navigationMenu.addStyleName("navigationMenu");
 
 		//Selection
 		serverTableSelection = new ServerTableSelection(this);
+				
+		//setup search view
+		//initially start with search view
+		//initial ContentContainer:
+		searchView = new SearchView(this);
+		newEntryView = new NewEntryView();
+		blastView = new BlastView();
+		content= searchView;
 		
-		//whole Layout
-		layout.addComponent(logo);
-		layout.addComponent(navigationMenu);
-		layout.addComponent(serverTableSelection);
-		layout.addComponent(content);
+		//whole building page, peace by peace
+		this.modifyLayoutToLargeView();
 	}
 	
-	public void modifyLayouttoResultView(){
-		layout.removeComponent(logo);
-		layout.removeComponent(serverTableSelection);
+	//this method reduces the page layout to a smaller view (e.g.: used to display the search results).
+	public void modifyLayoutToReducedView(){
+		viewIsReduced=true;
+		layout.removeAllComponents();
+		layout.addComponent(navigationMenu);
+		layout.addComponent(content);
 		layout.setComponentAlignment(navigationMenu, Alignment.TOP_LEFT);
 	}
-	public void modifyLayouttoSearchView(){
+	
+	//this method enlarges the page layout to inital view (e.g.: Search start page))
+	public void modifyLayoutToLargeView(){
+		viewIsReduced=false;
 		layout.removeAllComponents();
 		layout.addComponent(logo);
 		layout.addComponent(navigationMenu);
@@ -102,16 +121,20 @@ public class PoodledbUI extends UI {
 		layout.addComponent(content);
 	}
 	
-	public Layout getContentBox(){
+	
+//------------------------------------------------------------------------------------------------------------------------
+//Getter and Setter:
+//------------------------------------------------------------------------------------------------------------------------
+	public ServerTableSelection getServerTable(){
+		return serverTableSelection;
+	}
+	
+	public VerticalLayout getContentBox(){
 		return content;
 	}
 	
-	public void SetContentBox(Component view){
-		content.removeAllComponents();
-		content.addComponent(view);
-	}
-	public ServerTableSelection getServerTable(){
-		return serverTableSelection;
+	public void SetContentBox(VerticalLayout view){
+		this.content=view;
 	}
 
 	public SearchView getSearchView() {
@@ -122,11 +145,11 @@ public class PoodledbUI extends UI {
 		this.searchView = searchView;
 	}
 
-	public NewEntryView getNewEntry() {
+	public NewEntryView getNewEntryView() {
 		return newEntryView;
 	}
 
-	public void setNewEntry(NewEntryView newEntry) {
+	public void setNewEntryView(NewEntryView newEntry) {
 		this.newEntryView = newEntry;
 	}
 
@@ -136,5 +159,29 @@ public class PoodledbUI extends UI {
 
 	public void setBlastView(BlastView blastView) {
 		this.blastView = blastView;
+	}
+
+	public BasicTables getTables() {
+		return tables;
+	}
+
+	public void setTables(BasicTables tables) {
+		this.tables = tables;
+	}
+
+	public BasicDBs getdBs() {
+		return dBs;
+	}
+
+	public void setdBs(BasicDBs dBs) {
+		this.dBs = dBs;
+	}
+
+	public Boolean getViewIsReduced() {
+		return viewIsReduced;
+	}
+
+	public void setViewIsReduced(Boolean viewIsReduced) {
+		this.viewIsReduced = viewIsReduced;
 	}
 }

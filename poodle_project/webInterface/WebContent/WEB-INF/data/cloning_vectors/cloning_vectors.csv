@@ -1,4 +1,4 @@
-id|box|position|name|size|C-Term-Tags|N-Term-Tags|construct cleavable?|MCS|antibiotics|fw seq primer|rv seq primer|vector map|concentration|DH5A stock|date|author|notes
+#id|box|position|name|size|C-Term-Tags|N-Term-Tags|construct cleavable?|MCS|antibiotics|fw seq primer|rv seq primer|vector map|concentration|DH5A stock|date|author|notes
 1|I|1A|pProExHTb|4779||N-His-TEV-MCS|TEV||Amp|M13 pUC|pBAD/pTrcHis|empty|108||11.08.08|Silke|
 2|I|4A|pET 11a|5677||N-T7|-|BamHI||T7 promotor|T7 terminator||||||
 3|I|5A|pET 15b|5708||N-His-thrombin|thrombin|NdeI-XhoI-BamHI||T7 promotor|T7 terminator|N-His-thrombin-NdeI-XhoI-BamHI|||||not in the box

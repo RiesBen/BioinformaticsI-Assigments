@@ -1,4 +1,4 @@
-id|box|position|protein|domain|protein family|mutation|backbone vector|antibiotics|cloning sites|QC|RF|used primer|constructed from|concentration|DH5A stock|C+ stock|project|date|author|notes
+#id|box|position|protein|domain|protein family|mutation|backbone vector|antibiotics|cloning sites|QC|RF|used primer|constructed from|concentration|DH5A stock|C+ stock|project|date|author|notes
 1|I|1A|hUbiquitin|full length|Ub|WT|pET M30||Kan||Silke's pETM30 from EMBL; W to S mut adds BamHI site before TEV site|||41|||||SW|
 2|I|2A|hUbcH5a|full length|E2|WT|pET M10_60|1|Kan|NcoI / KpnI||||115|y|||02.01.10|Mira|
 3|I|3A|hSmurf1|C2|E3|WT|pET M41|4|Kan|NcoI / KpnI||||86|y|||26.01.10|Mira|

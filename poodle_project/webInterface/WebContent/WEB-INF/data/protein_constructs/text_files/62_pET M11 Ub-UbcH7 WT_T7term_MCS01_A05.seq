@@ -1,0 +1,99 @@
+>MCS01_A05_047
+CCATGCTAGCTCTTTCGGGCTTTGTTAGCAGCCGGATCTCAGTGGTGGTG
+GTGGTGGTGCTCGAGTGCGGCCGCAAGCTTGTCGACGGAGCTCGAATTCG
+GATCCCTAGCTAGCTAGTTAGTCCACAGGACGCTTTTCCCCATATTTCTT
+TGTAAACTCTTCAGCATTCTTACAGAATTTTTTACGGTCCTTAGAGTATT
+CTTCAGCTAGGTCAGCCCGAAGCGGGTGCTCAGGCTGGGGGTCATTCACC
+AGTGCTATGAGGGACTGGATTACTTGGTCGGTTTTGGTTGCTGGCTTCCA
+GTTTTCGGCACTAATTACTGGCAGACAGACCTGCCCCTTTTCGTCGATGT
+TTGGGTGATAGATCTTTGTTTTAAATGTGATCTTCGGTGGTTTGAATGGG
+TACTCTGCTGGAAAGTTGATTTCGATTCTGAAGGCTCCCTTATCATATGG
+AGGGTTGTCAGGAACAATAAGCCCTTGCCAAGTCAATAAATTAGCTTCAT
+CAACCTGGATGTTACGGAAGTTTTTCATCCCACATTTGCGGATTTCTTCA
+AGCTCCTTCATCAGCCTCCGGCTGGCCGCCATGGTATATCTCCTTCTTAA
+AGTTAAACAAAATTATTTCTAGCTAGTTAACCACCACGAAGGCGTAAGAC
+AAGATGTAAGGTCGACTCCTTCTGAATGTTGTAATCAGACAGCGTTCTAC
+CGTCCTCGAGCTGCTTACCGGCAAAGATCAATCTTTGTTGATCAGGTGGA
+ATTCCTTCCTTGTCTTGAATTTTAGCCTTAACGTTTTCGATGGTATCGGA
+TGGTTCAACTTCCAGAGTTATGGTTTTACCGGTTAAACGTCTTGACGAAA
+GATCTGCATTCCCATGGCGCCCTGAAAATAAAGATTCTCAGAAGTGGGGA
+TTGTCATAATCCCTTCATGGTGGAATT
+
+IPP-RDYDNPHF-ESLFSGRHGNADLSSRRLTGKTITLEVEPSDTIENVKAKIQDKEGIP
+PDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG-LARNNFV-L-EGDIPWRPAG
+G--RSLKKSANVG-KTSVTSRLMKLIY-LGKGLLFLTTLHMIREPSESKSTFQQSTHSNH
+RRSHLKQRSITQTSTKRGRSVCQ-LVPKTGSQQPKPTK-SSPS-HW-MTPSLSTRFGLT-
+LKNTLRTVKNSVRMLKSLQRNMGKSVLWTN-LARDPNSSSVDKLAAALEHHHHHH-DPAA
+NKARKS-H
+
+aattccaccatgaagggattatgacaatccccacttctgagaatctttattttcagggcg
+ N  S  T  M  K  G  L  -  Q  S  P  L  L  R  I  F  I  F  R  A 
+ccatgggaatgcagatctttcgtcaagacgtttaaccggtaaaaccataactctggaagt
+ P  W  E  C  R  S  F  V  K  T  F  N  R  -  N  H  N  S  G  S 
+tgaaccatccgataccatcgaaaacgttaaggctaaaattcaagacaaggaaggaattcc
+ -  T  I  R  Y  H  R  K  R  -  G  -  N  S  R  Q  G  R  N  S 
+acctgatcaacaaagattgatctttgccggtaagcagctcgaggacggtagaacgctgtc
+ T  -  S  T  K  I  D  L  C  R  -  A  A  R  G  R  -  N  A  V 
+tgattacaacattcagaaggagtcgaccttacatcttgtcttacgccttcgtggtggtta
+ -  L  Q  H  S  E  G  V  D  L  T  S  C  L  T  P  S  W  W  L 
+actagctagaaataattttgtttaactttaagaaggagatataccatggcggccagccgg
+ T  S  -  K  -  F  C  L  T  L  R  R  R  Y  T  M  A  A  S  R 
+aggctgatgaaggagcttgaagaaatccgcaaatgtgggatgaaaaacttccgtaacatc
+ R  L  M  K  E  L  E  E  I  R  K  C  G  M  K  N  F  R  N  I 
+caggttgatgaagctaatttattgacttggcaagggcttattgttcctgacaaccctcca
+ Q  V  D  E  A  N  L  L  T  W  Q  G  L  I  V  P  D  N  P  P 
+tatgataagggagccttcagaatcgaaatcaactttccagcagagtacccattcaaacca
+ Y  D  K  G  A  F  R  I  E  I  N  F  P  A  E  Y  P  F  K  P 
+ccgaagatcacatttaaaacaaagatctatcacccaaacatcgacgaaaaggggcaggtc
+ P  K  I  T  F  K  T  K  I  Y  H  P  N  I  D  E  K  G  Q  V 
+tgtctgccagtaattagtgccgaaaactggaagccagcaaccaaaaccgaccaagtaatc
+ C  L  P  V  I  S  A  E  N  W  K  P  A  T  K  T  D  Q  V  I 
+cagtccctcatagcactggtgaatgacccccagcctgagcacccgcttcgggctgaccta
+ Q  S  L  I  A  L  V  N  D  P  Q  P  E  H  P  L  R  A  D  L 
+gctgaagaatactctaaggaccgtaaaaaattctgtaagaatgctgaagagtttacaaag
+ A  E  E  Y  S  K  D  R  K  K  F  C  K  N  A  E  E  F  T  K 
+			    	  NheI	   BamHI  EcoRI	
+			         ------	  ------ ------
+aaatatggggaaaagcgtcctgtggactaactagctagctagggatcc gaattcgagctc
+ K  Y  G  E  K  R  P  V  D  -  L  A  S  -  G  S   E  F  E  L 
+cgtcgacaagcttgcggccgcactcgagcaccaccaccaccaccactgagatccggctgc
+ R  R  Q  A  C  G  R  T  R  A  P  P  P  P  P  L  R  S  G  C 
+taacaaagcccgaaagagctagcatgg
+ -  Q  S  P  K  E  L  A  W  
+
+
+CLUSTAL 2.0.12 multiple sequence alignment
+
+
+ub_reference      MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN
+ubclone           ADLSSRRLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN
+                   ::  : *****************************************************
+
+ub_reference      IQKESTLHLVLRLRGG
+ubclone           IQKESTLHLVLRLRGG
+                  ****************
+
+NSTMKGL-QSPLLRIFIFRAPWECRSFVKTFNR-NHNSGS-TIRYHRKR-G-NSRQGRNS
+T-STKIDLCR-AARGR-NAV-LQHSEGVDLTSCLTPSWWLTS-K-FCLTLRRRYTMAASR
+RLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAEYPFKP
+PKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHPLRADL
+AEEYSKDRKKFCKNAEEFTKKYGEKRPVD-LAS-GSEFELRRQACGRTRAPPPPPLRSGC
+-QSPKELAW
+
+CLUSTAL 2.0.12 multiple sequence alignment
+
+
+UbcH7_reference      MAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAE
+UbcH7_clone1         MAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAE
+                     ************************************************************
+
+UbcH7_reference      YPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHP
+UbcH7_clone1         YPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHP
+                     ************************************************************
+
+UbcH7_reference      LRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+UbcH7_clone1         LRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+                     **********************************
+
+
+#62: pEt M11 Ub - rbs Ubch7 WT

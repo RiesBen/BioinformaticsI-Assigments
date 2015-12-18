@@ -1,0 +1,87 @@
+>MCS05_F10_070 Reverse Complement
+TCCAGGCTTCCCGCCCAATCGCCGCTGCACTTTTTCCGCAGTTGCAGACC
+TACTGCTGGTCACCACGCGGGAATCGTCTGATAAGAGAACACGGGCATAC
+TCTGCGACATCGTATAACGTACCTGGTTCACATCACCACCTGAATGACTC
+TCTCCCGGGCCGCTATCATGCCATACCCGCGAAAGGTTTTGCGCCATTCG
+ATGGTGTCCGGGGATCTCGACGCTCTCCTTTATGCGACTCCTGCATTAGG
+AAGCAGCCCAGTAGTAGGTTGAGGCCGTTGAGCACCGCCGCCGCAAGGAA
+TGGTGCATGCAAGGAGATGGCGCCCAACAGTCCCCCGGCCACGGGGCCTG
+CCACCATACCCACGCCGAAACAAGCGCTCATGAGCCCGAAGTGGCGAGCC
+CGATCTTCCCCATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACC
+TGTGGCGCCGGTGATGCCGGCCACGATGCGTCCGGCGTAGAGGATCGAGA
+TCTCGATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGG
+ATAACAATTCCCCTCTAGAAATAATTTTGTTTAACTTTAAGAAGGAGATA
+TACCATGGCGGCCAGCCGGAGGCTGATGAAGGAGCTTGAAGAAATCCGCA
+AATGTGGGATGAAAAACTTCCGTAACATCCAGGTTGATGAAGCTAATTTA
+TTGACTTGGCAAGGGCTTATTGTTCCTGACAACCCTCCATATGATAAGGG
+AGCCTTCAGAATCGAAATCAACTTTCCAGCAGAGTACCCATTCAAACCAC
+CGAAGATCACATTTAAAACAAAGATCTATCACCCAAACATCGACGAAAAG
+GGGCAGGTCTGTCTGCCAGTAATTAGTGCCGAAAACTGGAAGCCAGCAAC
+CAAAACCGACCAAGTAATCCAGTCCCTCATAGCACTGGTGAATGACCCCC
+AGCCTGAGCACCCGCTTCGGGCTGACCTAGCTGAAGAATACTCTAAGGAC
+CGTAAAAAATTCTGTAAGAATGCTGAAGAGTTTACAAAGAAATATGGGGA
+AAAGCGTCCTGTGGACTAACTAGCTAGCTAGGGATCCGAATTCGAGCTCC
+GTCGACAAGCTTGCGGCCGCACTCGAGCACCACCACCACCACCACTGAGA
+TCCGGCTGCTAACAAAGCCCGACATGAAGTGATGGAAAA
+
+tccaggcttcccgcccaatcgccgctgcactttttccgcagttgcagacctactgctggtc
+  P  G  F  P  P  N  R  R  C  T  F  S  A  V  A  D  L  L  L  V 
+accacgcgggaatcgtctgataagagaacacgggcatactctgcgacatcgtataacgta
+ T  T  R  E  S  S  D  K  R  T  R  A  Y  S  A  T  S  Y  N  V 
+cctggttcacatcaccacctgaatgactctctcccgggccgctatcatgccatacccgcg
+ P  G  S  H  H  H  L  N  D  S  L  P  G  R  Y  H  A  I  P  A 
+aaaggttttgcgccattcgatggtgtccggggatctcgacgctctcctttatgcgactcc
+ K  G  F  A  P  F  D  G  V  R  G  S  R  R  S  P  L  C  D  S 
+tgcattaggaagcagcccagtagtaggttgaggccgttgagcaccgccgccgcaaggaat
+ C  I  R  K  Q  P  S  S  R  L  R  P  L  S  T  A  A  A  R  N 
+ggtgcatgcaaggagatggcgcccaacagtcccccggccacggggcctgccaccataccc
+ G  A  C  K  E  M  A  P  N  S  P  P  A  T  G  P  A  T  I  P 
+acgccgaaacaagcgctcatgagcccgaagtggcgagcccgatcttccccatcggtgatg
+ T  P  K  Q  A  L  M  S  P  K  W  R  A  R  S  S  P  S  V  M 
+tcggcgatataggcgccagcaaccgcacctgtggcgccggtgatgccggccacgatgcgt
+ S  A  I  -  A  P  A  T  A  P  V  A  P  V  M  P  A  T  M  R 
+ccggcgtagaggatcgagatctcgatcccgcgaaattaatacgactcactataggggaat
+ P  A  -  R  I  E  I  S  I  P  R  N  -  Y  D  S  L  -  G  N 
+tgtgagcggataacaattcccctctagaaataattttgtttaactttaagaaggagatat
+ C  E  R  I  T  I  P  L  -  K  -  F  C  L  T  L  R  R  R  Y 
+accatggcggccagccggaggctgatgaaggagcttgaagaaatccgcaaatgtgggatg
+ T  M  A  A  S  R  R  L  M  K  E  L  E  E  I  R  K  C  G  M 
+aaaaacttccgtaacatccaggttgatgaagctaatttattgacttggcaagggcttatt
+ K  N  F  R  N  I  Q  V  D  E  A  N  L  L  T  W  Q  G  L  I 
+gttcctgacaaccctccatatgataagggagccttcagaatcgaaatcaactttccagca
+ V  P  D  N  P  P  Y  D  K  G  A  F  R  I  E  I  N  F  P  A 
+gagtacccattcaaaccaccgaagatcacatttaaaacaaagatctatcacccaaacatc
+ E  Y  P  F  K  P  P  K  I  T  F  K  T  K  I  Y  H  P  N  I 
+gacgaaaaggggcaggtctgtctgccagtaattagtgccgaaaactggaagccagcaacc
+ D  E  K  G  Q  V  C  L  P  V  I  S  A  E  N  W  K  P  A  T 
+aaaaccgaccaagtaatccagtccctcatagcactggtgaatgacccccagcctgagcac
+ K  T  D  Q  V  I  Q  S  L  I  A  L  V  N  D  P  Q  P  E  H 
+ccgcttcgggctgacctagctgaagaatactctaaggaccgtaaaaaattctgtaagaat
+ P  L  R  A  D  L  A  E  E  Y  S  K  D  R  K  K  F  C  K  N 
+								    NheI
+								   ------
+gctgaagagtttacaaagaaatatggggaaaagcgtcctgtggactaactagctagctag
+ A  E  E  F  T  K  K  Y  G  E  K  R  P  V  D  -  L  A  S  - 
+BamHI
+------
+ggatccgaattcgagctccgtcgacaagcttgcggccgcactcgagcaccaccaccacca
+ G  S  E  F  E  L  R  R  Q  A  C  G  R  T  R  A  P  P  P  P 
+ccactgagatccggctgctaacaaagcccgacatgaagtgatggaaaa
+ P  L  R  S  G  C  -  Q  S  P  T  -  S  D  G  K  
+
+
+CLUSTAL 2.0.12 multiple sequence alignment
+
+ubch7             MAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAE
+ubcH7_clone1      MAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAE
+                  ************************************************************
+
+ubch7             YPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHP
+ubcH7_clone1      YPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHP
+                  ************************************************************
+
+ubch7             LRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+ubcH7_clone1      LRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+                  **********************************
+
+pET28a UbcH7 WT

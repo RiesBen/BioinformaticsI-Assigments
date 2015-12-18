@@ -22,7 +22,7 @@ public class VectorParameter extends BasicParameters{
 
 			//Search Parameter:
 			parameters[0]   = new TextField("Tags");
-			parameters[1]   = new TextField("Ant-Biotics");
+			parameters[1]   = new TextField("Tev cleavage?");
 
 	        addComponent(displays);
 	        this.changeViewLarge();

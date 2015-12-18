@@ -1,0 +1,104 @@
+>MCS05_A07_063
+CTTTGCCGCTAATTCCCCTCTAGAATAATTTTGTTTAACTTTAAGAAGGA
+GATATACCATGAAACATCACCATCACCATCACCCCATGAAACAACACGAT
+GAAGCCGTAGACAACAAATTCAACAAAGAACAACAAAACGCGTTCTATGA
+GATCTTACATTTACCTAACTTAAACGAAGAACAACGAAACGCCTTCATCC
+AAAGTTTAAAAGATGACCCAAGCCAAAGCGCTAACCTTTTAGCAGAAGCT
+AAAAAGCTAAATGATGCTCAGGCGCCGAAAGTAGACGCGGGATCTGGCAG
+TGGTTCTGAGAATCTTTATTTTCAGGGCGCCATGGGGCCAGTCAAGCTGC
+GCCTGACAGTACTCTGTGCAAAAAACCTGGTGAAAAAGGATTTTTTCCGA
+CTTCCTGATCCATTTGCTAAGGTGGTGGTTGATGGATCTGGGCAATGCCA
+TTCTACAGATACTGTGAAGAATACGCTTGATCCAAAGTGGAATCAGCATT
+ATGACCTGTATATTGGAAAGTCTGATTCAGTTACGATCAGTGTATGGAAT
+CACAAGAAGATCCATAAGAAACAAGGTGCTGGATTTCTCGGTTGTGTTCG
+TCTTCTTTCCAATGCCATCAACCGCCTCAAAGACACTGGTTATCAGAGGT
+TGGATTTATGCAAACTCGGGCCAAATGACAATGATACAGTTAGAGGACAG
+ATAGTAGTAAGTCTTCAGTCCCGCGACTAAGGTACCGGATCCGAATTCGA
+GCTCCGTCGACAAGCTTGCGGCCGCACTCGAGCACCACCACCACCACCAC
+TGAGATCCGGCTGCTAACAAAGCCCGAAAGGAAGCTGAGTTGGCTGCTGC
+CACCGCTGAGCAATAACTAGCATAACCCCTTGGGGCCTCTAAACGGGTCT
+TGAGGGGTTTTTTGCTGAAAGGAGGAACTATATCCGGATTGGCGAATGGG
+ACGCGCCCTGTAGCGGCGCATTAAGCGCGGCGGGTGTGGTGGTTACGCGC
+AGCGTGACCGCTACACTTGCCAGCGCCCTAGCGCCCGCTCCTTTCGCTTT
+CTTCCCTTCTTTCTCGCACGTTCGCCGGCTTTCCCGTCAGCTCTAAATCG
+GGGGCTCCTTTAGGTCGATTTAGTGCTTTACGCACTCGACCCAAAACTGA
+TAGGTGATGTCACGTAATGGCATCGCCTGATGACGATTCGGCTGAGTGGA
+ATTCAGTTCTAATTGGACTTGTCACTGACACTAGCTATCTCGGCCTATTC
+TTGAATTTATAGAT
+
+FAANSPLE-FCLTLRRRYTMKHHHHHHPMKQHDEAVDNKFNKEQQNAFYEILHLPNLNEE
+QRNAFIQSLKDDPSQSANLLAEAKKLNDAQAPKVDAGSGSGSENLYFQGAMGPVKLRLTV
+LCAKNLVKKDFFRLPDPFAKVVVDGSGQCHSTDTVKNTLDPKWNQHYDLYIGKSDSVTIS
+VWNHKKIHKKQGAGFLGCVRLLSNAINRLKDTGYQRLDLCKLGPNDNDTVRGQIVVSLQS
+RD-GTGSEFELRRQACGRTRAPPPPPLRSGC-QSPKGS-VGCCHR-AITSITPWGL-TGL
+EGFFAERRNYIRIGEWDAPCSGALSAAGVVVTRSVTATLASALAPAPFAFFPSFSHVRRL
+SRQL-IGGSFRSI-CFTHSTQN--VMSRNGIA--RFG-VEFSSNWTCH-H-LSRPILEFI
+D
+
+ctttgccgctaattcccctctagaataattttgtttaactttaagaaggagatataccatg
+  F  A  A  N  S  P  L  E  -  F  C  L  T  L  R  R  R  Y  T  M 
+aaacatcaccatcaccatcaccccatgaaacaacacgatgaagccgtagacaacaaattc
+ K  H  H  H  H  H  H  P  M  K  Q  H  D  E  A  V  D  N  K  F 
+aacaaagaacaacaaaacgcgttctatgagatcttacatttacctaacttaaacgaagaa
+ N  K  E  Q  Q  N  A  F  Y  E  I  L  H  L  P  N  L  N  E  E 
+caacgaaacgccttcatccaaagtttaaaagatgacccaagccaaagcgctaacctttta
+ Q  R  N  A  F  I  Q  S  L  K  D  D  P  S  Q  S  A  N  L  L 
+gcagaagctaaaaagctaaatgatgctcaggcgccgaaagtagacgcgggatctggcagt
+ A  E  A  K  K  L  N  D  A  Q  A  P  K  V  D  A  G  S  G  S 
+ggttctgagaatctttattttcagggcgccatggggccagtcaagctgcgcctgacagta
+ G  S  E  N  L  Y  F  Q  G  A  M  G  P  V  K  L  R  L  T  V 
+ctctgtgcaaaaaacctggtgaaaaaggattttttccgacttcctgatccatttgctaag
+ L  C  A  K  N  L  V  K  K  D  F  F  R  L  P  D  P  F  A  K 
+gtggtggttgatggatctgggcaatgccattctacagatactgtgaagaatacgcttgat
+ V  V  V  D  G  S  G  Q  C  H  S  T  D  T  V  K  N  T  L  D 
+ccaaagtggaatcagcattatgacctgtatattggaaagtctgattcagttacgatcagt
+ P  K  W  N  Q  H  Y  D  L  Y  I  G  K  S  D  S  V  T  I  S 
+gtatggaatcacaagaagatccataagaaacaaggtgctggatttctcggttgtgttcgt
+ V  W  N  H  K  K  I  H  K  K  Q  G  A  G  F  L  G  C  V  R 
+cttctttccaatgccatcaaccgcctcaaagacactggttatcagaggttggatttatgc
+ L  L  S  N  A  I  N  R  L  K  D  T  G  Y  Q  R  L  D  L  C 
+aaactcgggccaaatgacaatgatacagttagaggacagatagtagtaagtcttcagtcc
+ K  L  G  P  N  D  N  D  T  V  R  G  Q  I  V  V  S  L  Q  S 
+cgcgactaaggtaccggatccgaattcgagctccgtcgacaagcttgcggccgcactcga
+ R  D  -  G  T  G  S  E  F  E  L  R  R  Q  A  C  G  R  T  R 
+gcaccaccaccaccaccactgagatccggctgctaacaaagcccgaaaggaagctgagtt
+ A  P  P  P  P  P  L  R  S  G  C  -  Q  S  P  K  G  S  -  V 
+ggctgctgccaccgctgagcaataactagcataaccccttggggcctctaaacgggtctt
+ G  C  C  H  R  -  A  I  T  S  I  T  P  W  G  L  -  T  G  L 
+gaggggttttttgctgaaaggaggaactatatccggattggcgaatgggacgcgccctgt
+ E  G  F  F  A  E  R  R  N  Y  I  R  I  G  E  W  D  A  P  C 
+agcggcgcattaagcgcggcgggtgtggtggttacgcgcagcgtgaccgctacacttgcc
+ S  G  A  L  S  A  A  G  V  V  V  T  R  S  V  T  A  T  L  A 
+agcgccctagcgcccgctcctttcgctttcttcccttctttctcgcacgttcgccggctt
+ S  A  L  A  P  A  P  F  A  F  F  P  S  F  S  H  V  R  R  L 
+tcccgtcagctctaaatcgggggctcctttaggtcgatttagtgctttacgcactcgacc
+ S  R  Q  L  -  I  G  G  S  F  R  S  I  -  C  F  T  H  S  T 
+caaaactgataggtgatgtcacgtaatggcatcgcctgatgacgattcggctgagtggaa
+ Q  N  -  -  V  M  S  R  N  G  I  A  -  -  R  F  G  -  V  E 
+ttcagttctaattggacttgtcactgacactagctatctcggcctattcttgaatttata
+ F  S  S  N  W  T  C  H  -  H  -  L  S  R  P  I  L  E  F  I 
+gat
+ D  
+
+
+>UNIPROT:SMUF2_HUMAN Q9HAU4 E3 ubiquitin-protein ligase SMURF2 OS=Homo sapiens GN=SMURF2
+           PE=1 SV=1
+          Length = 748
+
+ Score =  182 bits (463), Expect = 9e-45
+ Identities = 131/131 (100%), Positives = 131/131 (100%)
+
+Query: 6   GPVKLRLTVLCAKNLVKKDFFRLPDPFAKVVVDGSGQCHSTDTVKNTLDPKWNQHYDLYI 65
+           GPVKLRLTVLCAKNLVKKDFFRLPDPFAKVVVDGSGQCHSTDTVKNTLDPKWNQHYDLYI
+Sbjct: 10  GPVKLRLTVLCAKNLVKKDFFRLPDPFAKVVVDGSGQCHSTDTVKNTLDPKWNQHYDLYI 69
+
+Query: 66  GKSDSVTISVWNHKKIHKKQGAGFLGCVRLLSNAINRLKDTGYQRLDLCKLGPNDNDTVR 125
+           GKSDSVTISVWNHKKIHKKQGAGFLGCVRLLSNAINRLKDTGYQRLDLCKLGPNDNDTVR
+Sbjct: 70  GKSDSVTISVWNHKKIHKKQGAGFLGCVRLLSNAINRLKDTGYQRLDLCKLGPNDNDTVR 129
+
+Query: 126 GQIVVSLQSRD 136
+           GQIVVSLQSRD
+Sbjct: 130 GQIVVSLQSRD 140
+
+
+His  - Zdom  -TEV - hsmurf2 C2 (#5)

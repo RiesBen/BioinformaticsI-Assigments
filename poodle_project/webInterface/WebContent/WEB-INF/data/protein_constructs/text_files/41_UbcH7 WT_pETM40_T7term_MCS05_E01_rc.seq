@@ -1,0 +1,84 @@
+>MCS05_E01_007 Reverse Complement
+GTGTTTAATGAACCAATCCGCCTGGGGGTGGCCGTAGCGCTGAAAGTCTT
+ACGAGGAAGAGTTGGGCGAAAGATCCACGTATTGCCGCCACTATGGAAAA
+CGCCCAGAAAGGTGAAATCATGCCGAACATCCCGCAGATGTCCGCTTTCT
+GGTATGCCGTGCGTACTGCGGTGATCAACGCCGCCAGCGGTCGTCAGACT
+GTCGATGAAGCCCCTGAAAGACGCGCAGACTAATTCGAGCTCGAACAACA
+ACAACAATAACAATAACAACAACCCCATGAGCGAGAATCTTTATTTTCAG
+GGCGCCATGGCGGCCAGCCGGAGGCTGATGAAGGAGCTTGAAGAAATCCG
+CAAATGTGGGATGAAAAACTTCCGTAACATCCAGGTTGATGAAGCTAATT
+TATTGACTTGGCAAGGGCTTATTGTTCCTGACAACCCTCCATATGATAAG
+GGAGCCTTCAGAATCGAAATCAACTTTCCAGCAGAGTACCCATTCAAACC
+ACCGAAGATCACATTTAAAACAAAGATCTATCACCCAAACATCGACGAAA
+AGGGGCAGGTCTGTCTGCCAGTAATTAGTGCCGAAAACTGGAAGCCAGCA
+ACCAAAACCGACCAAGTAATCCAGTCCCTCATAGCACTGGTGAATGACCC
+CCAGCCTGAGCACCCGCTTCGGGCTGACCTAGCTGAAGAATACTCTAAGG
+ACCGTAAAAAATTCTGTAAGAATGCTGAAGAGTTTACAAAGAAATATGGG
+GAAAAGCGTCCTGTGGACTAACTAGCTAGCTGGGATCCGAATTCGAGCTC
+CGTCGACAAGCTTGCGGCCGCACTCGAGCACCACCACCACCACCACTGAG
+ATCCGGCTGCTAACAAAGCCCGAAATGAAGTTTCTC
+
+gtgtttaatgaaccaatccgcctgggggtggccgtagcgctgaaagtcttacgaggaaga
+ V  F  N  E  P  I  R  L  G  V  A  V  A  L  K  V  L  R  G  R 
+gttgggcgaaagatccacgtattgccgccactatggaaaacgcccagaaaggtgaaatca
+ V  G  R  K  I  H  V  L  P  P  L  W  K  T  P  R  K  V  K  S 
+tgccgaacatcccgcagatgtccgctttctggtatgccgtgcgtactgcggtgatcaacg
+ C  R  T  S  R  R  C  P  L  S  G  M  P  C  V  L  R  -  S  T 
+ccgccagcggtcgtcagactgtcgatgaagcccctgaaagacgcgcagactaattcgagc
+ P  P  A  V  V  R  L  S  M  K  P  L  K  D  A  Q  T  N  S  S 
+tcgaacaacaacaacaataacaataacaacaaccccatgagcgagaatctttattttcag
+ S  N  N  N  N  N  N  N  N  N  N  P  M  S  E  N  L  Y  F  Q 
+
+    NcoI
+    ------
+ggcgccatggcggccagccggaggctgatgaaggagcttgaagaaatccgcaaatgtggg
+ G  A  M  A  A  S  R  R  L  M  K  E  L  E  E  I  R  K  C  G 
+atgaaaaacttccgtaacatccaggttgatgaagctaatttattgacttggcaagggctt
+ M  K  N  F  R  N  I  Q  V  D  E  A  N  L  L  T  W  Q  G  L 
+attgttcctgacaaccctccatatgataagggagccttcagaatcgaaatcaactttcca
+ I  V  P  D  N  P  P  Y  D  K  G  A  F  R  I  E  I  N  F  P 
+gcagagtacccattcaaaccaccgaagatcacatttaaaacaaagatctatcacccaaac
+ A  E  Y  P  F  K  P  P  K  I  T  F  K  T  K  I  Y  H  P  N 
+atcgacgaaaaggggcaggtctgtctgccagtaattagtgccgaaaactggaagccagca
+ I  D  E  K  G  Q  V  C  L  P  V  I  S  A  E  N  W  K  P  A 
+accaaaaccgaccaagtaatccagtccctcatagcactggtgaatgacccccagcctgag
+ T  K  T  D  Q  V  I  Q  S  L  I  A  L  V  N  D  P  Q  P  E 
+cacccgcttcgggctgacctagctgaagaatactctaaggaccgtaaaaaattctgtaag
+ H  P  L  R  A  D  L  A  E  E  Y  S  K  D  R  K  K  F  C  K 
+
+                                                      NheI
+                                                      ------
+aatgctgaagagtttacaaagaaatatggggaaaagcgtcctgtggactaactagctagc
+ N  A  E  E  F  T  K  K  Y  G  E  K  R  P  V  D  -  L  A  S 
+
+   BamHI
+  ------
+tgggatccgaattcgagctccgtcgacaagcttgcggccgcactcgagcaccaccaccac
+ W  D  P  N  S  S  S  V  D  K  L  A  A  A  L  E  H  H  H  H 
+caccactgagatccggctgctaacaaagcccgaaatgaagtttctc
+ H  H  -  D  P  A  A  N  K  A  R  N  E  V  S  
+
+VFNEPIRLGVAVALKVLRGRVGRKIHVLPPLWKTPRKVKSCRTSRRCPLSGMP
+CVLR-STPPAVVRLSMKPLKDAQTNSSSNNNNNNNNNNPMSENLYFQGAMAASRRLMKEL
+EEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFPAEYPFKPPKITFK
+TKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPEHPLRADLAEEYSK
+DRKKFCKNAEEFTKKYGEKRPVD-LASWDPNSSSVDKLAAALEHHHHHH-DPAANKARNE
+VS
+
+CLUSTAL 2.0.12 multiple sequence alignment
+
+
+ubch7             --MAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFP
+ubcH7_clone1      GAMAASRRLMKELEEIRKCGMKNFRNIQVDEANLLTWQGLIVPDNPPYDKGAFRIEINFP
+                    **********************************************************
+
+ubch7             AEYPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPE
+ubcH7_clone1      AEYPFKPPKITFKTKIYHPNIDEKGQVCLPVISAENWKPATKTDQVIQSLIALVNDPQPE
+                  ************************************************************
+
+ubch7             HPLRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+ubcH7_clone1      HPLRADLAEEYSKDRKKFCKNAEEFTKKYGEKRPVD
+                  ************************************
+
+MBP-TEV-UbcH7 WT #1
+pETM 40 UbcH7 WT  (#41)

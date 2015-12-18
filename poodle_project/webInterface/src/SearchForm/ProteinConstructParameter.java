@@ -14,8 +14,11 @@ public class ProteinConstructParameter extends BasicParameters{
 			parameters = new TextField[2];
 
 			//Search Parameter:
-			parameters[0]   = new TextField("Tags");
-			parameters[1]   = new TextField("expressed");
+			parameters[0]   = new TextField("C-Tags");
+			parameters[1]   = new TextField("N-Tags");
+			parameters[1]   = new TextField("Mutation");
+			parameters[1]   = new TextField("protein-family");
+			parameters[1]   = new TextField("vector");
 
 	        addComponent(displays);
 	        this.changeViewLarge();

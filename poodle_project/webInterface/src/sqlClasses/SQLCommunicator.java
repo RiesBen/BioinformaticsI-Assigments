@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import com.vaadin.data.Container.*;
 import com.vaadin.data.util.filter.Compare.Equal;
+import com.vaadin.data.util.filter.Like;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.connection.*;
 import com.vaadin.data.util.sqlcontainer.query.TableQuery;
@@ -130,7 +131,7 @@ public class SQLCommunicator {
 		for(int i=0; i<searchCriteria.length; i++){
 			if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
 				System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-				Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+				Filter querry = new Like(searchCriteria[i][0],searchCriteria[i][1]);
 				primerContainer.addContainerFilter(querry);
 			}
 		}
@@ -138,7 +139,7 @@ public class SQLCommunicator {
 			for(int i=0; i<searchCriteria.length; i++){
 				if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
 					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					Filter querry = new Like(searchCriteria[i][0],searchCriteria[i][1]);
 					primerContainer.addContainerFilter(querry);
 				}
 			}
@@ -148,7 +149,7 @@ public class SQLCommunicator {
 			for(int i=0; i<searchCriteria.length; i++){
 				if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
 					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					Filter querry = new Like(searchCriteria[i][0],searchCriteria[i][1]);
 					vectorContainer.addContainerFilter(querry);
 				}
 			}
@@ -156,7 +157,7 @@ public class SQLCommunicator {
 			for(int i=0; i<searchCriteria.length; i++){
 				if(!searchCriteria[i][1].equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
 					System.out.println(searchCriteria[i][0]+"   "+searchCriteria[i][1]);
-					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					Filter querry = new Like(searchCriteria[i][0],searchCriteria[i][1]);
 					vectorContainer.addContainerFilter(querry);
 				}
 			}
@@ -166,7 +167,7 @@ public class SQLCommunicator {
 			for(int i=0; i<searchCriteria.length; i++){
 				if(!searchCriteria[i][1].trim().equals("") && !searchCriteria[i][1].equals(" ") && !(searchCriteria[i][1] == null)){
 					System.out.println(searchCriteria[i][0]+"   ->"+searchCriteria[i][1]+"<-");
-					Filter querry = new Equal(searchCriteria[i][0],searchCriteria[i][1]);
+					Filter querry = new Like(searchCriteria[i][0],searchCriteria[i][1]);
 					proteinContainer.addContainerFilter(querry);
 				}
 			}

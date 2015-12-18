@@ -1,0 +1,69 @@
+>MCS23_G03_019 Reverse Complement
+TACCCACGCCGAAAACAAAGCGCTCATGAGCCCGAAGTGGCGAGCCCGAT
+CTTCCCCATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACCTGTG
+GCGCCGGTGATGCCGGCCACGATGCGTCCGGCGTAGAGGATCGAGATCTC
+GATCCCGCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAA
+CAATTCCCCTCTAGAAATAATTTTGTTTAACTTTAAGAAGGAGATATACC
+ATGAAACATCACCATCACCATCACCCCATGAGCGATTACGACATCCCCAC
+TACTGAGAATCTTTATTTTCAGGGCGCCATGGGAATGCAGATCTTCGTCA
+AGACGTTAACCGGTAAAACCATAACTCTGGAAGTTGAACCATCCGATACC
+ATCGAAAACGTTAAGGCTAAAATTCAAGACAAGGAAGGAATTCCACCTGA
+TCAACAAAGATTGATCTTTGCCGGTAAGCAGCTCGAGGACGGTAGAACGC
+TGTCTGATTACAACATTCAGAAGGAGTCGACCTTACATCTTGTCTTAAGA
+CTTCGTGGTGGTTAAGGTACCGGATCCGAATTCGAGCTCCGTCGACAAGC
+TTGCGGCCGCACTCGAGCACCACCACCACCACCACTGAGATCCGGCTGCT
+AACAAAGCCCGAAAGATGCTAGTCCTT
+
+THAENKALMSPKWRARSSPSVMSAI-APATAPVAPVMPATMRPA-RIEISIPRN-YDSL-
+GNCERITIPL-K-FCLTLRRRYTMKHHHHHHPMSDYDIPTTENLYFQGAMGMQIFVKTLT
+GKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHL
+VLRLRGG-GTGSEFELRRQACGRTRAPPPPPLRSGC-QSPKDASP
+
+tacccacgccgaaaacaaagcgctcatgagcccgaagtggcgagcccgatcttccccatcg
+  T  H  A  E  N  K  A  L  M  S  P  K  W  R  A  R  S  S  P  S 
+gtgatgtcggcgatataggcgccagcaaccgcacctgtggcgccggtgatgccggccacg
+ V  M  S  A  I  -  A  P  A  T  A  P  V  A  P  V  M  P  A  T 
+atgcgtccggcgtagaggatcgagatctcgatcccgcgaaattaatacgactcactatag
+ M  R  P  A  -  R  I  E  I  S  I  P  R  N  -  Y  D  S  L  - 
+gggaattgtgagcggataacaattcccctctagaaataattttgtttaactttaagaagg
+ G  N  C  E  R  I  T  I  P  L  -  K  -  F  C  L  T  L  R  R 
+agatataccatgaaacatcaccatcaccatcaccccatgagcgattacgacatccccact
+ R  Y  T  M  K  H  H  H  H  H  H  P  M  S  D  Y  D  I  P  T 
+actgagaatctttattttcagggcgccatgggaatgcagatcttcgtcaagacgttaacc
+ T  E  N  L  Y  F  Q  G  A  M  G  M  Q  I  F  V  K  T  L  T 
+ggtaaaaccataactctggaagttgaaccatccgataccatcgaaaacgttaaggctaaa
+ G  K  T  I  T  L  E  V  E  P  S  D  T  I  E  N  V  K  A  K 
+attcaagacaaggaaggaattccacctgatcaacaaagattgatctttgccggtaagcag
+ I  Q  D  K  E  G  I  P  P  D  Q  Q  R  L  I  F  A  G  K  Q 
+ctcgaggacggtagaacgctgtctgattacaacattcagaaggagtcgaccttacatctt
+ L  E  D  G  R  T  L  S  D  Y  N  I  Q  K  E  S  T  L  H  L 
+			      BamHI
+			      ------
+gtcttaagacttcgtggtggttaaggtaccggatccgaattcgagctccgtcgacaagct
+ V  L  R  L  R  G  G  -  G  T  G  S  E  F  E  L  R  R  Q  A 
+tgcggccgcactcgagcaccaccaccaccaccactgagatccggctgctaacaaagcccg
+ C  G  R  T  R  A  P  P  P  P  P  L  R  S  G  C  -  Q  S  P 
+aaagatgctagtcctt
+ K  D  A  S  P
+
+>UNIPROT:Q5U5U6_HUMAN Q5U5U6 Ubiquitin B OS=Homo sapiens GN=UBB PE=2 SV=1
+          Length = 229
+
+
+ Score =  148 bits (373), Expect = 3e-34
+ Identities = 76/76 (100%), Positives = 76/76 (100%)
+
+Query: 2  MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN 61
+          MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN
+Sbjct: 1  MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN 60
+
+Query: 62 IQKESTLHLVLRLRGG 77
+          IQKESTLHLVLRLRGG
+Sbjct: 61 IQKESTLHLVLRLRGG 76
+
+
+
+His-TEV-UbWT [BamHI] no NheI!!!!
+in pET24d
+sequenced with T7term
+database #78

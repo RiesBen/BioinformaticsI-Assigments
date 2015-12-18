@@ -1,3 +1,4 @@
+
 package SearchForm;
 
 import com.vaadin.ui.*;
@@ -25,6 +26,8 @@ public class GeneralSearchParameter extends BasicParameters{
 		parameters[3] = new TextField("name");
 		parameters[4] = new TextField("date");
 		parameters[5] = new TextField("author");
+		
+		parameters[1]   = new TextField("protein");
 		
 		setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		

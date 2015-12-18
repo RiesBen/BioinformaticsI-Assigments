@@ -1,0 +1,85 @@
+>MCS05_E11_087 Reverse Complement
+GTCCTTCACAGGCTGGTCCCAGTTGATTCGCCGAGATGATCGCCGGACAA
+TTGCGACGACGCGTGCAGGACCAGACTGAGTGCCACGGCATCAGCACGAC
+TGTTTGCCGCAGTGTTTGTGCACGCGGTGGGAATGTATCAGCTCGCCATC
+GCCGCTTCACTTTTTCCCGCGTTTTCGCAGAAACGTGGCTGGCCTGGTTC
+ACCACGCGGGAAACGGTCTGATAAGAGACACGGGCATACTCTGCGACATC
+GTATAACGTTACTGGTTTCACATTCACCACCCTGAATTGACTCTCTTCCG
+GGCGCTATCATGCCATACCGCGAAAGGTTTTGCGCCATTCGATGGTGTCC
+GGGATCTCGACGCTCTCCCTTATGCGACTCCTGCATTAGGAAGCAGCCCA
+GTAGTAGGTTGAGGCCGTTGAGCACCGCCGCCGCAAGGAATGGTGCATGC
+AAGGAGATGGCGCCCAACAGTCCCCCGGCCACGGGGCCTGCCACCATACC
+CACGCCGAAACAAGCGCTCATGAGCCCGAAGTGGCGAGCCCGATCTTCCC
+CATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACCTGTGGCGCCG
+GTGATGCCGGCCACGATGCGTCCGGCGTAGAGGATCGAGATCTCGATCCC
+GCGAAATTAATACGACTCACTATAGGGGAATTGTGAGCGGATAACAATTC
+CCCTCTAGAAATAATTTTGTTTAACTTTAAGAAGGAGATATACCATGAAA
+CATCACCATCACCATCACCCCATGAGCGATTACGACATCCCCACTACTGA
+GAATCTTTATTTTCAGGGCGCCATGGGAATGCAGATCTTCGTCAAGACGT
+TAACCGGTAAAACCATAACTCTGGAAGTTGAACCATCCGATACCATCGAA
+AACGTTAAGGCTAAAATTCAAGACAAGGAAGGAATTCCACCTGATCAACA
+AAGATTGATCTTTGCCGGTAAGCAGCTCGAGGACGGTAGAACGCTGTCTG
+ATTACAACATTCAGAAGGAGTCGACCTTACATCTTGTCTTACGCCTTCGT
+GGTGGTTAACTAGCTAGCTAGGGATCCGAATTCGAGCTCCGTCGACAAGC
+TTGCGGCCGCACTCGAGCACCACCACCACCACCACTGAGATCCGGCTGCT
+AACAAAGCACGAAAGAGTTGTGAA
+
+gtccttcacaggctggtcccagttgattcgccgagatgatcgccggacaattgcgacgac
+ V  L  H  R  L  V  P  V  D  S  P  R  -  S  P  D  N  C  D  D 
+gcgtgcaggaccagactgagtgccacggcatcagcacgactgtttgccgcagtgtttgtg
+ A  C  R  T  R  L  S  A  T  A  S  A  R  L  F  A  A  V  F  V 
+cacgcggtgggaatgtatcagctcgccatcgccgcttcactttttcccgcgttttcgcag
+ H  A  V  G  M  Y  Q  L  A  I  A  A  S  L  F  P  A  F  S  Q 
+aaacgtggctggcctggttcaccacgcgggaaacggtctgataagagacacgggcatact
+ K  R  G  W  P  G  S  P  R  G  K  R  S  D  K  R  H  G  H  T 
+ctgcgacatcgtataacgttactggtttcacattcaccaccctgaattgactctcttccg
+ L  R  H  R  I  T  L  L  V  S  H  S  P  P  -  I  D  S  L  P 
+ggcgctatcatgccataccgcgaaaggttttgcgccattcgatggtgtccgggatctcga
+ G  A  I  M  P  Y  R  E  R  F  C  A  I  R  W  C  P  G  S  R 
+cgctctcccttatgcgactcctgcattaggaagcagcccagtagtaggttgaggccgttg
+ R  S  P  L  C  D  S  C  I  R  K  Q  P  S  S  R  L  R  P  L 
+agcaccgccgccgcaaggaatggtgcatgcaaggagatggcgcccaacagtcccccggcc
+ S  T  A  A  A  R  N  G  A  C  K  E  M  A  P  N  S  P  P  A 
+acggggcctgccaccatacccacgccgaaacaagcgctcatgagcccgaagtggcgagcc
+ T  G  P  A  T  I  P  T  P  K  Q  A  L  M  S  P  K  W  R  A 
+cgatcttccccatcggtgatgtcggcgatataggcgccagcaaccgcacctgtggcgccg
+ R  S  S  P  S  V  M  S  A  I  -  A  P  A  T  A  P  V  A  P 
+gtgatgccggccacgatgcgtccggcgtagaggatcgagatctcgatcccgcgaaattaa
+ V  M  P  A  T  M  R  P  A  -  R  I  E  I  S  I  P  R  N  - 
+tacgactcactataggggaattgtgagcggataacaattcccctctagaaataattttgt
+ Y  D  S  L  -  G  N  C  E  R  I  T  I  P  L  -  K  -  F  C 
+ttaactttaagaaggagatataccatgaaacatcaccatcaccatcaccccatgagcgat
+ L  T  L  R  R  R  Y  T  M  K  H  H  H  H  H  H  P  M  S  D 
+tacgacatccccactactgagaatctttattttcagggcgccatgggaatgcagatcttc
+ Y  D  I  P  T  T  E  N  L  Y  F  Q  G  A  M  G  M  Q  I  F 
+gtcaagacgttaaccggtaaaaccataactctggaagttgaaccatccgataccatcgaa
+ V  K  T  L  T  G  K  T  I  T  L  E  V  E  P  S  D  T  I  E 
+aacgttaaggctaaaattcaagacaaggaaggaattccacctgatcaacaaagattgatc
+ N  V  K  A  K  I  Q  D  K  E  G  I  P  P  D  Q  Q  R  L  I 
+tttgccggtaagcagctcgaggacggtagaacgctgtctgattacaacattcagaaggag
+ F  A  G  K  Q  L  E  D  G  R  T  L  S  D  Y  N  I  Q  K  E 
+
+					   NheI     BamHI
+				          ______   ______
+tcgaccttacatcttgtcttacgccttcgtggtggttaactagctagctagggatccgaa
+ S  T  L  H  L  V  L  R  L  R  G  G  -  L  A  S  -  G  S  E 
+ttcgagctccgtcgacaagcttgcggccgcactcgagcaccaccaccaccaccactgaga
+ F  E  L  R  R  Q  A  C  G  R  T  R  A  P  P  P  P  P  L  R 
+tccggctgctaacaaagcacgaaagagttgtgaa
+ S  G  C  -  Q  S  T  K  E  L  - 
+
+
+
+CLUSTAL 2.0.12 multiple sequence alignment
+
+
+ub              MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN
+ubclone         MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYN
+                ************************************************************
+
+ub              IQKESTLHLVLRLRGG
+ubclone         IQKESTLHLVLRLRGG
+                ****************
+
+
+pETM11 Ub #1

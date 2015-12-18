@@ -18,8 +18,13 @@ public class PrimerParameter extends BasicParameters{
 		parameters = new TextField[2];
 
 		//Search Parameter:
-		parameters[0]   = new TextField("RestrictionSites");
-		parameters[1]   = new TextField("Cloning Type");
+		parameters[0]   = new TextField("protein");
+		parameters[1]   = new TextField("domain");
+		parameters[1]   = new TextField("cloningtype");
+		parameters[1]   = new TextField("project");
+		parameters[1]   = new TextField("restrictionSite");
+		parameters[1]   = new TextField("direction");
+		parameters[1]   = new TextField("organism");
 
 		addComponent(displays);
 		this.changeViewLarge();

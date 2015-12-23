@@ -98,7 +98,7 @@ def makeFastaFile(db,filename):
 
 def makeBlastDB(fasta):
     # call the executable of NCBI to make the blast db
-    subprocess.call(["./makeblastdb", "-dbtype", "nucl", "-in", fasta])
+    subprocess.call(["./makeblastdb", "-dbtype", "nucl", "-in", fasta, "-parse_seqids"])
     
 
 #

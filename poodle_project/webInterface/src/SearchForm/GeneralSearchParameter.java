@@ -18,7 +18,7 @@ public class GeneralSearchParameter extends BasicParameters{
 	Label displays = new Label("General Parameters.");
 
 	public GeneralSearchParameter() {
-		parameters = new TextField[6];
+		parameters = new TextField[7];
 
 		parameters[0] = new TextField("Id");
 		parameters[1] = new TextField("box");
@@ -26,8 +26,7 @@ public class GeneralSearchParameter extends BasicParameters{
 		parameters[3] = new TextField("name");
 		parameters[4] = new TextField("date");
 		parameters[5] = new TextField("author");
-		
-		parameters[1]   = new TextField("protein");
+		parameters[6]   = new TextField("protein");
 		
 		setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		

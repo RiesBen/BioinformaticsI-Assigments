@@ -39,15 +39,15 @@ public abstract class BasicParameters extends VerticalLayout {
 	}
 
 	public void changeViewLarge(){
-		this.removeAllComponents();		
+		this.removeAllComponents();
 		grid = new GridLayout(2,4);
 		
 		int j=-1;
 		for(int i=0; i<parameters.length; i++){
-			if(i%3==0){
+			if(i%4==0){
 				j++;
 			}
-			grid.addComponent(parameters[i], j, i%3);
+			grid.addComponent(parameters[i], j, i%4);
 		}
 		grid.setSpacing(true);
 		this.addComponent(grid);

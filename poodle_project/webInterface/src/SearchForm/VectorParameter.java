@@ -13,18 +13,15 @@ import com.vaadin.ui.declarative.Design;
 
 
 public class VectorParameter extends BasicParameters{
-	   //Rest Navigation
-	   Label     displays = new Label("Vector Parameters");
-
 	    public VectorParameter() {
-	    	grid = new GridLayout(1,2);
 			parameters = new TextField[2];
 
 			//Search Parameter:
 			parameters[0]   = new TextField("Tags");
 			parameters[1]   = new TextField("Tev cleavage?");
 
-	        addComponent(displays);
+
+			title = new Label("Vector Parameters");
 	        this.changeViewLarge();
 	    }
 	}

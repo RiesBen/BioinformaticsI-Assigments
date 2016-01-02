@@ -5,14 +5,23 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
 import SearchForm.GeneralSearchParameter;
+import SearchForm.PrimerParameter;
+import SearchForm.ProteinConstructParameter;
+import SearchForm.VectorParameter;
 import pageElements.SearchBar;
 
 public class NewEntryView extends VerticalLayout {
-		Label title = new Label("You want to create a new Entry?");
-		GeneralSearchParameter generalParameters = new GeneralSearchParameter();
-		Button newEntryButton;
-		Button importButton;
-		HorizontalLayout buttons;
+		private Label title = new Label("You want to create a new Entry?");
+		
+		private Button newEntryButton;
+		private Button importButton;
+		private HorizontalLayout buttons;
+		
+		private VerticalLayout parameters;
+		private GeneralSearchParameter generalSearchParameter = new GeneralSearchParameter();
+		private VectorParameter vectorParameter = new VectorParameter();
+		private PrimerParameter primerParameter = new PrimerParameter();
+		private ProteinConstructParameter proteinConstructParameter = new ProteinConstructParameter();
 		
 		public NewEntryView(){
 
@@ -20,10 +29,15 @@ public class NewEntryView extends VerticalLayout {
 			this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 			this.setSpacing(true);
 
+			//Parameters
+			parameters = new VerticalLayout();
+			parameters.setSpacing(true);
+			
+			//Buttons:
 			//newEntry Button 
 			//initialize
 			newEntryButton = new Button("newEntry");
-			newEntryButton.addStyleName("newEntry");
+
 			//function:
 			newEntryButton.addClickListener(new Button.ClickListener() {
 				public void buttonClick(ClickEvent event) {
@@ -48,24 +62,65 @@ public class NewEntryView extends VerticalLayout {
 			buttons.addComponent(importButton);
 			buttons.setSpacing(true);
 			
-
+			
+			//build up:
 			this.addComponent(title);
-			this.addComponent(generalParameters);
+			this.addComponent(generalSearchParameter);
+			this.addComponent(parameters);
 			this.addComponent(buttons);
+			this.modifyToPrimerParamAdvanced();
 		}
 
 		public void modifyToPrimerParamAdvanced() {
-			// TODO Auto-generated method stub
+			parameters.removeAllComponents();
+			this.getPrimerParameter().changeToEntryForm();
+			this.getGeneralSearchParameter().changeToEntryForm();
+			parameters.addComponent(this.getGeneralSearchParameter());
+			parameters.addComponent(this.getPrimerParameter());
 			
 		}
 
 		public void modifyToVectorParamAdvanced() {
-			// TODO Auto-generated method stub
-			
+			parameters.removeAllComponents();
+			parameters.addComponent(this.getGeneralSearchParameter());
+			parameters.addComponent(this.getVectorParameter());
 		}
 
 		public void modifyToProteinParamAdvanced() {
-			// TODO Auto-generated method stub
-			
+			parameters.removeAllComponents();
+			parameters.addComponent(this.getGeneralSearchParameter());
+			parameters.addComponent(this.getProteinConstructParameter());
+		}
+
+		public GeneralSearchParameter getGeneralSearchParameter() {
+			return generalSearchParameter;
+		}
+
+		public void setGeneralSearchParameter(GeneralSearchParameter generalSearchParameter) {
+			this.generalSearchParameter = generalSearchParameter;
+		}
+
+		public VectorParameter getVectorParameter() {
+			return vectorParameter;
+		}
+
+		public void setVectorParameter(VectorParameter vectorParameter) {
+			this.vectorParameter = vectorParameter;
+		}
+
+		public PrimerParameter getPrimerParameter() {
+			return primerParameter;
+		}
+
+		public void setPrimerParameter(PrimerParameter primerParameter) {
+			this.primerParameter = primerParameter;
+		}
+
+		public ProteinConstructParameter getProteinConstructParameter() {
+			return proteinConstructParameter;
+		}
+
+		public void setProteinConstructParameter(ProteinConstructParameter proteinConstructParameter) {
+			this.proteinConstructParameter = proteinConstructParameter;
 		}
 	}

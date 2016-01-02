@@ -14,9 +14,6 @@ import com.vaadin.ui.declarative.Design;
 
 
 public class GeneralSearchParameter extends BasicParameters{
-	//Rest Navigation
-	Label displays = new Label("General Parameters.");
-
 	public GeneralSearchParameter() {
 		parameters = new TextField[7];
 
@@ -28,10 +25,25 @@ public class GeneralSearchParameter extends BasicParameters{
 		parameters[5] = new TextField("author");
 		parameters[6]   = new TextField("protein");
 		
-		setDefaultComponentAlignment(Alignment.TOP_CENTER);
+		title = new Label("General Parameters");
 		
-		addComponent(displays);
 		this.changeViewLarge();
-
+	}
+	public void changeToEntryForm(){
+		this.removeAllComponents();
+		GridLayout grid = new GridLayout(4,4);
+		
+		Label label1 = new Label("General");
+		Label label2 = new Label("Location");
+		
+		grid.addComponent(label1, 0, 0);
+		grid.addComponent(parameters[3], 1,1);
+		grid.addComponent(parameters[4], 2,1);
+		grid.addComponent(parameters[5], 3,1);
+		
+		grid.addComponent(label2, 1,2);
+		grid.addComponent(parameters[0], 1,3);
+		grid.addComponent(parameters[1], 2,3);
+		grid.addComponent(parameters[2], 3,3);
 	}
 }

@@ -38,18 +38,12 @@ public class SearchView extends BasicView{
 		//Layout 
 		this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		this.setSpacing(true);
-
-		//initialize
-		parameters = new HorizontalLayout();
-		parameters.addComponent(generalSearchParameter);
-		parameters.setSpacing(true);
-		
-		generalSearchParameter = new GeneralSearchParameter();
-		vectorParameter = new VectorParameter();
-		primerParameter = new PrimerParameter();
-		proteinConstructParameter = new ProteinConstructParameter();
 		
 		//Components:
+		//initialize
+		parameters = new HorizontalLayout();
+		parameters.setSpacing(true);
+				
 		// Search Button 
 		//initialize
 		searchButton = new Button("Search");
@@ -66,6 +60,7 @@ public class SearchView extends BasicView{
 		//build up:
 		this.addComponent(parameters);
 		this.addComponent(searchButton);
+		this.modifyToGenParam();
 	}
 
 	public void modifyToGenParam(){

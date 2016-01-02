@@ -1,5 +1,6 @@
 package SearchForm;
 
+import com.vaadin.ui.Component;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
@@ -10,7 +11,8 @@ public abstract class BasicParameters extends VerticalLayout {
 	protected GridLayout grid;
 	//Search Parameter:
 	protected TextField[] parameters;
-
+	protected Component[] entryParameters;
+	protected Label title = new Label("unknown");
 	//Rest Navigation
 	Label displays = new Label("General Parameters.");
 	public void fill(String[][] strings){
@@ -40,6 +42,7 @@ public abstract class BasicParameters extends VerticalLayout {
 
 	public void changeViewLarge(){
 		this.removeAllComponents();
+
 		grid = new GridLayout(2,4);
 		
 		int j=-1;
@@ -50,9 +53,15 @@ public abstract class BasicParameters extends VerticalLayout {
 			grid.addComponent(parameters[i], j, i%4);
 		}
 		grid.setSpacing(true);
+		
+		this.addComponent(title);
 		this.addComponent(grid);
 	}
-
+	
+	public void changeToEntryForm(){
+		this.removeAllComponents();
+	}
+	
 	public String getParameter(int x){
 		return  parameters[x].getValue();
 	}

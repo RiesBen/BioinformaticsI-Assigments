@@ -1,8 +1,7 @@
-	package com.poodledb;
+package com.poodledb;
 
 import java.io.File;
 import java.io.FileReader;
-
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.DesignRoot;
@@ -60,7 +59,7 @@ public class PoodledbUI extends UI {
 	private static BasicTables tables = new WiesnerTables();
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class)
+	@VaadinServletConfiguration(productionMode = false, ui = PoodledbUI.class, widgetset = "com.poodledb.widgetset.PoodledbWidgetset")
 	public static class Servlet extends VaadinServlet {
 	}
 	

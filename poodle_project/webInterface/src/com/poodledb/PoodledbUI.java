@@ -36,7 +36,6 @@ import specificValues.WiesnerTables;
 @Theme("poodledb")
 @DesignRoot
 public class PoodledbUI extends UI {
-	
 	//"root box"
 	private final VerticalLayout layout = new VerticalLayout(); // layout is the complete page, which is viewed
 	
@@ -50,6 +49,7 @@ public class PoodledbUI extends UI {
 	private SearchView searchView;	// the class which provides the normal search context
 	private NewEntryView newEntryView;	//class for newEntry 
 	private BlastView blastView;	//class for new Blast run.
+	
 	
 	//control elements
 	private Boolean viewIsReduced=false;
@@ -93,7 +93,7 @@ public class PoodledbUI extends UI {
 		//initially start with search view
 		//initial ContentContainer:
 		searchView = new SearchView(this);
-		newEntryView = new NewEntryView();
+		newEntryView = new NewEntryView(this);
 		blastView = new BlastView();
 		content= searchView;
 		

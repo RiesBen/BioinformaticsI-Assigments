@@ -1,5 +1,6 @@
 package contentViews;
 
+import com.poodledb.PoodledbUI;
 import com.vaadin.annotations.Push;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
@@ -9,21 +10,35 @@ import SearchForm.PrimerParameter;
 import SearchForm.ProteinConstructParameter;
 import SearchForm.VectorParameter;
 import pageElements.SearchBar;
+import sqlClasses.SQLCommunicator;
 
 public class NewEntryView extends VerticalLayout {
+		
+		//SQL-Stuff for preBuffering of Textfields
+		private String dbSQL; 
+		private SQLCommunicator sqlC;
+		
+		private PoodledbUI poodleUI;
+	
 		private Label title = new Label("You want to create a new Entry?");
 		
 		private Button newEntryButton;
-		private Button importButton;
-		private HorizontalLayout buttons;
+		private Upload importButton;
+		private VerticalLayout buttons;
 		
 		private VerticalLayout parameters;
-		private GeneralSearchParameter generalSearchParameter = new GeneralSearchParameter();
+		private GeneralSearchParameter generalParameter = new GeneralSearchParameter();
 		private VectorParameter vectorParameter = new VectorParameter();
 		private PrimerParameter primerParameter = new PrimerParameter();
 		private ProteinConstructParameter proteinConstructParameter = new ProteinConstructParameter();
 		
-		public NewEntryView(){
+		public NewEntryView(PoodledbUI poodleUI){
+			this.poodleUI= poodleUI;
+			
+			//initialize
+			//SQL stuff
+			dbSQL=poodleUI.getdBs().wiesnerDB; //<-- CHANGE HERE!
+			sqlC = new SQLCommunicator(dbSQL);
 
 			//Layout
 			this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
@@ -43,29 +58,36 @@ public class NewEntryView extends VerticalLayout {
 				public void buttonClick(ClickEvent event) {
 					Label working = new Label ("still working on");
 					addComponent(working);
+					try{
+						fieldValdiation();
+					}
+					catch(Exception e){
+						Label error = new Label ("Fields are not correct!");
+						addComponent(error);
+						System.out.println(e);
+					}
 				}
 			});
 			//import Button 
 			//initialize
-			importButton = new Button("import");
-			importButton.addStyleName("import");
+			importButton = new Upload("import", null);
 			//function:
-			importButton.addClickListener(new Button.ClickListener() {
-				public void buttonClick(ClickEvent event) {
-					Label working = new Label ("still working on");
-					addComponent(working);
-				}
-			});
+//			importButton.addClickListener(new Button.ClickListener() {
+//				public void buttonClick(ClickEvent event) {
+//					Label working = new Label ("still working on");
+//					addComponent(working);
+//				}
+//			});
 			
-			buttons = new HorizontalLayout();
-			buttons.addComponent(newEntryButton);
+			buttons = new VerticalLayout();
 			buttons.addComponent(importButton);
+			buttons.addComponent(newEntryButton);
 			buttons.setSpacing(true);
 			
 			
 			//build up:
 			this.addComponent(title);
-			this.addComponent(generalSearchParameter);
+			this.addComponent(generalParameter);
 			this.addComponent(parameters);
 			this.addComponent(buttons);
 			this.modifyToPrimerParamAdvanced();
@@ -74,30 +96,53 @@ public class NewEntryView extends VerticalLayout {
 		public void modifyToPrimerParamAdvanced() {
 			parameters.removeAllComponents();
 			this.getPrimerParameter().changeToEntryForm();
-			this.getGeneralSearchParameter().changeToEntryForm();
-			parameters.addComponent(this.getGeneralSearchParameter());
+			this.getGeneralParameter().changeToEntryForm(sqlC);
+			parameters.addComponent(this.getGeneralParameter());
 			parameters.addComponent(this.getPrimerParameter());
 			
 		}
 
 		public void modifyToVectorParamAdvanced() {
 			parameters.removeAllComponents();
-			parameters.addComponent(this.getGeneralSearchParameter());
+			this.getVectorParameter().changeToEntryForm();
+			this.getGeneralParameter().changeToEntryForm(sqlC);
+			parameters.addComponent(this.getGeneralParameter());
 			parameters.addComponent(this.getVectorParameter());
 		}
 
 		public void modifyToProteinParamAdvanced() {
 			parameters.removeAllComponents();
-			parameters.addComponent(this.getGeneralSearchParameter());
+			this.getProteinConstructParameter().changeToEntryForm();
+			this.getGeneralParameter().changeToEntryForm(sqlC);
+			parameters.addComponent(this.getGeneralParameter());
 			parameters.addComponent(this.getProteinConstructParameter());
 		}
+		
+		
+//		Evaluate the fields for correctness:
+		private void fieldValdiation() throws Exception{
+			switch (poodleUI.getServerTable().getTable()){
+				case "primer":
+					this.generalParameter.evaluate();
+					break;
+				case "vector":
+					break;
 
-		public GeneralSearchParameter getGeneralSearchParameter() {
-			return generalSearchParameter;
+				case "proteinConstruct":
+					break;
+			}
+		}
+		
+		//------------------------------------------------------------------------------------------------------------------------
+		//Getter and Setter:
+		//------------------------------------------------------------------------------------------------------------------------		
+
+		public GeneralSearchParameter getGeneralParameter() {
+			return generalParameter;
 		}
 
-		public void setGeneralSearchParameter(GeneralSearchParameter generalSearchParameter) {
-			this.generalSearchParameter = generalSearchParameter;
+		public void setgeneralParameter(GeneralSearchParameter generalParameter) {
+			this.generalParameter = generalParameter;
 		}
 
 		public VectorParameter getVectorParameter() {

@@ -78,4 +78,7 @@ public abstract class BasicParameters extends VerticalLayout {
 			parameters[i].setValue("");
 		}
 	}
+	public void evaluate() throws Exception {
+		throw new Exception("No Validation is available!");	
+	}
 }

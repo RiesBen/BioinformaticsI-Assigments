@@ -16,21 +16,29 @@ import sqlClasses.SQLCommunicator;
 
 @Push
 public class SearchResultView extends VerticalLayout{
-	private GridLayout grid = new GridLayout(1,4);
+//	private thisLayout this = new thisLayout(1,4);
 	private SearchBar searchBar;
 	private Table primerTable;
 	private Table vectorTable;
 	private Table proteinTable;
 	
 	public SearchResultView(SQLCommunicator sqlC, GeneralSearchParameter gP, PrimerParameter pP, VectorParameter vP, ProteinConstructParameter pcP){
+
+		this.setSizeFull();
+//		this.setMargin(true);
 		//Table selection, and searchbar init
 		switch(sqlC.getTable()){
 		case WiesnerTables.primerOption:
 			sqlC.setPrimerFilter(gP, pP);
 			primerTable = new Table("Primer");
 			primerTable.setContainerDataSource(sqlC.getPrimerContainer());
-			grid.addComponent(primerTable, 0, 1);
 			searchBar= new SearchBar(gP, pP);
+			
+			primerTable.setContainerDataSource(sqlC.getPrimerContainer());
+			primerTable.sort();
+			
+			this.addComponent(searchBar);
+			this.addComponent(primerTable);
 			break;
 			
 		case WiesnerTables.cloningVectorOption:
@@ -39,14 +47,21 @@ public class SearchResultView extends VerticalLayout{
 			vectorTable.setContainerDataSource(sqlC.getVectorContainer());
 			searchBar= new SearchBar(gP, vP);
 			
-			grid.addComponent(vectorTable, 0, 1);
+			vectorTable.setWidth(this.getWidth(), Unit.PERCENTAGE);
+			
+			this.addComponent(searchBar);
+			this.addComponent(vectorTable);
 			break;
 		case WiesnerTables.proteinConstructOption:
 			sqlC.setProteinFilter(gP, pcP);
 			proteinTable = new Table("Protein");
 			proteinTable.setContainerDataSource(sqlC.getProteinContainer());
-			grid.addComponent(proteinTable, 0, 1);
 			searchBar= new SearchBar(gP, pcP);
+			
+			proteinTable.setWidth(this.getWidth(), Unit.PERCENTAGE);
+			
+			this.addComponent(searchBar);
+			this.addComponent(proteinTable);
 			break;
 			
 		case WiesnerTables.allOption:
@@ -56,17 +71,29 @@ public class SearchResultView extends VerticalLayout{
 			vectorTable = new Table("Vector");
 			proteinTable = new Table("Protein");
 			
+			primerTable.setColumnReorderingAllowed(true);
+			primerTable.setWidth(this.getWidth(), Unit.PERCENTAGE);
+			vectorTable.setWidth(this.getWidth(), Unit.PERCENTAGE);
+			proteinTable.setWidth(this.getWidth(), Unit.PERCENTAGE);
+			
 			primerTable.setContainerDataSource(sqlC.getPrimerContainer());
+			primerTable.sort();
+			
 			vectorTable.setContainerDataSource(sqlC.getVectorContainer());
+			vectorTable.sort();
+			
 			proteinTable.setContainerDataSource(sqlC.getProteinContainer());
+			proteinTable.sort();
 			searchBar= new SearchBar(gP);
 			
-			grid.addComponent(primerTable, 0, 1);
-			grid.addComponent(vectorTable, 0, 2);
-			grid.addComponent(proteinTable, 0, 3);
+			this.addComponent(searchBar);
+			this.addComponent(primerTable);
+			this.addComponent(vectorTable);
+			this.addComponent(proteinTable);
 			break;
+			
+
 		}
-		grid.addComponent(searchBar,0,0);
-		addComponent(grid);
+
 	}
 }

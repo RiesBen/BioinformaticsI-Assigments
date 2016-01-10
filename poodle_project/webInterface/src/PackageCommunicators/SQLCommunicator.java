@@ -15,7 +15,7 @@ import Forms.PrimerParameter;
 import Forms.ProteinConstructParameter;
 import Forms.VectorParameter;
 
-import org.sqlite.*;
+//import org.sqlite.*;
 
 
 public class SQLCommunicator {
@@ -34,7 +34,7 @@ public class SQLCommunicator {
 	public SQLCommunicator(String db){
 		this.setDb(db);
 		String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
-		String dbPath = "/WEB-INF/db/poodle_sqlite3.dat";
+		String dbPath = "/WEB-INF/db/Wiesner/poodle_sqlite3.dat";
 		try {
 			pool = new SimpleJDBCConnectionPool("org.sqlite.JDBC", "jdbc:sqlite:"+basepath+dbPath, "", "", 2, 5);
 		} catch (SQLException e) {

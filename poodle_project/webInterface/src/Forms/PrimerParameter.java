@@ -1,5 +1,7 @@
 package Forms;
 
+import com.vaadin.server.Sizeable.Unit;
+import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
@@ -24,19 +26,24 @@ public class PrimerParameter extends BasicParameters{
 		parameters[3] = new TextField("domain");
 		parameters[4] = new TextField("restrictionSite");
 		
-		entryParameters[0] = new OptionGroup("cloning types");
-		entryParameters[1] = new TextField("restriction sites");
-		entryParameters[2] = new TextField("direction");
+		entryParameters[0] = new TextField("project");
+		entryParameters[1] = new TextField("organism");
+		entryParameters[2] = new TextField("protein");
+		entryParameters[3] = new TextField("domain");
+		entryParameters[4] = new TextField("restrictionSite");
+		entryParameters[5] = new OptionGroup("cloning types");
+		entryParameters[6] = new TextField("restriction sites");
+		entryParameters[7] = new TextField("direction");
 		
-		entryParameters[3] = new TextField("melting temperatur");
-		entryParameters[4] = new TextField("concentration");
+		entryParameters[8] = new TextField("melting temperatur");
+		entryParameters[9] = new TextField("concentration");
+	
+		entryParameters[10] = new TextField("primer Sequence");
+		entryParameters[11] = new TextField("protein sequence");
 		
-		entryParameters[5] = new TextField("primer Sequence");
-		entryParameters[6] = new TextField("protein sequence");
-		
-		entryParameters[7] = new TextField("notes");
+		entryParameters[12] = new TextField("notes");
 
-		((OptionGroup) entryParameters[0]).addItems("classic", "QC", "RF");
+		((OptionGroup) entryParameters[5]).addItems("classic", "QC", "RF");
 		
 		addComponent(displays);
 		this.changeViewLarge();
@@ -44,6 +51,9 @@ public class PrimerParameter extends BasicParameters{
 	public void changeToEntryForm(){
 		this.removeAllComponents();
 		GridLayout grid = new GridLayout(4,12);
+		grid.setDefaultComponentAlignment(Alignment.TOP_CENTER);
+		grid.setWidth(90, Unit.PERCENTAGE);
+		
 		Label label1 = new Label("organisatory");
 		Label label2 = new Label("biology");
 		Label label3 = new Label("cloning");
@@ -61,19 +71,19 @@ public class PrimerParameter extends BasicParameters{
 		grid.addComponent(parameters[4], 2, 3);
 		
 		grid.addComponent(label3, 0, 4);
-		grid.addComponent(entryParameters[0], 1, 5);
-		grid.addComponent(entryParameters[1], 2, 5);
-		grid.addComponent(entryParameters[2], 3, 5);
+		grid.addComponent(entryParameters[5], 1, 5);
+		grid.addComponent(entryParameters[6], 2, 5);
+		grid.addComponent(entryParameters[7], 3, 5);
 		
 		grid.addComponent(label4, 0, 6);
-		grid.addComponent(entryParameters[3], 1, 7);
-		grid.addComponent(entryParameters[4], 2, 7);
+		grid.addComponent(entryParameters[8], 1, 7);
+		grid.addComponent(entryParameters[9], 2, 7);
 
 		grid.addComponent(label5, 0, 8);
-		grid.addComponent(entryParameters[5], 1, 9);
-		grid.addComponent(entryParameters[6], 2, 9);
+		grid.addComponent(entryParameters[10], 1, 9);
+		grid.addComponent(entryParameters[11], 2, 9);
 		
-		grid.addComponent(entryParameters[7], 1, 11);
+		grid.addComponent(entryParameters[12], 1, 11);
 		
 		grid.setSpacing(true);
 		this.addComponent(grid);		

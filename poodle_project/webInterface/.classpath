@@ -27,5 +27,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="BlastPackage/bj4.1.0/biojava-core-4.1.0.jar"/>
+	<classpathentry kind="lib" path="BlastPackage/bj4.1.0/biojava-ws-4.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

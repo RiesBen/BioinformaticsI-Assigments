@@ -40,6 +40,7 @@ public class SearchView extends BasicView{
 		this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		this.setSpacing(true);
 		
+		
 		//Components:
 		//initialize
 		parameters = new HorizontalLayout();
@@ -48,7 +49,7 @@ public class SearchView extends BasicView{
 		// Search Button 
 		//initialize
 		searchButton = new Button("Search");
-		searchButton.addStyleName("searchButton");
+		
 		//function:
 		searchButton.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
@@ -62,6 +63,7 @@ public class SearchView extends BasicView{
 		this.addComponent(parameters);
 		this.addComponent(searchButton);
 		this.modifyToGenParam();
+		this.setComponentAlignment(searchButton, Alignment.TOP_CENTER);
 	}
 
 	public void modifyToGenParam(){

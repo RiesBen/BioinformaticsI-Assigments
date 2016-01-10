@@ -25,6 +25,7 @@ import contentViews.BlastView;
 import contentViews.NewEntryView;
 import contentViews.SearchResultView;
 import contentViews.SearchView;
+import pageElements.BlastBar;
 import pageElements.NavigationBar;
 import pageElements.ServerTableSelection;
 import specificValues.BasicDBs;
@@ -35,14 +36,16 @@ import specificValues.WiesnerTables;
 @SuppressWarnings("serial")
 @Theme("poodledb")
 @DesignRoot
+
 public class PoodledbUI extends UI {
-	//"root box"
+	//"root box" 	
 	private final VerticalLayout layout = new VerticalLayout(); // layout is the complete page, which is viewed
 	
 	//the page is build up by using the following elements:
 	private static Image logo;
 	private static MenuBar navigationMenu; // guide through the page
 	private static ServerTableSelection serverTableSelection;	// select the Database (in work), and the single tables
+	private static BlastBar blastBar; // for Blastview options for the Blast algorithms
 	private static VerticalLayout content; // contains the different view classes.
 	
 	//The following classes each are used to get the content.
@@ -50,7 +53,7 @@ public class PoodledbUI extends UI {
 	private NewEntryView newEntryView;	//class for newEntry 
 	private BlastView blastView;	//class for new Blast run.
 
-	
+
 	//control elements
 	private Boolean viewIsReduced=false;
 	
@@ -88,13 +91,13 @@ public class PoodledbUI extends UI {
 
 		//Selection
 		serverTableSelection = new ServerTableSelection(this);
-				
+		blastBar = new BlastBar(this);
 		//setup search view
 		//initially start with search view
 		//initial ContentContainer:
 		searchView = new SearchView(this);
 		newEntryView = new NewEntryView(this);
-		blastView = new BlastView(this);
+		blastView = new BlastView(this, blastBar);
 		content= searchView;
 		
 		//whole building page, peace by peace

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 10:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,31 +365,29 @@ Underfull \hbox (badness 10000) detected at line 31
 []
  []
 
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 76--78
+[][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 78.
+LaTeX Font Info:    No file LY1phb.fd. on input line 78.
+
+LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
+(Font)              using `LY1/ptm/m/n' instead on input line 78.
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 88.
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 61.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 88.
 
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 66.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 93.
 
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 84.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 89.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 94.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 102.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 98.
 
 
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 107.
@@ -411,28 +409,25 @@ Overfull \hbox (1.12001pt too wide) has occurred while \output is active
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 126.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 129.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 131.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 134.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 136.
+LaTeX Warning: Reference `Tab:01' on page 2 undefined on input line 142.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 144.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 143.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 149.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 145.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 159.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 147.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 164.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 169.
+LaTeX Warning: Reference `Tab:01' on page 2 undefined on input line 172.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 174.
@@ -444,269 +439,59 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 179.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 184.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 189.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 191.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 200.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 203.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 205.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 210.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 218.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 223.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 228.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 236.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 241.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 246.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 251.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 256.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 261.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 266.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 277.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 282.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 287.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 208.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 290.
 
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
 
-[2]
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 295.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 300.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 305.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 312.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 317.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 322.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 328.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 333.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 338.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 343.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 352.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 357.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 362.
-
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 373.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 373.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 373.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 373.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.75> not available
-(Font)              size <5> substituted on input line 373.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 373.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 373.
-
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 373.
-
-LaTeX Font Info:    No file LY1phb.fd. on input line 373.
-
-LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 373.
-
-
-LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 373.
-
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 373--373
-[]$[]$ 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 381--383
-[][][][][][][] 
- []
-
-LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 383.
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 393.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 398.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 403.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 412.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 417.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 422.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 434.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 439.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 448.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 450.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 452.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 479.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 484.
-
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 489.
-
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[3]
-
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 496.
-
-
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 508.
-
-
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 513.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 522.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 217.
 
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 549.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 244.
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--567
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 []\LY1/ptm/m/n/7 Crenshaw, B.,III, and Jones, W.B.,Jr (2003) The future of clin
 ical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--567
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 \LY1/ptm/m/n/7 cancer management: one tumor, one chip. \LY1/ptm/m/it/7 Bioinfor
 matics\LY1/ptm/m/n/7 ,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 285.86148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 286.86148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 287.86148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 288.86148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:288.86148pt Right:281.98698pt Output:288.86148pt
+Extra height:28.98698pt when 455.86148pt
+Extra height:28.98698pt when 456.86148pt
+Extra height:28.98698pt when 457.86148pt
+Extra height:28.98698pt when 458.86148pt
+Extra height:28.98698pt when 459.86148pt
+Extra height:0.0pt when 460.86148pt
+(2)Left:460.86148pt Right:461.72298pt Output:460.86148pt
+(2)Left:461.72298pt Right:461.72298pt Output:461.72298pt
 - LAST -
 Extra skip:0.0pt
-Left:288.86148pt
-Right:281.98698pt
-Output:288.86148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:461.72298pt
+Right:461.72298pt
+Output:461.72298pt
+LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 275.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[4] (./main.aux)
+[2] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.25pt have occurred.
+(Font)              up to 0.75pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -716,30 +501,27 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3680 strings out of 493304
- 45404 string characters out of 6139870
- 125863 words of memory out of 5000000
- 7048 multiletter control sequences out of 15000+600000
- 60727 words of font info for 108 fonts, out of 8000000 for 9000
+ 3653 strings out of 493304
+ 45003 string characters out of 6139870
+ 134847 words of memory out of 5000000
+ 7021 multiletter control sequences out of 15000+600000
+ 55529 words of font info for 96 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
- 38i,10n,28p,265b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,28p,265b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
-c.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 127429 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
+uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 101057 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,75 +1,75 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.28)  9 JAN 2016 11:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 10:26
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **main.tex
-(main.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
-(bioinfo.cls
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./bioinfo.cls
 Document Class: bioinfo 2003/02/08 0.1
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-) (crop.sty
+) (./crop.sty
 Package: crop 2001/11/16 v1.6 cropmarks (mf)
 \CROP@width=\dimen102
 \CROP@height=\dimen103
 \CROP@index=\count79
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count80
 ))
 \CROP@offset=\count81
 Package crop Info: Local config file crop.cfg used on input line 344.
- (crop.cfg))
+ (./crop.cfg))
 Package crop Info: using pdf(la)tex graphics driver on input line 31.
-
-(graphicx.sty
+ (./graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip41
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count82
@@ -109,7 +109,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-) (array.sty
+) (./array.sty
 Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \col@sep=\dimen115
 \extrarowheight=\dimen116
@@ -117,23 +117,24 @@ Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
-(color.sty
+(./color.sty
 Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 125.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (flushend.sty
+))
+(./flushend.sty
 Package: flushend 1997/10/01
 \@aaa=\box28
 \@ccc=\box29
@@ -142,12 +143,13 @@ Package: flushend 1997/10/01
 \atColsBreak=\toks23
 \@extra@skip=\dimen117
 \@nd@page@rule=\dimen118
-) (stfloats.sty
+) (./stfloats.sty
 Package: stfloats 1999/10/22
 \@dblbotnum=\count94
 \c@dblbotnumber=\count95
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
-Package: amsthm 2015/03/04 v2.20.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks24
 \thm@bodyfont=\toks25
 \thm@headfont=\toks26
@@ -157,24 +159,24 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip47
 \thm@headsep=\skip48
 \dth@everypar=\toks29
-)
-(chngpage.sty
+) (./chngpage.sty
 Package: chngpage 2001/01/31 v1.1b change page layout
 \c@cp@cnt=\count96
 \c@cp@tempcnt=\count97
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1enc.def
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 )
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 105.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 100.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1ptm.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 ))
 \c@section=\count98
@@ -192,14 +194,16 @@ File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 \rotdimen=\dimen119
 \tempdime=\dimen120
 \temptbox=\box32
- (natbib.sty
+ (./natbib.sty
 Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 508.
 \c@NAT@ctr=\count105
 ))
-(main.aux)
+(./main.aux)
+\openout1 = `main.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -214,7 +218,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
 \scratchdimen=\dimen121
@@ -227,9 +231,57 @@ LaTeX Font Info:    ... okay on input line 7.
 \MPnumerator=\count110
 \makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks31
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for LY1+phv on input line 31.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\ly1\ly1phv.fd"
+
+(/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1phv.fd
 File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
 mes.
 )
@@ -248,12 +300,12 @@ LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <12> not available
 (Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
 LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <9> not available
@@ -304,9 +356,8 @@ LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
 (Font)              Font shape `LY1/phv/m/sl' tried instead on input line 31.
 
 Overfull \hbox (11.74072pt too wide) in paragraph at lines 31--31
-\LY1/phv/b/n/9 Supplementary infor-ma-tion: \LY1/phv/m/n/9 Sup-ple-men-tary dat
-a are avai-la-ble at \LY1/phv/m/sl/9 https://github.com/derjedi/BioinformaticsI
--
+\LY1/phv/b/n/9 Supplementary information: \LY1/phv/m/n/9 Supplementary data are
+ available at \LY1/phv/m/sl/9 https://github.com/derjedi/BioinformaticsI-
  []
 
 
@@ -315,9 +366,9 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 56.
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 50.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 56.
 
 
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 61.
@@ -326,7 +377,7 @@ LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 61.
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 66.
 
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 71.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 79.
 
 
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 84.
@@ -338,7 +389,7 @@ LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 89.
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 94.
 
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 99.
+LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 102.
 
 
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 107.
@@ -350,18 +401,18 @@ LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 112.
 LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 117.
 
 
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 122.
-
-
 Overfull \hbox (1.12001pt too wide) has occurred while \output is active
  []
  []
 
-[1{C:/Users/JonasTower/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 126.
+
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 131.
 
@@ -369,13 +420,13 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 131.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 136.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 141.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 144.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 149.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 159.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 164.
@@ -396,7 +447,7 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 184.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 189.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 194.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 200.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 205.
@@ -405,7 +456,7 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 205.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 210.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 215.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 218.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 223.
@@ -414,7 +465,7 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 223.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 228.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 233.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 236.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 241.
@@ -435,7 +486,7 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 261.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 266.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 271.
+LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 277.
 
 
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 282.
@@ -444,13 +495,10 @@ LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 282.
 LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 287.
 
 
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 292.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 295.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 290.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
@@ -458,13 +506,16 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 
 [2]
 
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 295.
+
+
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 300.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 305.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 310.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 312.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 317.
@@ -473,7 +524,7 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 317.
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 322.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 327.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 328.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 333.
@@ -485,7 +536,7 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 338.
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 343.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 348.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 352.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 357.
@@ -493,57 +544,57 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 357.
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 362.
 
-
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 367.
-
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 378.
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 373.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 378.
+(Font)              size <7> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 378.
+(Font)              size <5> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 378.
+(Font)              size <7> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.75> not available
-(Font)              size <5> substituted on input line 378.
+(Font)              size <5> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 378.
+(Font)              size <7> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 378.
+(Font)              size <5> substituted on input line 373.
 
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 378.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 373.
 
-LaTeX Font Info:    No file LY1phb.fd. on input line 378.
+LaTeX Font Info:    No file LY1phb.fd. on input line 373.
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 378.
+(Font)              using `LY1/ptm/m/n' instead on input line 373.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 378.
+(Font)              using `LY1/phb/m/n' instead on input line 373.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 378--378
+Overfull \hbox (12.0pt too wide) in paragraph at lines 373--373
 []$[]$ 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 386--388
+Overfull \hbox (1.0pt too wide) in paragraph at lines 381--383
 [][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 388.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 383.
+
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 393.
+
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 398.
 
@@ -551,7 +602,7 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 398.
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 403.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 408.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 412.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 417.
@@ -560,22 +611,22 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 417.
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 422.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 427.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 434.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 439.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 444.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 448.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 453.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 450.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 455.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 452.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 457.
+LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 479.
 
 
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 484.
@@ -584,77 +635,66 @@ LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 484.
 LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 489.
 
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 494.
-
-
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [3]
 
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 501.
+LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 496.
+
+
+LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 508.
 
 
 LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 513.
 
 
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 518.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 527.
+LaTeX Warning: Reference `fig:02' on page 4 undefined on input line 522.
 
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 554.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 549.
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--567
+[]\LY1/ptm/m/n/7 Crenshaw, B.,III, and Jones, W.B.,Jr (2003) The future of clin
+ical
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--567
+\LY1/ptm/m/n/7 cancer management: one tumor, one chip. \LY1/ptm/m/it/7 Bioinfor
+matics\LY1/ptm/m/n/7 ,
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.98698pt when 281.36148pt
+Extra height:28.98698pt when 285.86148pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.98698pt when 282.36148pt
+Extra height:28.98698pt when 286.86148pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.98698pt when 283.36148pt
+Extra height:28.98698pt when 287.86148pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.98698pt when 284.36148pt
+Extra height:0.0pt when 288.86148pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.98698pt when 285.36148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 286.36148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 287.36148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.98698pt when 288.36148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 289.36148pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:289.36148pt Right:272.98698pt Output:289.36148pt
+(2)Left:288.86148pt Right:281.98698pt Output:288.86148pt
 - LAST -
 Extra skip:0.0pt
-Left:289.36148pt
-Right:272.98698pt
-Output:289.36148pt
+Left:288.86148pt
+Right:281.98698pt
+Output:288.86148pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -663,7 +703,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[4] (main.aux)
+[4] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.25pt have occurred.
@@ -676,28 +716,30 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3322 strings out of 493673
- 38740 string characters out of 3143944
- 116672 words of memory out of 3000000
- 6611 multiletter control sequences out of 15000+200000
- 60727 words of font info for 108 fonts, out of 3000000 for 9000
- 1029 hyphenation exceptions out of 8191
- 35i,10n,28p,265b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}<C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
-helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8ac.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/helvetic/uhvro8ac.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
-s/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 136654 bytes).
+ 3680 strings out of 493304
+ 45404 string characters out of 6139870
+ 125863 words of memory out of 5000000
+ 7048 multiletter control sequences out of 15000+600000
+ 60727 words of font info for 108 fonts, out of 8000000 for 9000
+ 961 hyphenation exceptions out of 8191
+ 38i,10n,28p,265b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
+vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+c.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 127429 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

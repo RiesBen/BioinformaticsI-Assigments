@@ -67,7 +67,6 @@ public class GeneralSearchParameter extends BasicParameters{
 		GridLayout grid = new GridLayout(4,4);
 		grid.setSpacing(true);
 
-//		((TextField) entryParameters[3]).
 		Label label1 = new Label("General");
 		Label label2 = new Label("Location");
 

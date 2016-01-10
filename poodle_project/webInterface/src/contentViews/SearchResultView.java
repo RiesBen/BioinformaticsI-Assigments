@@ -5,14 +5,14 @@ import com.vaadin.annotations.Push;
 import com.vaadin.data.Container.Filter;
 import com.vaadin.ui.*;
 
-import SearchForm.GeneralSearchParameter;
-import SearchForm.PrimerParameter;
-import SearchForm.ProteinConstructParameter;
-import SearchForm.VectorParameter;
+import Forms.GeneralSearchParameter;
+import Forms.PrimerParameter;
+import Forms.ProteinConstructParameter;
+import Forms.VectorParameter;
+import PackageCommunicators.SQLCommunicator;
 import pageElements.NavigationBar;
 import pageElements.SearchBar;
 import specificValues.WiesnerTables;
-import sqlClasses.SQLCommunicator;
 
 @Push
 public class SearchResultView extends VerticalLayout{

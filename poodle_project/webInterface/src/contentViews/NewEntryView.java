@@ -5,12 +5,12 @@ import com.vaadin.annotations.Push;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
-import SearchForm.GeneralSearchParameter;
-import SearchForm.PrimerParameter;
-import SearchForm.ProteinConstructParameter;
-import SearchForm.VectorParameter;
+import Forms.GeneralSearchParameter;
+import Forms.PrimerParameter;
+import Forms.ProteinConstructParameter;
+import Forms.VectorParameter;
+import PackageCommunicators.SQLCommunicator;
 import pageElements.SearchBar;
-import sqlClasses.SQLCommunicator;
 
 public class NewEntryView extends VerticalLayout {
 		
@@ -43,10 +43,12 @@ public class NewEntryView extends VerticalLayout {
 			//Layout
 			this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 			this.setSpacing(true);
+			this.setMargin(true);
 
 			//Parameters
 			parameters = new VerticalLayout();
 			parameters.setSpacing(true);
+			
 			
 			//Buttons:
 			//newEntry Button 

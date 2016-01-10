@@ -22,6 +22,7 @@ public class NavigationBar extends MenuBar{
 	
 	
 	//Commands for Navigation Bar
+	//new Command for the searchPage link page
 	MenuBar.Command searchCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
 	    	if(poodledb.getViewIsReduced()){
@@ -32,7 +33,7 @@ public class NavigationBar extends MenuBar{
 	    	poodledb.getServerTable().setForSearchView();
 	    }
 	};
-	
+	//new Command for the newEntry link page
 	MenuBar.Command newEntryCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
 	    	poodledb.SetContentBox(poodledb.getNewEntryView());
@@ -40,7 +41,7 @@ public class NavigationBar extends MenuBar{
 	    	poodledb.getServerTable().setForNewEntryView();
 	    }
 	};
-	
+	//new Command for the Blast link page
 	MenuBar.Command blastCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
 	    	poodledb.SetContentBox(poodledb.getBlastView());

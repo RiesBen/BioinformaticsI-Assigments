@@ -5,14 +5,15 @@ import com.vaadin.annotations.Push;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
+
+import Forms.GeneralSearchParameter;
+import Forms.PrimerParameter;
+import Forms.ProteinConstructParameter;
+import Forms.VectorParameter;
+import PackageCommunicators.SQLCommunicator;
+
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
-
-import SearchForm.GeneralSearchParameter;
-import SearchForm.PrimerParameter;
-import SearchForm.ProteinConstructParameter;
-import SearchForm.VectorParameter;
-import sqlClasses.SQLCommunicator;
 
 @Push
 public class SearchView extends BasicView{

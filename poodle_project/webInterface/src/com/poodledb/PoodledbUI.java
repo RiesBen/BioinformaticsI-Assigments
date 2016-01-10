@@ -20,7 +20,7 @@ import com.vaadin.ui.MenuBar.MenuItem;
 import com.vaadin.ui.declarative.Design;
 import com.vaadin.ui.themes.ValoTheme;
 
-import SearchForm.GeneralSearchParameter;
+import Forms.GeneralSearchParameter;
 import contentViews.BlastView;
 import contentViews.NewEntryView;
 import contentViews.SearchResultView;
@@ -49,7 +49,7 @@ public class PoodledbUI extends UI {
 	private SearchView searchView;	// the class which provides the normal search context
 	private NewEntryView newEntryView;	//class for newEntry 
 	private BlastView blastView;	//class for new Blast run.
-	
+
 	
 	//control elements
 	private Boolean viewIsReduced=false;
@@ -94,7 +94,7 @@ public class PoodledbUI extends UI {
 		//initial ContentContainer:
 		searchView = new SearchView(this);
 		newEntryView = new NewEntryView(this);
-		blastView = new BlastView();
+		blastView = new BlastView(this);
 		content= searchView;
 		
 		//whole building page, peace by peace
@@ -118,6 +118,8 @@ public class PoodledbUI extends UI {
 		layout.addComponent(navigationMenu);
 		layout.addComponent(serverTableSelection);
 		layout.addComponent(content);
+		layout.setDefaultComponentAlignment(Alignment.TOP_CENTER);
+		content.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 	}
 	
 	

@@ -6,12 +6,12 @@ import com.vaadin.server.FileResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
-import SearchForm.GeneralSearchParameter;
-import SearchForm.PrimerParameter;
-import SearchForm.ProteinConstructParameter;
-import SearchForm.VectorParameter;
+import Forms.GeneralSearchParameter;
+import Forms.PrimerParameter;
+import Forms.ProteinConstructParameter;
+import Forms.VectorParameter;
+import PackageCommunicators.SQLCommunicator;
 import contentViews.SearchResultView;
-import sqlClasses.SQLCommunicator;
 
 public class SearchBar extends HorizontalLayout {
 

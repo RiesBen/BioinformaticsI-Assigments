@@ -58,7 +58,7 @@ methods like a Blast search.
 
 \subsection{Database layer}
 
-SQLite \footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
+SQLite\footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
 this software for several reasons. First, it is free of charge. Second, and more important SQLite is 
 a small and fast database system written in C. So the requirement in space is very low. Since, the 
 whole database is stored just in one file SQLite also has a incredibly good performance. Besides, 
@@ -74,7 +74,7 @@ the database a little bit safer, since changes can be reviewed before iserting t
 
 \subsection{Web service}
 
-POODLE web service is build with Vaadin \footnote{https://vaadin.com/home}. This allows a safe 
+POODLE web service is build with Vaadin\footnote{https://vaadin.com/home}. This allows a safe 
 communication between the front end and the database layer as well as a smooth and easy handling of 
 the side. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
 service in the future. That could be necessary, if new functionalities are required. Currently, 
@@ -94,7 +94,9 @@ and a easy-to-use interface but also a Blast (\citealp{Altschul01}) functionalit
 is implemented by a combination of Blast binaries provided by NCBI and the Biojava Api 
 (\citealp{Prlic01}). There are two different Blast searches available in POODLE. On one hand, there 
 is a remote Blast search on the NCBI server. And on the other hand, there is a local Blast search. 
-
+The remote Blast search is not a fully functional copy of the NCBI web service but can used to 
+perform a quick and simply search against NCBI databases, e.g. Swissprot (\citealp{Doni01}). But we do not recommend to 
+overuse that because too many requests may cause a blacklisting by NCBI. 
 
 \end{methods}
 
@@ -235,7 +237,10 @@ to convince people giving their money away.
 Altschul, S.F., Gish, W., Miller, W., Myers, E.W., Lipman, D.J. (1990) Basic local alignment search tool., {\it J. Mol. Biol.}, {\bf 215}, 403-410.
 
 \bibitem[Prli\'{c} {\it et~al}., 2012]{Prlic01}
-Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. V., ... Willis, S. (2012) BioJava: an open-source framework for bioinformatics in 2012. {\it Bioinformatics}, {\bf 28(20)}, 2693-2695. http://doi.org/10.1093/bioinformatics/bts494
+Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. V., ... Willis, S. (2012) BioJava: an open-source framework for bioinformatics in 2012. {\it Bioinformatics}, {\bf 28}(20), 2693-2695. http://doi.org/10.1093/bioinformatics/bts494
+
+\bibitem[O'Donavan {\it et~al}., 2002]{Doni01}
+O'Donovan, C., Martin, M.J., Gattiker, A., Gasteiger, E., Bairoch, A., Apweiler, R. (2002) High-quality protein knowledge resource: SWISS-PROT and TrEMBL {\it Brief. Bioinform.}  {\bf 3} (3), 275-284. doi: 10.1093/bib/3.3.275 
 
 \bibitem[Bag {\it et~al}., 2001]{Bag01}
 Bag,M., Name2, Name3 (2001) Article title, {\it Journal Name}, {\bf 99}, 33-54.

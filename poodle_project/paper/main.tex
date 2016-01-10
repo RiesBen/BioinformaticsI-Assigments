@@ -33,7 +33,7 @@ online.}
 \section{Introduction}
 
 
-%\enlargethispage{12pt}
+\enlargethispage{12pt}
 
 \section{Approach}
 
@@ -63,13 +63,18 @@ a small and fast database system written in C. So the requirement in space is ve
 whole database is stored just in one file SQLite also has a incredibly good performance. Besides, 
 SQLite guaranties that all transactions are ACID even if a system crash or power failure occurs. So 
 we have a robust storage and access of data as well as a lot of functionality provided by the database 
-system.
+system. In addition to the SQLite database POODLE's software creates a BLAST database for the provided 
+data, too. That database is needed for the BLAST function that comes with POODLE.
 
 The build and update process is implemented in python. So the user does not have to have knowledge in 
-SQL coding but only has to execute one python script and everything is done automatically. 
+SQL coding but only has to execute one python script and everything is done automatically. This routine 
+ensures that the SQLite database and the BLAST database are always in the same state.
 
-\enlargethispage{6pt}
+\subsection{Web service}
 
+POODLE web service is build with Vaadin \footnote{https://vaadin.com/home}. This allows a safe 
+communication between the front end and the database layer as well as a smooth and easy handling of 
+the side. 
 
 \end{methods}
 

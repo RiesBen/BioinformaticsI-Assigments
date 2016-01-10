@@ -103,7 +103,7 @@ public class BlastSearch {
     try {
       // set up Runtime
       Runtime rt = Runtime.getRuntime();
-      String execString = this.blastProgram + " -query " + queryFile + " -db " + this.blastDB + " -task " + this.task + " -outfmt 5";
+      String execString = this.blastProgram + " -query " + queryFile + " -db " + this.blastDB + " -task " + this.task + " -outfmt 13";
       System.out.println("Running " + execString + " ...");
       Process pr = rt.exec(execString);
       

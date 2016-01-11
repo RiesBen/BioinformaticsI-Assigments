@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 19:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  11 JAN 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,9 +355,9 @@ LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
 (Font)              Font shape `LY1/phv/m/sl' tried instead on input line 31.
 
-Overfull \hbox (11.74072pt too wide) in paragraph at lines 31--31
-\LY1/phv/b/n/9 Supplementary information: \LY1/phv/m/n/9 Supplementary data are
- available at \LY1/phv/m/sl/9 https://github.com/derjedi/BioinformaticsI-
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\LY1/phv/b/n/9 Supplementary information: \LY1/phv/m/n/9 Supplementary data and
+ the code are available at
  []
 
 
@@ -366,9 +366,10 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 77--89
-\LY1/ptm/m/n/8 POODLE web service is build with Vaadin$[]$. This allows a safe
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (1.12001pt too wide) has occurred while \output is active
@@ -380,59 +381,36 @@ Overfull \hbox (1.12001pt too wide) has occurred while \output is active
 
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 109--111
+Overfull \hbox (1.0pt too wide) in paragraph at lines 126--128
 [][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 111.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 128.
 
-LaTeX Font Info:    No file LY1phb.fd. on input line 111.
+LaTeX Font Info:    No file LY1phb.fd. on input line 128.
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 111.
+(Font)              using `LY1/ptm/m/n' instead on input line 128.
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 111.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 128.
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 148.
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
-[]\LY1/ptm/m/n/7 Crenshaw, B.,III, and Jones, W.B.,Jr (2003) The future of clin
-ical
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
-\LY1/ptm/m/n/7 cancer management: one tumor, one chip. \LY1/ptm/m/it/7 Bioinfor
-matics\LY1/ptm/m/n/7 ,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 334.44873pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:334.44873pt Right:331.98698pt Output:334.44873pt
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 191.
+Extra height:0.0pt when 605.17276pt
+(2)Left:605.17276pt Right:600.43503pt Output:605.17276pt
 - LAST -
 Extra skip:0.0pt
-Left:334.44873pt
-Right:331.98698pt
-Output:334.44873pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:605.17276pt
+Right:600.43503pt
+Output:605.17276pt
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 185.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 200.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[2
-
-] (./main.aux)
+[2] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.75pt have occurred.
@@ -442,10 +420,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3652 strings out of 493304
- 44985 string characters out of 6139870
- 116923 words of memory out of 5000000
- 7020 multiletter control sequences out of 15000+600000
+ 3646 strings out of 493304
+ 44943 string characters out of 6139870
+ 124735 words of memory out of 5000000
+ 7014 multiletter control sequences out of 15000+600000
  54398 words of font info for 95 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
  38i,10n,28p,285b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -459,7 +437,7 @@ uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 103153 bytes).
+Output written on main.pdf (2 pages, 103455 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

@@ -96,7 +96,7 @@ def createPrimTable(db):
     # drop table, if already exists
     db.execute('drop table if exists primer')
     # create table primer
-    db.execute('create table primer (id Integer Primary Key,box,position,name,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,date,author,notes)')
+    db.execute('create table primer (id Integer Primary Key,box,position,name,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,date,author,notes,classic,cloning_information)')
     values = []
     primerFile = open(DATA_PATH + 'primer/primer_database.csv', 'r')
     for line in primerFile.readlines():
@@ -109,7 +109,7 @@ def createPrimTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into primer (id,box,position,name,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,date,author,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into primer (id,box,position,name,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,date,author,notes,classic,cloning_information) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create a fasta file with sequences from a database

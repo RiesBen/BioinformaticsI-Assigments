@@ -39,6 +39,12 @@ public class NavigationBar extends MenuBar{
 	    	poodledb.SetContentBox(poodledb.getNewEntryView());
 	    	poodledb.modifyLayoutToLargeView();
 	    	poodledb.getServerTable().setForNewEntryView();
+	    	try {
+				poodledb.getNewEntryView().setAutomaticID();
+			} catch (Exception e) {
+				System.out.println("The ID finding process failed: "+e);
+				e.printStackTrace();
+			}
 	    }
 	};
 	//new Command for the Blast link page
@@ -47,6 +53,7 @@ public class NavigationBar extends MenuBar{
 	    	poodledb.SetContentBox(poodledb.getBlastView());
 	    	poodledb.modifyLayoutToLargeView();
 	    	poodledb.getServerTable().setForBlastView();
+	    	poodledb.getBlastView().refresh();
     	}
 	};
 	

@@ -7,6 +7,7 @@ import com.vaadin.data.util.filter.Compare.Equal;
 import com.vaadin.data.util.filter.Like;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.connection.*;
+import com.vaadin.data.util.sqlcontainer.query.OrderBy;
 import com.vaadin.data.util.sqlcontainer.query.TableQuery;
 import com.vaadin.server.VaadinService;
 
@@ -25,9 +26,9 @@ public class SQLCommunicator {
 	private String table;
 	private TableQuery tq;
 	private SQLContainer container;
-	private SQLContainer primerContainer;
-	private SQLContainer vectorContainer;
-	private SQLContainer proteinContainer;
+	private SQLContainer primerContainer = null;
+	private SQLContainer vectorContainer = null;
+	private SQLContainer proteinContainer = null;
 
 
 
@@ -55,6 +56,7 @@ public class SQLCommunicator {
 			tq1.setVersionColumn("OPTLOCK");
 			try {
 				primerContainer = new SQLContainer(tq1);
+				primerContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -64,6 +66,7 @@ public class SQLCommunicator {
 			tq2.setVersionColumn("OPTLOCK");
 			try {
 				vectorContainer = new SQLContainer(tq2);
+				vectorContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -73,6 +76,7 @@ public class SQLCommunicator {
 			tq3.setVersionColumn("OPTLOCK");
 			try {
 				proteinContainer = new SQLContainer(tq3);
+				proteinContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -83,6 +87,7 @@ public class SQLCommunicator {
 			tq1.setVersionColumn("OPTLOCK");
 			try {
 				primerContainer = new SQLContainer(tq1);
+				primerContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -92,6 +97,7 @@ public class SQLCommunicator {
 			tq2.setVersionColumn("OPTLOCK");
 			try {
 				vectorContainer = new SQLContainer(tq2);
+				vectorContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -102,6 +108,7 @@ public class SQLCommunicator {
 			tq3.setVersionColumn("OPTLOCK");
 			try {
 				proteinContainer = new SQLContainer(tq3);
+				proteinContainer.addOrderBy(new OrderBy("id",true));
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

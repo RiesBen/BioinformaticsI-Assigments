@@ -28,7 +28,7 @@ public class NavigationBar extends MenuBar{
 	    	if(poodledb.getViewIsReduced()){
 	    		poodledb.getSearchView().refreshParameters();
 	    	}
-	    	poodledb.SetContentBox(poodledb.getSearchView());
+	    	poodledb.setContentBox(poodledb.getSearchView());
 	    	poodledb.modifyLayoutToLargeView();
 	    	poodledb.getServerTable().setForSearchView();
 	    }
@@ -36,7 +36,7 @@ public class NavigationBar extends MenuBar{
 	//new Command for the newEntry link page
 	MenuBar.Command newEntryCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	    	poodledb.SetContentBox(poodledb.getNewEntryView());
+	    	poodledb.setContentBox(poodledb.getNewEntryView());
 	    	poodledb.modifyLayoutToLargeView();
 	    	poodledb.getServerTable().setForNewEntryView();
 	    	try {
@@ -50,7 +50,7 @@ public class NavigationBar extends MenuBar{
 	//new Command for the Blast link page
 	MenuBar.Command blastCommand = new MenuBar.Command() {
 	    public void menuSelected(MenuItem selectedItem) {
-	    	poodledb.SetContentBox(poodledb.getBlastView());
+	    	poodledb.setContentBox(poodledb.getBlastView());
 	    	poodledb.modifyLayoutToLargeView();
 	    	poodledb.getServerTable().setForBlastView();
 	    	poodledb.getBlastView().refresh();

@@ -46,7 +46,7 @@ public class BlastBar extends VerticalLayout {
 
 		program= new NativeSelect("program");
 		program.addItems("blastp", "blastn");
-		program.setValue("blastp");
+		program.setValue("blastn");
 		program.setNullSelectionAllowed(false);
 
 		ncbiServer= new NativeSelect("server");

@@ -23,7 +23,7 @@ import Forms.GeneralSearchParameter;
 import PackageCommunicators.BlastCommunicator;
 import pageElements.BlastBar;
 
-public class BlastView extends VerticalLayout {
+public class BlastView extends BasicView {
 	private Label title = new Label("You want to BLAST it?");
 	private BlastBar blastBar;
 	private BlastSeqField seq;
@@ -68,6 +68,8 @@ public class BlastView extends VerticalLayout {
 					
 					BlastCommunicator blastC = new BlastCommunicator(blastBar.getMode(),blastBar.getProgram(), querry, blastBar.getDB(), blastBar.getDBTable(), blastBar.getQuerry());
 					
+					poodleUI.SetContentBox(new BlastResultView(blastC.getResult()));
+					poodleUI.modifyLayoutToReducedView();
 					try{
 					}catch(Exception e){
 						System.out.println("System-Error"+e);

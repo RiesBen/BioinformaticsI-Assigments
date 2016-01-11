@@ -40,17 +40,17 @@ public class BlastCommunicator {
 				else{
 					throw new Exception("unkown OS!");
 				}
-				
+
 				//Check Table
 				if(table.equals("all")){
 					location= basepath+"/WEB-INF/db/"+database+"/primer.fasta";
 					BlastSearch localBlast1 = new BlastSearch(sequence, location, program);
 					location= basepath+"/WEB-INF/db/"+database+"/proteinConstruct.fasta";
 					BlastSearch localBlast2 = new BlastSearch(sequence, location, program);
-					
+
 					blastResult=localBlast1.getResult();
 					blastResult2=localBlast2.getResult();
-							
+
 				}
 				else{
 					BlastSearch localBlast = new BlastSearch(sequence, location, program);
@@ -65,14 +65,19 @@ public class BlastCommunicator {
 				System.out.println("There was a problem with your OS"+e);
 			}
 		}
-	else if(mode.equals("NCBI")) {
-		// perform NCBI search
-		NCBIQBlastClass ncbiBlast = new NCBIQBlastClass();
-		//ncbiBlast.runBLASTRequest(program, sequence, database, querry);
-		ncbiBlast.runBLASTRequest(program, sequence, database, querry);
-		blastResult = ncbiBlast.getResult();
-	}
+		else if(mode.equals("NCBI")) {
+			// perform NCBI search
+			NCBIQBlastClass ncbiBlast = new NCBIQBlastClass();
+			//ncbiBlast.runBLASTRequest(program, sequence, database, querry);
+			ncbiBlast.runBLASTRequest(program, sequence, database, querry);
+			blastResult = ncbiBlast.getResult();
+		}
 
-	System.out.println(blastResult);
-}
+		System.out.println(blastResult);
+	}
+	
+	public String[] getResults(){
+		
+		return results;
+	}
 }

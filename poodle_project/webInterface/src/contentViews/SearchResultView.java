@@ -15,7 +15,7 @@ import pageElements.SearchBar;
 import specificValues.WiesnerTables;
 
 @Push
-public class SearchResultView extends VerticalLayout{
+public class SearchResultView extends BasicView{
 //	private thisLayout this = new thisLayout(1,4);
 	private SearchBar searchBar;
 	private Table primerTable;

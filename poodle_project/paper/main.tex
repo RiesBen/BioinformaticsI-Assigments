@@ -21,16 +21,18 @@
 
 \abstract{\textbf{Motivation:} Many life science laboratories are still using Excel files do organize their data. 
 	This leads to a huge workload for maintenance as well as a inconvenient access and update routine. 
-	POODLE provides an easy-to-use and powerful interface to improve the work of your lab.\\
+	POODLE provides an easy-to-use and powerful interface to improve the cloning work of your lab.\\
 \textbf{Results:} POODLE is a Java-based web interface, which allows intuitive access, update and 
-manipulation of data.\\
+manipulation of data for cloning.\\
 \textbf{Contact:} \href{}{forename.surname@student.uni-tuebingen.de}\\
-\textbf{Supplementary information:} Supplementary data are available at \textit{https://github.com/derjedi/BioinformaticsI\-Assigments/tree/master/poodle\_project}
+\textbf{Supplementary information:} Supplementary data and the code are available at \textit{https://github.com/derjedi/BioinformaticsI\-Assigments/tree/master/poodle\_project}
 online.}
 
 \maketitle
 
 \section{Introduction}
+
+\enlargethispage{12pt}
 
 \subsection{A real world pipeline}
 function study
@@ -44,7 +46,6 @@ primer
 cloningVectors
 proteinConstructs
 
-\enlargethispage{12pt}
 
 \section{Approach}
 
@@ -72,7 +73,9 @@ methods like a Blast search.
 SQLite\footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
 this software for several reasons. First, it is free of charge. Second, and more important SQLite is 
 a small and fast database system written in C. So the requirement in space is very low. Since, the 
-whole database is stored just in one file SQLite also has a incredibly good performance. Besides, 
+whole database is stored just in one file SQLite also has a incredibly good performance. And there 
+is the possibility to create a mobile version of POODLE without changing the whole database system, 
+which may be interesting in the future. Besides, 
 SQLite guaranties that all transactions are ACID even if a system crash or power failure occurs. So 
 we have a robust storage and access of data as well as a lot of functionality provided by the database 
 system. In addition to the SQLite database POODLE's software creates a BLAST database for the provided 
@@ -85,32 +88,35 @@ the database a little bit safer, since changes can be reviewed before inserting 
 
 \subsection{Web service}
 
-POODLE web service is build with Vaadin\footnote{https://vaadin.com/home}. This allows a safe 
+POODLE web service is build with Vaadin\footnote{https://vaadin.com/home}. We chose that framework 
+because it allows a safe 
 communication between the front end and the database layer as well as a smooth and easy handling of 
 the side. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
 service in the future. That could be necessary, if new functionalities are required. Currently, 
 there are three pages with different roles. The search page provides a formula that can be used 
-to perform a simple SQL search in the local database. Therefor, different files are displayed and 
+to perform a simple SQL search in the local database. Therefor, different fields are displayed and 
 can be filled by the user. A click on the search button will automatically build a SQL query and 
 results are displayed, if there are available results. The new entry page allows to insert a new 
 entry into the database. It also provide a Blast search against the NCBI databases to check, whether 
-there are available information about the current sequence or not. Last but not least, users can 
+there are already available information about the new sequence or not. Last but not least, users can 
 perform a local Blast search against their one database or a remote Blast search against the NCBI 
-databases on the Blast page. 
+databases on the Blast page. That functionality can be found on the Blast page. 
 
 \subsection{Blast functionality}
 
 Our software package provides not just a database functionality for powerful and secure data storage 
-and a easy-to-use interface but also a Blast (\citealp{Altschul01}) functionality. This functionality 
-is implemented by a combination of Blast binaries provided by NCBI and the Biojava Api 
+and a easy-to-use interface but also a Blast (\citealp{Altschul01}) functionality. This function 
+is implemented by using a combination of Blast binaries provided by NCBI and the Biojava Api 
 (\citealp{Prlic01}). There are two different Blast searches available in POODLE. On one hand, there 
 is a remote Blast search on the NCBI server. And on the other hand, there is a local Blast search. 
 The remote Blast search is not a fully functional copy of the NCBI web service but can used to 
 perform a quick and simply search against databases provided by NCBI, e.g. Swissprot (\citealp{Doni01}). But we 
 do not recommend to overuse that because too many requests may cause a blacklisting by NCBI. This 
 remote Blast routine is mainly for the insertion of a new entry. The idea is to check whether there 
-are information about the new sequence. The local Blast routine does everything someone would 
-expect from a Blast search but against the local database, hence local Blast.
+are information about the new sequence. But it can also used separated from the new entry routine. 
+The local Blast routine does everything someone would 
+expect from a Blast search but against the local database, hence local Blast. There a several programs, 
+e.g. blastn or blastp, available for both Blast methods. 
 
 \end{methods}
 
@@ -130,12 +136,38 @@ expect from a Blast search but against the local database, hence local Blast.
 
 \section{Discussion}
 
+POODLE is completely open-source. So the user can adapt the code at any point of the software. To make 
+this adaption as easy as possible for the user we chose to use widely known software inside of POODLE. 
+Most scientist have heard of SQL as a database managment system. So it is not to dangerous to assume 
+that there are people with basic SQL knowledge in most of the laboratories. And that means these 
+laboratories do not have to use POODLE as a black box. We chose SQLite over all other SQL databases 
+for the reasons described in the method section. 
+
+The build up process of the database is written in Python. There are two reasons for that. First, 
+Python is a easy and powerful language which makes it possible for the user to adapt the build up 
+process without detailed programming knowledge. And second there is almost no 
+Server without a Python2.7 or higher environment.
+
+Vaadin was chose as the framework to be for several reasons. Java is a widely used programming language 
+in the scientific world. So there is a relative high chance for a person in the laboratory, who speaks 
+Java. Again we want to make adaption as easy as possible for the user. Furthermore, Vaadin needs a 
+tomcat server. Such a server is provided free of charge by Apache\footnote{http://www.apache.org/}. 
+So the user does not have to face extra charges just to be able to use POODLE. More reasons for 
+Vaadin are discussed in the method section.
 
 \section{Conclusion}
 
+POODLE provides a secure storage of cloning data as well as a easy-to-use interface for 
+interacting with these data. Besides, it comes with functionalities like local and remote Blast 
+search that can improve the workflow during cloning. 
+
+It is our goal to improve the software in the future by adding new functionalities like a chromatogram 
+viewer and the possibility to add annotations to sequences. 
 
 \section*{Acknowledgements}
 
+We would like to thank Silke Wiesner and her group at the Max-Plack-Institute for Developmental Biology 
+in T\"{u}bingen for providing us with real-world data and fruitful discussions.
 
 \section*{Funding}
 
@@ -163,34 +195,6 @@ Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. 
 
 \bibitem[O'Donavan {\it et~al}., 2002]{Doni01}
 O'Donovan, C., Martin, M.J., Gattiker, A., Gasteiger, E., Bairoch, A., Apweiler, R. (2002) High-quality protein knowledge resource: SWISS-PROT and TrEMBL {\it Brief. Bioinform.}  {\bf 3} (3), 275-284. doi: 10.1093/bib/3.3.275 
-
-\bibitem[Bag {\it et~al}., 2001]{Bag01}
-Bag,M., Name2, Name3 (2001) Article title, {\it Journal Name}, {\bf 99}, 33-54.
-
-\bibitem[Yoo \textit{et~al}., 2003]{Yoo03}
-Yoo,M.S. \textit{et~al}. (2003) Oxidative stress regulated genes
-in nigral dopaminergic neurnol cell: correlation with the known
-pathology in Parkinson's disease. \textit{Brain Res. Mol. Brain
-Res.}, \textbf{110}(Suppl. 1), 76--84.
-
-\bibitem[Lehmann, 1986]{Leh86}
-Lehmann,E.L. (1986) Chapter title. \textit{Book Title}. Vol.~1, 2nd edn. Springer-Verlag, New York.
-
-\bibitem[Crenshaw and Jones, 2003]{Cre03}
-Crenshaw, B.,III, and Jones, W.B.,Jr (2003) The future of clinical
-cancer management: one tumor, one chip. \textit{Bioinformatics},
-doi:10.1093/bioinformatics/btn000.
-
-\bibitem[Auhtor \textit{et~al}. (2000)]{Aut00}
-Auhtor,A.B. \textit{et~al}. (2000) Chapter title. In Smith, A.C.
-(ed.), \textit{Book Title}, 2nd edn. Publisher, Location, Vol. 1, pp.
-???--???.
-
-\bibitem[Bardet, 1920]{Bar20}
-Bardet, G. (1920) Sur un syndrome d'obesite infantile avec
-polydactylie et retinite pigmentaire (contribution a l'etude des
-formes cliniques de l'obesite hypophysaire). PhD Thesis, name of
-institution, Paris, France.
 
 \end{thebibliography}
 \end{document}

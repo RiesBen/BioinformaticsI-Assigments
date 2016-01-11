@@ -91,8 +91,6 @@ public class SearchResultView extends BasicView{
 			this.addComponent(vectorTable);
 			this.addComponent(proteinTable);
 			break;
-			
-
 		}
 
 	}

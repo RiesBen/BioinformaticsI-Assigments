@@ -28,13 +28,11 @@ public class BlastView extends BasicView {
 	private BlastBar blastBar;
 	private BlastSeqField seq;
 	private Button blast;
-	private PoodledbUI poodleUI;
 	private ProgressBar loadBar;
 	private Label working;
 
-	public BlastView(PoodledbUI pooldeUI, BlastBar blastBar){
+	public BlastView(PoodledbUI poodleUI, BlastBar blastBar){
 		//initialization
-		this.poodleUI = poodleUI;
 		seq = new BlastSeqField();
 		this.blastBar = blastBar;
 		
@@ -68,14 +66,16 @@ public class BlastView extends BasicView {
 					
 					BlastCommunicator blastC = new BlastCommunicator(blastBar.getMode(),blastBar.getProgram(), querry, blastBar.getDB(), blastBar.getDBTable(), blastBar.getQuerry());
 					
-					poodleUI.SetContentBox(new BlastResultView(blastC.getResult()));
-					poodleUI.modifyLayoutToReducedView();
 					try{
+//						poodleUI.setContentBox(new BlastResultView(blastC.getResult()));
+//						poodleUI.modifyLayoutToReducedView();
 					}catch(Exception e){
-						System.out.println("System-Error"+e);
+						System.out.println("System-Error-with building up the BlastResultView: "+e);
+						e.printStackTrace();
 					}
 				}catch(Exception e){
-					System.out.println("User-Error"+e);
+					System.out.println("User-Error: "+e);
+					e.printStackTrace();
 					getBlastView().refresh();
 				}
 			}

@@ -3,6 +3,7 @@ import static org.biojava.nbio.ws.alignment.qblast.BlastAlignmentParameterEnum.E
 import java.io.*;
 import org.biojava.nbio.core.sequence.io.util.IOUtils;
 import org.biojava.nbio.ws.alignment.qblast.*;
+import org.biojava.nbio.ws.alignment.qblast.BlastAlignmentParameterEnum;
 
 /**
  * This class performs a BLAST request on NCBI server

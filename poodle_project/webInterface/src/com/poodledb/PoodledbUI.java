@@ -21,6 +21,7 @@ import com.vaadin.ui.declarative.Design;
 import com.vaadin.ui.themes.ValoTheme;
 
 import Forms.GeneralSearchParameter;
+import contentViews.BlastResultView;
 import contentViews.BlastView;
 import contentViews.NewEntryView;
 import contentViews.SearchResultView;
@@ -52,7 +53,6 @@ public class PoodledbUI extends UI {
 	private SearchView searchView;	// the class which provides the normal search context
 	private NewEntryView newEntryView;	//class for newEntry 
 	private BlastView blastView;	//class for new Blast run.
-
 
 	//control elements
 	private Boolean viewIsReduced=false;
@@ -137,7 +137,7 @@ public class PoodledbUI extends UI {
 		return content;
 	}
 	
-	public void SetContentBox(VerticalLayout view){
+	public void setContentBox(VerticalLayout view){
 		this.content=view;
 	}
 

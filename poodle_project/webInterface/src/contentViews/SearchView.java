@@ -54,7 +54,7 @@ public class SearchView extends BasicView{
 		searchButton.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				sqlC.setTableQuerry(poodleUI.getServerTable().getTable());
-				poodleUI.SetContentBox(new SearchResultView( sqlC, generalSearchParameter, primerParameter, vectorParameter, proteinConstructParameter));
+				poodleUI.setContentBox(new SearchResultView( sqlC, generalSearchParameter, primerParameter, vectorParameter, proteinConstructParameter));
 				poodleUI.modifyLayoutToReducedView();
 			}
 		});

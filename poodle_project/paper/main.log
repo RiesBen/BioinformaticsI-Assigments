@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 13:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  10 JAN 2016 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,28 +366,9 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 82--84
-[][][][][][][] 
+Underfull \hbox (badness 1292) in paragraph at lines 77--89
+\LY1/ptm/m/n/8 POODLE web service is build with Vaadin$[]$. This allows a safe
  []
-
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 84.
-LaTeX Font Info:    No file LY1phb.fd. on input line 84.
-
-LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 84.
-
-LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 84.
-LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 94.
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 94.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 99.
-
-
-LaTeX Warning: Reference `fig:02' on page 1 undefined on input line 104.
 
 
 Overfull \hbox (1.12001pt too wide) has occurred while \output is active
@@ -399,78 +380,29 @@ Overfull \hbox (1.12001pt too wide) has occurred while \output is active
 
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 113.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 118.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 123.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 135.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Reference `Tab:01' on page 2 undefined on input line 148.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 149.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 151.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 153.
-
-
-LaTeX Warning: Reference `Tab:01' on page 2 undefined on input line 178.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 180.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 185.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 190.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 197.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 209.
-
-
-LaTeX Warning: Reference `fig:02' on page 2 undefined on input line 214.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 219.
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
+Overfull \hbox (1.0pt too wide) in paragraph at lines 109--111
+[][][][][][][] 
  []
 
-[2]
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 111.
 
-LaTeX Warning: Reference `fig:02' on page 3 undefined on input line 223.
+LaTeX Font Info:    No file LY1phb.fd. on input line 111.
 
+LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
+(Font)              using `LY1/ptm/m/n' instead on input line 111.
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 250.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 148.
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 []\LY1/ptm/m/n/7 Crenshaw, B.,III, and Jones, W.B.,Jr (2003) The future of clin
 ical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 \LY1/ptm/m/n/7 cancer management: one tumor, one chip. \LY1/ptm/m/it/7 Bioinfor
 matics\LY1/ptm/m/n/7 ,
  []
@@ -478,44 +410,27 @@ matics\LY1/ptm/m/n/7 ,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 189.99348pt
+Extra height:0.0pt when 334.44873pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 190.99348pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 191.99348pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 192.99348pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 193.99348pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 194.99348pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 195.99348pt
-Extra height:0.0pt when 196.99348pt
-(2)Left:196.99348pt Right:160.98698pt Output:196.99348pt
+(2)Left:334.44873pt Right:331.98698pt Output:334.44873pt
 - LAST -
 Extra skip:0.0pt
-Left:196.99348pt
-Right:160.98698pt
-Output:196.99348pt
+Left:334.44873pt
+Right:331.98698pt
+Output:334.44873pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 185.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[3
+[2
 
 ] (./main.aux)
 
@@ -525,18 +440,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 3653 strings out of 493304
- 45003 string characters out of 6139870
- 115847 words of memory out of 5000000
- 7021 multiletter control sequences out of 15000+600000
- 55529 words of font info for 96 fonts, out of 8000000 for 9000
+ 3652 strings out of 493304
+ 44985 string characters out of 6139870
+ 116923 words of memory out of 5000000
+ 7020 multiletter control sequences out of 15000+600000
+ 54398 words of font info for 95 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
- 38i,10n,28p,265b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,28p,285b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
@@ -547,10 +459,10 @@ uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 102303 bytes).
+Output written on main.pdf (2 pages, 103153 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,6 +5,7 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
+import os
 import subprocess
 
 #
@@ -12,6 +13,8 @@ import subprocess
 #
 
 DATA_PATH = '../data/'
+
+GROUP1 = 'Wiesner/'
 
 #
 #---------------------------------------------------------------------------------------------------------------------
@@ -66,7 +69,7 @@ def createPrimTable(db):
     # create table primer
     db.execute('create table primer (id Primary Key,box,position,name,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,date,author,notes)')
     values = []
-    primerFile = open(DATA_PATH + 'primer_database.csv', 'r')
+    primerFile = open(DATA_PATH + 'primer/primer_database.csv', 'r')
     for line in primerFile.readlines():
         # just take non-empty lines into account
         if line:
@@ -81,7 +84,7 @@ def createPrimTable(db):
 
 
 # function to create a fasta file with sequences from a database
-def makeFastaFile(db,filename):
+def makeFastaFile(db,filename,group):
     # select primer sequences
     db.select("select id,name,primer_sequence from primer")
     results = db.fetchAll()
@@ -93,12 +96,16 @@ def makeFastaFile(db,filename):
         records.append(rec)
 
     # write sequences to file
-    SeqIO.write(records, filename, "fasta")
+    SeqIO.write(records, group+filename, "fasta")
     
 
-def makeBlastDB(fasta):
+def makeBlastDB(fasta, group):
+    # change to the blast db directory
+    os.chdir(group)
     # call the executable of NCBI to make the blast db
-    subprocess.call(["./makeblastdb", "-dbtype", "nucl", "-in", fasta, "-parse_seqids"])
+    subprocess.call(["../makeblastdb", "-dbtype", "nucl", "-in", fasta, "-parse_seqids"])
+    # change back
+    os.chdir('..')
     
 
 #
@@ -107,7 +114,7 @@ def makeBlastDB(fasta):
 
 if __name__ == '__main__':
     # get database handler
-    db = dbUtils.DBUtil('poodle_sqlite3.dat')
+    db = dbUtils.DBUtil(GROUP1 + 'poodle_sqlite3.dat')
     
     # create tables
     print "building table of protein constructs..."
@@ -123,9 +130,9 @@ if __name__ == '__main__':
 
     print "making fasta file for blast search..."
     primerDB = "primer.fasta"
-    makeFastaFile(db, primerDB)
+    makeFastaFile(db, primerDB, GROUP1)
     print "successfully made fasta file"
 
     print "building blast database..."
-    makeBlastDB(primerDB)
+    makeBlastDB(primerDB, GROUP1)
     print "successfully built blast database"

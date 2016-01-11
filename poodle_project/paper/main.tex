@@ -9,7 +9,7 @@
 
 \subtitle{}%Database applications}
 
-\title[POODLE]{POODLE - To the core of your data}
+\title[POODLE]{POODLE 1.0 - To the core of your data}
 \author[Ditz, Schroeder]{Jonas Ditz\,$^{\text{\sfb 1,}*}$ and Benjamin Schroeder\,$^{\text{\sfb 1,}*}$} 
 \address{$^{\text{\sf 1}}$Department of Informatics, Eberhard Karls University, T\"ubingen, 72076, Germany.}
 
@@ -63,29 +63,54 @@ easy-to-learn handling.
 
 POODLE is build as a two-layer software. The first layer consists of the database and routines to 
 automatically build and update that database. The second layer consists of the web service that is 
-used to access, update and manipulate data. This is the front end layer and a user only interacts 
-with that layer. One major aspect of POODLE is the in-build BLAST function.
+used to access, update and manipulate data. This is the front end layer and provides access to all 
+functions for the user. Because POODLE is not just a data storage software but also comes with useful 
+methods like a Blast search.
 
 \subsection{Database layer}
 
-SQLite \footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
+SQLite\footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
 this software for several reasons. First, it is free of charge. Second, and more important SQLite is 
 a small and fast database system written in C. So the requirement in space is very low. Since, the 
 whole database is stored just in one file SQLite also has a incredibly good performance. Besides, 
 SQLite guaranties that all transactions are ACID even if a system crash or power failure occurs. So 
 we have a robust storage and access of data as well as a lot of functionality provided by the database 
 system. In addition to the SQLite database POODLE's software creates a BLAST database for the provided 
-data, too. That database is needed for the BLAST function that comes with POODLE.
+data, too. 
 
-The build and update process is implemented in python. So the user does not have to have knowledge in 
+The build and update process is implemented in Python. So the user does not have to have knowledge in 
 SQL coding but only has to execute one python script and everything is done automatically. This routine 
-ensures that the SQLite database and the BLAST database are always in the same state.
+ensures that the SQLite database and the BLAST database are always in the same state. It also makes 
+the database a little bit safer, since changes can be reviewed before inserting them into the database.
 
 \subsection{Web service}
 
-POODLE web service is build with Vaadin \footnote{https://vaadin.com/home}. This allows a safe 
+POODLE web service is build with Vaadin\footnote{https://vaadin.com/home}. This allows a safe 
 communication between the front end and the database layer as well as a smooth and easy handling of 
-the side. 
+the side. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
+service in the future. That could be necessary, if new functionalities are required. Currently, 
+there are three pages with different roles. The search page provides a formula that can be used 
+to perform a simple SQL search in the local database. Therefor, different files are displayed and 
+can be filled by the user. A click on the search button will automatically build a SQL query and 
+results are displayed, if there are available results. The new entry page allows to insert a new 
+entry into the database. It also provide a Blast search against the NCBI databases to check, whether 
+there are available information about the current sequence or not. Last but not least, users can 
+perform a local Blast search against their one database or a remote Blast search against the NCBI 
+databases on the Blast page. 
+
+\subsection{Blast functionality}
+
+Our software package provides not just a database functionality for powerful and secure data storage 
+and a easy-to-use interface but also a Blast (\citealp{Altschul01}) functionality. This functionality 
+is implemented by a combination of Blast binaries provided by NCBI and the Biojava Api 
+(\citealp{Prlic01}). There are two different Blast searches available in POODLE. On one hand, there 
+is a remote Blast search on the NCBI server. And on the other hand, there is a local Blast search. 
+The remote Blast search is not a fully functional copy of the NCBI web service but can used to 
+perform a quick and simply search against databases provided by NCBI, e.g. Swissprot (\citealp{Doni01}). But we 
+do not recommend to overuse that because too many requests may cause a blacklisting by NCBI. This 
+remote Blast routine is mainly for the insertion of a new entry. The idea is to check whether there 
+are information about the new sequence. The local Blast routine does everything someone would 
+expect from a Blast search but against the local database, hence local Blast.
 
 \end{methods}
 
@@ -102,149 +127,20 @@ the side.
 %\caption{Caption, caption.}\label{fig:02}
 %\end{figure}
 
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-
-
-\subsection{Test1}
-
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-
-
-
-
 
 \section{Discussion}
-
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text Text Text Text Text.
-
-
-
-
-Table~\ref{Tab:01} shows that Text Text Text Text Text  Text Text
-Text Text Text Text. Figure~2\vphantom{\ref{fig:02}} shows that
-the above method Text Text. Text Text Text  Text Text Text Text
-Text Text. Figure~2\vphantom{\ref{fig:02}} shows that the above
-method Text Text. Text Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method Text
-Text.
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     please remove the " % " symbol from \centerline{\includegraphics{fig01.eps}}
-%     as it may ignore the figures.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
 
 
 \section{Conclusion}
 
-(Table~\ref{Tab:01}) Text Text Text Text Text Text  Text Text Text
-Text Text Text Text Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-Text Text Text Text Text Text Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-
-
-
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text  Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about  text text text text
-
-\begin{enumerate}
-\item this is item, use enumerate
-\item this is item, use enumerate
-\item this is item, use enumerate
-\end{enumerate}
-
-Text Text Text Text Text Text Text Text Text Text Text Text Text
-Text Text Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows\vadjust{\pagebreak} that the
-above method  Text Text Text Text Text Text Text Text Text Text
-Text Text.  \citealp{Boffelli03} might want to know about text
-text text text Text Text Text Text Text Text  Text Text Text Text
-Text Text Text Text Text Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text Text Text Text Text Text Text  Text Text.
-\citealp{Boffelli03} might want to know about text text text text
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text Text Text Text Text Text\break Text.
-
-
-Text Text Text Text Text Text  Text Text Text Text Text Text Text
-Text Text  Text Text Text Text Text Text.
-Figure~2\vphantom{\ref{fig:02}} shows that the above method  Text
-Text Text Text\vspace*{-10pt}
-
 
 \section*{Acknowledgements}
 
-Text Text Text Text Text Text  Text Text.  \citealp{Boffelli03} might want to know about  text
-text text text\vspace*{-12pt}
 
 \section*{Funding}
 
-This work has been supported by the... Text Text  Text Text.\vspace*{-12pt}
+This work has been supported by ... nobody. Seriously, not anybody. We know that is sad but it is hard 
+to convince people giving their money away.
 
 %\bibliographystyle{natbib}
 %\bibliographystyle{achemnat}
@@ -259,8 +155,14 @@ This work has been supported by the... Text Text  Text Text.\vspace*{-12pt}
 
 \begin{thebibliography}{}
 
-\bibitem[Bofelli {\it et~al}., 2000]{Boffelli03}
-Bofelli,F., Name2, Name3 (2003) Article title, {\it Journal Name}, {\bf 199}, 133-154.
+\bibitem[Altschul {\it et~al}., 1990]{Altschul01}
+Altschul, S.F., Gish, W., Miller, W., Myers, E.W., Lipman, D.J. (1990) Basic local alignment search tool., {\it J. Mol. Biol.}, {\bf 215}, 403-410.
+
+\bibitem[Prli\'{c} {\it et~al}., 2012]{Prlic01}
+Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. V., ... Willis, S. (2012) BioJava: an open-source framework for bioinformatics in 2012. {\it Bioinformatics}, {\bf 28}(20), 2693-2695. http://doi.org/10.1093/bioinformatics/bts494
+
+\bibitem[O'Donavan {\it et~al}., 2002]{Doni01}
+O'Donovan, C., Martin, M.J., Gattiker, A., Gasteiger, E., Bairoch, A., Apweiler, R. (2002) High-quality protein knowledge resource: SWISS-PROT and TrEMBL {\it Brief. Bioinform.}  {\bf 3} (3), 275-284. doi: 10.1093/bib/3.3.275 
 
 \bibitem[Bag {\it et~al}., 2001]{Bag01}
 Bag,M., Name2, Name3 (2001) Article title, {\it Journal Name}, {\bf 99}, 33-54.

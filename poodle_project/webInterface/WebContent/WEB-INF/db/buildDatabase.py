@@ -3,6 +3,7 @@
 import dbUtils
 
 import os
+import glob
 import subprocess
 
 #
@@ -21,12 +22,35 @@ BLAST_TYPE_PROT = 'prot'
 #---------------------------------------------------------------------------------------------------------------------
 #
 
+# function to read in sequence file
+def readSequence(path):
+  # try to read sequence out of file
+  seqFilePath = (glob.glob(path))
+  if seqFilePath:
+    seqFile = open(seqFilePath[0], 'r')
+    seqFlag = False
+    seq = ""
+    for line in seqFile:
+      if line and line.strip() != "":
+        if seqFlag:
+          seq += line.strip()
+        if line[0] == ">":
+          seqFlag = True
+      else:
+        break
+
+    return seq
+
+  else:
+    return ""
+
+
 # function to create table of protein construncts
 def createProtConTable(db):
     # drop table if exists
     db.execute('drop table if exists proteinConstructs')
     # create table proteinConstructs
-    db.execute('CREATE table proteinConstructs (id Integer Primary Key,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes)')
+    db.execute('CREATE table proteinConstructs (id Integer Primary Key,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,protein_sequence)')
     values = []
     protConFile = open(DATA_PATH + 'protein_constructs/protein_constructs.csv','r')
     for line in protConFile.readlines():
@@ -36,10 +60,12 @@ def createProtConTable(db):
             if line[0] == "#":
                 continue
             lineSplit = line.split('|')
+            seq = readSequence(DATA_PATH + 'protein_constructs/text_files/'+lineSplit[0]+'*')
+            lineSplit.append(seq)
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into proteinConstructs (id,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into proteinConstructs (id,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of cloning vectors
@@ -47,7 +73,7 @@ def createClonVecTable(db):
     # drop table, if it already exists
     db.execute('drop table if exists cloningVectors')
     # create table cloningVectors
-    db.execute('create table cloningVectors (id Integer Primary Key,box,position,name,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,date,author,notes)')
+    db.execute('create table cloningVectors (id Integer Primary Key,box,position,name,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,date,author,notes,vector_sequence)')
     values = []
     clonVecFile = open(DATA_PATH + 'cloning_vectors/cloning_vectors.csv', 'r')
     for line in clonVecFile.readlines():
@@ -57,10 +83,12 @@ def createClonVecTable(db):
             if line[0] == "#":
                 continue
             lineSplit = line.split('|')
+            seq = readSequence(DATA_PATH + 'cloning_vectors/text_files/'+lineSplit[0]+'*')
+            lineSplit.append(seq)
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into cloningVectors (id,box,position,name,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,date,author,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into cloningVectors (id,box,position,name,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,date,author,notes,vector_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of primer
@@ -89,11 +117,11 @@ def makeFastaFile(db,filename,group,table):
     # build query regarding selected table
     queryString = ""
     if table == "primer":
-      queryString = "select id,name,primer_sequence from primer"
+      queryString = "select id,name,primer_sequence from primer where primer_sequence is not \"\""
     elif table == "protConst":
-      queryString = "TODO"
+      queryString = "select id,protein,protein_sequence from proteinConstructs where protein_sequence is not \"\""
     elif table == "clonVec":
-      queryString = "TODO"
+      queryString = "select id,name,vector_sequence from cloningVectors where vector_sequence is not \"\""
 
     # select sequences
     db.select(queryString)
@@ -136,11 +164,17 @@ if __name__ == '__main__':
 
     print "successfully built the database"
 
-    print "making fasta file for blast search..."
+    print "making fasta files for blast search..."
     primerDB = "primer.fasta"
+    proteinDB = "protConst.fasta"
+    vectorDB = "clonVec.fasta"
     makeFastaFile(db, primerDB, GROUP1, 'primer')
-    print "successfully made fasta file"
+    makeFastaFile(db, proteinDB, GROUP1, 'protConst')
+    makeFastaFile(db, vectorDB, GROUP1, 'clonVec')
+    print "successfully made fasta files"
 
-    print "building blast database..."
+    print "building blast databases..."
     makeBlastDB(BLAST_TYPE_NUCL, primerDB, GROUP1)
-    print "successfully built blast database"
+    makeBlastDB(BLAST_TYPE_NUCL, proteinDB, GROUP1)
+    makeBlastDB(BLAST_TYPE_NUCL, vectorDB, GROUP1)
+    print "successfully built blast databases"

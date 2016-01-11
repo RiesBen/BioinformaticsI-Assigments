@@ -1,5 +1,6 @@
 package Forms;
 
+import com.vaadin.server.UserError;
 import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Component;
@@ -62,13 +63,13 @@ public class PrimerParameter extends BasicParameters{
 		Label label6 = new Label("rest");
 		
 		grid.addComponent(label1, 0, 0);
-		grid.addComponent(parameters[0], 1, 1);
-		grid.addComponent(parameters[1], 2, 1);
-		grid.addComponent(parameters[2], 3, 1);
+		grid.addComponent(entryParameters[0], 1, 1);
+		grid.addComponent(entryParameters[1], 2, 1);
+		grid.addComponent(entryParameters[2], 3, 1);
 		
 		grid.addComponent(label2, 0, 2);
-		grid.addComponent(parameters[3], 1, 3);
-		grid.addComponent(parameters[4], 2, 3);
+		grid.addComponent(entryParameters[3], 1, 3);
+		grid.addComponent(entryParameters[4], 2, 3);
 		
 		grid.addComponent(label3, 0, 4);
 		grid.addComponent(entryParameters[5], 1, 5);

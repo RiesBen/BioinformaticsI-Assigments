@@ -127,6 +127,12 @@ public class ServerTableSelection extends HorizontalLayout{
 				newEntry.modifyToProteinParamAdvanced();
 				break;
 			}
+	    	try {
+				poodledb.getNewEntryView().setAutomaticID();
+			} catch (Exception e) {
+				System.out.println("The ID finding process failed: "+e);
+				e.printStackTrace();
+			}
 		}
 	}
 }

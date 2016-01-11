@@ -1,5 +1,6 @@
 package Forms;
 
+import com.vaadin.server.UserError;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
@@ -34,7 +35,7 @@ public abstract class BasicParameters extends VerticalLayout {
 				j++;
 			}
 			parameters[i].setWidth("175px");
-//			parameters[i].setHeight("25px");
+			//			parameters[i].setHeight("25px");
 			grid.addComponent(parameters[i], j, i%3);
 		}
 		this.addComponent(grid);
@@ -44,7 +45,7 @@ public abstract class BasicParameters extends VerticalLayout {
 		this.removeAllComponents();
 
 		grid = new GridLayout(2,4);
-		
+
 		int j=-1;
 		for(int i=0; i<parameters.length; i++){
 			if(i%4==0){
@@ -53,15 +54,15 @@ public abstract class BasicParameters extends VerticalLayout {
 			grid.addComponent(parameters[i], j, i%4);
 		}
 		grid.setSpacing(true);
-		
+
 		this.addComponent(title);
 		this.addComponent(grid);
 	}
-	
+
 	public void changeToEntryForm(){
 		this.removeAllComponents();
 	}
-	
+
 	public String getParameter(int x){
 		return  parameters[x].getValue();
 	}
@@ -78,7 +79,43 @@ public abstract class BasicParameters extends VerticalLayout {
 			parameters[i].setValue("");
 		}
 	}
-	public void evaluate() throws Exception {
-		throw new Exception("No Validation is available!");	
+	public boolean evaluate(boolean focus) throws Exception {
+		boolean focused =focus;
+		for(int i=0; i< entryParameters.length; i++){
+			if((entryParameters[i] instanceof TextField)){
+				if(((TextField) entryParameters[i]).getValue().equals("") || ((TextField) entryParameters[i]).getValue().equals(null) || ((TextField) entryParameters[i]).getValue().equals("")){
+					((TextField) entryParameters[i]).setComponentError(new UserError("This Field is required!"));
+					if(!focused){
+						focused=true;
+						((TextField) entryParameters[i]).focus();
+					}
+				}
+				else{
+					if((((TextField) entryParameters[i]).isValid())){
+						((TextField) entryParameters[i]).setComponentError(null);
+						continue;
+					}
+					else{
+						((TextField) entryParameters[i]).setConversionError("OH OH");	
+						if(!focused){
+							focused=true;
+							((TextField) entryParameters[i]).focus();
+						}
+					}
+				}
+			}
+		}
+		return focused;
+	}
+
+
+
+
+	//------------------------------------------------------------------------------------------------------------------------
+	//Getter and Setter:
+	//------------------------------------------------------------------------------------------------------------------------		
+
+	protected Component getEntryParameters(int x){
+		return entryParameters[x]; 
 	}
 }

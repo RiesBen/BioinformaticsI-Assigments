@@ -8,6 +8,7 @@ import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.NativeSelect;
+import com.vaadin.ui.ProgressBar;
 import com.vaadin.ui.TextArea;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
@@ -15,6 +16,7 @@ import com.vaadin.ui.VerticalLayout;
 import BlastClasses.BlastSearch;
 
 import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Component;
 
 import Forms.BlastSeqField;
 import Forms.GeneralSearchParameter;
@@ -27,6 +29,8 @@ public class BlastView extends VerticalLayout {
 	private BlastSeqField seq;
 	private Button blast;
 	private PoodledbUI poodleUI;
+	private ProgressBar loadBar;
+	private Label working;
 
 	public BlastView(PoodledbUI pooldeUI, BlastBar blastBar){
 		//initialization
@@ -47,28 +51,49 @@ public class BlastView extends VerticalLayout {
 		//LAyout
 		//function:
 		blast.addClickListener(new Button.ClickListener() {
+
 			public void buttonClick(ClickEvent event) {
 				try{
+					
 					String querry= seq.evaluateSequence();
-					Label working = new Label ("still working on");
-					BlastCommunicator blast = new BlastCommunicator(blastBar.getMode(),blastBar.getProgram(), querry, blastBar.getDB(), blastBar.getDBTable(), blastBar.getQuerry());
+					
+					getBlastView().removeComponent(blast);
+					loadBar = new ProgressBar();
+					loadBar.setIndeterminate(true);
+					addComponent(loadBar);
+					
+					working = new Label ("Loading");
+					working.addStyleName("center");
 					addComponent(working);
+					
+					BlastCommunicator blastC = new BlastCommunicator(blastBar.getMode(),blastBar.getProgram(), querry, blastBar.getDB(), blastBar.getDBTable(), blastBar.getQuerry());
+					
 					try{
-						
 					}catch(Exception e){
 						System.out.println("System-Error"+e);
 					}
 				}catch(Exception e){
 					System.out.println("User-Error"+e);
+					getBlastView().refresh();
 				}
 			}
 		});
 
-		addComponent(title);
-		addComponent(blastBar);
-		addComponent(seq);
-		addComponent(blast);
+		this.addComponent(title);
+		this.addComponent(blastBar);
+		this.addComponent(seq);
+		this.addComponent(blast);
 
+	}
+	public void refresh(){
+		getBlastView().removeAllComponents();
+		this.addComponent(title);
+		this.addComponent(blastBar);
+		this.addComponent(seq);
+		this.addComponent(blast);
+	}
+	public BlastView getBlastView(){
+		return this;
 	}
 }
 

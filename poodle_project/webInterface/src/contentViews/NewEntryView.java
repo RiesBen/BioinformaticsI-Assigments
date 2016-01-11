@@ -45,10 +45,13 @@ public class NewEntryView extends VerticalLayout {
 			this.setSpacing(true);
 			this.setMargin(true);
 
+			//title
+			title.setStyleName("center");
 			//Parameters
 			parameters = new VerticalLayout();
 			parameters.setSpacing(true);
-			
+			parameters.setDefaultComponentAlignment(Alignment.TOP_CENTER);
+			parameters.setWidth(this.getWidth()/2, Unit.PERCENTAGE);
 			
 			//Buttons:
 			//newEntry Button 
@@ -73,6 +76,7 @@ public class NewEntryView extends VerticalLayout {
 			//import Button 
 			//initialize
 			importButton = new Upload("import", null);
+			importButton.isReadOnly();
 			//function:
 //			importButton.addClickListener(new Button.ClickListener() {
 //				public void buttonClick(ClickEvent event) {
@@ -85,7 +89,8 @@ public class NewEntryView extends VerticalLayout {
 			buttons.addComponent(importButton);
 			buttons.addComponent(newEntryButton);
 			buttons.setSpacing(true);
-			
+			buttons.setDefaultComponentAlignment(Alignment.BOTTOM_CENTER);
+			buttons.setWidth(this.getWidth()/3, Unit.PERCENTAGE);
 			
 			//build up:
 			this.addComponent(title);

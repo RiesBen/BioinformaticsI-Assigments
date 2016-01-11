@@ -66,7 +66,8 @@ public class GeneralSearchParameter extends BasicParameters{
 		this.removeAllComponents();
 		GridLayout grid = new GridLayout(4,4);
 		grid.setSpacing(true);
-
+		grid.setWidth(90, Unit.PERCENTAGE);
+		
 		Label label1 = new Label("General");
 		Label label2 = new Label("Location");
 

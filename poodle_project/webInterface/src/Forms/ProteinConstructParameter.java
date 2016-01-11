@@ -1,5 +1,6 @@
 package Forms;
 
+import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
@@ -53,6 +54,7 @@ public class ProteinConstructParameter extends BasicParameters{
 	    public void changeToEntryForm(){
 			this.removeAllComponents();
 			GridLayout grid = new GridLayout(4,14);
+			grid.setWidth(90, Unit.PERCENTAGE);
 			Label label1 = new Label("organisatory");
 			Label label2 = new Label("biology");
 			Label label3 = new Label("cloning");

@@ -8,6 +8,7 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
+import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.declarative.Design;
 
@@ -48,6 +49,7 @@ public class VectorParameter extends BasicParameters{
 	    public void changeToEntryForm(){
 			this.removeAllComponents();
 			GridLayout grid = new GridLayout(4,10);
+			grid.setWidth(90, Unit.PERCENTAGE);
 			Label label1 = new Label("construct specifications");
 			Label label2 = new Label("cloning");
 			Label label3 = new Label("sequencing");

@@ -47,7 +47,8 @@ $valo-menu-background-color: #eee;
   @include valo;
 
    // Insert your own theme rules here
-	  
+	.center{ text-align: center}
+	
 	.navigationBar {
 		background: #000040;/* Dark blue */}
 	.navigationMenu{

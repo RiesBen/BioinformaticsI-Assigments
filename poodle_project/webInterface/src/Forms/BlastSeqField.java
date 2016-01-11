@@ -16,7 +16,8 @@ public class BlastSeqField extends BasicParameters{
 
 		//Layout:
 		this.setDefaultComponentAlignment(Alignment.TOP_CENTER);
-
+		this.setWidth((float) (this.getWidth()*0.75), Unit.PERCENTAGE);
+		
 		//Textfield Settings
 		seq.setInputPrompt("Here Sequence");
 		seq.setSizeFull();

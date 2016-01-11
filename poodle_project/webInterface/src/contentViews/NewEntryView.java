@@ -17,7 +17,7 @@ import Forms.VectorParameter;
 import PackageCommunicators.SQLCommunicator;
 import pageElements.SearchBar;
 
-public class NewEntryView extends VerticalLayout {
+public class NewEntryView extends BasicView {
 
 	//SQL-Stuff for preBuffering of Textfields
 	private String dbSQL; 

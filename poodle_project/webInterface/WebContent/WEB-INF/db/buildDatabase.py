@@ -1,9 +1,6 @@
 #!/bin/python
 
 import dbUtils
-from Bio import SeqIO
-from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
 
 import os
 import subprocess
@@ -88,15 +85,13 @@ def makeFastaFile(db,filename,group):
     # select primer sequences
     db.select("select id,name,primer_sequence from primer")
     results = db.fetchAll()
-    records = []
+    f = open(group+filename, 'w')
 
     for result in results:
-        rec = SeqRecord(Seq(result[2]),
-                        id=result[0] + "|" + result[1])
-        records.append(rec)
+        f.write('>'+result[0]+'|'+result[1]+os.linesep)
+        f.write(result[2]+os.linesep)
 
-    # write sequences to file
-    SeqIO.write(records, group+filename, "fasta")
+    f.close()
     
 
 def makeBlastDB(fasta, group):

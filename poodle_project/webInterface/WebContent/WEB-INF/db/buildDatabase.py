@@ -50,7 +50,7 @@ def createProtConTable(db):
     # drop table if exists
     db.execute('drop table if exists proteinConstructs')
     # create table proteinConstructs
-    db.execute('CREATE table proteinConstructs (id Integer Primary Key,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,protein_sequence)')
+    db.execute('CREATE table proteinConstructs (id Integer Primary Key,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,name,C_Term_Tag,N_Term_Tag,vector,cloning_information,organism,protein_sequence)')
     values = []
     protConFile = open(DATA_PATH + 'protein_constructs/protein_constructs.csv','r')
     for line in protConFile.readlines():
@@ -65,7 +65,7 @@ def createProtConTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into proteinConstructs (id,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into proteinConstructs (id,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,date,author,notes,name,C_Term_Tag,N_Term_Tag,vector,cloning_information,organism,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of cloning vectors

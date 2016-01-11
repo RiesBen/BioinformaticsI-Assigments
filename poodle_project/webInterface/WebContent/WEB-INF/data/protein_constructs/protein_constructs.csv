@@ -1,49 +1,49 @@
-#id|box|position|protein|domain|protein family|mutation|backbone vector|antibiotics|cloning sites|QC|RF|used primer|constructed from|concentration|DH5A stock|C+ stock|project|date|author|notes
-1|I|1A|hUbiquitin|full length|Ub|WT|pET M30||Kan||Silke's pETM30 from EMBL; W to S mut adds BamHI site before TEV site|||41|||||SW|
-2|I|2A|hUbcH5a|full length|E2|WT|pET M10_60|1|Kan|NcoI / KpnI||||115|y|||02.01.10|Mira|
-3|I|3A|hSmurf1|C2|E3|WT|pET M41|4|Kan|NcoI / KpnI||||86|y|||26.01.10|Mira|
-4|I|4A|hSmurf2|C2|E3|WT|pET M41|3|Kan|NcoI / KpnI||||79||||26.01.10|Mira|
-5|I|5A|hSmurf2|C2|E3|WT|pETZ2.1a|5|Kan|NcoI / KpnI||||93||||17.02.10|Mira|
-6|I|6A|hSmurf2|C2|E3|WT|pET M11-Trx|1|Kan|NcoI / KpnI||||115||||04.02.10|Mira|
-7|I|7A|hSmurf2|C2|E3|WT|pET M11-SUMO|1|Kan|NcoI / KpnI||||56||||03.03.10|Mira|
-8|I|8A|hSmurf1|HECT|E3|WT|pET M41|2|Kan|NcoI / KpnI||||14|y|||28.01.10|Mira|
-9|I|9A|hRap1B|full length||WT|pET M11-Trx|1|Kan|NcoI / KpnI||||136||||26.01.10|Mira|
-10|I|1B|hRap1B|full length||WT|pET M41|1|Kan|NcoI / KpnI||||28||||26.01.10|Mira|
-11|I|2B|hE6AP|HECT|E3|WT|pET M30||Kan|||||134||||24.11.09|Mira|
-17|I|8B|hUbe1||E1|WT|pET M30|2|Kan||Silke's pETM30 from EMBL; W to S mut adds BamHI site before TEV site|||46||||02.03.10|Mira|
-19|I|1C|hUbcH5a||E2|WT|pET M41|1|Kan|NcoI / KpnI||||69||||28.01.10|Mira|
-20|I|2C|hUbcH5b||E2|WT|pET M41||Kan|NcoI / KpnI||||55||||01.07.10|Mira|
-21|I|3C|hHUWE1|N-lobe|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||122||||04.03.10|Mira|
-22|I|4C|hHUWE1|N1|E3|WT|pET M10_60|2|Kan|NcoI / BamHI||||98||||04.03.10|Mira|
-23|I|5C|hHUWE1|N2|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||42||||04.03.10|Mira|
-24|I|6C|hHUWE1|C-lobe|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||60||y||04.03.10|Mira|
-25|I|7C|hUbcH5b||E2|WT|pET M10_60|1|Kan|NcoI / KpnI||||92||||11.01.10|Mira|NcoI KpnI?
-26|I|8C|hUbch7||E2|WT|pGEX|1|Amp|||||226||||01.03.10|Mira|
-30|I|3D|hSmurf2|HECT|E3|WT|pProEx HTb||Amp|||||101||||||Silkes vector for student practicals
-38|I|2E|hUbcH5b||E2|WT|pET M30||Kan|NcoI / KpnI|Silke's pETM30 from EMBL; W to S mut adds BamHI site before TEV site|||128||||07.07.10|Mira|
-39|I|3E|hUbcH5b|full length|E2|WT|pET M40|1|Kan|NcoI / BamHI|NheI / BamHI|||105||||07.07.10|Mira|
-41|I|5E|hUbch7||E2|WT|pET M40||Kan|NcoI / BamHI|NheI / BamHI|||161||||21.07.10|Mira|
-43|I|7E|hUbiquitin||Ub|WT|pET M11|1|Kan|NcoI / BamHI|NheI / BamHI|||127||||22.07.10|Mira|
-44|I|8E|hUbcH5b||E2|WT|pET 28a||Kan|NcoI / BamHI|NheI / BamHI|||33|y|||05.09.10|Mira|
-45|I|9E|hUbch7||E2|WT|pET 28a||Kan|NcoI / BamHI|NheI / BamHI|||57|y|||26.07.10|Mira|
-50|I|5F|hRhoA|full length||WT|pET M41||Kan|NcoI / KpnI||||66||||no date|Ida|
-51|I|6F|hRap1B|1-167||WT|pET M41||Kan|NcoI / KpnI||||82||||no date|Ida|
-52|I|7F|hRhoA|1-181||WT|pET M30||Kan|NcoI / KpnI|Silke's pETM30 from EMBL; W to S mut adds BamHI site before TEV site|||53||||12.02.10|Ida|
-53|I|8F|hRhoA|1-181||WT|pProEx HTb||Amp|NcoI / KpnI||||78||||15.01.10|Ida|
-54|I|9F|hRhoA|1-181||WT|pET M30-HA||Kan|NcoI / KpnI||||112||||08.03.10|Ida|
-61|I|7G|rbs-hUbch5b||E2|WT|pET M11 Ub|1.1|Kan|XbaI-NheI/BamHI|NheI / BamHI|||84||||04.10.10|Mira|H6-TEV-UbWT-rbs hUbch5bWT
-62|I|8G|rbs-hUbch7||E2|WT|pET M11 Ub|3.1|Kan|XbaI-NheI/BamHI|NheI / BamHI|||123||||21.09.10|Mira|H6-TEV-UbWT-rbs hUbch7WT
-63|I|9G|hUbe1|full length|E1|WT|pET 28a KpnI||Kan|PciI-NcoI/KpnI||||||||22.03.10|Matthias|
-66|I|3H|hUbe1||E1|WT|pET 43a|2|Amp|SpeI /|||||||||SW|NusA-Ube1
-78|I|6I|hUbiquitin||Ub|WT|pET 24d (pET M11)||Kan|NcoI / KpnI|BamHI|||100|||||SW|original clone from Silke
-79|I|7I|hSmurf2|C2|E3|WT|pET M10_60|2|Kan|NcoI / KpnI|-|||||||04.09.09|Tine|
-82|II|1A|hSmurf2|C2|E3|WT|pET M30||Kan|NcoI / KpnI||||||||2005|SW|
-83|II|2A|hSmurf2|C2|E3|WT|pProEx HTb||Amp|NcoI / KpnI||||||||2005|SW|
-84|II|3A|hSmurf2|C2|E3|WT|pGEX 4T1-TEV||Amp|BamHI / QC stop||||||||2007|SW|
-253|IV|1B|scRsp5|HECT|E3|I440V|pProEx HTb|2|Amp|QC with #189||||||||01.09.2011|Mira|
-254|IV|2B|scRsp5|HECT|E3|I450L|pProEx HTb|4|Amp|QC with #189||||||||05.09.2011|Mira|
-255|IV|3B|scRsp5|HECT|E3|I537L|pProEx HTb|3|Amp|QC with #189||||||||05.09.2011|Mira|
-256|IV|4B|scRsp5|HECT|E3|M598V|pProEx HTb|1|Amp|QC with #189||||||||05.09.2011|Mira|
-257|IV|5B|scRsp5|HECT|E3|I691L|pProEx HTb|2|Amp|QC with #189||||||||07.11.2011|Mira|
-258|IV|6B|scRsp5|HECT|E3|I694V|pProEx HTb|1|Amp|QC with #189||||||||1.09.2011|Mira|
-259|IV|7B|scRsp5|HECT|E3|I696V|pProEx HTb|3|Amp|QC with #189||||||||05.09.2011|Mira|
+#id|box|position|protein|domain|protein family|mutation|backbone vector|antibiotics|classic|QC|RF|used primer|constructed from|concentration|DH5A stock|C+ stock|project|date|author|notes|name|cTags|nTags|vector|cloning information|organism
+1|I|1A|hUbiquitin|full length|Ub|WT|pET M30||Kan||Silke's pETM30 from EMBL| W to S mut adds BamHI site before TEV site|||41|||||SW|test|His|Gst|PETN30||DM
+2|I|2A|hUbcH5a|full length|E2|WT|pET M10_60|1|Kan|NcoI / KpnI||||115|y|||02.01.10|Mira||test|His|Gst|PETN30||DM
+3|I|3A|hSmurf1|C2|E3|WT|pET M41|4|Kan|NcoI / KpnI||||86|y|||26.01.10|Mira||test|His|Gst|PETN30||DM
+4|I|4A|hSmurf2|C2|E3|WT|pET M41|3|Kan|NcoI / KpnI||||79||||26.01.10|Mira||test|His|Gst|PETN30||DM
+5|I|5A|hSmurf2|C2|E3|WT|pETZ2.1a|5|Kan|NcoI / KpnI||||93||||17.02.10|Mira||test|His|Gst|PETN30||DM
+6|I|6A|hSmurf2|C2|E3|WT|pET M11-Trx|1|Kan|NcoI / KpnI||||115||||04.02.10|Mira||test|His|Gst|PETN30||DM
+7|I|7A|hSmurf2|C2|E3|WT|pET M11-SUMO|1|Kan|NcoI / KpnI||||56||||03.03.10|Mira||test|His|Gst|PETN30||DM
+8|I|8A|hSmurf1|HECT|E3|WT|pET M41|2|Kan|NcoI / KpnI||||14|y|||28.01.10|Mira||test|His|Gst|PETN30||DM
+9|I|9A|hRap1B|full length||WT|pET M11-Trx|1|Kan|NcoI / KpnI||||136||||26.01.10|Mira||test|His|Gst|PETN30||DM
+10|I|1B|hRap1B|full length||WT|pET M41|1|Kan|NcoI / KpnI||||28||||26.01.10|Mira||test|His|Gst|PETN30||DM
+11|I|2B|hE6AP|HECT|E3|WT|pET M30||Kan|||||134||||24.11.09|Mira||test|His|Gst|PETN30||DM
+17|I|8B|hUbe1||E1|WT|pET M30|2|Kan||Silke's pETM30 from EMBL| W to S mut adds BamHI site before TEV site|||46||||02.03.10|Mira|test|His|Gst|PETN30||DM
+19|I|1C|hUbcH5a||E2|WT|pET M41|1|Kan|NcoI / KpnI||||69||||28.01.10|Mira||test|His|Gst|PETN30||DM
+20|I|2C|hUbcH5b||E2|WT|pET M41||Kan|NcoI / KpnI||||55||||01.07.10|Mira||test|His|Gst|PETN30||DM
+21|I|3C|hHUWE1|N-lobe|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||122||||04.03.10|Mira||test|His|Gst|PETN30||DM
+22|I|4C|hHUWE1|N1|E3|WT|pET M10_60|2|Kan|NcoI / BamHI||||98||||04.03.10|Mira||test|His|Gst|PETN30||DM
+23|I|5C|hHUWE1|N2|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||42||||04.03.10|Mira||test|His|Gst|PETN30||DM
+24|I|6C|hHUWE1|C-lobe|E3|WT|pET M10_60|1|Kan|NcoI / BamHI||||60||y||04.03.10|Mira||test|His|Gst|PETN30||DM
+25|I|7C|hUbcH5b||E2|WT|pET M10_60|1|Kan|NcoI / KpnI||||92||||11.01.10|Mira|NcoI KpnI?|test|His|Gst|PETN30||DM
+26|I|8C|hUbch7||E2|WT|pGEX|1|Amp|||||226||||01.03.10|Mira||test|His|Gst|PETN30||DM
+30|I|3D|hSmurf2|HECT|E3|WT|pProEx HTb||Amp|||||101||||||Silkes vector for student practicals|test|His|Gst|PETN30||DM
+38|I|2E|hUbcH5b||E2|WT|pET M30||Kan|NcoI / KpnI|Silke's pETM30 from EMBL| W to S mut adds BamHI site before TEV site|||128||||07.07.10|Mira|test|His|Gst|PETN30||DM
+39|I|3E|hUbcH5b|full length|E2|WT|pET M40|1|Kan|NcoI / BamHI|NheI / BamHI|||105||||07.07.10|Mira||test|His|Gst|PETN30||DM
+41|I|5E|hUbch7||E2|WT|pET M40||Kan|NcoI / BamHI|NheI / BamHI|||161||||21.07.10|Mira||test|His|Gst|PETN30||DM
+43|I|7E|hUbiquitin||Ub|WT|pET M11|1|Kan|NcoI / BamHI|NheI / BamHI|||127||||22.07.10|Mira||test|His|Gst|PETN30||DM
+44|I|8E|hUbcH5b||E2|WT|pET 28a||Kan|NcoI / BamHI|NheI / BamHI|||33|y|||05.09.10|Mira||test|His|Gst|PETN30||DM
+45|I|9E|hUbch7||E2|WT|pET 28a||Kan|NcoI / BamHI|NheI / BamHI|||57|y|||26.07.10|Mira||test|His|Gst|PETN30||DM
+50|I|5F|hRhoA|full length||WT|pET M41||Kan|NcoI / KpnI||||66||||no date|Ida||test|His|Gst|PETN30||DM
+51|I|6F|hRap1B|1-167||WT|pET M41||Kan|NcoI / KpnI||||82||||no date|Ida||test|His|Gst|PETN30||DM
+52|I|7F|hRhoA|1-181||WT|pET M30||Kan|NcoI / KpnI|Silke's pETM30 from EMBL| W to S mut adds BamHI site before TEV site|||53||||12.02.10|Ida|test|His|Gst|PETN30||DM
+53|I|8F|hRhoA|1-181||WT|pProEx HTb||Amp|NcoI / KpnI||||78||||15.01.10|Ida||test|His|Gst|PETN30||DM
+54|I|9F|hRhoA|1-181||WT|pET M30-HA||Kan|NcoI / KpnI||||112||||08.03.10|Ida||test|His|Gst|PETN30||DM
+61|I|7G|rbs-hUbch5b||E2|WT|pET M11 Ub|1.1|Kan|XbaI-NheI/BamHI|NheI / BamHI|||84||||04.10.10|Mira|H6-TEV-UbWT-rbs hUbch5bWT|test|His|Gst|PETN30||DM
+62|I|8G|rbs-hUbch7||E2|WT|pET M11 Ub|3.1|Kan|XbaI-NheI/BamHI|NheI / BamHI|||123||||21.09.10|Mira|H6-TEV-UbWT-rbs hUbch7WT|test|His|Gst|PETN30||DM
+63|I|9G|hUbe1|full length|E1|WT|pET 28a KpnI||Kan|PciI-NcoI/KpnI||||||||22.03.10|Matthias||test|His|Gst|PETN30||DM
+66|I|3H|hUbe1||E1|WT|pET 43a|2|Amp|SpeI /|||||||||SW|NusA-Ube1|test|His|Gst|PETN30||DM
+78|I|6I|hUbiquitin||Ub|WT|pET 24d (pET M11)||Kan|NcoI / KpnI|BamHI|||100|||||SW|original clone from Silke|test|His|Gst|PETN30||DM
+79|I|7I|hSmurf2|C2|E3|WT|pET M10_60|2|Kan|NcoI / KpnI|-|||||||04.09.09|Tine||test|His|Gst|PETN30||DM
+82|II|1A|hSmurf2|C2|E3|WT|pET M30||Kan|NcoI / KpnI||||||||2005|SW||test|His|Gst|PETN30||DM
+83|II|2A|hSmurf2|C2|E3|WT|pProEx HTb||Amp|NcoI / KpnI||||||||2005|SW||test|His|Gst|PETN30||DM
+84|II|3A|hSmurf2|C2|E3|WT|pGEX 4T1-TEV||Amp|BamHI / QC stop||||||||2007|SW||test|His|Gst|PETN30||DM
+253|IV|1B|scRsp5|HECT|E3|I440V|pProEx HTb|2|Amp|QC with #189||||||||01.09.2011|Mira||test|His|Gst|PETN30||DM
+254|IV|2B|scRsp5|HECT|E3|I450L|pProEx HTb|4|Amp|QC with #189||||||||05.09.2011|Mira||test|His|Gst|PETN30||DM
+255|IV|3B|scRsp5|HECT|E3|I537L|pProEx HTb|3|Amp|QC with #189||||||||05.09.2011|Mira||test|His|Gst|PETN30||DM
+256|IV|4B|scRsp5|HECT|E3|M598V|pProEx HTb|1|Amp|QC with #189||||||||05.09.2011|Mira||test|His|Gst|PETN30||DM
+257|IV|5B|scRsp5|HECT|E3|I691L|pProEx HTb|2|Amp|QC with #189||||||||07.11.2011|Mira||test|His|Gst|PETN30||DM
+258|IV|6B|scRsp5|HECT|E3|I694V|pProEx HTb|1|Amp|QC with #189||||||||1.09.2011|Mira||test|His|Gst|PETN30||DM
+259|IV|7B|scRsp5|HECT|E3|I696V|pProEx HTb|3|Amp|QC with #189||||||||05.09.2011|Mira||test|His|Gst|PETN30||DM

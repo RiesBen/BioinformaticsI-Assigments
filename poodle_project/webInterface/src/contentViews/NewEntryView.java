@@ -1,5 +1,6 @@
 package contentViews;
 
+import java.io.File;
 import java.util.Collection;
 
 import com.poodledb.PoodledbUI;
@@ -65,6 +66,9 @@ public class NewEntryView extends BasicView {
 				addComponent(working);
 				try{
 					fieldValdiation();
+					try{
+						File page = new File(basepath+"/WEB-INF/db/Wiesner/");
+					}
 				}
 				catch(Exception e){
 					Label error = new Label ("Fields are not correct!");

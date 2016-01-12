@@ -65,10 +65,10 @@ public class BlastView extends BasicView {
 					addComponent(working);
 					
 					BlastCommunicator blastC = new BlastCommunicator(blastBar.getMode(),blastBar.getProgram(), querry, blastBar.getDB(), blastBar.getDBTable(), blastBar.getQuerry());
-					
+					getBlastView().refresh();
 					try{
-//						poodleUI.setContentBox(new BlastResultView(blastC.getResult()));
-//						poodleUI.modifyLayoutToReducedView();
+						poodleUI.setContentBox(new BlastResultView(blastC.getResult(), poodleUI));
+						poodleUI.modifyLayoutToReducedView();
 					}catch(Exception e){
 						System.out.println("System-Error-with building up the BlastResultView: "+e);
 						e.printStackTrace();

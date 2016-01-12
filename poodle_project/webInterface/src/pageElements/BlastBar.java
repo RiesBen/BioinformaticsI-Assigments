@@ -29,6 +29,7 @@ public class BlastBar extends VerticalLayout {
 
 		//initialize all Components
 		serverTableSelection = new ServerTableSelection(poodleUI);
+		serverTableSelection.setForNewEntryView();
 		
 		//layout:
 		panel.setDefaultComponentAlignment(Alignment.TOP_CENTER);

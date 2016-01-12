@@ -142,7 +142,7 @@ because it allows a safe
 communication between the front end and the database layer as well as a smooth and intuitive user 
 interface. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
 service in the future. That could be necessary, if new functionalities are required. Currently, 
-there are three pages with different roles. The search page provides a formula that can be used 
+there are three pages with different roles. The search page (see Figure \ref{fig:poodleMain}) provides a formula that can be used 
 to perform a simple SQL search in the local database. Therefor, different fields are displayed and 
 can be filled by the user. A click on the search button will automatically build a SQL query and 
 results are displayed, if there are available results. The new entry page allows to insert a new 
@@ -150,6 +150,14 @@ entry into the database. It also provide a Blast search against the NCBI databas
 there are already available information about the new sequence or not. Last but not least, users can 
 perform a local Blast search against their one database or a remote Blast search against the NCBI 
 databases on the Blast page. That functionality can be found on the Blast page. 
+
+\begin{figure}[!tpb]
+ \centering
+ \includegraphics[width=0.3\textwidth]{../img/Poodle_MainPage.png}
+ \caption{Main page of POODLE's webservice. Users can perform a SQL search against the local database on this page.}
+ \label{fig:poodleMain}
+\end{figure}
+
 
 \subsection{Blast functionality}
 
@@ -202,7 +210,7 @@ Vaadin was chosen as the running framework for several reasons. Java is a widely
 in the scientific world. So there is a relative high chance for a person in the laboratory, who 
 is able to work with
 Java. Again we want to make adaption as easy as possible for the user. Furthermore, Vaadin needs a 
-tomcat server. Such a server is provided free of charge by Apache\footnote{http://www.apache.org/}. 
+tomcat server. Such a server is provided free of charge by Apache (for more detail visit http://www.apache.org/). 
 So the user does not have to face extra charges just to be able to use POODLE. More reasons for 
 Vaadin are discussed above.
 

@@ -65,7 +65,7 @@ def createProtConTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into proteinConstructs (id Integer Primary Key,name,author,date,box,position,project,organism,protein,domain,protein_family,mutation,backbone_vector,antibiotics,restriction,QC,RF,cloning_information,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,notes,C_Term_Tag,N_Term_Tag,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into proteinConstructs (id,name,author,date,box,position,project,organism,protein,domain,protein_family,mutation,backbone_vector,antibiotics,restriction,QC,RF,cloning_information,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,notes,C_Term_Tag,N_Term_Tag,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of cloning vectors
@@ -88,7 +88,7 @@ def createClonVecTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into cloningVectors (id,name,author,date,box,position,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,size,concentration,DH5A_stock,notes,vector_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into cloningVectors (id,name,author,date,box,position,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,size,concentration,DH5A_stock,notes,vector_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of primer
@@ -109,7 +109,7 @@ def createPrimTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into primer (id Integer Primary Key,name,author,date,box,position,project,designed_for,organism,protein,domain,restriction,QC,RF,cloning_information,direction,melting_temperature,concentration_uM,primer_sequence,protein_sequence,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into primer (id,name,author,date,box,position,project,designed_for,organism,protein,domain,restriction,QC,RF,cloning_information,direction,melting_temperature,concentration_uM,primer_sequence,protein_sequence,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create a fasta file with sequences from a database

@@ -43,13 +43,13 @@ public class BlastCommunicator {
 					throw new Exception("unkown OS!");
 				}
 
-				//Check Table
+				//Check Table	
 				if(table.equals("all")){
 					location= basepath+"/WEB-INF/db/"+database+"/primer.fasta";
 					BlastSearch localBlast1 = new BlastSearch(sequence, location, program);
-					location= basepath+"/WEB-INF/db/"+database+"/vector.fasta";
+					location= basepath+"/WEB-INF/db/"+database+"/clonVector.fasta";
 					BlastSearch localBlast2 = new BlastSearch(sequence, location, program);
-					location= basepath+"/WEB-INF/db/"+database+"/proteinConstruct.fasta";
+					location= basepath+"/WEB-INF/db/"+database+"/protConst.fasta";
 					BlastSearch localBlast3 = new BlastSearch(sequence, location, program);
 
 					resultPrimer=localBlast1.getResult();

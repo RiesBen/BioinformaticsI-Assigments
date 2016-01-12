@@ -70,37 +70,37 @@ public class NewEntryView extends BasicView {
 				addComponent(working);
 				try{
 					fieldValdiation();
+					
 					try{
 						String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
-						System.out.println(basepath+"/WEB-INF/db/Wiesner/"+poodleUI.getTables());
-						File page = new File(basepath+"/WEB-INF/db/Wiesner/"+poodleUI.getTables());
-						String entry=null;
-						
+						System.out.println(basepath+"/WEB-INF/data/Wiesner/"+poodleUI.getTables());
+						File entryTable = new File(basepath+"/WEB-INF/data/Wiesner/"+poodleUI.getServerTable().getTable()+"/"+poodleUI.getServerTable().getTable()+".csv");
+						String entry="";
+
 						for(int i=0; i<parameters.getComponentCount(); i++){
 							entry+=((BasicParameters) parameters.getComponent(i)).makeSimpleEntry();
 						}
-							System.out.println(entry);
-						
+						System.out.println(entry);
 						if(!entry.isEmpty()){
-//							FileUtils.writeStringToFile(page, entry, true);
+							FileUtils.writeStringToFile(entryTable, entry, true);
+							entryTable = null;
 						}
 					}
 					catch(Exception e){
-						System.out.println("Creating Entry faild:" );
+						System.out.println("Creating Entry faild:"+e);
 						e.printStackTrace();
 					}
 				}
 				catch(Exception e){
-					Label error = new Label ("Fields are not correct!");
-					addComponent(error);
-					System.out.println(e);
+					System.out.println("Field evaluation is not working! "+e);
+					e.printStackTrace();
 				}
 			}
 		});
 		//import Button 
 		//initialize
 		importButton = new Upload("import", null);
-		importButton.isReadOnly();
+		importButton.setReadOnly(true);
 		//function:
 		//			importButton.addClickListener(new Button.ClickListener() {
 		//				public void buttonClick(ClickEvent event) {
@@ -192,7 +192,7 @@ public class NewEntryView extends BasicView {
 			throw new Exception("could not find SQL Table");
 		}
 
-		
+
 		Collection<?> itemIDS= data.getItemIds();
 		int numberY = -1;
 		int numberX=-1;
@@ -200,7 +200,7 @@ public class NewEntryView extends BasicView {
 		for (Object itemID : itemIDS)
 		{
 			Property property= data.getContainerProperty(itemID, "id");
-			numberX = Integer.parseInt(((String) property.getValue()));
+			numberX = (int) property.getValue();
 			if(numberY==-1 && numberX!=1){
 				numberX=1;
 				break;
@@ -220,7 +220,6 @@ public class NewEntryView extends BasicView {
 				}
 			}
 		}
-		System.out.println("The result is:"+numberX);
 		this.generalParameter.setID(Integer.toString(numberX));
 
 	}

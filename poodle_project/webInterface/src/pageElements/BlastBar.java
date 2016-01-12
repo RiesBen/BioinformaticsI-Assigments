@@ -59,6 +59,9 @@ public class BlastBar extends VerticalLayout {
 		querry.setInputPrompt("For Advanced users.");
 		panel.addComponents(mode, program, serverTableSelection);
 		this.addComponents(title, panel);
+		
+		mode.setReadOnly(true);
+		program.setReadOnly(true);
 	}
 
 	public void modeValues(String modeValue){

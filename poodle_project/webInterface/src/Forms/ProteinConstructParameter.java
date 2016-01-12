@@ -6,6 +6,7 @@ import com.vaadin.ui.DateField;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.OptionGroup;
+import com.vaadin.ui.TextArea;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
@@ -23,7 +24,7 @@ public class ProteinConstructParameter extends BasicParameters{
 		parameters[4]   = new TextField("vector");			
 
 		//entry Parameter:
-		entryParameters = new Component[18];
+		entryParameters = new Component[17];
 
 		entryParameters[0] = new TextField("project");
 		entryParameters[1] = new TextField("organism");
@@ -56,66 +57,41 @@ public class ProteinConstructParameter extends BasicParameters{
 	}
 	public void changeToEntryForm(){
 		this.removeAllComponents();
-		GridLayout grid = new GridLayout(4,14);
+		GridLayout grid = new GridLayout(6,14);
 		grid.setWidth(90, Unit.PERCENTAGE);
-		Label label1 = new Label("organisatory");
-		Label label2 = new Label("biology");
-		Label label3 = new Label("cloning");
-		Label label4 = new Label("specifications");
-		Label label5 = new Label("sequences");
-		Label label6 = new Label("rest");
+		Label label1 = new Label("protein");
+		Label label2 = new Label("construct");
+		Label label3 = new Label("plasmid");
+		Label label4 = new Label("cloning");
+		Label label5 = new Label("sample");
+		Label label6 = new Label("Sequences");
 
 		grid.addComponent(label1, 0, 0);
 		grid.addComponent(entryParameters[0], 1, 1);
 		grid.addComponent(entryParameters[1], 2, 1);
-		grid.addComponent(entryParameters[2], 3, 1);	
-		grid.addComponent(entryParameters[3], 1, 1);
-		grid.addComponent(entryParameters[4], 2, 1);
-		grid.addComponent(label2, 0, 2);
-		grid.addComponent(entryParameters[5], 1, 3);
-		grid.addComponent(entryParameters[6], 2, 3);
-		grid.addComponent(entryParameters[7], 3, 3);
-		grid.addComponent(label3, 0, 4);
-		grid.addComponent(entryParameters[8], 1, 5);
-		grid.addComponent(entryParameters[9], 2, 5);
-		grid.addComponent(label4, 0, 6);
-		grid.addComponent(entryParameters[10], 1, 7);
-		grid.addComponent(entryParameters[11], 2, 7);
-		grid.addComponent(entryParameters[12], 1, 7);
-		grid.addComponent(entryParameters[13], 2, 7);
+		grid.addComponent(entryParameters[2], 3, 1);
 
-		grid.addComponent(label5, 0, 8);
-		grid.addComponent(entryParameters[14], 1, 9);
-		grid.addComponent(entryParameters[15], 2, 9);
-		
-		grid.addComponent(entryParameters[16], 1, 11);
+		grid.addComponent(entryParameters[3], 1, 2);
+		grid.addComponent(entryParameters[4], 2, 2);
+		grid.addComponent(label2, 0, 3);
+		grid.addComponent(entryParameters[5], 1, 4);
+		grid.addComponent(entryParameters[6], 2, 4);
+		grid.addComponent(entryParameters[7], 3, 4);
+		grid.addComponent(label3, 0, 5);
+		grid.addComponent(entryParameters[8], 1, 6);
+		grid.addComponent(entryParameters[9], 2, 6);
+		grid.addComponent(label4, 0, 7);
+		grid.addComponent(entryParameters[12], 1, 8);
+		grid.addComponent(entryParameters[13], 2, 8);
+		grid.addComponent(entryParameters[10], 1, 9);
+		grid.addComponent(entryParameters[11], 2, 9);
+		grid.addComponent(label5, 0, 10);
+		grid.addComponent(entryParameters[14], 1, 11);
+		grid.addComponent(entryParameters[15], 2, 11);
+
+		grid.addComponent(entryParameters[16], 1, 13);
 
 		grid.setSpacing(true);
 		this.addComponent(grid);		
-	}
-	public String makeSimpleEntry() throws Exception{
-		String entry=null;
-
-		for(int i=0; i<entryParameters.length; i++){
-			if(entryParameters[i] instanceof TextField){
-				entry+="|"+((TextField) entryParameters[i]).getValue();
-			}
-			else if(entryParameters[i] instanceof OptionGroup){
-				entry+="|"+((OptionGroup) entryParameters[i]).getValue();
-				if(((OptionGroup) entryParameters[i]).getDescription().equals("cloning types")){
-					System.out.println(((OptionGroup) entryParameters[i]).getValue());
-				}
-				else if(((OptionGroup) entryParameters[i]).getDescription().equals("cell stocks")){
-					System.out.println(((OptionGroup) entryParameters[i]).getValue());
-				}
-				else{
-					throw new Exception("something with optiongroup!");
-				}
-			}
-			else{
-				throw new Exception("not only all components are handled! write another a more specific method");
-			}
-		}
-		return entry;
 	}
 }

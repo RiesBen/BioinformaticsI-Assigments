@@ -52,7 +52,7 @@ def createProtConTable(db):
     # create table proteinConstructs
     db.execute('CREATE table proteinConstructs (id Integer Primary Key,name,author,date,box,position,project,organism,protein,domain,protein_family,mutation,backbone_vector,antibiotics,restriction,QC,RF,cloning_information,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,notes,C_Term_Tag,N_Term_Tag,protein_sequence)')
     values = []
-    protConFile = open(DATA_PATH + 'protein_constructs/protein_constructs.csv','r')
+    protConFile = open(DATA_PATH + GROUP1 + 'proteinConstructs/proteinConstructs.csv','r')
     for line in protConFile.readlines():
         # just take non-empty lines into account
         if line:
@@ -60,7 +60,7 @@ def createProtConTable(db):
             if line[0] == "#":
                 continue
             lineSplit = line.split('|')
-            seq = readSequence(DATA_PATH + 'protein_constructs/text_files/'+lineSplit[0]+'*')
+            seq = readSequence(DATA_PATH + GROUP1 + 'proteinConstructs/text_files/'+lineSplit[0]+'*')
             lineSplit.append(seq)
             values.append(tuple(lineSplit))
 
@@ -75,7 +75,7 @@ def createClonVecTable(db):
     # create table cloningVectors
     db.execute('create table cloningVectors (id Integer Primary Key,name,author,date,box,position,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,size,concentration,DH5A_stock,notes,vector_sequence)')
     values = []
-    clonVecFile = open(DATA_PATH + 'cloning_vectors/cloning_vectors.csv', 'r')
+    clonVecFile = open(DATA_PATH + GROUP1 + 'cloningVectors/cloningVectors.csv', 'r')
     for line in clonVecFile.readlines():
         # just take non-empty lines into account
         if line:
@@ -83,7 +83,7 @@ def createClonVecTable(db):
             if line[0] == "#":
                 continue
             lineSplit = line.split('|')
-            seq = readSequence(DATA_PATH + 'cloning_vectors/text_files/'+lineSplit[0]+'*')
+            seq = readSequence(DATA_PATH + GROUP1 + 'cloningVectors/text_files/'+lineSplit[0]+'*')
             lineSplit.append(seq)
             values.append(tuple(lineSplit))
 
@@ -98,7 +98,7 @@ def createPrimTable(db):
     # create table primer
     db.execute('create table primer (id Integer Primary Key,name,author,date,box,position,project,designed_for,organism,protein,domain,restriction,QC,RF,cloning_information,direction,melting_temperature,concentration_uM,primer_sequence,protein_sequence,notes)')
     values = []
-    primerFile = open(DATA_PATH + 'primer/primer_database.csv', 'r')
+    primerFile = open(DATA_PATH + GROUP1 + 'primer/primer.csv', 'r')
     for line in primerFile.readlines():
         # just take non-empty lines into account
         if line:

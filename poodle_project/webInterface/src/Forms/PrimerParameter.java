@@ -58,9 +58,8 @@ public class PrimerParameter extends BasicParameters{
 		grid.setDefaultComponentAlignment(Alignment.TOP_CENTER);
 		grid.setWidth(90, Unit.PERCENTAGE);
 		
-		Label label1 = new Label("organisatory");
-		Label label2 = new Label("biology");
-		Label label3 = new Label("cloning");
+		Label label1 = new Label("biology");
+		Label label2 = new Label("cloning");
 		Label label4 = new Label("specifications");
 		Label label5 = new Label("sequences");
 		Label label6 = new Label("rest");
@@ -69,27 +68,25 @@ public class PrimerParameter extends BasicParameters{
 		grid.addComponent(entryParameters[0], 1, 1);
 		grid.addComponent(entryParameters[1], 2, 1);
 
+		grid.addComponent(entryParameters[2], 1, 2);
+		grid.addComponent(entryParameters[3], 2, 2);
+		grid.addComponent(entryParameters[4], 3, 2);
 		
-		grid.addComponent(label2, 0, 2);
-		grid.addComponent(entryParameters[2], 1, 3);
-		grid.addComponent(entryParameters[3], 2, 3);
-		grid.addComponent(entryParameters[4], 3, 3);
-		
-		grid.addComponent(label3, 0, 4);
-		grid.addComponent(entryParameters[5], 1, 5);
-		grid.addComponent(entryParameters[6], 2, 5);
+		grid.addComponent(label2, 0, 3);
+		grid.addComponent(entryParameters[5], 1, 4);
+		grid.addComponent(entryParameters[6], 2, 4);
 
 		
-		grid.addComponent(label4, 0, 6);
-		grid.addComponent(entryParameters[7], 1, 5);
-		grid.addComponent(entryParameters[8], 2, 7);
-		grid.addComponent(entryParameters[9], 3, 7);
+		grid.addComponent(label4, 0, 5);
+		grid.addComponent(entryParameters[7], 1, 6);
+		grid.addComponent(entryParameters[8], 2, 6);
+		grid.addComponent(entryParameters[9], 3, 6);
 
-		grid.addComponent(label5, 0, 8);
-		grid.addComponent(entryParameters[10], 1, 9);
-		grid.addComponent(entryParameters[11], 2, 9);
+		grid.addComponent(label5, 0, 7);
+		grid.addComponent(entryParameters[10], 1, 8);
+		grid.addComponent(entryParameters[11], 2, 8);
 		
-		grid.addComponent(entryParameters[12], 1, 11);
+		grid.addComponent(entryParameters[12], 1, 10);
 		
 		grid.setSpacing(true);
 		this.addComponent(grid);		

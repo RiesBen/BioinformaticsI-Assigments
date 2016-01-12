@@ -39,6 +39,7 @@ The POODLE project is a project which deals with really daily duty in a bio labo
 The cloning procedure is a standard strategy, which is used in nearly every life science lab. One possible application is in protein structure-function relationship studies. These studies use proteins, with a known sequence and start to modify the sequence with mutationsin order to observe changes  in the protein structure or functional bahaviour. The general pipeline of such an experiment could be, introducing the mutation via cloning, isolating the mutated protein and visualisation of differences via several methods. The visualisation for example could be an NMR interaction study or via X-Ray-Crystallography or any other essay. POODLE trys to manage the first  step of this pipeline, which is not only in this pieline the basic step.
 \subsection{cloning as lab strategy}
 Cloning is the key to a huge ammount of variety in the resulting protein constructs. Via cloning, it is possible to remove a function, add a function to a protein or influence the structure. Today, there are many different cloning methods available, like the classical restriction approach, the site directed mutagenisis method, restriction free cloning or the Crisp-Cas system. All mehtods have a specific task and are chosen in various situation. For this paper we want to stick to the site directed mutagenisis, which was initially developed by stratagene as QuickChange site-directed mutagensis kit. This method allow to introduce small directed mutation into a protein on DNA level. these mutations can be used to perform point mutations or switch single or multiple amino acids.
+For this process, a primer is designed containing the new information and annealing sites, which are site-directing for targeted mutation. The primer and the target vector are now used in a poly-chain-reaction (PCR). This steps generates an amplified product, which contains now the changed sequence.
 
 \begin{figure}
 	\include{"../img/QC-cloning.png}{width=\textwidth}
@@ -46,10 +47,8 @@ Cloning is the key to a huge ammount of variety in the resulting protein constru
 	\label{QC-pic}
 \end{figure}
 
-\subsection{cloning methods}
-Classsic Cloning, Quickchange, Restriction free cloning
-
 \subsection{The resulting data}
+The nucleic acids from the cloning process can be characterized in three categories. The first category is the primer-category.
 primer
 cloningVectors
 proteinConstructs

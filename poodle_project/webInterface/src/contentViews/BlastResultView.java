@@ -91,8 +91,8 @@ public class BlastResultView extends BasicView{
 			}
 		}
 		title = new Label("Result of the BLAST");
-		
-		poodleUI.getPage().open("file:///"+basepath+qfPath+"BlastResult.html", "_blank");
+		title = new Label(resultPrimer+this.resultProtein+this.resultVector+this.resultBlast);
+		poodleUI.getPage().open("file:///"+basepath+qfPath+"BlastResult.html", "_parent");
 		
 //		System.out.println(resultPrimer);
 //		JsonParser jsonParser = new JsonParser();

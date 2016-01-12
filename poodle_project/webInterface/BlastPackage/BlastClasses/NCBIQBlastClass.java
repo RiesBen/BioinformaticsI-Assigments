@@ -59,6 +59,7 @@ public class NCBIQBlastClass {
     BufferedReader reader = null;
     try {
       // send blast request and save request id
+    	System.out.println("sequence:"+sequence+"\n props"+props);
       rid = service.sendAlignmentRequest(sequence, props);
  
       // wait until results become available. Alternatively, one can do other computations/send other alignment requests

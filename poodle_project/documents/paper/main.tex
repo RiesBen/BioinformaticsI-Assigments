@@ -34,30 +34,21 @@ online.}
 \section{Introduction}
 
 \enlargethispage{12pt}
-The POODLE project is a project which deals with really daily duty in a bio laboratory. Due to the data managment aspect of sequences and the task providing information fast, the project is clearly settled in the computer science field. The background data, which was obtained, was focussed on cloning for protein function studies or structure elucidation. Therefore we will focus on this application of the POODLE.
+POODLE is a software suite which deals with a real problem in a nearly every life science laboratory. Due to the data management aspect of sequences and the task of fast information providing. The background data, which was obtained, is focussed on cloning for protein structure-function-relationship-studies or structure elucidation. Therefore we will focus on this application field.
   
 \subsection{A real world pipeline}
-The cloning procedure is a standard strategy, which is used in nearly every life science lab. One possible application is in protein structure-function relationship studies. These studies use proteins, with a known sequence and start to modify the sequence with mutationsin order to observe changes  in the protein structure or functional bahaviour. The general pipeline of such an experiment could be, introducing the mutation via cloning, isolating the mutated protein and visualisation of differences via several methods. The visualisation for example could be an NMR interaction study or via X-Ray-Crystallography or any other essay. POODLE trys to manage the first  step of this pipeline, which is not only in this pieline the basic step.
+The cloning procedure is a basic strategy, which is used in nearly every life science lab, independent of the laboratory orientation. One possible application is in protein structure-function relationship studies. These studies use recombinant proteins and start to modify the sequence with mutations in order to observe changes  in the protein structure or functional behaviour. \cite{Clark1} An example pipeline of such an experiment can be deuced from a publication of our collaborating lab. In short: Introducing the mutation via cloning, isolating the mutated expressed protein and visualisation of differences of wild type and mutated protein via several methods. \cite{Mira} The visualisation for example could be an NMR interaction study, a X-ray-crystallography study or any kind of essay. POODLE tries to manage the design of the first step of this pipeline.
+
 \subsection{cloning as lab strategy}
-Cloning is the key to a huge ammount of variety in the resulting protein constructs. Via cloning, it is possible to remove a function, add a function to a protein or influence the structure. Today, there are many different cloning methods available, like the classical restriction approach, the site directed mutagenisis method, restriction free cloning or the Crisp-Cas system. All mehtods have a specific task and are chosen in various situation. For this paper we want to stick to the site directed mutagenisis, which was initially developed by stratagene as QuickChange site-directed mutagensis kit. This method allow to introduce small directed mutation into a protein on DNA level. these mutations can be used to perform point mutations or switch single or multiple amino acids.
+Cloning is the key to a huge amount of variety in the resulting protein constructs. Via cloning, it is possible to remove a function, add a function to a protein or influence the structure. \cite{clark} Today, there are many different cloning methods available, like the classical restriction approach \cite{clark}, the site directed mutagenesis method or QuikChange\textregistered \cite{Quik}, restriction free cloning \cite{Van den Ent} or the Gateway system \cite{clark}. In aspect of understanding the importance of cloning, we will take a closer look to one certain method the site directed mutagenesis or QuikChange\textregistered. This method allows to introduce a small directed mutation into a protein on DNA level. These mutations can be used to switch single or multiple amino acids. Procedure is started with designing a primer, which contains the same sequnce as the targeted site except for the mutation, which should be introduced. The designed primer is mixed with the target DNA-plasmid and a polymerase chain reaction (PCR) is started. In this PCR the primer first does not completely fit to the target, but still good enough for triggering the replication process. Already in the first replication cycle the product does contain the mutated sequence. In all following cycles an amplification is caused by the primer to enhance the concentration of product plasmid (Figure \ref{QC-pic}). \cite{Quik} The product plasmid from the QuikChange\textregistered finally needs to be introduced to the expression organism cells, which can be accomplished for example by electroporation. The cells containing the plasmid can finally be used to express recombinantly the desired protein construct.\cite{Mülhardt1}
 
 \begin{figure}
 	\includegraphics[width=0.4\textwidth]{"../img/QC-cloning.png}
-	\caption{Schema of QC}
+	\caption{Schema of a QuikChange\textregistered  }
 	\label{QC-pic}
 \end{figure}
 
-\subsection{cloning methods}
-Classsic Cloning, Quickchange, Restriction free cloning
-
-\subsection{The resulting data}
-primer
-cloningVectors
-proteinConstructs
-
-
 \section{Approach}
-
 As already mentioned above many life-science laboratories use Excel files for storing and working with 
 data. But Excel files have a few drawbacks, which make working with them inconvenient. One of the 
 biggest problems occurs, if more than one member of the laboratory tries to access the file at the 
@@ -76,6 +67,11 @@ automatically build and update that database. The second layer consists of the w
 used to access, update and manipulate data. This is the front end layer and provides access to all 
 functions for the user, such as accessing the database, manipulating data and using the in-build 
 Blast functionality.
+
+\subsection{Data}
+The nucleic acids used in the cloning process described earlier can be ordered to  three categories, which are used during the cloning process. These describe the nucleic acids used for cloning and are primer, cloning-vectors( bought commercially) and protein-construct-plasmids. Each category has different specifications and therefore has it's own table in the sql database. This implies the exclusion of other materials, like buffers or enzymes. These categories can be added later, but do not play a major role in designing or planing experiments, as a opposite to the execution planning.\\
+For consistency reasons and to enable a possible linkage of the data, we decided to place general parameters, which are defined in every data entry. Additionally to these general parameters, like name or author. Each category has also specific parameters, like primer posses annealing temperature or size as parameters.
+
 
 \subsection{Database layer}
 
@@ -209,8 +205,27 @@ Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. 
 \bibitem[O'Donavan {\it et~al}., 2002]{Donavan01}
 O'Donovan, C., Martin, M.J., Gattiker, A., Gasteiger, E., Bairoch, A., Apweiler, R. (2002) High-quality protein knowledge resource: SWISS-PROT and TrEMBL {\it Brief. Bioinform.}  {\bf 3} (3), 275-284. doi: 10.1093/bib/3.3.275 
 
-\bibitem[Alberts {\it et~al}., 2002]{Alberts01}
-Alberts B, Johnson A, Lewis J, et al. (2002) Molecular Biology of the Cell. 4th edition. {\it New York: Garland Science}. Studying Gene Expression and Function. Available from: http://www.ncbi.nlm.nih.gov/books/NBK26818/
+\bibitem[Mülhardt, 2013]{Mülhardt1}
+Mülhardt, Cornel (2013) 
+Der Experimentator Molekularbiologie Genomics,
+{\it Springer Spektrum} 7. Edition,
+ISBN: 978-3-642-34636-1
 
+\bibitem[Clark {\it et~al}, 2009]{Clark1}
+Clark, D. P., Pzdernik, N.J.(2009) 
+Molekulare Biotechnologie - Grundlagen und Anwendungen, 
+{\it Springer Spektrum},
+ISBN: 978-3-8274-2128-9
+
+\bibitem[Stoffregen {\it et~al}.,2012]{Mira}
+Mira C. Stoffregen and Matthias M. Schwer and Fabian A. Renschler and Silke Wiesner (2012) Methionine Scanning as an \{NMR\} Tool for Detecting and Analyzing Biomolecular Interaction Surfaces {\it Structure} {\bf 20} (4), 573-581. doi: http://dx.doi.org/10.1016/j.str.2012.02.012
+
+\bibitem[Strattagene, 2007]{Quik}
+Stratagene (2007) QuikChange\textregistered Site-Directed Mutagenesis Kit 
+ http://www.genomics.agilent.com/files/Manual/200521_C.pdf
+ 
+ \bibitem[Van den Ent {\it et~al}, 2006]{Van den Ent}
+ Van den Ent, F., & Löwe, J. (2006). RF cloning: a restriction-free method for inserting target genes into plasmids. Journal of Biochemical and Biophysical Methods, 67(1), 67–74. doi:10.1016/j.jbbm.2005.12.008
+ 
 \end{thebibliography}
 \end{document}

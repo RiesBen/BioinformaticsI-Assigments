@@ -1,3 +1,3 @@
-#id|name|author|date|box|position|direction|organism|protein|domain|restriction|QC|RF|restriction site or mutation|melting temperature|Concentration [uM]|primer sequence|protein sequence|project|designed for|notes|classic|cloning information
-19|Rsp5_I440A_fw|Silke|09.06.2011|I|1C|fw|sc|Rsp5|HECT||QC||I440A||25|cttcagacgtaaggttgcgtatttcaggtcccag|FRRKVAYFRSQ|Rsp5 HECT IVLM assignment||||
-20|Rsp5_I440A_rv|Silke|09.06.2011|I|2C|rv|sc|Rsp5|HECT||QC||I440A||25|CTGGGACCTGAAATACGCAACCTTACGTCTGAAG|FRRKVAYFRSQ|Rsp5 HECT IVLM assignment||||
+#id|name|author|date|box|position|project|designed for|organism|protein|domain|restriction|QC|RF|cloning information|direction|melting temperature|concentration [uM]|primer sequence|protein sequence||notes
+19|Rsp5_I440A_fw|Silke|09.06.2011|I|1C|Rsp5 HECT IVLM assignment||sc|Rsp5|HECT||QC||I440A|fw||25|cttcagacgtaaggttgcgtatttcaggtcccag|FRRKVAYFRSQ||
+20|Rsp5_I440A_rv|Silke|09.06.2011|I|2C|Rsp5 HECT IVLM assignment||sc|Rsp5|HECT||QC||I440A|rv||25|CTGGGACCTGAAATACGCAACCTTACGTCTGAAG|FRRKVAYFRSQ||

@@ -28,23 +28,26 @@ public class PrimerParameter extends BasicParameters{
 		parameters[4] = new TextField("restrictionSite");
 		
 		entryParameters[0] = new TextField("project");
-		entryParameters[1] = new TextField("organism");
-		entryParameters[2] = new TextField("protein");
-		entryParameters[3] = new TextField("domain");
-		entryParameters[4] = new TextField("restrictionSite");
-		entryParameters[5] = new OptionGroup("cloning types");
-		entryParameters[6] = new TextField("restriction sites");
-		entryParameters[7] = new TextField("direction");
+		entryParameters[1] = new TextField("designed for");
 		
+		entryParameters[2] = new TextField("organism");
+		entryParameters[3] = new TextField("protein");
+		entryParameters[4] = new TextField("domain");
+		
+		entryParameters[5] = new OptionGroup("cloning types");
+		entryParameters[6] = new TextField("cloning information");
+		
+		entryParameters[7] = new TextField("direction");
 		entryParameters[8] = new TextField("melting temperatur");
 		entryParameters[9] = new TextField("concentration");
 	
 		entryParameters[10] = new TextField("primer Sequence");
 		entryParameters[11] = new TextField("protein sequence");
+
 		
 		entryParameters[12] = new TextField("notes");
 
-		((OptionGroup) entryParameters[5]).addItems("classic", "QC", "RF");
+		((OptionGroup) entryParameters[5]).addItems("restriction", "QC", "RF");
 		
 		addComponent(displays);
 		this.changeViewLarge();
@@ -65,20 +68,22 @@ public class PrimerParameter extends BasicParameters{
 		grid.addComponent(label1, 0, 0);
 		grid.addComponent(entryParameters[0], 1, 1);
 		grid.addComponent(entryParameters[1], 2, 1);
-		grid.addComponent(entryParameters[2], 3, 1);
+
 		
 		grid.addComponent(label2, 0, 2);
-		grid.addComponent(entryParameters[3], 1, 3);
-		grid.addComponent(entryParameters[4], 2, 3);
+		grid.addComponent(entryParameters[2], 1, 3);
+		grid.addComponent(entryParameters[3], 2, 3);
+		grid.addComponent(entryParameters[4], 3, 3);
 		
 		grid.addComponent(label3, 0, 4);
 		grid.addComponent(entryParameters[5], 1, 5);
 		grid.addComponent(entryParameters[6], 2, 5);
-		grid.addComponent(entryParameters[7], 3, 5);
+
 		
 		grid.addComponent(label4, 0, 6);
-		grid.addComponent(entryParameters[8], 1, 7);
-		grid.addComponent(entryParameters[9], 2, 7);
+		grid.addComponent(entryParameters[7], 1, 5);
+		grid.addComponent(entryParameters[8], 2, 7);
+		grid.addComponent(entryParameters[9], 3, 7);
 
 		grid.addComponent(label5, 0, 8);
 		grid.addComponent(entryParameters[10], 1, 9);

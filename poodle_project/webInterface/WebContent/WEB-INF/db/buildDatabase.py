@@ -50,7 +50,7 @@ def createProtConTable(db):
     # drop table if exists
     db.execute('drop table if exists proteinConstructs')
     # create table proteinConstructs
-    db.execute('CREATE table proteinConstructs (id Integer Primary Key,name,author,date,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,notes,C_Term_Tag,N_Term_Tag,vector,cloning_information,organism,protein_sequence)')
+    db.execute('CREATE table proteinConstructs (id Integer Primary Key,name,author,date,box,position,project,organism,protein,domain,protein_family,mutation,backbone_vector,antibiotics,restriction,QC,RF,cloning_information,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,notes,C_Term_Tag,N_Term_Tag,protein_sequence)')
     values = []
     protConFile = open(DATA_PATH + 'protein_constructs/protein_constructs.csv','r')
     for line in protConFile.readlines():
@@ -65,7 +65,7 @@ def createProtConTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into proteinConstructs (id,name,author,date,box,position,protein,domain,protein_family,mutation,backbone_vector,antibiotics,cloning_sites,QC,RF,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,project,notes,C_Term_Tag,N_Term_Tag,vector,cloning_information,organism,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into proteinConstructs (id Integer Primary Key,name,author,date,box,position,project,organism,protein,domain,protein_family,mutation,backbone_vector,antibiotics,restriction,QC,RF,cloning_information,used_primer,constructed_from,concentration,DH5A_stock,Cplus_stock,notes,C_Term_Tag,N_Term_Tag,protein_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of cloning vectors
@@ -73,7 +73,7 @@ def createClonVecTable(db):
     # drop table, if it already exists
     db.execute('drop table if exists cloningVectors')
     # create table cloningVectors
-    db.execute('create table cloningVectors (id Integer Primary Key,name,author,date,box,position,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,notes,vector_sequence)')
+    db.execute('create table cloningVectors (id Integer Primary Key,name,author,date,box,position,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,size,concentration,DH5A_stock,notes,vector_sequence)')
     values = []
     clonVecFile = open(DATA_PATH + 'cloning_vectors/cloning_vectors.csv', 'r')
     for line in clonVecFile.readlines():
@@ -88,7 +88,7 @@ def createClonVecTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into cloningVectors (id,name,author,date,box,position,size,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,concentration,DH5A_stock,notes,vector_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into cloningVectors (id,name,author,date,box,position,C_Term_Tags,N_Term_Tags,construct_cleavable,MCS,antibiotics,fw_seq_primer,rv_seq_primer,vector_map,size,concentration,DH5A_stock,notes,vector_sequence) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create table of primer
@@ -96,7 +96,7 @@ def createPrimTable(db):
     # drop table, if already exists
     db.execute('drop table if exists primer')
     # create table primer
-    db.execute('create table primer (id Integer Primary Key,name,author,date,box,position,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,notes,classic,cloning_information)')
+    db.execute('create table primer (id Integer Primary Key,name,author,date,box,position,project,designed_for,organism,protein,domain,restriction,QC,RF,cloning_information,direction,melting_temperature,concentration_uM,primer_sequence,protein_sequence,notes)')
     values = []
     primerFile = open(DATA_PATH + 'primer/primer_database.csv', 'r')
     for line in primerFile.readlines():
@@ -109,7 +109,7 @@ def createPrimTable(db):
             values.append(tuple(lineSplit))
 
     # insert values into table
-    db.execute('insert into primer (id,name,author,date,box,position,direction,organism,protein,domain,restriction,QC,RF,restriction_site_or_mutation,melting_temperature,Concentration_uM,primer_sequence,protein_sequence,project,designed_for,notes,classic,cloning_information) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
+    db.execute('insert into primer (id Integer Primary Key,name,author,date,box,position,project,designed_for,organism,protein,domain,restriction,QC,RF,cloning_information,direction,melting_temperature,concentration_uM,primer_sequence,protein_sequence,notes) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values)
 
 
 # function to create a fasta file with sequences from a database

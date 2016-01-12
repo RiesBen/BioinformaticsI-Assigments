@@ -36,6 +36,7 @@ public class VectorParameter extends BasicParameters{
 			entryParameters[6] = new TextField("rv seq primer");
 			
 			entryParameters[7] = new TextField("vector map");
+			entryParameters[7] = new TextField("size");
 			entryParameters[8] = new TextField("concentration");
 			entryParameters[9] = new OptionGroup("cell stock");
 			

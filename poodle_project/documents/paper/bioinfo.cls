@@ -482,7 +482,7 @@
   \vspace*{\aboveskipchk}%
   \vspace{\dropfromtop}%
   \hbox to \textwidth{\raisebox{5pt}[0pt]{%
-  \raisebox{-5pt}[0pt]{\includegraphics[width=0.2\textwidth]{../Documents/img/logo_poodle.png}}\parbox[b]{315pt}{\raggedleft{\helveticacnitalic\fontsize{8}{12}\selectfont {Bioinformatics}}\\[1pt]
+  \raisebox{-5pt}[0pt]{\includegraphics[width=0.2\textwidth]{../img/logo_poodle.png}}\parbox[b]{315pt}{\raggedleft{\helveticacnitalic\fontsize{8}{12}\selectfont {Bioinformatics}}\\[1pt]
   {\helveticacn doi.10.1093/bioinformatics/xxxxxx}\\[1pt]
   {\ifx\@access\@empty
   \else

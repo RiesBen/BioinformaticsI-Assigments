@@ -3,14 +3,18 @@ package contentViews;
 import java.io.File;
 import java.util.Collection;
 
+import org.apache.commons.io.FileUtils;
+
 import com.poodledb.PoodledbUI;
 import com.vaadin.annotations.Push;
 import com.vaadin.data.Property;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.query.OrderBy;
+import com.vaadin.server.VaadinService;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Button.ClickEvent;
 
+import Forms.BasicParameters;
 import Forms.GeneralSearchParameter;
 import Forms.PrimerParameter;
 import Forms.ProteinConstructParameter;
@@ -66,9 +70,25 @@ public class NewEntryView extends BasicView {
 				addComponent(working);
 				try{
 					fieldValdiation();
-//					try{
-//						File page = new File(basepath+"/WEB-INF/db/Wiesner/");
-//					}
+					try{
+						String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
+						System.out.println(basepath+"/WEB-INF/db/Wiesner/"+poodleUI.getTables());
+						File page = new File(basepath+"/WEB-INF/db/Wiesner/"+poodleUI.getTables());
+						String entry=null;
+						
+						for(int i=0; i<parameters.getComponentCount(); i++){
+							entry+=((BasicParameters) parameters.getComponent(i)).makeSimpleEntry();
+						}
+							System.out.println(entry);
+						
+						if(!entry.isEmpty()){
+//							FileUtils.writeStringToFile(page, entry, true);
+						}
+					}
+					catch(Exception e){
+						System.out.println("Creating Entry faild:" );
+						e.printStackTrace();
+					}
 				}
 				catch(Exception e){
 					Label error = new Label ("Fields are not correct!");

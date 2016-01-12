@@ -40,11 +40,12 @@ public class GeneralSearchParameter extends BasicParameters{
 
 		//Parameters for a New Entry
 		
-		entryParameters[0] = new TextField("name");
-		entryParameters[1] = new TextField("author");
+		entryParameters[0] = new TextField("Id");
+		entryParameters[1] = new TextField("name");
+		entryParameters[2] = new TextField("author");
 		date = new DateField("date");
 				
-		entryParameters[2] = new TextField("Id");
+		
 		entryParameters[3] = new TextField("box");
 		entryParameters[4] = new TextField("position");
 

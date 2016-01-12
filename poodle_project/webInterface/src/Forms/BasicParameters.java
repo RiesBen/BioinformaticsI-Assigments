@@ -2,6 +2,7 @@ package Forms;
 
 import com.vaadin.server.UserError;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.DateField;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
@@ -109,7 +110,23 @@ public abstract class BasicParameters extends VerticalLayout {
 	}
 
 
+	public String makeSimpleEntry() throws Exception{
+		String entry=null;
 
+		for(int i=0; i<entryParameters.length; i++){
+			if(entryParameters[i] instanceof TextField){
+				entry+="|"+((TextField) entryParameters[i]).getValue();
+			}
+			else if(entryParameters[i] instanceof DateField){
+				entry+="|"+((DateField) entryParameters[i]).getValue();
+			}
+			else{
+				throw new Exception("not only Textfields! write another a more specific method");
+			}
+		}
+		System.out.println(entry);
+		return entry;
+	}
 
 	//------------------------------------------------------------------------------------------------------------------------
 	//Getter and Setter:

@@ -2,6 +2,7 @@ package Forms;
 
 import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.DateField;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.OptionGroup;
@@ -22,29 +23,33 @@ public class ProteinConstructParameter extends BasicParameters{
 			parameters[4]   = new TextField("vector");			
 			
 			//entry Parameter:
-			entryParameters = new Component[17];
+			entryParameters = new Component[18];
 			
-			entryParameters[0]   = new TextField("C-Tags");
-			entryParameters[1]   = new TextField("N-Tags");
-			entryParameters[2]   = new TextField("Mutation");
+			entryParameters[17] = new TextField("project");
+			
 			entryParameters[3]   = new TextField("protein-family");
-			entryParameters[4]   = new TextField("vector");
 			entryParameters[5] = new TextField("protein");
 			entryParameters[6] = new TextField("domain");
 			
-			entryParameters[7] = new TextField("mutation");
+			entryParameters[2]   = new TextField("mutation");
+			entryParameters[0]   = new TextField("C-Term-Tags");
+			entryParameters[1]   = new TextField("N-Term-Tags");
+//			entryParameters[4]   = new TextField("vector");	
+						
 			entryParameters[8] = new TextField("backbone vector");
 			entryParameters[9] = new TextField("antibiotics");
 			
-			entryParameters[10] = new TextField("cloning sites");
+
 			entryParameters[11] = new OptionGroup("cloning types");
-			
+			entryParameters[10] = new TextField("cloning information");
 			entryParameters[12] = new TextField("used primer");
 			entryParameters[13] = new TextField("constructed from vector");
 			
 			entryParameters[14] = new TextField("concentration");
 			entryParameters[15] = new OptionGroup("cell stocks");
+			
 			entryParameters[16] = new TextField("notes");
+
 			
 			((OptionGroup) entryParameters[15]).addItems("DH5A", "C+");
 			((OptionGroup) entryParameters[11]).addItems("classic", "QC", "RF");
@@ -89,5 +94,51 @@ public class ProteinConstructParameter extends BasicParameters{
 			
 			grid.setSpacing(true);
 			this.addComponent(grid);		
+		}
+		public String makeSimpleEntry() throws Exception{
+			String entry=null;
+			String protein;
+			String domain;
+			String proteinfamily;
+			String mutation;
+			String backboneVector;
+			String antibiotics;
+			String classic;
+			String qc;
+			String rf;
+			String usedPrimer;
+			String constructedFrom;
+			String concentration;
+			String DHStock;
+			String CStock;
+			String project;
+			String notes;
+			String cTags;
+			String nTags;
+			String vector;
+			String cloningInformation;
+			String organism;
+			
+			for(int i=0; i<entryParameters.length; i++){
+				if(entryParameters[i] instanceof TextField){
+					entry+="|"+((TextField) entryParameters[i]).getValue();
+				}
+				else if(entryParameters[i] instanceof OptionGroup){
+					entry+="|"+((OptionGroup) entryParameters[i]).getValue();
+					if(((OptionGroup) entryParameters[i]).getDescription().equals("cloning types")){
+						System.out.println(((OptionGroup) entryParameters[i]).getValue());
+					}
+					else if(((OptionGroup) entryParameters[i]).getDescription().equals("cell stocks")){
+						System.out.println(((OptionGroup) entryParameters[i]).getValue());
+					}
+					else{
+						throw new Exception("something with optiongroup!");
+					}
+				}
+				else{
+					throw new Exception("not only all components are handled! write another a more specific method");
+				}
+			}
+			return entry;
 		}
 }

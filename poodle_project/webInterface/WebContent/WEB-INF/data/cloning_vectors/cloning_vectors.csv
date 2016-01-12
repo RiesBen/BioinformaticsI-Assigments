@@ -1,13 +1,13 @@
-#id|box|position|name|size|C-Term-Tags|N-Term-Tags|construct cleavable?|MCS|antibiotics|fw seq primer|rv seq primer|vector map|concentration|DH5A stock|date|author|notes
-1|I|1A|pProExHTb|4779||N-His-TEV-MCS|TEV||Amp|M13 pUC|pBAD/pTrcHis|empty|108||11.08.2008|Silke|
-2|I|4A|pET 11a|5677||N-T7|-|BamHI||T7 promotor|T7 terminator||||||
-3|I|5A|pET 15b|5708||N-His-thrombin|thrombin|NdeI-XhoI-BamHI||T7 promotor|T7 terminator|N-His-thrombin-NdeI-XhoI-BamHI|||||not in the box
-4|I|6A|pET 19b|5717||N-His|-|||T7 promotor|T7 terminator|N-His-enterokinase cleavage site-NdeI-XhoI-BamHI|||||
-5|I|7A|pET 21b|5442||N-T7-MCS(-His)|-||Amp|T7 promotor|T7 terminator||||||f1 origin for virion production
-6|I|8A|pET 28a|5369||N-T7-MCS(-His)|-||Kan|T7 promotor|T7 terminator||||||f1 origin for virion production
-7|I|9A|pET 28b|5368||N-His-thrombin-T7-MCS|-||Kan|T7 promotor|T7 terminator||||||f1 origin for virion production
-8|I|1B|pET 29b|5370|MCS-His-C|N-STag-thrombin-MCS|-||Kan|T7 promotor|T7 terminator||||||f1 origin for virion production
-9|I|2B|pET 32a(+)|5900||N-Trx-His-thrombin-STag-enterokinase-MCS-His|-||Amp|S-Tag Primer|T7 terminator||||||f1 origin for virion production
-10|I|3B|pET 32b|5899||N-Trx-His-thrombin-STag-enterokinase-MCS-His|-||Amp|S-Tag Primer|T7 terminator||||||f1 origin for virion production
-11|I|4B|pET 43.1a(+)|7275||N-Nus-His-S-thrombin--enterokinase-MCS-HSV-His|-|||pET upstream/Nus/S|ColiDOWN|||no|||
-12|I|4G|pET GB1a +|||||w/ additional NheI/NdeI|||||270|yes||Mira|?
+#id|name|author|date|box|position|size|C-Term-Tags|N-Term-Tags|construct cleavable?|MCS|antibiotics|fw seq primer|rv seq primer|vector map|concentration|DH5A stock|notes
+1|pProExHTb|Silke|11.08.2008|I|1A|4779||N-His-TEV-MCS|TEV||Amp|M13 pUC|pBAD/pTrcHis|empty|108||
+2|pET 11a|||I|4A|5677||N-T7|-|BamHI||T7 promotor|T7 terminator||||
+3|pET 15b|||I|5A|5708||N-His-thrombin|thrombin|NdeI-XhoI-BamHI||T7 promotor|T7 terminator|N-His-thrombin-NdeI-XhoI-BamHI|||not in the box
+4|pET 19b|||I|6A|5717||N-His|-|||T7 promotor|T7 terminator|N-His-enterokinase cleavage site-NdeI-XhoI-BamHI|||
+5|pET 21b|||I|7A|5442||N-T7-MCS(-His)|-||Amp|T7 promotor|T7 terminator||||f1 origin for virion production
+6|pET 28a|||I|8A|5369||N-T7-MCS(-His)|-||Kan|T7 promotor|T7 terminator||||f1 origin for virion production
+7|pET 28b|||I|9A|5368||N-His-thrombin-T7-MCS|-||Kan|T7 promotor|T7 terminator||||f1 origin for virion production
+8|pET 29b|||I|1B|5370|MCS-His-C|N-STag-thrombin-MCS|-||Kan|T7 promotor|T7 terminator||||f1 origin for virion production
+9|pET 32a(+)|||I|2B|5900||N-Trx-His-thrombin-STag-enterokinase-MCS-His|-||Amp|S-Tag Primer|T7 terminator||||f1 origin for virion production
+10|pET 32b|||I|3B|5899||N-Trx-His-thrombin-STag-enterokinase-MCS-His|-||Amp|S-Tag Primer|T7 terminator||||f1 origin for virion production
+11|pET 43.1a(+)|||I|4B|7275||N-Nus-His-S-thrombin--enterokinase-MCS-HSV-His|-|||pET upstream/Nus/S|ColiDOWN|||no|
+12|pET GB1a +|Mira||I|4G|||||w/ additional NheI/NdeI|||||270|yes|?

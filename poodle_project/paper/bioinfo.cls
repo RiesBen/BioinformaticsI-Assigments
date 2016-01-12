@@ -56,7 +56,7 @@
 \reversemarginpar
 
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize{8}{11}%
+   \@setfontsize\normalsize{8.5}{11.5}%
    \abovedisplayskip 11\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
@@ -482,7 +482,7 @@
   \vspace*{\aboveskipchk}%
   \vspace{\dropfromtop}%
   \hbox to \textwidth{\raisebox{5pt}[0pt]{%
-  \parbox[b]{415pt}{\raggedleft{\helveticacnitalic\fontsize{8}{12}\selectfont {Bioinformatics}}\\[1pt]
+  \raisebox{-5pt}[0pt]{\includegraphics[width=0.2\textwidth]{../Documents/img/logo_poodle.png}}\parbox[b]{315pt}{\raggedleft{\helveticacnitalic\fontsize{8}{12}\selectfont {Bioinformatics}}\\[1pt]
   {\helveticacn doi.10.1093/bioinformatics/xxxxxx}\\[1pt]
   {\ifx\@access\@empty
   \else

@@ -20,7 +20,7 @@
 \editor{}%Associate Editor: XXXXXXX}
 
 \abstract{\textbf{Motivation:} Many life science laboratories are still using Excel files do organize their data. 
-	This leads to a huge workload for maintenance as well as a inconvenient access and update routine. 
+	This leads to a huge workload for maintenance as well as an inconvenient access and update routine. 
 	POODLE provides an easy-to-use and powerful interface to improve the cloning work of your lab.\\
 \textbf{Results:} POODLE is a Java-based web interface, which allows intuitive access, update and 
 manipulation of data for cloning.\\
@@ -49,14 +49,14 @@ proteinConstructs
 
 \section{Approach}
 
-As already wrote above many life-science laboratories use Excel files for storing and working with 
-data. But Excel files have a few drawbacks, which make working with them inconvenient. On of the 
+As already mentioned above many life-science laboratories use Excel files for storing and working with 
+data. But Excel files have a few drawbacks, which make working with them inconvenient. One of the 
 biggest problems occurs, if more than one member of the laboratory tries to access the file at the 
-same time. That can lead to inconsistent files. Second, searching in a Excel file is not as easy as 
-it could be. Furthermore, licenses for Excel are expensive and free software is not as powerful as 
-commercial ones. The reason for using Excel rather than a database system is that most life-scientist 
-are not familiar with database systems and therefor chooses the GUI of Excel to work with. We are 
-facing that problem by combining the functionality of a database system with an intuitive and 
+same time. Inconsistent files can be the result of a simultaneous access. Second, searching in a Excel file is not as easy as 
+it could be. Furthermore, licenses for Excel are expensive and switching to a free software solution 
+saves a lot of money. The reason for using Excel rather than a database system is that most life-scientist 
+are not familiar with database systems and prefer the GUI of Excel to work with. We are 
+trying to solve that problem by combining the functionality of a database system with an intuitive and 
 easy-to-learn handling.
 
 \begin{methods}
@@ -65,33 +65,35 @@ easy-to-learn handling.
 POODLE is build as a two-layer software. The first layer consists of the database and routines to 
 automatically build and update that database. The second layer consists of the web service that is 
 used to access, update and manipulate data. This is the front end layer and provides access to all 
-functions for the user. Because POODLE is not just a data storage software but also comes with useful 
-methods like a Blast search.
+functions for the user, such as accessing the database, manipulating data and using the in-build 
+Blast functionality.
 
 \subsection{Database layer}
 
 SQLite\footnote{http://www.sqlite.org/} is the database system running in the background. We chose 
 this software for several reasons. First, it is free of charge. Second, and more important SQLite is 
-a small and fast database system written in C. So the requirement in space is very low. Since, the 
-whole database is stored just in one file SQLite also has a incredibly good performance. And there 
+a small and fast database system written in C. Since, the whole database is stored just in one file
+SQLite has a incredibly good performance combined with a really small among of required space. And there 
 is the possibility to create a mobile version of POODLE without changing the whole database system, 
 which may be interesting in the future. Besides, 
-SQLite guaranties that all transactions are ACID even if a system crash or power failure occurs. So 
+SQLite guaranties that transactions have all ACID (Atomicity, Consistency, Isolation and Durability) properties even if a system crash or power failure occurs. So 
 we have a robust storage and access of data as well as a lot of functionality provided by the database 
 system. In addition to the SQLite database POODLE's software creates a BLAST database for the provided 
 data, too. 
 
-The build and update process is implemented in Python. So the user does not have to have knowledge in 
-SQL coding but only has to execute one python script and everything is done automatically. This routine 
-ensures that the SQLite database and the BLAST database are always in the same state. It also makes 
-the database a little bit safer, since changes can be reviewed before inserting them into the database.
+The build and update process is implemented in Python. POODLE combines a SQL database with several 
+local Blast databases and this routine 
+ensures that the SQLite database and BLAST databases are always in the same state. 
+It also makes the database a little bit safer, since changes can be reviewed before inserting them 
+into the database. Furthermore, the user does not need detailed knowledge about SQL to create the 
+database, which may be helpful for many laboratories.
 
 \subsection{Web service}
 
 POODLE web service is build with Vaadin\footnote{https://vaadin.com/home}. We chose that framework 
 because it allows a safe 
-communication between the front end and the database layer as well as a smooth and easy handling of 
-the side. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
+communication between the front end and the database layer as well as a smooth and intuitive user 
+interface. Since a website developed with Vaadin is highly modular, it is easy to extend the web 
 service in the future. That could be necessary, if new functionalities are required. Currently, 
 there are three pages with different roles. The search page provides a formula that can be used 
 to perform a simple SQL search in the local database. Therefor, different fields are displayed and 
@@ -104,13 +106,13 @@ databases on the Blast page. That functionality can be found on the Blast page.
 
 \subsection{Blast functionality}
 
-Our software package provides not just a database functionality for powerful and secure data storage 
-and a easy-to-use interface but also a Blast (\citealp{Altschul01}) functionality. This function 
+Our software package provides not just a database functionality for powerful and safe data storage 
+and an easy-to-use interface but also a Blast (\citealp{Altschul01}) functionality. This function 
 is implemented by using a combination of Blast binaries provided by NCBI and the Biojava Api 
 (\citealp{Prlic01}). There are two different Blast searches available in POODLE. On one hand, there 
 is a remote Blast search on the NCBI server. And on the other hand, there is a local Blast search. 
-The remote Blast search is not a fully functional copy of the NCBI web service but can used to 
-perform a quick and simply search against databases provided by NCBI, e.g. Swissprot (\citealp{Doni01}). But we 
+The remote Blast search is not a fully functional copy of the NCBI web service but can be used to 
+perform a quick and simple search against databases provided by NCBI, e.g. Swissprot (\citealp{Doni01}). But we 
 do not recommend to overuse that because too many requests may cause a blacklisting by NCBI. This 
 remote Blast routine is mainly for the insertion of a new entry. The idea is to check whether there 
 are information about the new sequence. But it can also used separated from the new entry routine. 
@@ -120,13 +122,13 @@ e.g. blastn or blastp, available for both Blast methods.
 
 \end{methods}
 
-\begin{figure}[!tpb]%figure1
-\fboxsep=0pt\colorbox{gray}{\begin{minipage}[t]{235pt} \vbox to 100pt{\vfill\hbox to
-235pt{\hfill\fontsize{24pt}{24pt}\selectfont FPO\hfill}\vfill}
-\end{minipage}}
+%\begin{figure}[!tpb]%figure1
+%\fboxsep=0pt\colorbox{gray}{\begin{minipage}[t]{235pt} \vbox to 100pt{\vfill\hbox to
+%235pt{\hfill\fontsize{24pt}{24pt}\selectfont FPO\hfill}\vfill}
+%\end{minipage}}
 %\centerline{\includegraphics{fig01.eps}}
-\caption{Caption, caption.}\label{fig:01}
-\end{figure}
+%\caption{Caption, caption.}\label{fig:01}
+%\end{figure}
 
 %\begin{figure}[!tpb]%figure2
 %%\centerline{\includegraphics{fig02.eps}}
@@ -138,26 +140,28 @@ e.g. blastn or blastp, available for both Blast methods.
 
 POODLE is completely open-source. So the user can adapt the code at any point of the software. To make 
 this adaption as easy as possible for the user we chose to use widely known software inside of POODLE. 
-Most scientist have heard of SQL as a database managment system. So it is not to dangerous to assume 
+Most scientist have heard of SQL as a database managment system. So it is not too venture to assume 
 that there are people with basic SQL knowledge in most of the laboratories. And that means these 
 laboratories do not have to use POODLE as a black box. We chose SQLite over all other SQL databases 
 for the reasons described in the method section. 
 
 The build up process of the database is written in Python. There are two reasons for that. First, 
-Python is a easy and powerful language which makes it possible for the user to adapt the build up 
-process without detailed programming knowledge. And second there is almost no 
-Server without a Python2.7 or higher environment.
+Python is an easy and powerful language which makes it possible for the user to adapt the build up 
+process without detailed programming knowledge. And second Python2.7 is a default package of most 
+operating systems installed on a server. We tried to make POODLE as platform independent as possible 
+and that helps to reach our goal.
 
-Vaadin was chose as the framework to be for several reasons. Java is a widely used programming language 
-in the scientific world. So there is a relative high chance for a person in the laboratory, who speaks 
+Vaadin was chosen as the running framework for several reasons. Java is a widely used programming language 
+in the scientific world. So there is a relative high chance for a person in the laboratory, who 
+is able to work with
 Java. Again we want to make adaption as easy as possible for the user. Furthermore, Vaadin needs a 
 tomcat server. Such a server is provided free of charge by Apache\footnote{http://www.apache.org/}. 
 So the user does not have to face extra charges just to be able to use POODLE. More reasons for 
-Vaadin are discussed in the method section.
+Vaadin are discussed above.
 
 \section{Conclusion}
 
-POODLE provides a secure storage of cloning data as well as a easy-to-use interface for 
+POODLE provides a safe storage of cloning data as well as a easy-to-use interface for 
 interacting with these data. Besides, it comes with functionalities like local and remote Blast 
 search that can improve the workflow during cloning. 
 

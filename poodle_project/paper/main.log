@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  12 JAN 2016 11:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  12 JAN 2016 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -283,10 +283,10 @@ e
 File: ../Documents/img/logo_poodle.png Graphic file (type png)
 
 <use ../Documents/img/logo_poodle.png>
-Package pdftex.def Info: ../Documents/img/logo_poodle.png used on input line 31
+Package pdftex.def Info: ../Documents/img/logo_poodle.png used on input line 32
 .
 (pdftex.def)             Requested size: 97.19852pt x 56.42212pt.
-LaTeX Font Info:    Try loading font information for LY1+phv on input line 31.
+LaTeX Font Info:    Try loading font information for LY1+phv on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1phv.fd
 File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
@@ -297,81 +297,101 @@ File: OUP_First_SBk_Bot_8401-eps-converted-to.pdf Graphic file (type pdf)
 
 <use OUP_First_SBk_Bot_8401-eps-converted-to.pdf>
 Package pdftex.def Info: OUP_First_SBk_Bot_8401-eps-converted-to.pdf used on in
-put line 31.
+put line 32.
 (pdftex.def)             Requested size: 54.20236pt x 54.20236pt.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <8.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <18> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <12> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <9> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <7> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 32.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 31.
+(Font)              size <8> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 31.
+(Font)              size <5> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.5> not available
-(Font)              size <8> substituted on input line 31.
+(Font)              size <8> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.25> not available
-(Font)              size <5> substituted on input line 31.
+(Font)              size <5> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 31.
+(Font)              size <8> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 31.
+(Font)              size <5> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 31.
+(Font)              size <6> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 31.
+(Font)              size <6> substituted on input line 32.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 31.
+(Font)              size <6> substituted on input line 32.
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <10> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 31.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 31.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 32.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \LY1/phv/b/n/9 Supplementary information: \LY1/phv/m/n/9 Supplementary data and
  the code are available at
  []
 
 
-Underfull \hbox (badness 10000) detected at line 31
+Underfull \hbox (badness 10000) detected at line 32
 []
  []
 
+
+LaTeX Warning: File `"../Documents/img/QC-cloning.png' not found on input line 
+45.
+
+<"../Documents/img/QC-cloning.png, id=4, 1157.82562pt x 204.01219pt>
+File: "../Documents/img/QC-cloning.png Graphic file (type png)
+
+<use "../Documents/img/QC-cloning.png>
+Package pdftex.def Info: "../Documents/img/QC-cloning.png used on input line 45
+.
+(pdftex.def)             Requested size: 194.39703pt x 34.25201pt.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 46.
+LaTeX Font Info:    No file LY1phb.fd. on input line 46.
+
+
+LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
+(Font)              using `LY1/ptm/m/n' instead on input line 46.
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 46.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -385,50 +405,99 @@ Overfull \hbox (1.19002pt too wide) has occurred while \output is active
 
 
  <../Documents/img/logo_poodle.png> <./OUP_First_SBk_Bot_8401-eps-converted-to.
-pdf>]
-LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 195.
-Extra height:19.0pt when 584.88976pt
-Extra height:19.0pt when 585.88976pt
-Extra height:19.0pt when 586.88976pt
-Extra height:19.0pt when 587.88976pt
-Extra height:19.0pt when 588.88976pt
-Extra height:19.0pt when 589.88976pt
-Extra height:19.0pt when 590.88976pt
-Extra height:0.0pt when 591.88976pt
-(2)Left:591.88976pt Right:593.27953pt Output:591.88976pt
-(2)Left:593.27953pt Right:593.27953pt Output:593.27953pt
-- LAST -
-Extra skip:0.0pt
-Left:593.27953pt
-Right:593.27953pt
-Output:593.27953pt
-
-Overfull \vbox (1.00003pt too high) has occurred while \output is active []
-
+pdf> <../Documents/img/QC-cloning.png>]
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <8> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 204.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 204.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 201.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[2] (./main.aux)
+[2]
+LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 204.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 99.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 100.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 101.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 102.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 103.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:39.519pt when 104.00949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:21.519pt when 105.00949pt
+Extra height:0.0pt when 106.00949pt
+(2)Left:106.00949pt Right:93.519pt Output:106.00949pt
+- LAST -
+Extra skip:0.0pt
+Left:106.00949pt
+Right:93.519pt
+Output:106.00949pt
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3
+
+] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.75pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 3647 strings out of 493304
- 45087 string characters out of 6139870
- 124802 words of memory out of 5000000
- 7014 multiletter control sequences out of 15000+600000
- 54242 words of font info for 95 fonts, out of 8000000 for 9000
+ 3663 strings out of 493304
+ 45391 string characters out of 6139870
+ 113838 words of memory out of 5000000
+ 7025 multiletter control sequences out of 15000+600000
+ 55387 words of font info for 96 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
- 38i,10n,28p,285b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,28p,795b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
@@ -439,10 +508,10 @@ uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 130627 bytes).
+Output written on main.pdf (3 pages, 159074 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

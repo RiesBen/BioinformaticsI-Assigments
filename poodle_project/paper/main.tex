@@ -19,15 +19,10 @@
 
 \editor{}%Associate Editor: XXXXXXX}
 
-<<<<<<< HEAD
+
 \abstract{\textbf{Motivation:} Many life science laboratories are still using Excel files to organize their data. 
 	This leads to a huge workload for maintenance as well as a inconvenient access and update routine. 
 	POODLE provides an easy-to-use and powerful interface to improve the cloning work of a lab.\\
-=======
-\abstract{\textbf{Motivation:} Many life science laboratories are still using Excel files do organize their data. 
-	This leads to a huge workload for maintenance as well as an inconvenient access and update routine. 
-	POODLE provides an easy-to-use and powerful interface to improve the cloning work of your lab.\\
->>>>>>> efdfbea45cd9ac7e20970ff1722307a213921f37
 \textbf{Results:} POODLE is a Java-based web interface, which allows intuitive access, update and 
 manipulation of data for cloning.\\
 \textbf{Contact:} \href{}{forename.surname@student.uni-tuebingen.de}\\
@@ -47,7 +42,7 @@ The cloning procedure is a standard strategy, which is used in nearly every life
 Cloning is the key to a huge ammount of variety in the resulting protein constructs. Via cloning, it is possible to remove a function, add a function to a protein or influence the structure. Today, there are many different cloning methods available, like the classical restriction approach, the site directed mutagenisis method, restriction free cloning or the Crisp-Cas system. All mehtods have a specific task and are chosen in various situation. For this paper we want to stick to the site directed mutagenisis, which was initially developed by stratagene as QuickChange site-directed mutagensis kit. This method allow to introduce small directed mutation into a protein on DNA level. these mutations can be used to perform point mutations or switch single or multiple amino acids.
 
 \begin{figure}
-	\include{"../Documents/img/QC-cloning.png}{width=\textwidth}
+	\includegraphics[width=0.4\textwidth]{"../Documents/img/QC-cloning.png}
 	\caption{Schema of QC}
 	\label{QC-pic}
 \end{figure}
@@ -126,7 +121,7 @@ is implemented by using a combination of Blast binaries provided by NCBI and the
 (\citealp{Prlic01}). There are two different Blast searches available in POODLE. On one hand, there 
 is a remote Blast search on the NCBI server. And on the other hand, there is a local Blast search. 
 The remote Blast search is not a fully functional copy of the NCBI web service but can be used to 
-perform a quick and simple search against databases provided by NCBI, e.g. Swissprot (\citealp{Doni01}). But we 
+perform a quick and simple search against databases provided by NCBI, e.g. Swissprot (\citealp{Donavan01}). But we 
 do not recommend to overuse that because too many requests may cause a blacklisting by NCBI. This 
 remote Blast routine is mainly for the insertion of a new entry. The idea is to check whether there 
 are information about the new sequence. But it can also used separated from the new entry routine. 
@@ -211,11 +206,11 @@ Altschul, S.F., Gish, W., Miller, W., Myers, E.W., Lipman, D.J. (1990) Basic loc
 \bibitem[Prli\'{c} {\it et~al}., 2012]{Prlic01}
 Prli\'{c}, A., Yates, A., Bliven, S. E., Rose, P. W., Jacobsen, J., Troshin, P. V., ... Willis, S. (2012) BioJava: an open-source framework for bioinformatics in 2012. {\it Bioinformatics}, {\bf 28}(20), 2693-2695. http://doi.org/10.1093/bioinformatics/bts494
 
-\bibitem[O'Donavan {\it et~al}., 2002]{Doni01}
+\bibitem[O'Donavan {\it et~al}., 2002]{Donavan01}
 O'Donovan, C., Martin, M.J., Gattiker, A., Gasteiger, E., Bairoch, A., Apweiler, R. (2002) High-quality protein knowledge resource: SWISS-PROT and TrEMBL {\it Brief. Bioinform.}  {\bf 3} (3), 275-284. doi: 10.1093/bib/3.3.275 
 
-\bibitem{Alberts {\it et~al}., 200b2}
-Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Studying Gene Expression and Function. Available from: http://www.ncbi.nlm.nih.gov/books/NBK26818/
+\bibitem[Alberts {\it et~al}., 2002]{Alberts01}
+Alberts B, Johnson A, Lewis J, et al. (2002) Molecular Biology of the Cell. 4th edition. {\it New York: Garland Science}. Studying Gene Expression and Function. Available from: http://www.ncbi.nlm.nih.gov/books/NBK26818/
 
 \end{thebibliography}
 \end{document}

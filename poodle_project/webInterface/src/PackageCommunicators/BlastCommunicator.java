@@ -18,7 +18,7 @@ public class BlastCommunicator {
 	public BlastCommunicator(String mode, String programe, String sequence, String database, String table, String querry){
 		String basepath= VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
 		String pPath = "/WEB-INF/classes/ncbi_binaries/";
-		String location= basepath+"/WEB-INF/db/"+database+"/"+table+".fasta";
+		String location;
 
 		//initialisation
 		this.mode=mode;
@@ -47,7 +47,7 @@ public class BlastCommunicator {
 				if(table.equals("all")){
 					location= basepath+"/WEB-INF/db/"+database+"/primer.fasta";
 					BlastSearch localBlast1 = new BlastSearch(sequence, location, program);
-					location= basepath+"/WEB-INF/db/"+database+"/clonVector.fasta";
+					location= basepath+"/WEB-INF/db/"+database+"/clonVectors.fasta";
 					BlastSearch localBlast2 = new BlastSearch(sequence, location, program);
 					location= basepath+"/WEB-INF/db/"+database+"/protConst.fasta";
 					BlastSearch localBlast3 = new BlastSearch(sequence, location, program);
@@ -57,19 +57,25 @@ public class BlastCommunicator {
 					resultProtein=localBlast3.getResult();
 				}
 				else if(table.equals("primer")){
+					location= basepath+"/WEB-INF/db/"+database+"/primer.fasta";
+					
 					BlastSearch localBlast = new BlastSearch(sequence, location, program);
 					localBlast.runBlastSearch();
 					System.out.println("PrimerLäuft");
 					resultPrimer=localBlast.getResult();
 					System.out.println(resultPrimer);
 				}
-				else if(table.equals("vector")){
+				else if(table.equals("cloningVector")){
+					location= basepath+"/WEB-INF/db/"+database+"/clonVector.fasta";
+					
 					BlastSearch localBlast = new BlastSearch(sequence, location, program);
 					localBlast.runBlastSearch();
 					System.out.println("PrimerLäuft");
 					resultVector=localBlast.getResult();
 				}
 				else if(table.equals("proteinConstructs")){
+					location= basepath+"/WEB-INF/db/"+database+"/protConst.fasta";
+					
 					BlastSearch localBlast = new BlastSearch(sequence, location, program);
 					localBlast.runBlastSearch();
 					System.out.println("PrimerLäuft");

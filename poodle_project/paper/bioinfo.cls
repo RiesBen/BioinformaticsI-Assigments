@@ -56,7 +56,7 @@
 \reversemarginpar
 
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize{8.5}{11.5}%
+   \@setfontsize\normalsize{8}{11}%
    \abovedisplayskip 11\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@

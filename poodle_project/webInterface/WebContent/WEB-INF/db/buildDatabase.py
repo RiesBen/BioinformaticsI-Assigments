@@ -153,28 +153,28 @@ if __name__ == '__main__':
     db = dbUtils.DBUtil(GROUP1 + 'poodle_sqlite3.dat')
     
     # create tables
-    print "building table of protein constructs..."
+    print("building table of protein constructs...")
     createProtConTable(db)
 
-    print "building table of cloning vectors..."
+    print("building table of cloning vectors...")
     createClonVecTable(db)
 
-    print "building table of primer..."
+    print("building table of primer...")
     createPrimTable(db)
 
-    print "successfully built the database"
+    print("successfully built the database")
 
-    print "making fasta files for blast search..."
+    print("making fasta files for blast search...")
     primerDB = "primer.fasta"
     proteinDB = "protConst.fasta"
     vectorDB = "clonVec.fasta"
     makeFastaFile(db, primerDB, GROUP1, 'primer')
     makeFastaFile(db, proteinDB, GROUP1, 'protConst')
     makeFastaFile(db, vectorDB, GROUP1, 'clonVec')
-    print "successfully made fasta files"
+    print("successfully made fasta files")
 
-    print "building blast databases..."
+    print("building blast databases...")
     makeBlastDB(BLAST_TYPE_NUCL, primerDB, GROUP1)
     makeBlastDB(BLAST_TYPE_NUCL, proteinDB, GROUP1)
     makeBlastDB(BLAST_TYPE_NUCL, vectorDB, GROUP1)
-    print "successfully built blast databases"
+    print("successfully built blast databases")

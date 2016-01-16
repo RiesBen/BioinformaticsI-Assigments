@@ -122,7 +122,14 @@ Tutor: #2  % Tutor
 
 Finding all overlaps is basically a APSP (All-pairs-suffix-prefix) problem. Solving such a problem 
 with a suffix tree approach has a time complexity of $O(n + k^2)$ where $n$ is the total length of 
-all strings and 
+all strings and $k$ is the count of strings. First all reads will be concatenated with a separation 
+character between all reads and a terminal character at the end. Now it is rather simple to check, 
+whether the prefix of one read matches with the suffix of another read. This can be done using the 
+suffix tree since we know that each prefix starts with an separation character (one could put one 
+separation character at the beginning of the string to make this statement true) and every suffix 
+ends ether with the separation character or the terminal character. Since one has to go trough the 
+whole concatenated string and compare the prefix of each read with the suffix of every other read, 
+this approach has a total runtime complexity of $O(n+k^2)$.
 
 \section*{Bonus - \textit{Challenges of your Project}}
 

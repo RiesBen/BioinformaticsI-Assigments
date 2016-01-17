@@ -1,0 +1,72 @@
+// overlap
+digraph {
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			A [label="1s"]
+			B [label="1e"]
+				A -> B
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			C [label="2s"]
+			D [label="2e"]
+				C -> D
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			E [label="3s"]
+			F [label="3e"]
+				E -> F
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			G [label="4s"]
+			H [label="4e"]
+				G -> H
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			I [label="5s"]
+			J [label="5e"]
+				I -> J
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			K [label="6s"]
+			L [label="6e"]
+				K -> L
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			M [label="7s"]
+			N [label="7e"]
+				M -> N
+	}
+	// auxTree
+	subgraph {
+		graph [rankdir=LR]
+			O [label="8s"]
+			P [label="8e"]
+				O -> P
+	}
+		E -> D [label=-230 dir=none]
+		L -> D [label=-150 dir=none]
+		I -> P [label=-150 dir=none]
+		L -> P [label=-80 dir=none]
+		O -> M [label=-400 dir=none]
+		L -> F [label=-420 dir=none]
+		H -> D [label=-40 dir=none]
+		H -> J [label=-250 dir=none]
+		H -> A [label=-400 dir=none]
+		B -> J [label=-350 dir=none]
+		I -> M [label=-50 dir=none]
+		N -> K [label=-180 dir=none]
+		N -> F [label=-100 dir=none]
+}

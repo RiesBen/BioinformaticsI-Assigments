@@ -114,31 +114,41 @@ Tutor: #2  % Tutor
 
 \section*{Theoretical Assignment - \textit{Overlap and Layout}}
 \subsection*{graphs}
-The graphs from the exercise are shown in Figure 1-3. Figure 1 is the overlap grap, Figure 2 is the minimal spanning tree and Figure 3 shows the layout. These figures are also publishable.
- 
-\begin{figure}[h]
-	\includegraphics[width=\textwidth]{overlapGraph.png}
-	\caption{Minimal-spanning-tree}
-\end{figure}
-
+The graphs from the exercise are shown in Figure 1-2. Figure \ref{fig:og} is the overlap grap with minimal spanning tree (red edges) and Figure \ref{fig:layout} shows the layout. 
+	 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{minimal-Spanning-Tree.png}
 	\caption{Minimal-spanning-tree}
+	\label{fig:og}
 \end{figure}
 
 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{layout.png}
 	\caption{layout}
+	\label{fig:layout}
 \end{figure}
 
 \subsection*{Is the Layout consitent?}
-The overlaps are not consistent, because:
+One overlap ($f_6$ and $f_8$) is not consistent, because:
 \begin{equation*}
 o(3'f_6 - 3'f_8)=80
 \end{equation*}
 \section*{Theoretical Assignment - \textit{Overlap graph figure}}
  
+A Figure for a paper would look like Figure \ref{fig:paper}.
+
+\begin{figure}[h]
+	\centering
+	\subfigure{
+		\includegraphics[width=0.45\textwidth]{minimal-Spanning-Tree.png}
+	}
+	\subfigure{
+		\includegraphics[width=0.45\textwidth]{layout.png}
+	}
+	\caption{\textbf{left}: Overlap Graph with minimal spanning tree in red. \textbf{right}: Layout computed with the minimal spanning tree shown on the left site.}
+	\label{fig:paper}
+\end{figure} 
  
 \section*{Theoretical Assignment - \textit{Computing all overlaps using suffix tree}}
 

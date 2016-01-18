@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.12)  18 JAN 2016 00:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.12)  18 JAN 2016 10:12
 entering extended mode
 **./Assignment9-Ditz_Schroeder-WS15-16.tex
 (Assignment9-Ditz_Schroeder-WS15-16.tex
@@ -1417,55 +1417,54 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 115.
 
 
-<overlapGraph.png, id=6, 671.50874pt x 864.22874pt>
-File: overlapGraph.png Graphic file (type png)
- <use overlapGraph.png>
-Package pdftex.def Info: overlapGraph.png used on input line 120.
-(pdftex.def)             Requested size: 426.79135pt x 549.28026pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<minimal-Spanning-Tree.png, id=7, 757.3896pt x 381.5856pt>
+<minimal-Spanning-Tree.png, id=8, 757.3896pt x 381.5856pt>
 File: minimal-Spanning-Tree.png Graphic file (type png)
 
 <use minimal-Spanning-Tree.png>
-Package pdftex.def Info: minimal-Spanning-Tree.png used on input line 125.
+Package pdftex.def Info: minimal-Spanning-Tree.png used on input line 120.
 (pdftex.def)             Requested size: 426.79135pt x 215.02565pt.
+ <layout.png, id=10, 590.205pt x 344.487pt>
+File: layout.png Graphic file (type png)
+
+<use layout.png>
+Package pdftex.def Info: layout.png used on input line 127.
+(pdftex.def)             Requested size: 426.79135pt x 249.11327pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<layout.png, id=9, 590.205pt x 344.487pt>
+File: minimal-Spanning-Tree.png Graphic file (type png)
+<use minimal-Spanning-Tree.png>
+Package pdftex.def Info: minimal-Spanning-Tree.png used on input line 145.
+(pdftex.def)             Requested size: 192.0548pt x 96.75862pt.
 File: layout.png Graphic file (type png)
  <use layout.png>
-Package pdftex.def Info: layout.png used on input line 131.
-(pdftex.def)             Requested size: 426.79135pt x 249.11327pt.
+Package pdftex.def Info: layout.png used on input line 148.
+(pdftex.def)             Requested size: 192.0548pt x 112.09361pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{C:/Users/benja/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
-
-[3 <./overlapGraph.png>] [4 <./minimal-Spanning-Tree.png> <./layout.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+{C:/Users/benja/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./minimal-S
+panning-Tree.png>] [2 <./layout.png>] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
 
 (Assignment9-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `Assignment9-Ditz_Schroeder-WS15-16.out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 21724 strings out of 493634
- 392064 string characters out of 3135239
- 520233 words of memory out of 3000000
- 24684 multiletter control sequences out of 15000+200000
+ 21723 strings out of 493634
+ 392016 string characters out of 3135239
+ 519464 words of memory out of 3000000
+ 24683 multiletter control sequences out of 15000+200000
  43234 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  64i,9n,60p,959b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1485,10 +1484,10 @@ X 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/benja/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/benja/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/benja/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
-Output written on Assignment9-Ditz_Schroeder-WS15-16.pdf (4 pages, 298912 bytes
+Output written on Assignment9-Ditz_Schroeder-WS15-16.pdf (3 pages, 245651 bytes
 ).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 15 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

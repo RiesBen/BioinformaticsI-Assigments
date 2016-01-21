@@ -134,16 +134,11 @@ for this graph is not just one but three strings:
 \begin{align}
  S_{part_1} &= TAAACTG \nonumber \\
  S_{part_2} &= CGTAACGTTAA \nonumber \\
- S_{part_3} &= ACCGT \nonumber
+ s_{part_3} &= ACCGT \nonumber
 \end{align}
 
 One can see that $S_{part_1} = f_5$ and $S_{part_3} = f_1$, while $S_{part_2}$ is the result of an 
-overlap alignment between $f_2$, $f_3$ and $f_4$. In general the second graph is more realistic. 
-It is very unlikely to get a connected graph with real-life data. So it is possible that just $f_2$, 
-$f_3$ and $f_4$ come from the same area in the target DNA. $f_1$ and $f_5$ could come from a different 
-contig and, hence, result in this graph (Figure \ref{fig:5mere}). Since this is a minimal example 
-the first graph (Figure \ref{fig:4mere}) is not wrong but one should not expect to get a connected 
-graph all the time. In fact a connected graph is suspicious, normally.
+overlap alignment between $f_2$, $f_3$ and $f_4$. 
 
 \begin{figure}[h]
  \centering

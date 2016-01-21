@@ -20,7 +20,6 @@ digraph {
 			GTA -> TAA
 			TAA -> AAC
 			TAA -> AAA
-			AAC -> ACC
 			AAC -> ACG
 			AAC -> ACT
 			ACG -> CGT

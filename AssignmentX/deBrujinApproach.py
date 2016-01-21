@@ -5,29 +5,35 @@ import os
 
 from graphviz import Digraph
 
-def kMinus1List(reads, k):
-  kMinus1 = []
+def getkMere(reads, k):
+  kMere = []
 
   for read in reads:
     print "work on Read "+read+"..."
     i = 0
     while i+k <= len(read):
       kMer = read[i:i+k]
-      if kMer[:-1] not in kMinus1:
-        kMinus1.append(kMer[:-1])
-      if kMer[1:] not in kMinus1:
-        kMinus1.append(kMer[1:])
+      if kMer not in kMere:
+        kMere.append(kMer)
       i = i + 1
 
-  print "all computed k-1 mere:"
-  print kMinus1
-  return kMinus1
+  print "all computed k mere:"
+  print kMere
+  return kMere
 
 
-def drawDeBruijn(kMinus1, k):
+def drawDeBruijn(kMere, k):
   deBruijn = Digraph(comment='de Bruijn graph for given reads', format='png')
   deBruijn.graph_attr['rankdir'] = 'LR'
   
+  # generate k-1 mere
+  kMinus1 = []
+  for mer in kMere:
+    if mer[:-1] not in kMinus1:
+      kMinus1.append(mer[:-1])
+    if mer[1:] not in kMinus1:
+      kMinus1.append(mer[1:])
+
   # insert nodes
   for mer in kMinus1:
     deBruijn.node(mer, mer)
@@ -37,8 +43,9 @@ def drawDeBruijn(kMinus1, k):
     for mer2 in kMinus1:
       if mer1 == mer2:
         continue
-      if mer1[1:] == mer2[:-1]:
-        deBruijn.edge(mer1, mer2)  
+      for kMer in kMere:
+        if ((mer1 == kMer[:-1]) and (mer2 == kMer[1:])):
+          deBruijn.edge(mer1,mer2)
  
   # print graph
   deBruijn.render(filename="deBruijnGraph_"+str(k)+"mere")
@@ -55,5 +62,5 @@ if __name__ == '__main__':
     sys.exit('k has to be a integer')
 
   reads = ['ACCGT', 'CGTAACGTT', 'ACGTTA', 'GTTAA', 'TAAACTG']
-  kMinus1Mere = kMinus1List(reads, k)
-  drawDeBruijn(kMinus1Mere, k)
+  kMere = getkMere(reads, k)
+  drawDeBruijn(kMere, k)

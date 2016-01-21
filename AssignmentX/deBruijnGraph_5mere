@@ -16,22 +16,14 @@ digraph {
 		AACT [label=AACT]
 		ACTG [label=ACTG]
 			ACCG -> CCGT
-			CCGT -> CGTA
-			CCGT -> CGTT
 			CGTA -> GTAA
 			GTAA -> TAAC
-			GTAA -> TAAA
 			TAAC -> AACG
-			TAAC -> AACT
 			AACG -> ACGT
-			ACGT -> CGTA
 			ACGT -> CGTT
 			CGTT -> GTTA
 			GTTA -> TTAA
-			TTAA -> TAAC
-			TTAA -> TAAA
 			TAAA -> AAAC
-			AAAC -> AACG
 			AAAC -> AACT
 			AACT -> ACTG
 }

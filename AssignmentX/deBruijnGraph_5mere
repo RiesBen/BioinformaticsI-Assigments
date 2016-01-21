@@ -1,0 +1,29 @@
+// de Bruijn graph for given reads
+digraph {
+	graph [rankdir=LR]
+		ACCG [label=ACCG]
+		CCGT [label=CCGT]
+		CGTA [label=CGTA]
+		GTAA [label=GTAA]
+		TAAC [label=TAAC]
+		AACG [label=AACG]
+		ACGT [label=ACGT]
+		CGTT [label=CGTT]
+		GTTA [label=GTTA]
+		TTAA [label=TTAA]
+		TAAA [label=TAAA]
+		AAAC [label=AAAC]
+		AACT [label=AACT]
+		ACTG [label=ACTG]
+			ACCG -> CCGT
+			CGTA -> GTAA
+			GTAA -> TAAC
+			TAAC -> AACG
+			AACG -> ACGT
+			ACGT -> CGTT
+			CGTT -> GTTA
+			GTTA -> TTAA
+			TAAA -> AAAC
+			AAAC -> AACT
+			AACT -> ACTG
+}

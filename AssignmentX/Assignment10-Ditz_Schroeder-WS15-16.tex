@@ -159,8 +159,25 @@ graph all the time. In fact a connected graph is suspicious, normally.
  \label{fig:5mere}
 \end{figure}
 
-
-
 \section*{Practical Assignment - \textit{Assemble the human mitochondrial genome}}
+\subsubsection*{Introduction}
+The mitochondrial genome is rather a small genome in our world. But even this rather small genome, with its $10^4$ basepairs is a though nut, when trying to discover its sequence from reads \cite{!!!!}. For this purpose we used two different alignment algorithms. The Velvet algorithm by Zebrino and Birney is using de Bruijn graphs to assemble the reads.\cite{VelvetProgram}
+Likewise does the SOAP algotihm by Luo et al. use a de Bruijn graph \cite{SOAPProgram}. The differences of both algorithms lie in their detailed structure.
+
+
+\subsubsection*{Results}
+both algorithms were used to calculate the assembly of the mitochondrial genome seperatley. The velvet algorithm was computed on the homesource with 4 k-mer sizes (from 7 to 31 bases). as a result of the lacking hardware and the missing password for the WSI-Server, the resulting data from the SOAP algorithm was thankfully provided by Sanja Koehlers goup.
+
+\subsubsection*{Discussion}
+
+\subsubsection*{Acknowledgement}
+Thanks again to Sanja Koehler an her group, who enabled this phenomenal sucess of publishing this paper.
+
+\begin{thebibliography}{20}
+	\bibitem{VelvetProgram} Velvet: algorithms for de novo short read assembly using de Bruijn graphs. D.R. Zerbino and E. Birney. Genome Research 18:821-829. 
+	\bibitem{SOAPProgram} SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler. Luo et al. GigaScience 2012 1:18.
+\end{thebibliography}
+
+
 
 \end{document}

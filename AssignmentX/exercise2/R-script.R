@@ -1,6 +1,7 @@
 wd<-"C:/Users/benja/Desktop/material"
 setwd(wd)
 library(plotrix)
+x<-t(t(seq(1, 23)))
 
 #velvet coverage
 velvet7results <- read.delim(c(wd,"/velvet/velvet_result_7/stats.txt"), header =TRUE)
@@ -10,18 +11,14 @@ velvet31results <- read.delim("C:/Users/benja/Desktop/material/velvet/velvet_res
 
 
 #Soap k-mer Freq => cov
-Soap35mer<- read.table("C:/Users/benja/Desktop/material/SOAP/35soap/35soap.kmerFreq", quote="\"", comment.char="")
-Soap43mer<- read.table("C:/Users/benja/Desktop/material/SOAP/43soap/43soap.kmerFreq", quote="\"", comment.char="")
-Soap45mer<- read.table("C:/Users/benja/Desktop/material/SOAP/45soap/45soap.kmerFreq", quote="\"", comment.char="")
-Soap47mer<- read.table("C:/Users/benja/Desktop/material/SOAP/47soap/47soap.kmerFreq", quote="\"", comment.char="")
-Soap55mer<- read.table("C:/Users/benja/Desktop/material/SOAP/55soap/55soap.kmerFreq", quote="\"", comment.char="")
+Soap35mer<- read.table("C:/Users/benja/Documents/Git/BioinformaticsI-Assigments/AssignmentX/exercise2/35soap-cov.csv", quote="\"", comment.char="")
+Soap43mer<- read.table("C:/Users/benja/Documents/Git/BioinformaticsI-Assigments/AssignmentX/exercise2/43soap-cov.csv", quote="\"", comment.char="")
+Soap45mer<- read.table("C:/Users/benja/Documents/Git/BioinformaticsI-Assigments/AssignmentX/exercise2/45soap-cov.csv", quote="\"", comment.char="")
+Soap47mer<- read.table("C:/Users/benja/Documents/Git/BioinformaticsI-Assigments/AssignmentX/exercise2/47soap-cov.csv", quote="\"", comment.char="")
+
 
 #pictures SOAP
-barplot(Soap35mer$V1[1:23], main="K-mer Frequencies - Soap - 35mers")
-barplot(Soap43mer$V1[1:23], main="K-mer Frequencies - Soap - 43mers")
-barplot(Soap45mer$V1[1:23], main="K-mer Frequencies - Soap - 45mers")
-barplot(Soap47mer$V1[1:23], main="K-mer Frequencies - Soap - 47mers")
-barplot(Soap55mer$V1[1:23], main="K-mer Frequencies - Soap - 55mers")
+
 
 #pictures Velvet  
 png("velvet7kmersCoverage.png")
@@ -54,4 +51,23 @@ dev.off()
 
 png("velvet31kmersWeightedCoverage.png")
 velvet31HistWheight <- weighted.hist(velvet31results$short1_cov, velvet31results$lgth, breaks=0:50, main="coverage for wheighted 31 k-mers")
+dev.off()
+
+
+#pictures SOAP
+
+png("Soap35merCoverage.png")
+velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+dev.off()
+
+png("Soap43merCoverage.png")
+velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+dev.off()
+
+png("Soap45merCoverage.png")
+velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+dev.off()
+
+png("Soap47merCoverage.png")
+velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
 dev.off()

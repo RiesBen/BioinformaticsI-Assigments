@@ -32,8 +32,9 @@
 %\usepackage{TikZ} %phylogenetischer Baum
 %\usetikzlibrary{calc, shapes, backgrounds} %für die Phylogenetische bäume
 %\usetikzlibrary{automata,arrows}
-\usepackage{subfigure} 
-
+\usepackage{caption}
+\usepackage{units}
+\usepackage{subcaption}
 
 % Definition des Headers
 \usepackage{geometry}
@@ -161,21 +162,77 @@ graph all the time. In fact a connected graph is suspicious, normally.
 
 \section*{Practical Assignment - \textit{Assemble the human mitochondrial genome}}
 \subsubsection*{Introduction}
-The mitochondrial genome is rather a small genome in our world. But even this rather small genome, with its $10^4$ basepairs is a though nut, when trying to discover its sequence from reads \cite{!!!!}. For this purpose we used two different alignment algorithms. The Velvet algorithm by Zebrino and Birney is using de Bruijn graphs to assemble the reads.\cite{VelvetProgram}
-Likewise does the SOAP algotihm by Luo et al. use a de Bruijn graph \cite{SOAPProgram}. The differences of both algorithms lie in their detailed structure.
-
+The mitochondrial genome is rather a small genome in our world. But even this rather small genome, with its $10^4$ basepairs is a though nut, when trying to discover its sequence from reads. For this purpose we used two different alignment algorithms. The Velvet algorithm by Zebrino and Birney is using de Bruijn graphs to assemble the reads.\cite{VelvetProgram}
+Likewise does the short oligonucleotide alignment program (SOAP) denovo2 algorithm by Luo et al. use a de Bruijn graph \cite{SOAP2Program}. The differences of both algorithms lie in their detailed structure.\\
+The Velvet program starts with building an de Bruijn graph, in which each node has a so called twin node, which represents the reverse complement of the node. Both nodes are called block. The construction of the de Broijn graph happens via two databases. one is a hash table fo r the k-mers, and the second recording the overlaps of the k-mers of a read with other reads. Next a simplification step follows. After this two construction steps, the Error removal starts. The error removing focuses on to three aspects, the removing of tips, bubbles and erroneous connections. There are two rules for tip removing, one is the length is smaller than 2k and the other is called minority count. The minority count is true, if there is an alternative path, which is more common. Bubbles are redundant paths, which are removed via the Tour Bus algorithm. The last correction, removing erroneous connections is based on a threshold which is user set. \cite{VelvetProgram}
+The SOAP program is structured in six modules, which handle read error correction, de Bruijn graph construction, contig assembly, paired-end reads mapping, scaffold construction and gap closure. The de Bruijn graph is since SOAPdenovo2 part of the program.\cite{SOAP2Program} Like velvet, does SOAP use a hash table to build up a de Bruijn graph.\cite{SOAP1Program} But before a correction of the sequencing takes place. and afterwards again corrections are applied.
 
 \subsubsection*{Results}
-both algorithms were used to calculate the assembly of the mitochondrial genome seperatley. The velvet algorithm was computed on the homesource with 4 k-mer sizes (from 7 to 31 bases). as a result of the lacking hardware and the missing password for the WSI-Server, the resulting data from the SOAP algorithm was thankfully provided by Sanja Koehlers goup.
+Both algorithms were used to calculate the assembly of the mitochondrial genome separatly. The velvet algorithm was computed on the home source with four different k-mer sizes (from 7 to 31 bases). As a result of the lacking hardware and the missing password for the WSI-Server, the resulting data from the SOAP algorithm was thankfully provided by Sanja Koehlers goup. The statistics for each algorithm are shown in figure \ref{Velvet-Results} and \ref{SOAP-Results}. The for the Velvet program are from the stats.txt and for the SOAP from the XYsoap.contig. The coverage was isolated via a java script (see attachment).
+
+\begin{figure}[h]
+	\begin{subfigure}[t] {0.2\textwidth}
+	\includegraphics[width=\textwidth]{exercise2/velvet7kmersCoverage.png}
+	\caption{k-mer size: 7}
+	\label{Velvet-7-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/velvet15kmersCoverage.png}
+		\caption{k-mer size: 15}
+		\label{Velvet-15-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/velvet23kmersCoverage.png}
+		\caption{k-mer size: 23}
+		\label{Velvet-23-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/velvet31kmersCoverage.png}
+		\caption{k-mer size: 31}
+		\label{Velvet-31-mers-coverage}
+	\end{subfigure}
+
+	\caption{The figures show the coverage from the Soap program with differing k-mer size for the mitochondrial DNA assembly.}
+		\label{Velvet-Results}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/Soap35merCoverage.png}
+		\caption{k-mer size: 35}
+		\label{SOAP-25-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/Soap43merCoverage.png}
+		\caption{k-mer size: 43}
+		\label{SOAP-43-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/Soap45merCoverage.png}
+		\caption{k-mer size: 45}
+		\label{SOAP-45-mers-coverage}
+	\end{subfigure}
+	\begin{subfigure}[t] {0.2\textwidth}
+		\includegraphics[width=\textwidth]{exercise2/Soap47merCoverage.png}
+		\caption{k-mer size: 47}
+		\label{SOAP-47-mers-coverage}
+	\end{subfigure}
+
+	\caption{The figures show the coverage from the Soap program with differing k-mer size for the mitochondrial DNA assembly.}
+		\label{SOAP-Results}
+\end{figure}
 
 \subsubsection*{Discussion}
+The smaller the k-mer the more contigs are the result as it is visible in figure \ref{Velvet-7-mers-coverage}. Larger k-mers have as result more unique contigs \cite{VelvetProgram}. Generally we can not conclude anything from our results for the quality of the algorithms, because we did not use the same k-mer length. But an optimal k-mer size is a compromise between uniqueness of the k-mer (longer) and resulting amount of contigs (shorter).
 
 \subsubsection*{Acknowledgement}
-Thanks again to Sanja Koehler an her group, who enabled this phenomenal sucess of publishing this paper.
+Thanks again to Sanja Koehler an her group for the SOAP-data.
 
 \begin{thebibliography}{20}
 	\bibitem{VelvetProgram} Velvet: algorithms for de novo short read assembly using de Bruijn graphs. D.R. Zerbino and E. Birney. Genome Research 18:821-829. 
-	\bibitem{SOAPProgram} SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler. Luo et al. GigaScience 2012 1:18.
+	\bibitem{SOAP2Program} SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler. Luo et al. GigaScience 2012 1:18.
+	\bibitem{SOAP1Program}SOAP: short oligonucleotide alignment program" (2008) BIOINFORMATICS,Vol. 24 no.5 2008, pages 713–714 doi:10.1093/bioinformatics/btn025
+	
 \end{thebibliography}
 
 

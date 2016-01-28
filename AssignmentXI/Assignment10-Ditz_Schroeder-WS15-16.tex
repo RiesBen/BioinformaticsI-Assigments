@@ -23,6 +23,7 @@
 \usepackage{stmaryrd}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{multirow}
@@ -104,7 +105,7 @@ Tutor: #2  % Tutor
 \setcounter{colmns}{#1}
 \stepcounter{colmns}
   \begin{vartab}{\thecolmns}
-    \numbers{#1} & $\sum$ (6)\\\hline
+    \numbers{#1} & $\sum$ (7)\\\hline
     \emptyLine{\thecolmns}\\
   \end{vartab}
 }
@@ -113,19 +114,63 @@ Tutor: #2  % Tutor
 %\header{Blatt}{Tutor}{Abgabedatum}{Vorlesung}{Bearbeiter}{Semester}{Anzahl Aufgaben}
 \header{11}{Alexander Seitz}{1. Februar 2016}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{3}
 
-\section{Coverage statistics}
-\subsection{title}
-\subsection{title}
-\subsection{title}
-\section{Application of the arrival statistic for unitigs}
+\section{Theoretical Assignment - \textit{Coverage statistics}}
+\subsection{}
+\subsection{}
+\subsection{}
+\section{Theoretical Assignment - \textit{Application of the arrival statistic for unitigs}}
 
-\section{On distances}
+\section{Theoretical Assignment - \textit{On distances}}
 \subsection{title}
-\subsection{title}
+
+Consider a tree $T$ constructed with $D$ and the four nodes $i,j,k,l \in T$. Since $D$ is ultrametric, 
+the following four inequalities have to hold:
+\begin{align}
+ d(i,j) &\le max \left\lbrace d(i,k), d(j,k) \right\rbrace \nonumber \\
+ d(i,j) &\le max \left\lbrace d(i,l), d(j,l) \right\rbrace \nonumber \\
+ d(k,l) &\le max \left\lbrace d(i,k), d(i,l) \right\rbrace \nonumber \\
+ d(k,l) &\le max \left\lbrace d(j,k), d(j,l) \right\rbrace \nonumber
+\end{align}
+W.l.o.g we can assume that $d(i,k) = d(j,k) = d(i,l) = d(j,l)$. With that assumption we can rewrite 
+the inequalities as
+\begin{align}
+ d(i,j) + d(i,j) &\le d(i,k) + d(j,l) \nonumber \\
+ d(k,l) + d(k,l) &\le d(i,l) + d(j,k) \nonumber
+\end{align}
+And also the following inequality is valid:
+\begin{equation}
+ d(i,j) + d(k,l) \le max \left\lbrace d(i,k) + d(j,l), d(i,l) + d(j,k) \right\rbrace \nonumber
+\end{equation}
+As one can see, that is the Four-Point-Condition (4PC) and a metric fulfill 4PC if and only if it is 
+additive. So $D$ is a tree metric $\square$
+
+To show the back direction one consider the four elements $A, B, C, D \in X$ of a taxa $X$ and the 
+following distance matrix:
+\begin{equation}
+ D = \begin{bmatrix}
+        & B & C & D \\
+      A & 7 & 6 & 5 \\
+      B &   & 3 & 6 \\
+      C &   &   & 5
+     \end{bmatrix} \nonumber
+\end{equation}
+One can see in the script of this lecture that $D$ is a tree metric. But the Three-Point-Condition 
+(3PC) is not fulfilled as can be easily shown. To fulfill 3PC the following inequality has to be 
+valid:
+\begin{equation}
+ d(A,B) \le max \left\lbrace d(A,C), d(B,C) \right\rbrace \nonumber
+\end{equation}
+but
+\begin{equation}
+ 7 \nleq max \left\lbrace 6, 3  \right\rbrace \nonumber
+\end{equation}
+So $D$ does not fulfill 3PC and thus $D$ is not ultra metric. $\square$
+
+\subsection{}
+
 \begin{thebibliography}{20}
 	
 \end{thebibliography}
-
 
 
 \end{document}

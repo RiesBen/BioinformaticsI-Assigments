@@ -57,17 +57,17 @@ dev.off()
 #pictures SOAP
 
 png("Soap35merCoverage.png")
-velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 35 k-mers")
 dev.off()
 
 png("Soap43merCoverage.png")
-velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+hist(as.double(Soap43mer$V1), ylim=range(0,100), breaks=8, main="coverage for 43 k-mers")
 dev.off()
 
 png("Soap45merCoverage.png")
-velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+hist(as.double(Soap45mer$V1), ylim=range(0,100), breaks=8, main="coverage for 45 k-mers")
 dev.off()
 
 png("Soap47merCoverage.png")
-velvet7Hist <- hist(as.double(Soap35mer$V1), ylim=range(0,100), breaks=145, main="coverage for 7 k-mers")
+ hist(as.double(Soap47mer$V1), ylim=range(0,100), breaks=8, main="coverage for 47 k-mers")
 dev.off()

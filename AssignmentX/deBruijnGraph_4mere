@@ -1,6 +1,6 @@
 // de Bruijn graph for given reads
 digraph {
-	graph [rankdir=LR]
+	graph [rankdir=UD]
 		ACC [label=ACC]
 		CCG [label=CCG]
 		CGT [label=CGT]

@@ -24,7 +24,7 @@ def getkMere(reads, k):
 
 def drawDeBruijn(kMere, k):
   deBruijn = Digraph(comment='de Bruijn graph for given reads', format='png')
-  deBruijn.graph_attr['rankdir'] = 'LR'
+  deBruijn.graph_attr['rankdir'] = 'UD'
   
   # generate k-1 mere
   kMinus1 = []

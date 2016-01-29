@@ -41,6 +41,7 @@
 \usepackage{geometry}
 \geometry{a4paper, top=3cm, left=3cm, right=3cm, bottom=3cm, headsep=0mm, footskip=0mm}
 \renewcommand{\baselinestretch}{1.3}\normalsize
+\renewcommand{\thesubsection}{\thesection\alph{subsection}}
 
 \def\header#1#2#3#4#5#6#7{\pagestyle{empty}
 \noindent
@@ -121,7 +122,7 @@ Tutor: #2  % Tutor
 \section{Theoretical Assignment - \textit{Application of the arrival statistic for unitigs}}
 
 \section{Theoretical Assignment - \textit{On distances}}
-\subsection{title}
+\subsection{}
 
 Consider a tree $T$ constructed with $D$ and the four nodes $i,j,k,l \in T$. Since $D$ is ultrametric, 
 the following four inequalities have to hold:
@@ -168,9 +169,32 @@ So $D$ does not fulfill 3PC and thus $D$ is not ultra metric. $\square$
 
 \subsection{}
 
-\begin{thebibliography}{20}
-	
-\end{thebibliography}
+\begin{figure}[t]
+ \centering
+ \includegraphics[width=0.6\textwidth]{exec3bFigure.png}
+ \caption{Behavior of observed distance $p$ and expected genetic distance $d$ of two non-saturated sequences. Both sequences are of length 200.}
+ \label{fig:pdRelationship}
+\end{figure}
+
+There are different methods to estimate the (evolutionary) distance between two sequences. The easiest 
+one is to simply calculate the Hamming distance. This is called the observed or $p$-distance. $p$-distance 
+is just suitable for closely related species, since it is not able to detect superimposed mutations, i.e. 
+mutations that happened at a position that was already mutated, previously. A correction for observed 
+distance was formulated by Jukes and Cantor. The Jukes-Cantor transformation corrects the $p$-distance 
+to take, among others, superimposed events into account. This correct distance is called the expected 
+genetic distance $d$. An important note is that JC transformation does 
+not work for sequences that are saturated w.r.t. each other. So Figure \ref{fig:pdRelationship} shows 
+the relationship between $d$ and $p$ for non-saturated sequences of length 200. As one can see the 
+observed distance $p$ is constantly underestimating the genetic distance for more distant sequences. 
+Especially, if both sequences are close to be saturated, the difference between $d$ and $p$ shows 
+that $p$ cannot give a reliable result. So for sequences/species that are evolutionary close to each 
+other both measurements $d$ and $p$ give almost the same result. But the further away the last common 
+ancestor of both sequences the larger is the difference between observed distance and expected genetic 
+distance. 
+
+%\begin{thebibliography}{20}
+%	
+%\end{thebibliography}
 
 
 \end{document}

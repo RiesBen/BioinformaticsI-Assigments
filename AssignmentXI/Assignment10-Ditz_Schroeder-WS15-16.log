@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  28 JAN 2016 17:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.18)  29 JAN 2016 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,29 +1118,29 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 (./Assignment10-Ditz_Schroeder-WS15-16.aux)
 \openout1 = `Assignment10-Ditz_Schroeder-WS15-16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 114.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 113.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 114.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1174,7 +1174,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring OFF on input line 113.
+Package hyperref Info: Link coloring OFF on input line 114.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1184,9 +1184,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count155
 )
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+LaTeX Info: Redefining \nameref on input line 114.
 
 (./Assignment10-Ditz_Schroeder-WS15-16.out)
 (./Assignment10-Ditz_Schroeder-WS15-16.out)
@@ -1234,45 +1234,45 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@colmns=\count157
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 116.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 115.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 116.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 115
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 116
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 115
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 116
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 115.
+(Font)              <10> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 115.
+(Font)              <7> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 115.
-LaTeX Font Info:    Try loading font information for U+stmry on input line 115.
+(Font)              <5> on input line 116.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 116.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1280,17 +1280,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c@ctra=\count158
 \c@ctra1=\count159
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 115--115
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 116--116
 [] [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 117.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 118.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 117.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 118.
 
  [1
 
@@ -1299,77 +1299,71 @@ ination with the same identifier (name{equation.3.1}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.160 \begin{equation}
+l.161 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \begin{equation}
+l.161 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \begin{equation}
+l.161 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \begin{equation}
+l.161 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.165 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.165 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.165 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
-                      
+l.165 \begin{equation}
+                       <exec3bFigure.png, id=39, 586.8324pt x 442.2924pt>
+File: exec3bFigure.png Graphic file (type png)
 
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 173.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-[2pdfTeX warning (ext4): destination with the same identifier (name{equation.3.
-1}) has been already used, duplicate ignored
+<use exec3bFigure.png>
+Package pdftex.def Info: exec3bFigure.png used on input line 174.
+(pdftex.def)             Requested size: 256.07741pt x 193.00978pt.
+ [2pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.176 \end{document}
-                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+l.194 
+       <./exec3bFigure.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./Assignment10-Ditz_Schroeder-WS15-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
-
-
-Package rerunfilecheck Warning: File `Assignment10-Ditz_Schroeder-WS15-16.out' 
-has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Assignment10-Ditz_Schroeder-WS15-16
-.out':
-(rerunfilecheck)             Before: B85846163185D5DDFA382385E8135F57;367
-(rerunfilecheck)             After:  BB589901A7004DE0F8E2BCF40797F375;313.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package rerunfilecheck Info: File `Assignment10-Ditz_Schroeder-WS15-16.out' has
+ not changed.
+(rerunfilecheck)             Checksum: E35E99A3608D267AB3D59B2E2D771A0A;259.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 21047 strings out of 493304
- 354675 string characters out of 6139870
- 478007 words of memory out of 5000000
- 24083 multiletter control sequences out of 15000+600000
+ 21060 strings out of 493304
+ 354887 string characters out of 6139870
+ 478178 words of memory out of 5000000
+ 24093 multiletter control sequences out of 15000+600000
  43234 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,9n,71p,958b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1384,11 +1378,11 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on Assignment10-Ditz_Schroeder-WS15-16.pdf (2 pages, 154910 byte
+Output written on Assignment10-Ditz_Schroeder-WS15-16.pdf (3 pages, 183811 byte
 s).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 

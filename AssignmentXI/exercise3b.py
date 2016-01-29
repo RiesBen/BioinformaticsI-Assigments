@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
   plt.plot(t, ham, 'bs', label='observed distance p')
   plt.plot(t, jc, 'g^', label='expected genetic distance d')
-  plt.xlabel('difference of two sequences')
+  plt.xlabel('number of differences between two sequences')
   plt.ylabel('distance')
   plt.legend(loc='best')
   plt.show()

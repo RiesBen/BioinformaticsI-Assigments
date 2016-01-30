@@ -121,6 +121,33 @@ Tutor: #2  % Tutor
 \subsection{}
 \section{Theoretical Assignment - \textit{Application of the arrival statistic for unitigs}}
 
+The probability whether a unitig is unique can be done with a formula derived from the Lander-Waterman 
+model for shotgun sequencing. This formula is
+\begin{equation}
+ \frac{e^{-c} c^k}{k!}\text{, with } c = \frac{\rho R}{L} \nonumber
+\end{equation}
+for non-oversampled unitigs and
+\begin{equation}
+ \frac{e^{-2c} (2c)^k}{k!} \nonumber
+\end{equation}
+for unitigs that are the result of collapsing two repeats. In these formulas $R$ is the number of reads, $L$ is the length 
+of target sequence, $\rho$ is the length of the unitig and $k$ is the number of reads contained by the 
+unitig.
+
+In this task we consider a source sequence of length $L = 2Mb$ and $R = 22000$ reads. The length of 
+the unitig is $\rho = 3000bp$ and it consists of $k = 100$ reads. With the formulas mentioned above, the 
+probability of this specific unitig to be unique is
+\begin{equation}
+ \frac{e^{-\frac{3000 \cdot 22000}{3000000}} \cdot (\frac{3000 \cdot 22000}{3000000})^{100}}{100!} \approx 5.221 \cdot 10^{-34} \nonumber
+\end{equation}
+for the case that our unitig is not oversampled and 
+\begin{equation}
+ \frac{e^{-2\frac{3000 \cdot 22000}{3000000}} \cdot (2\frac{3000 \cdot 22000}{3000000})^{100}}{100!} \approx 1.846 \cdot 10^{-13} \nonumber
+\end{equation}
+for the case that our unitig is the result of collapsing to repeats.
+
+
+
 \section{Theoretical Assignment - \textit{On distances}}
 \subsection{}
 

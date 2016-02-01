@@ -116,9 +116,54 @@ Tutor: #2  % Tutor
 \header{11}{Alexander Seitz}{1. Februar 2016}{Bioinformatics I}{\\Jonas Ditz \\\& Benjamin Schroeder}{WS 15/16}{3}
 
 \section{Theoretical Assignment - \textit{Coverage statistics}}
+\subsection{fraction sequenced}
+The used equation is from the script(equation \ref{fraction}.\\	
+	\begin{eqnarray}
+		f=1-e^{-c} \label{fraction}\\
+	\end{eqnarray}
+\\	
+As a result of using the given coverages $c=1,2,4,8, 14$, table \ref{fractionsTable} is deduced. The last column shows the bases which are not covered when the sequence length is  $L= 248956422 bp$ like in the human chromosome 1.
+\\
+\begin{tabular}{|c|c|c|c|}
+	\hline coverage & fraction covered f & fraction not covered & bases not covered [bp] \\ 
+	\hline 1 & 0.63212 & 0.36788 & 91586089 \\ 
+	\hline 2 & 0.86466 & 0.13534 & 33693762 \\ 
+	\hline 4 & 0.98168 & 0.01832 & 4650882 \\ 
+	\hline 8 & 0.99966 & 0.00034 & 84645 \\ 
+	\hline 14 & 0.99995 & 0.00005 & 12448 \\ 
+	\hline 
+	\label{fractionsTable}
+\end{tabular} 
+\\
+The Treponema pallidum chromosome has a length of 1,139,633 bp. If now less than one base can be missed, the not covered fraction is $\leq\frac{1}{1,139,633} =7.16*10^{-6}$. This results in a positive fraction of at least 0.999993.  The coverage is determined with the transformed equation \ref{transformedEquation1} and has a value of 11.87.
+\\
+\begin{equation}
+c=-ln(1-f)
+\label{transformedEquation1}
+\end{equation}
+\\
+\subsection{times sequenced}
+If there is a coverage of $c=10$, a base has been exactly been sequenced three times with a probability p(3)=0.015 according to the poisson distribution (equation \ref{pois}).
+\\
+\begin{equation}
+p(x)=\frac{c^x}{x!} e^{-c} \label{pois}
+\end{equation}
+\begin{equation}
+p(x)=\frac{10^3}{3!} e^{-10} = 0.015
+\end{equation}
+The next question was at most three times covered. This can be calculated with equation \ref{poisD}. F(3) has a value of $F(3)=0.018$.
+
+\begin{equation}
+	F(n)= \sum_{x=0}^{3} p(x) \label{poisD}	
+\end{equation}
+\begin{equation}
+	F(3)= \frac{10^0}{0!}*e^{-10}+\frac{10^1}{1!}*e^{-10}+\frac{10^2}{2!}*e^{-10}+\frac{10^3}{3!}*e^{-10} = 0.018 \label{poisD}	
+\end{equation}
+\\
 \subsection{}
-\subsection{}
-\subsection{}
+expected number of gaps
+mean contig size
+\\
 \section{Theoretical Assignment - \textit{Application of the arrival statistic for unitigs}}
 
 The probability whether a unitig is unique can be done with a formula derived from the Lander-Waterman 
